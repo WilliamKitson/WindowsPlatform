@@ -12,5 +12,15 @@ bool WindowsPlatform::Vibration::unequalLeft(Vibration value)
         return false;
     }
 
+    return unequalRight(value);
+}
+
+bool WindowsPlatform::Vibration::unequalRight(Vibration value)
+{
+    if (right != value.right)
+    {
+        return false;
+    }
+
     return true;
 }

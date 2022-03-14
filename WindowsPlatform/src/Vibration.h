@@ -15,6 +15,7 @@ namespace WindowsPlatform
 
 	private:
 		bool unequalLeft(Vibration);
+		bool unequalRight(Vibration);
 	};
 }
 

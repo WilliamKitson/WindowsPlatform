@@ -90,6 +90,9 @@
     <ClCompile Include="src\presentation\vibration\VibrationLeftTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\vibration\VibrationRightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -162,6 +165,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\vibration\VibrationLeftTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\vibration\VibrationRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
