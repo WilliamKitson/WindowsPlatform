@@ -31,5 +31,5 @@ std::string NormaliserTester::testParameter()
 
 std::string NormaliserTester::testInvalidRange()
 {
-	return NormaliserInvalidRangeTest().test();
+	return NormaliserInvertedRangeTest().test();
 }

@@ -4,7 +4,7 @@
 
 #include "NormaliserRangeDefaultTest.h"
 #include "NormaliserRangeParameterTest.h"
-#include "NormaliserInvalidRangeTest.h"
+#include "NormaliserInvertedRangeTest.h"
 
 class NormaliserTester
 {
