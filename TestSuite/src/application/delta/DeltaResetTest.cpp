@@ -10,7 +10,7 @@ DeltaResetTest::~DeltaResetTest()
 
 std::string DeltaResetTest::test()
 {
-	DeltaTimer unit;
+	WindowsPlatform::DeltaTimer unit;
 
 	Sleep(500);
 

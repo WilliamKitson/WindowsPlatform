@@ -2,23 +2,26 @@
 
 #include <chrono>
 
-class DeltaTimer
+namespace WindowsPlatform
 {
-public:
-	DeltaTimer();
-	~DeltaTimer();
+	class DeltaTimer
+	{
+	public:
+		DeltaTimer();
+		~DeltaTimer();
 
-	void update();
-	float getDelta();
-
-
-private:
-	void calculateDelta();
-	void resetStart();
+		void update();
+		float getDelta();
 
 
-private:
-	float delta;
-	std::chrono::time_point<std::chrono::high_resolution_clock> start;
-};
+	private:
+		void calculateDelta();
+		void resetStart();
+
+
+	private:
+		float delta;
+		std::chrono::time_point<std::chrono::high_resolution_clock> start;
+	};
+}
 

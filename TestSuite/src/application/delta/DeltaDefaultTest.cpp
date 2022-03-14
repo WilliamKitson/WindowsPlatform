@@ -10,7 +10,7 @@ DeltaDefaultTest::~DeltaDefaultTest()
 
 std::string DeltaDefaultTest::test()
 {
-	if (DeltaTimer().getDelta() == 0.0f)
+	if (WindowsPlatform::DeltaTimer().getDelta() == 0.0f)
 	{
 		return std::string();
 	}
