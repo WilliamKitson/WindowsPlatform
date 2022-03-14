@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GamepadState.h"
+#include "GamepadButtons.h"
 
 namespace WindowsPlatform
 {
@@ -11,6 +12,7 @@ namespace WindowsPlatform
 		~XInputGamepad();
 
 		GamepadState getState();
+		bool getButton(GamepadButtons);
 	};
 }
 

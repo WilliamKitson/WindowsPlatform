@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\DeltaTimer.h" />
+    <ClInclude Include="src\GamepadButtons.h" />
     <ClInclude Include="src\GamepadState.h" />
     <ClInclude Include="src\MouseState.h" />
     <ClInclude Include="src\Normaliser.h" />

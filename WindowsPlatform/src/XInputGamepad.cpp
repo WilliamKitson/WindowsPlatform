@@ -12,3 +12,8 @@ WindowsPlatform::GamepadState WindowsPlatform::XInputGamepad::getState()
 {
 	return GamepadState();
 }
+
+bool WindowsPlatform::XInputGamepad::getButton(GamepadButtons)
+{
+	return false;
+}

@@ -13,6 +13,7 @@ std::string GamepadDefaultTester::test()
 	std::string failures{ "" };
 
 	failures += testState();
+	failures += testButtons();
 
 	return failures;
 }
@@ -20,4 +21,9 @@ std::string GamepadDefaultTester::test()
 std::string GamepadDefaultTester::testState()
 {
 	return GamepadDefaultStateTest().test();
+}
+
+std::string GamepadDefaultTester::testButtons()
+{
+	return GamepadDefaultButtonsTest().test();
 }
