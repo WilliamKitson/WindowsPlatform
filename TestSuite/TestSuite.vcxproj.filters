@@ -69,6 +69,9 @@
     <ClCompile Include="src\presentation\gamepadState\GamepadStateJoystickLYTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\gamepadState\GamepadStateJoystickRXTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -120,6 +123,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickLYTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickRXTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
