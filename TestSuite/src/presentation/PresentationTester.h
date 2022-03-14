@@ -5,6 +5,7 @@
 #include "resolution/ResolutionTester.h"
 #include "mouseState/MouseStateTester.h"
 #include "gamepadState/GamepadStateTester.h"
+#include "vibration/VibrationTester.h"
 
 class PresentationTester
 {
@@ -19,5 +20,6 @@ private:
 	std::string testResolution();
 	std::string testMouseState();
 	std::string testGamepadState();
+	std::string testVibration();
 };
 
