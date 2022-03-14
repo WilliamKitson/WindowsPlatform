@@ -151,6 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\domain\DomainTester.cpp" />
+    <ClCompile Include="src\domain\normaliser\NormaliserInvalidRangeTest.cpp" />
+    <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
+    <ClCompile Include="src\domain\normaliser\NormaliserRangeParameterTest.cpp" />
+    <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateDefaultTest.cpp" />
@@ -179,6 +184,11 @@
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\domain\DomainTester.h" />
+    <ClInclude Include="src\domain\normaliser\NormaliserInvalidRangeTest.h" />
+    <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />
+    <ClInclude Include="src\domain\normaliser\NormaliserRangeParameterTest.h" />
+    <ClInclude Include="src\domain\normaliser\NormaliserTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickLXTest.h" />

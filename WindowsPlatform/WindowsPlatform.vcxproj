@@ -149,12 +149,14 @@
   <ItemGroup>
     <ClInclude Include="src\GamepadState.h" />
     <ClInclude Include="src\MouseState.h" />
+    <ClInclude Include="src\Normaliser.h" />
     <ClInclude Include="src\Resolution.h" />
     <ClInclude Include="src\Vibration.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GamepadState.cpp" />
     <ClCompile Include="src\MouseState.cpp" />
+    <ClCompile Include="src\Normaliser.cpp" />
     <ClCompile Include="src\Resolution.cpp" />
     <ClCompile Include="src\Vibration.cpp" />
   </ItemGroup>

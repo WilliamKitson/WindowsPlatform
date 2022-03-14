@@ -1,0 +1,23 @@
+#include "NormaliserRangeDefaultTest.h"
+
+NormaliserRangeDefaultTest::NormaliserRangeDefaultTest()
+{
+}
+
+NormaliserRangeDefaultTest::~NormaliserRangeDefaultTest()
+{
+}
+
+std::string NormaliserRangeDefaultTest::test()
+{
+	Normaliser unit;
+	
+	unit.normalise(0.0f, 100.0f, 50.0f);
+
+	if (unit.getNormalised() == 0.5f)
+	{
+		return std::string();
+	}
+
+	return "normaliser range default test failed\n";
+}
