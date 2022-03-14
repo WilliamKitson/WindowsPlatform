@@ -213,6 +213,9 @@
     <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\resolution\default\ResolutionDefaultHeightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -408,6 +411,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\resolution\ResolutionTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\resolution\default\ResolutionDefaultHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
