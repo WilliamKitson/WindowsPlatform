@@ -15,6 +15,7 @@ namespace WindowsPlatform
 
 	private:
 		bool unequalWidth(Resolution);
+		bool unequalHeight(Resolution);
 	};
 }
 

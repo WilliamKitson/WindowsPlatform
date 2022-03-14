@@ -14,6 +14,7 @@ std::string ResolutionTester::test()
 
 	failures += testDefault();
 	failures += testWidth();
+	failures += testHeight();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string ResolutionTester::testDefault()
 std::string ResolutionTester::testWidth()
 {
 	return ResolutionWidthTest().test();
+}
+
+std::string ResolutionTester::testHeight()
+{
+	return ResolutionHeightTest().test();
 }

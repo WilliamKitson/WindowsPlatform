@@ -4,6 +4,7 @@
 
 #include "ResolutionDefaultTest.h"
 #include "ResolutionWidthTest.h"
+#include "ResolutionHeightTest.h"
 
 class ResolutionTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testWidth();
+	std::string testHeight();
 };
 

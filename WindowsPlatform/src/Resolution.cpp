@@ -12,5 +12,15 @@ bool WindowsPlatform::Resolution::unequalWidth(Resolution value)
         return false;
     }
 
+    return unequalHeight(value);
+}
+
+bool WindowsPlatform::Resolution::unequalHeight(Resolution value)
+{
+    if (height != value.height)
+    {
+        return false;
+    }
+
     return true;
 }

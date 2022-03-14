@@ -54,6 +54,9 @@
     <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\resolution\ResolutionHeightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -90,6 +93,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\resolution\ResolutionHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
