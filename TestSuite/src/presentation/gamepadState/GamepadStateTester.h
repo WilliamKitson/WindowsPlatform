@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "GamepadStateDefaultTest.h"
+#include "GamepadStateJoystickLXTest.h"
 
 class GamepadStateTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testJoystickLX();
 };
 

@@ -15,6 +15,10 @@ namespace WindowsPlatform
 		float joystickRY{ 0.0f };
 		float triggerL{ 0.0f };
 		float triggerR{ 0.0f };
+
+
+	private:
+		bool unequalJoystickLX(GamepadState);
 	};
 }
 

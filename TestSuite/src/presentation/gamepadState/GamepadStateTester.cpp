@@ -13,6 +13,7 @@ std::string GamepadStateTester::test()
 	std::string failures{ "" };
 
 	failures += testDefault();
+	failures += testJoystickLX();
 
 	return failures;
 }
@@ -20,4 +21,9 @@ std::string GamepadStateTester::test()
 std::string GamepadStateTester::testDefault()
 {
 	return GamepadStateDefaultTest().test();
+}
+
+std::string GamepadStateTester::testJoystickLX()
+{
+	return GamepadStateJoystickLXTest().test();
 }
