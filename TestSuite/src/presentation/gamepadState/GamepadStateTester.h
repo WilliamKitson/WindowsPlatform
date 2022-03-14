@@ -4,6 +4,7 @@
 
 #include "GamepadStateDefaultTest.h"
 #include "GamepadStateJoystickLXTest.h"
+#include "GamepadStateJoystickLYTest.h"
 
 class GamepadStateTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testJoystickLX();
+	std::string testJoystickLY();
 };
 

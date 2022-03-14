@@ -19,6 +19,7 @@ namespace WindowsPlatform
 
 	private:
 		bool unequalJoystickLX(GamepadState);
+		bool unequalJoystickLY(GamepadState);
 	};
 }
 

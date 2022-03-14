@@ -12,5 +12,15 @@ bool WindowsPlatform::GamepadState::unequalJoystickLX(GamepadState value)
         return false;
     }
 
+    return unequalJoystickLY(value);
+}
+
+bool WindowsPlatform::GamepadState::unequalJoystickLY(GamepadState value)
+{
+    if (joystickLY != value.joystickLY)
+    {
+        return false;
+    }
+
     return true;
 }

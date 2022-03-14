@@ -155,6 +155,7 @@
     <ClCompile Include="src\MemoryTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateDefaultTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateJoystickLXTest.cpp" />
+    <ClCompile Include="src\presentation\gamepadState\GamepadStateJoystickLYTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateTester.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateDefaultTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateTester.cpp" />
@@ -173,6 +174,7 @@
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickLXTest.h" />
+    <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickLYTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateTester.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateDefaultTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateTester.h" />
