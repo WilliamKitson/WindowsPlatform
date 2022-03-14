@@ -153,6 +153,8 @@
   <ItemGroup>
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
+    <ClCompile Include="src\presentation\gamepadState\GamepadStateDefaultTest.cpp" />
+    <ClCompile Include="src\presentation\gamepadState\GamepadStateTester.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateDefaultTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateTester.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateXdragTest.cpp" />
@@ -168,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h" />
+    <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />
+    <ClInclude Include="src\presentation\gamepadState\GamepadStateTester.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateDefaultTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateTester.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateXdragTest.h" />

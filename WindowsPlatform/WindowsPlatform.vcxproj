@@ -147,10 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\GamepadState.h" />
     <ClInclude Include="src\MouseState.h" />
     <ClInclude Include="src\Resolution.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\GamepadState.cpp" />
     <ClCompile Include="src\MouseState.cpp" />
     <ClCompile Include="src\Resolution.cpp" />
   </ItemGroup>
