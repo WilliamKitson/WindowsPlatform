@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "VibrationDefaultTest.h"
+#include "VibrationLeftTest.h"
 
 class VibrationTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testLeft();
 };
 

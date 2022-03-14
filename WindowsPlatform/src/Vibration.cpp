@@ -1,6 +1,16 @@
 #include "Vibration.h"
 
-bool WindowsPlatform::Vibration::operator==(Vibration)
+bool WindowsPlatform::Vibration::operator==(Vibration value)
 {
+    return unequalLeft(value);
+}
+
+bool WindowsPlatform::Vibration::unequalLeft(Vibration value)
+{
+    if (left != value.left)
+    {
+        return false;
+    }
+
     return true;
 }

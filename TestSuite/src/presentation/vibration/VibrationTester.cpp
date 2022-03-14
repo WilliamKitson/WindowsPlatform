@@ -13,6 +13,7 @@ std::string VibrationTester::test()
 	std::string failures{ "" };
 
 	failures += testDefault();
+	failures += testLeft();
 
 	return failures;
 }
@@ -20,4 +21,9 @@ std::string VibrationTester::test()
 std::string VibrationTester::testDefault()
 {
 	return VibrationDefaultTest().test();
+}
+
+std::string VibrationTester::testLeft()
+{
+	return VibrationLeftTest().test();
 }
