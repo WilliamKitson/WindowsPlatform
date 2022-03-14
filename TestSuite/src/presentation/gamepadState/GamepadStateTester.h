@@ -8,6 +8,7 @@
 #include "GamepadStateJoystickRXTest.h"
 #include "GamepadStateJoystickRYTest.h"
 #include "GamepadStateTriggerLTest.h"
+#include "GamepadStateTriggerRTest.h"
 
 class GamepadStateTester
 {
@@ -25,5 +26,6 @@ private:
 	std::string testJoystickRX();
 	std::string testJoystickRY();
 	std::string testTriggerL();
+	std::string testTriggerR();
 };
 
