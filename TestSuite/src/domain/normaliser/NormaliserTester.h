@@ -3,7 +3,7 @@
 #include <string>
 
 #include "NormaliserRangeDefaultTest.h"
-#include "NormaliserRangeParameterTest.h"
+#include "NormaliserRangeSetTest.h"
 #include "NormaliserInvertedRangeTest.h"
 
 class NormaliserTester

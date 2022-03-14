@@ -96,9 +96,6 @@
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\normaliser\NormaliserRangeParameterTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -106,6 +103,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\normaliser\NormaliserRangeSetTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -188,9 +188,6 @@
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\normaliser\NormaliserRangeParameterTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\domain\normaliser\NormaliserTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -198,6 +195,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\normaliser\NormaliserRangeSetTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -154,7 +154,7 @@
     <ClCompile Include="src\domain\DomainTester.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
-    <ClCompile Include="src\domain\normaliser\NormaliserRangeParameterTest.cpp" />
+    <ClCompile Include="src\domain\normaliser\NormaliserRangeSetTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
@@ -187,7 +187,7 @@
     <ClInclude Include="src\domain\DomainTester.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />
-    <ClInclude Include="src\domain\normaliser\NormaliserRangeParameterTest.h" />
+    <ClInclude Include="src\domain\normaliser\NormaliserRangeSetTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />

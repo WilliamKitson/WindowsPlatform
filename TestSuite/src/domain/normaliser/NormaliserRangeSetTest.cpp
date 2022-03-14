@@ -1,4 +1,4 @@
-#include "NormaliserRangeParameterTest.h"
+#include "NormaliserRangeSetTest.h"
 
 NormaliserRangeParameterTest::NormaliserRangeParameterTest()
 {
@@ -20,5 +20,5 @@ std::string NormaliserRangeParameterTest::test()
 		return std::string();
 	}
 
-	return "normaliser range parameter test failed\n";
+	return "normaliser range set test failed\n";
 }
