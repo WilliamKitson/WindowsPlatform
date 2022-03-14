@@ -11,5 +11,9 @@ public:
 	int ypos{ 0 };
 	float xdrag{ 0.0f };
 	float ydrag{ 0.0f };
+
+
+private:
+	bool unequalXpos(MouseState);
 };
 

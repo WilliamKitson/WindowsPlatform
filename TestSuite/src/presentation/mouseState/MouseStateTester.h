@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "MouseStateDefaultTest.h"
+#include "MouseStateXposTest.h"
 
 class MouseStateTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testXpos();
 };
 
