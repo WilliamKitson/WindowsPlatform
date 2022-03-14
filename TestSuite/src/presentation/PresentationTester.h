@@ -1,6 +1,8 @@
 #pragma once
 
 #include <string>
+
+#include "resolution/ResolutionTester.h"
 #include "mouseState/MouseStateTester.h"
 
 class PresentationTester
@@ -13,6 +15,7 @@ public:
 
 
 private:
+	std::string testResolution();
 	std::string testMouseState();
 };
 

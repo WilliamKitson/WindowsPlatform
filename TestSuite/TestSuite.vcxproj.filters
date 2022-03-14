@@ -45,6 +45,12 @@
     <ClCompile Include="src\presentation\mouseState\MouseStateYdragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -72,6 +78,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\mouseState\MouseStateYdragTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\resolution\ResolutionTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
