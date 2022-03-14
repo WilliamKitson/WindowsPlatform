@@ -17,7 +17,12 @@ std::string WindowResolutionSetHeightTest::test()
 		"window resolution set height test"
 	};
 
-	unit.setResolution(0, height);
+	WindowsPlatform::Resolution set{
+		0,
+		height
+	};
+
+	unit.setResolution(set);
 
 	RECT resolution;
 

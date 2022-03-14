@@ -17,7 +17,7 @@ std::string WindowResolutionMinimumHeightTest::test()
 		"window resolution minimum height test"
 	};
 
-	unit.setResolution(0, 0);
+	unit.setResolution(WindowsPlatform::Resolution());
 
 	RECT resolution;
 
