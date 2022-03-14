@@ -6,6 +6,7 @@
 #include "MouseStateXposTest.h"
 #include "MouseStateYposTest.h"
 #include "MouseStateXdragTest.h"
+#include "MouseStateYdragTest.h"
 
 class MouseStateTester
 {
@@ -21,5 +22,6 @@ private:
 	std::string testXpos();
 	std::string testYpos();
 	std::string testXdrag();
+	std::string testYdrag();
 };
 

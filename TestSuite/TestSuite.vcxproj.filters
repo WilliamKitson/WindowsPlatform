@@ -42,6 +42,9 @@
     <ClCompile Include="src\presentation\mouseState\MouseStateXdragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\mouseState\MouseStateYdragTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -66,6 +69,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\mouseState\MouseStateXdragTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\mouseState\MouseStateYdragTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -19,6 +19,7 @@ namespace WindowsPlatform
 		bool unequalXpos(MouseState);
 		bool unequalYpos(MouseState);
 		bool unequalXdrag(MouseState);
+		bool unequalYdrag(MouseState);
 	};
 }
 
