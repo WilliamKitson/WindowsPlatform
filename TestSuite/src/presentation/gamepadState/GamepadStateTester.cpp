@@ -16,6 +16,7 @@ std::string GamepadStateTester::test()
 	failures += testJoystickLX();
 	failures += testJoystickLY();
 	failures += testJoystickRX();
+	failures += testJoystickRY();
 
 	return failures;
 }
@@ -38,4 +39,9 @@ std::string GamepadStateTester::testJoystickLY()
 std::string GamepadStateTester::testJoystickRX()
 {
 	return GamepadStateJoystickRXTest().test();
+}
+
+std::string GamepadStateTester::testJoystickRY()
+{
+	return GamepadStateJoystickRYTest().test();
 }
