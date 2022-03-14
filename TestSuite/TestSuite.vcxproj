@@ -151,6 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\application\ApplicationTester.cpp" />
+    <ClCompile Include="src\application\delta\DeltaDefaultTest.cpp" />
+    <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
+    <ClCompile Include="src\application\delta\DeltaTester.cpp" />
+    <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
@@ -184,6 +189,11 @@
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\application\ApplicationTester.h" />
+    <ClInclude Include="src\application\delta\DeltaDefaultTest.h" />
+    <ClInclude Include="src\application\delta\DeltaResetTest.h" />
+    <ClInclude Include="src\application\delta\DeltaTester.h" />
+    <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />

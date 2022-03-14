@@ -30,6 +30,9 @@
     <ClInclude Include="src\Normaliser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\DeltaTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MouseState.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Normaliser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DeltaTimer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

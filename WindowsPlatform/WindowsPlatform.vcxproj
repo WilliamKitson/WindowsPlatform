@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\GamepadState.h" />
     <ClInclude Include="src\MouseState.h" />
     <ClInclude Include="src\Normaliser.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="src\Vibration.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\GamepadState.cpp" />
     <ClCompile Include="src\MouseState.cpp" />
     <ClCompile Include="src\Normaliser.cpp" />
