@@ -209,6 +209,10 @@
     <ClCompile Include="src\presentation\mouseState\MouseStateYdragTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateYposTest.cpp" />
     <ClCompile Include="src\presentation\PresentationTester.cpp" />
+    <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp" />
+    <ClCompile Include="src\presentation\resolution\ResolutionHeightTest.cpp" />
+    <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp" />
+    <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationDefaultTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationLeftTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationRightTest.cpp" />
@@ -273,6 +277,10 @@
     <ClInclude Include="src\presentation\mouseState\MouseStateYdragTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateYposTest.h" />
     <ClInclude Include="src\presentation\PresentationTester.h" />
+    <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h" />
+    <ClInclude Include="src\presentation\resolution\ResolutionHeightTest.h" />
+    <ClInclude Include="src\presentation\resolution\ResolutionTester.h" />
+    <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationDefaultTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationLeftTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationRightTest.h" />
