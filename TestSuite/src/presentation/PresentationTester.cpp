@@ -22,7 +22,7 @@ std::string PresentationTester::test()
 
 std::string PresentationTester::testResolution()
 {
-	return ResolutionTester().test();
+	return std::string();
 }
 
 std::string PresentationTester::testMouseState()
