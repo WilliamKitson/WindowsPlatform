@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\GamepadButtons.h" />
     <ClInclude Include="src\GamepadState.h" />
@@ -154,9 +155,11 @@
     <ClInclude Include="src\Normaliser.h" />
     <ClInclude Include="src\Resolution.h" />
     <ClInclude Include="src\Vibration.h" />
+    <ClInclude Include="src\WindowsButtons.h" />
     <ClInclude Include="src\XInputGamepad.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\GamepadState.cpp" />
     <ClCompile Include="src\MouseState.cpp" />

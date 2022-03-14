@@ -1,6 +1,7 @@
 #include "ApplicationTester.h"
 
-ApplicationTester::ApplicationTester()
+ApplicationTester::ApplicationTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
@@ -12,10 +13,16 @@ std::string ApplicationTester::test()
 {
 	std::string failures{ "" };
 
+	failures += testWindow();
 	failures += testDelta();
 	failures += testGamepad();
 
 	return failures;
+}
+
+std::string ApplicationTester::testWindow()
+{
+	return WindowTester(hInstance, nCmdShow).test();
 }
 
 std::string ApplicationTester::testDelta()

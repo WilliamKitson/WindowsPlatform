@@ -1,6 +1,7 @@
 #include "SubordinateTester.h"
 
-SubordinateTester::SubordinateTester()
+SubordinateTester::SubordinateTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
@@ -26,7 +27,7 @@ std::string SubordinateTester::testDomain()
 
 std::string SubordinateTester::testApplication()
 {
-	return ApplicationTester().test();
+	return ApplicationTester(hInstance, nCmdShow).test();
 }
 
 std::string SubordinateTester::testPresentation()
