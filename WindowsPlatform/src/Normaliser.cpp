@@ -1,12 +1,7 @@
 #include "Normaliser.h"
 
 WindowsPlatform::Normaliser::Normaliser()
-	: Normaliser(0, 1)
-{
-}
-
-WindowsPlatform::Normaliser::Normaliser(float min, float max)
-	: minimum{ getSmaller(min, max) }, maximum{ getLarger(min, max) }, normalised{ 0.0f }
+	: minimum{ 0.0f }, maximum{ 1.0f }, normalised{ 0.0f }
 {
 }
 
@@ -24,22 +19,28 @@ float WindowsPlatform::Normaliser::getNormalised()
 	return normalised;
 }
 
-float WindowsPlatform::Normaliser::getSmaller(float min, float max)
+void WindowsPlatform::Normaliser::setRange(float min, float max)
 {
-	if (min < max)
-	{
-		return min;
-	}
-
-	return max;
+	minimum = getSmaller(min, max);
+	maximum = getLarger(min, max);
 }
 
-float WindowsPlatform::Normaliser::getLarger(float min, float max)
+float WindowsPlatform::Normaliser::getSmaller(float x, float y)
 {
-	if (min > max)
+	if (x < y)
 	{
-		return min;
+		return x;
 	}
 
-	return max;
+	return y;
+}
+
+float WindowsPlatform::Normaliser::getLarger(float x, float y)
+{
+	if (x > y)
+	{
+		return x;
+	}
+
+	return y;
 }

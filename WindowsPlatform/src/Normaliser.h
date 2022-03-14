@@ -6,11 +6,11 @@ namespace WindowsPlatform
 	{
 	public:
 		Normaliser();
-		Normaliser(float, float);
 		~Normaliser();
 
 		void normalise(float, float, float);
 		float getNormalised();
+		void setRange(float, float);
 
 
 	private:
@@ -19,8 +19,8 @@ namespace WindowsPlatform
 
 
 	private:
-		const float minimum;
-		const float maximum;
+		float minimum;
+		float maximum;
 		float normalised;
 	};
 }
