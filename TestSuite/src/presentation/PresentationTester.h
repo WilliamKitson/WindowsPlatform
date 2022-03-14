@@ -2,7 +2,6 @@
 
 #include <string>
 
-#include "resolution/ResolutionTester.h"
 #include "mouseState/MouseStateTester.h"
 #include "gamepadState/GamepadStateTester.h"
 #include "vibration/VibrationTester.h"
