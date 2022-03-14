@@ -12,5 +12,15 @@ bool WindowsPlatform::MouseState::unequalXpos(MouseState value)
         return false;
     }
 
+    return unequalYpos(value);
+}
+
+bool WindowsPlatform::MouseState::unequalYpos(MouseState value)
+{
+    if (ypos != value.ypos)
+    {
+        return false;
+    }
+
     return true;
 }
