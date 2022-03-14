@@ -15,6 +15,7 @@ std::string MouseStateTester::test()
 	failures += testDefault();
 	failures += testXpos();
 	failures += testYpos();
+	failures += testXdrag();
 
 	return failures;
 }
@@ -32,4 +33,9 @@ std::string MouseStateTester::testXpos()
 std::string MouseStateTester::testYpos()
 {
 	return MouseStateYposTest().test();
+}
+
+std::string MouseStateTester::testXdrag()
+{
+	return MouseStateXdragTest().test();
 }

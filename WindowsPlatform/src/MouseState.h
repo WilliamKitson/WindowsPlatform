@@ -18,6 +18,7 @@ namespace WindowsPlatform
 	private:
 		bool unequalXpos(MouseState);
 		bool unequalYpos(MouseState);
+		bool unequalXdrag(MouseState);
 	};
 }
 

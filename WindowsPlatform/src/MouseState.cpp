@@ -22,5 +22,15 @@ bool WindowsPlatform::MouseState::unequalYpos(MouseState value)
         return false;
     }
 
+    return unequalXdrag(value);
+}
+
+bool WindowsPlatform::MouseState::unequalXdrag(MouseState value)
+{
+    if (xdrag != value.xdrag)
+    {
+        return false;
+    }
+
     return true;
 }

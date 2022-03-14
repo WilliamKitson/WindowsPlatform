@@ -155,6 +155,7 @@
     <ClCompile Include="src\MemoryTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateDefaultTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateTester.cpp" />
+    <ClCompile Include="src\presentation\mouseState\MouseStateXdragTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateXposTest.cpp" />
     <ClCompile Include="src\presentation\mouseState\MouseStateYposTest.cpp" />
     <ClCompile Include="src\presentation\PresentationTester.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateDefaultTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateTester.h" />
+    <ClInclude Include="src\presentation\mouseState\MouseStateXdragTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateXposTest.h" />
     <ClInclude Include="src\presentation\mouseState\MouseStateYposTest.h" />
     <ClInclude Include="src\presentation\PresentationTester.h" />
