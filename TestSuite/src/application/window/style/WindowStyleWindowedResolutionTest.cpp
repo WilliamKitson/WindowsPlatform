@@ -19,7 +19,13 @@ std::string WindowStyleWindowedResolutionTest::test()
 
 	unit.setBorderless();
 	unit.setWindowed();
-	unit.setResolution(1000, 1000);
+
+	WindowsPlatform::Resolution set{
+		1000,
+		1000
+	};
+
+	unit.setResolution(set);
 
 	RECT resolution;
 

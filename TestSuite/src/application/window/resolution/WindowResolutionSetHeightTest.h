@@ -4,6 +4,7 @@
 #include <string>
 
 #include "ApplicationWindow.h"
+#include "Resolution.h"
 
 class WindowResolutionSetHeightTest
 {
