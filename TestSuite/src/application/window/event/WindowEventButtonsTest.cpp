@@ -11,7 +11,7 @@ WindowEventButtonsTest::~WindowEventButtonsTest()
 
 std::string WindowEventButtonsTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window event buttons test"

@@ -11,7 +11,7 @@ WindowResolutionMinimumWidthTest::~WindowResolutionMinimumWidthTest()
 
 std::string WindowResolutionMinimumWidthTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window resolution minimum width test"

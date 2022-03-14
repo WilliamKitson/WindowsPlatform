@@ -11,7 +11,7 @@ WindowResolutionMinimumHeightTest::~WindowResolutionMinimumHeightTest()
 
 std::string WindowResolutionMinimumHeightTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window resolution minimum height test"

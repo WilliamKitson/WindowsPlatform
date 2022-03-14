@@ -11,7 +11,7 @@ WindowStyleWindowedTest::~WindowStyleWindowedTest()
 
 std::string WindowStyleWindowedTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window style windowed test"

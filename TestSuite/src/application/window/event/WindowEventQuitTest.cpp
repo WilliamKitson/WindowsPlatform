@@ -11,7 +11,7 @@ WindowEventQuitTest::~WindowEventQuitTest()
 
 std::string WindowEventQuitTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window event quit test: QUIT TO CONTINUE"

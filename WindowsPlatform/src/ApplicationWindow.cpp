@@ -1,17 +1,17 @@
 #include "ApplicationWindow.h"
 
-ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
+WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
 	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, cursorX{ 0 }, cursorY{ 0 }, dragX{ 0 }, dragY{ 0 }, buttons{ false }
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
 
-ApplicationWindow::~ApplicationWindow()
+WindowsPlatform::ApplicationWindow::~ApplicationWindow()
 {
 	DestroyWindow(window);
 }
 
-void ApplicationWindow::update()
+void WindowsPlatform::ApplicationWindow::update()
 {
 	resetQuit();
 	resetMinimise();
@@ -22,47 +22,47 @@ void ApplicationWindow::update()
 	messageLoop();
 }
 
-HWND ApplicationWindow::getWindow()
+HWND WindowsPlatform::ApplicationWindow::getWindow()
 {
     return window;
 }
 
-bool ApplicationWindow::getQuit()
+bool WindowsPlatform::ApplicationWindow::getQuit()
 {
 	return quit;
 }
 
-bool ApplicationWindow::getMinimise()
+bool WindowsPlatform::ApplicationWindow::getMinimise()
 {
 	return minimise;
 }
 
-unsigned int ApplicationWindow::getCursorX()
+unsigned int WindowsPlatform::ApplicationWindow::getCursorX()
 {
 	return cursorX;
 }
 
-unsigned int ApplicationWindow::getCursorY()
+unsigned int WindowsPlatform::ApplicationWindow::getCursorY()
 {
 	return cursorY;
 }
 
-int ApplicationWindow::getDragX()
+int WindowsPlatform::ApplicationWindow::getDragX()
 {
 	return dragX;
 }
 
-int ApplicationWindow::getDragY()
+int WindowsPlatform::ApplicationWindow::getDragY()
 {
 	return dragY;
 }
 
-bool ApplicationWindow::getButton(WindowsButtons button)
+bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
 {
 	return buttons[(unsigned int)button];
 }
 
-void ApplicationWindow::setTag(std::string value)
+void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 {
 	SetWindowTextA(
 		window,
@@ -70,7 +70,7 @@ void ApplicationWindow::setTag(std::string value)
 	);
 }
 
-void ApplicationWindow::setResolution(int width, int height)
+void WindowsPlatform::ApplicationWindow::setResolution(int width, int height)
 {
 	RECT windowRect = {
 		0,
@@ -97,7 +97,7 @@ void ApplicationWindow::setResolution(int width, int height)
 	}
 }
 
-void ApplicationWindow::setBorderless()
+void WindowsPlatform::ApplicationWindow::setBorderless()
 {
 	SetWindowLongPtr(
 		window,
@@ -111,7 +111,7 @@ void ApplicationWindow::setBorderless()
 	);
 }
 
-void ApplicationWindow::setWindowed()
+void WindowsPlatform::ApplicationWindow::setWindowed()
 {
 	SetWindowLongPtr(
 		window,
@@ -125,7 +125,7 @@ void ApplicationWindow::setWindowed()
 	);
 }
 
-void ApplicationWindow::initialise(HINSTANCE hInstance, std::wstring tag)
+void WindowsPlatform::ApplicationWindow::initialise(HINSTANCE hInstance, std::wstring tag)
 {
 	if (FAILED(initialiseWindowClass(hInstance, tag)))
 	{
@@ -143,7 +143,7 @@ void ApplicationWindow::initialise(HINSTANCE hInstance, std::wstring tag)
 	}
 }
 
-HRESULT ApplicationWindow::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
+HRESULT WindowsPlatform::ApplicationWindow::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
 {
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -160,7 +160,7 @@ HRESULT ApplicationWindow::initialiseWindowClass(HINSTANCE hInstance, std::wstri
 	return E_FAIL;
 }
 
-HRESULT ApplicationWindow::initialiseWindow(std::wstring tag)
+HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 {
 	RECT windowRect = {
 		0,
@@ -201,12 +201,12 @@ HRESULT ApplicationWindow::initialiseWindow(std::wstring tag)
 	return S_OK;
 }
 
-DWORD ApplicationWindow::getWindowed()
+DWORD WindowsPlatform::ApplicationWindow::getWindowed()
 {
 	return { WS_TILED | WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION };
 }
 
-HRESULT ApplicationWindow::initialiseRawInput()
+HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
 {
 	RAWINPUTDEVICE rawInputDevice[1];
 
@@ -223,7 +223,7 @@ HRESULT ApplicationWindow::initialiseRawInput()
 	return E_FAIL;
 }
 
-int ApplicationWindow::validateWidth(int width)
+int WindowsPlatform::ApplicationWindow::validateWidth(int width)
 {
 	const int min{ 960 };
 
@@ -235,7 +235,7 @@ int ApplicationWindow::validateWidth(int width)
 	return width;
 }
 
-int ApplicationWindow::validateHeight(int height)
+int WindowsPlatform::ApplicationWindow::validateHeight(int height)
 {
 	const int min{ 540 };
 
@@ -247,7 +247,7 @@ int ApplicationWindow::validateHeight(int height)
 	return height;
 }
 
-void ApplicationWindow::resetQuit()
+void WindowsPlatform::ApplicationWindow::resetQuit()
 {
 	if (quit)
 	{
@@ -255,7 +255,7 @@ void ApplicationWindow::resetQuit()
 	}
 }
 
-void ApplicationWindow::resetMinimise()
+void WindowsPlatform::ApplicationWindow::resetMinimise()
 {
 	if (minimise)
 	{
@@ -263,7 +263,7 @@ void ApplicationWindow::resetMinimise()
 	}
 }
 
-void ApplicationWindow::resetDragX()
+void WindowsPlatform::ApplicationWindow::resetDragX()
 {
 	if (dragX)
 	{
@@ -271,7 +271,7 @@ void ApplicationWindow::resetDragX()
 	}
 }
 
-void ApplicationWindow::resetDragY()
+void WindowsPlatform::ApplicationWindow::resetDragY()
 {
 	if (dragY)
 	{
@@ -279,7 +279,7 @@ void ApplicationWindow::resetDragY()
 	}
 }
 
-void ApplicationWindow::resetScrollForwards()
+void WindowsPlatform::ApplicationWindow::resetScrollForwards()
 {
 	if (buttons[(unsigned int)WindowsButtons::mouse_scrollForwards])
 	{
@@ -287,7 +287,7 @@ void ApplicationWindow::resetScrollForwards()
 	}
 }
 
-void ApplicationWindow::resetScrollBackwards()
+void WindowsPlatform::ApplicationWindow::resetScrollBackwards()
 {
 	if (buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards])
 	{
@@ -295,7 +295,7 @@ void ApplicationWindow::resetScrollBackwards()
 	}
 }
 
-void ApplicationWindow::messageLoop()
+void WindowsPlatform::ApplicationWindow::messageLoop()
 {
 	MSG message;
 
@@ -310,7 +310,7 @@ void ApplicationWindow::messageLoop()
 	active = nullptr;
 }
 
-LRESULT CALLBACK ApplicationWindow::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	if (!active)
 	{
@@ -1597,4 +1597,4 @@ LRESULT CALLBACK ApplicationWindow::applicationWindowProcedure(HWND hWnd, UINT m
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-ApplicationWindow* ApplicationWindow::active = nullptr;
+WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;

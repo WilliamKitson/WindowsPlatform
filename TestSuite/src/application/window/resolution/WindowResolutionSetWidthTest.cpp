@@ -11,7 +11,7 @@ WindowsResolutionSetWidthTest::~WindowsResolutionSetWidthTest()
 
 std::string WindowsResolutionSetWidthTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window resolution set width test"

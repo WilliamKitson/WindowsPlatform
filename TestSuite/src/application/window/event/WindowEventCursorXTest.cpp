@@ -11,7 +11,7 @@ WindowEventCursorXTest::~WindowEventCursorXTest()
 
 std::string WindowEventCursorXTest::test()
 {
-	if (ApplicationWindow(hInstance, nCmdShow, "window event x test").getCursorX() == unsigned int(0))
+	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window event x test").getCursorX() == unsigned int(0))
 	{
 		return std::string();
 	}

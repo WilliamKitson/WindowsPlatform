@@ -11,7 +11,7 @@ WindowTagSetTest::~WindowTagSetTest()
 
 std::string WindowTagSetTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window tag set test"

@@ -11,7 +11,7 @@ WindowEventDragXTest::~WindowEventDragXTest()
 
 std::string WindowEventDragXTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window event drag x test"

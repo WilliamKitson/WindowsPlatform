@@ -11,7 +11,7 @@ WindowsStyleBorderlessTest::~WindowsStyleBorderlessTest()
 
 std::string WindowsStyleBorderlessTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window style borderless test"

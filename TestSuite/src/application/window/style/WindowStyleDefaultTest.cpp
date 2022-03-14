@@ -11,7 +11,7 @@ WindowStyleDefaultTest::~WindowStyleDefaultTest()
 
 std::string WindowStyleDefaultTest::test()
 {
-	ApplicationWindow unit{
+	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
 		"window style default test"
