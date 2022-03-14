@@ -1,11 +1,11 @@
 #include "MouseState.h"
 
-bool MouseState::operator==(MouseState value)
+bool WindowsPlatform::MouseState::operator==(MouseState value)
 {
     return unequalXpos(value);
 }
 
-bool MouseState::unequalXpos(MouseState value)
+bool WindowsPlatform::MouseState::unequalXpos(MouseState value)
 {
     if (xpos != value.xpos)
     {
