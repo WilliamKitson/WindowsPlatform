@@ -22,6 +22,7 @@ namespace WindowsPlatform
 		bool unequalJoystickLY(GamepadState);
 		bool unequalJoystickRX(GamepadState);
 		bool unequalJoystickRY(GamepadState);
+		bool unequalTriggerL(GamepadState);
 	};
 }
 

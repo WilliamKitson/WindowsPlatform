@@ -42,5 +42,15 @@ bool WindowsPlatform::GamepadState::unequalJoystickRY(GamepadState value)
         return false;
     }
 
+    return unequalTriggerL(value);
+}
+
+bool WindowsPlatform::GamepadState::unequalTriggerL(GamepadState value)
+{
+    if (triggerL != value.triggerL)
+    {
+        return false;
+    }
+
     return true;
 }
