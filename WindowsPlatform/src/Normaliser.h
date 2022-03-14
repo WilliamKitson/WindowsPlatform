@@ -1,24 +1,27 @@
 #pragma once
 
-class Normaliser
+namespace WindowsPlatform
 {
-public:
-	Normaliser();
-	Normaliser(float, float);
-	~Normaliser();
+	class Normaliser
+	{
+	public:
+		Normaliser();
+		Normaliser(float, float);
+		~Normaliser();
 
-	void normalise(float, float, float);
-	float getNormalised();
-
-
-private:
-	float getSmaller(float, float);
-	float getLarger(float, float);
+		void normalise(float, float, float);
+		float getNormalised();
 
 
-private:
-	const float minimum;
-	const float maximum;
-	float normalised;
-};
+	private:
+		float getSmaller(float, float);
+		float getLarger(float, float);
+
+
+	private:
+		const float minimum;
+		const float maximum;
+		float normalised;
+	};
+}
 

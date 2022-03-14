@@ -1,30 +1,30 @@
 #include "Normaliser.h"
 
-Normaliser::Normaliser()
+WindowsPlatform::Normaliser::Normaliser()
 	: Normaliser(0, 1)
 {
 }
 
-Normaliser::Normaliser(float min, float max)
+WindowsPlatform::Normaliser::Normaliser(float min, float max)
 	: minimum{ getSmaller(min, max) }, maximum{ getLarger(min, max) }, normalised{ 0.0f }
 {
 }
 
-Normaliser::~Normaliser()
+WindowsPlatform::Normaliser::~Normaliser()
 {
 }
 
-void Normaliser::normalise(float min, float max, float current)
+void WindowsPlatform::Normaliser::normalise(float min, float max, float current)
 {
 	normalised = ((maximum - minimum) * ((current - min) / (max - min)) + minimum);
 }
 
-float Normaliser::getNormalised()
+float WindowsPlatform::Normaliser::getNormalised()
 {
 	return normalised;
 }
 
-float Normaliser::getSmaller(float min, float max)
+float WindowsPlatform::Normaliser::getSmaller(float min, float max)
 {
 	if (min < max)
 	{
@@ -34,7 +34,7 @@ float Normaliser::getSmaller(float min, float max)
 	return max;
 }
 
-float Normaliser::getLarger(float min, float max)
+float WindowsPlatform::Normaliser::getLarger(float min, float max)
 {
 	if (min > max)
 	{
