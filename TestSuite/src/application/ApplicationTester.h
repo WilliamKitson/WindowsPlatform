@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "delta/DeltaTester.h"
+#include "gamepad/GamepadTester.h"
 
 class ApplicationTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDelta();
+	std::string testGamepad();
 };
 

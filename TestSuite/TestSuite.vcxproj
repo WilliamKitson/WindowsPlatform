@@ -156,6 +156,9 @@
     <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultStateTest.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
+    <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
@@ -194,6 +197,9 @@
     <ClInclude Include="src\application\delta\DeltaResetTest.h" />
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultStateTest.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
+    <ClInclude Include="src\application\gamepad\GamepadTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />
