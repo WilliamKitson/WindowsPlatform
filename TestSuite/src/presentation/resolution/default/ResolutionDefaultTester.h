@@ -1,9 +1,7 @@
 #pragma once
 
 #include <string>
-
 #include "ResolutionDefaultWidthTest.h"
-#include "ResolutionDefaultHeightTest.h"
 
 class ResolutionDefaultTester
 {
@@ -16,6 +14,5 @@ public:
 
 private:
 	std::string testWidth();
-	std::string testHeight();
 };
 

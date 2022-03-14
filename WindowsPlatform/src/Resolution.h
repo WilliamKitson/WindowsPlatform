@@ -9,7 +9,6 @@ namespace WindowsPlatform
 		~Resolution();
 
 		int getWidth();
-		int getHeight();
 	};
 }
 

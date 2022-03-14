@@ -12,8 +12,3 @@ int WindowsPlatform::Resolution::getWidth()
 {
 	return 960;
 }
-
-int WindowsPlatform::Resolution::getHeight()
-{
-	return 540;
-}
