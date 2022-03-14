@@ -11,6 +11,10 @@ namespace WindowsPlatform
 	public:
 		int width{ 0 };
 		int height{ 0 };
+
+
+	private:
+		bool unequalWidth(Resolution);
 	};
 }
 

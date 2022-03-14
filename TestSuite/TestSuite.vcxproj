@@ -162,6 +162,7 @@
     <ClCompile Include="src\presentation\PresentationTester.cpp" />
     <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp" />
     <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp" />
+    <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp" />
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +176,7 @@
     <ClInclude Include="src\presentation\PresentationTester.h" />
     <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h" />
     <ClInclude Include="src\presentation\resolution\ResolutionTester.h" />
+    <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h" />
     <ClInclude Include="src\SubordinateTester.h" />
   </ItemGroup>
   <ItemGroup>
