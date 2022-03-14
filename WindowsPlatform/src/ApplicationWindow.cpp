@@ -70,13 +70,13 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 	);
 }
 
-void WindowsPlatform::ApplicationWindow::setResolution(Resolution value)
+void WindowsPlatform::ApplicationWindow::setResolution(int width, int height)
 {
 	RECT windowRect = {
 		0,
 		0,
-		validateWidth(value.width),
-		validateHeight(value.height)
+		validateWidth(width),
+		validateHeight(height)
 	};
 
 	if (!AdjustWindowRect(&windowRect, (DWORD)GetWindowLongPtr(window, GWL_STYLE), FALSE))

@@ -17,7 +17,7 @@ std::string WindowResolutionMinimumWidthTest::test()
 		"window resolution minimum width test"
 	};
 
-	unit.setResolution(WindowsPlatform::Resolution());
+	unit.setResolution(0, 0);
 
 	RECT resolution;
 

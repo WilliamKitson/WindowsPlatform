@@ -7,7 +7,6 @@
 #include <codecvt>
 
 #include "WindowsButtons.h"
-#include "Resolution.h"
 
 namespace WindowsPlatform
 {
@@ -27,7 +26,7 @@ namespace WindowsPlatform
 		int getDragY();
 		bool getButton(WindowsButtons);
 		void setTag(std::string);
-		void setResolution(Resolution);
+		void setResolution(int, int);
 		void setBorderless();
 		void setWindowed();
 

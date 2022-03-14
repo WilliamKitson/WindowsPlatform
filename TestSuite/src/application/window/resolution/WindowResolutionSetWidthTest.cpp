@@ -17,12 +17,7 @@ std::string WindowsResolutionSetWidthTest::test()
 		"window resolution set width test"
 	};
 
-	WindowsPlatform::Resolution set{
-		width,
-		0
-	};
-
-	unit.setResolution(set);
+	unit.setResolution(width, 0);
 
 	RECT resolution;
 
