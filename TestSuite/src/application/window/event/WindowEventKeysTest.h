@@ -17,6 +17,7 @@ public:
 private:
 	void postDown(HWND, WindowsPlatform::WindowsButtons);
 	void postUp(HWND, WindowsPlatform::WindowsButtons);
+	bool isSysKey(WindowsPlatform::WindowsButtons);
 	int getKeyCode(WindowsPlatform::WindowsButtons);
 
 

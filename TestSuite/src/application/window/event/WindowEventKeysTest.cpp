@@ -38,19 +38,7 @@ std::string WindowEventKeysTest::test()
 
 void WindowEventKeysTest::postDown(HWND window, WindowsPlatform::WindowsButtons button)
 {
-	if (button == WindowsPlatform::WindowsButtons::keyboard_F10)
-	{
-		PostMessage(
-			window,
-			WM_SYSKEYDOWN,
-			getKeyCode(button),
-			0
-		);
-
-		return;
-	}
-
-	if (button == WindowsPlatform::WindowsButtons::keyboard_alt)
+	if (isSysKey(button))
 	{
 		PostMessage(
 			window,
@@ -72,19 +60,7 @@ void WindowEventKeysTest::postDown(HWND window, WindowsPlatform::WindowsButtons 
 
 void WindowEventKeysTest::postUp(HWND window, WindowsPlatform::WindowsButtons button)
 {
-	if (button == WindowsPlatform::WindowsButtons::keyboard_F10)
-	{
-		PostMessage(
-			window,
-			WM_SYSKEYUP,
-			getKeyCode(button),
-			0
-		);
-
-		return;
-	}
-
-	if (button == WindowsPlatform::WindowsButtons::keyboard_alt)
+	if (isSysKey(button))
 	{
 		PostMessage(
 			window,
@@ -102,6 +78,21 @@ void WindowEventKeysTest::postUp(HWND window, WindowsPlatform::WindowsButtons bu
 		getKeyCode(button),
 		0
 	);
+}
+
+bool WindowEventKeysTest::isSysKey(WindowsPlatform::WindowsButtons button)
+{
+	if (button == WindowsPlatform::WindowsButtons::keyboard_F10)
+	{
+		return true;
+	}
+
+	if (button == WindowsPlatform::WindowsButtons::keyboard_alt)
+	{
+		return true;
+	}
+
+	return false;
 }
 
 int WindowEventKeysTest::getKeyCode(WindowsPlatform::WindowsButtons button)
