@@ -15,6 +15,7 @@ std::string WindowDefaultTester::test()
 
 	failures += testQuit();
 	failures += testMinimise();
+	failures += testMouse();
 
 	return failures;
 }
@@ -27,4 +28,9 @@ std::string WindowDefaultTester::testQuit()
 std::string WindowDefaultTester::testMinimise()
 {
 	return WindowDefaultMinimiseTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowDefaultTester::testMouse()
+{
+	return WindowDefaultMouseTest(hInstance, nCmdShow).test();
 }

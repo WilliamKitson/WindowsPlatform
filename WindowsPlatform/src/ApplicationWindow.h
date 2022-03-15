@@ -6,6 +6,7 @@
 #include <string>
 #include <codecvt>
 
+#include "MouseState.h"
 #include "WindowsButtons.h"
 #include "Resolution.h"
 
@@ -21,6 +22,7 @@ namespace WindowsPlatform
 		HWND getWindow();
 		bool getQuit();
 		bool getMinimise();
+		MouseState getMouse();
 		unsigned int getCursorX();
 		unsigned int getCursorY();
 		int getDragX();

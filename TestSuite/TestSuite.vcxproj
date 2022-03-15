@@ -161,6 +161,7 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
     <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultMinimiseTest.cpp" />
+    <ClCompile Include="src\application\window\default\WindowDefaultMouseTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultQuitTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventButtonsTest.cpp" />
@@ -233,6 +234,7 @@
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
     <ClInclude Include="src\application\gamepad\GamepadTester.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultMinimiseTest.h" />
+    <ClInclude Include="src\application\window\default\WindowDefaultMouseTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultQuitTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultTester.h" />
     <ClInclude Include="src\application\window\event\WindowEventButtonsTest.h" />

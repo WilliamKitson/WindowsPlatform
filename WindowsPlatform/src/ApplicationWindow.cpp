@@ -37,6 +37,11 @@ bool WindowsPlatform::ApplicationWindow::getMinimise()
 	return minimise;
 }
 
+WindowsPlatform::MouseState WindowsPlatform::ApplicationWindow::getMouse()
+{
+	return MouseState();
+}
+
 unsigned int WindowsPlatform::ApplicationWindow::getCursorX()
 {
 	return cursorX;
