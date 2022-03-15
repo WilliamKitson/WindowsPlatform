@@ -395,21 +395,8 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_SYSKEYUP:
 	{
-		switch (wParam)
-		{
-		case VK_F10:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = false;
-			return 0;
-		}
-		break;
-		case VK_MENU:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = false;
-			return 0;
-		}
-		break;
-		}
+		processSyskeyUp(wParam);
+		return 0;
 	}
 	break;
 	}
@@ -1428,6 +1415,23 @@ void WindowsPlatform::ApplicationWindow::processSyskeyDown(WPARAM wParam)
 	case VK_MENU:
 	{
 		active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = true;
+	}
+	break;
+	}
+}
+
+void WindowsPlatform::ApplicationWindow::processSyskeyUp(WPARAM wParam)
+{
+	switch (wParam)
+	{
+	case VK_F10:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = false;
+	}
+	break;
+	case VK_MENU:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = false;
 	}
 	break;
 	}
