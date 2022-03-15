@@ -367,16 +367,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_XBUTTONUP:
 	{
-		if (GET_XBUTTON_WPARAM(wParam) == XBUTTON1)
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = false;
-			return 0;
-		}
-		else
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = false;
-			return 0;
-		}
+		processXbuttonUp(wParam);
+		return 0;
 	}
 	break;
 	case WM_KEYDOWN:
@@ -1592,6 +1584,17 @@ void WindowsPlatform::ApplicationWindow::processMouseWheel(WPARAM wParam)
 	}
 
 	active->buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = true;
+}
+
+void WindowsPlatform::ApplicationWindow::processXbuttonUp(WPARAM wParam)
+{
+	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
+	{
+		active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = false;
+		return;
+	}
+
+	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = false;
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;
