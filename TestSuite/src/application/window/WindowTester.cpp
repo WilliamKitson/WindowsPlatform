@@ -14,6 +14,7 @@ std::string WindowTester::test()
 	std::string failures{ "" };
 
 	failures += testDestroyed();
+	failures += testDefault();
 	failures += testTag();
 	failures += testResolution();
 	failures += testStyle();
@@ -25,6 +26,11 @@ std::string WindowTester::test()
 std::string WindowTester::testDestroyed()
 {
 	return WindowDestoroyedTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowTester::testDefault()
+{
+	return WindowDefaultTester(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testTag()

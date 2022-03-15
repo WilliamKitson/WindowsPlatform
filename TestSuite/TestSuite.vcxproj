@@ -160,6 +160,8 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultStateTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
     <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
+    <ClCompile Include="src\application\window\default\WindowDefaultQuitTest.cpp" />
+    <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventButtonsTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventCursorXTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventCursorYTest.cpp" />
@@ -229,6 +231,8 @@
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultStateTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
     <ClInclude Include="src\application\gamepad\GamepadTester.h" />
+    <ClInclude Include="src\application\window\default\WindowDefaultQuitTest.h" />
+    <ClInclude Include="src\application\window\default\WindowDefaultTester.h" />
     <ClInclude Include="src\application\window\event\WindowEventButtonsTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventCursorXTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventCursorYTest.h" />
