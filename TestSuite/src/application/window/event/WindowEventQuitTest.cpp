@@ -17,14 +17,16 @@ std::string WindowEventQuitTest::test()
 		"window event quit test: QUIT TO CONTINUE"
 	};
 
-	while (unit.getQuit() == false)
-	{
-		unit.update();
-	}
+	PostMessage(
+		unit.getWindow(),
+		WM_CLOSE,
+		0,
+		0
+	);
 
 	unit.update();
 
-	if (unit.getQuit() == false)
+	if (unit.getQuit() == true)
 	{
 		return std::string();
 	}
