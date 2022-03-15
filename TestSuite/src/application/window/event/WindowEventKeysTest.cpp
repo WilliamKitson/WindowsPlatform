@@ -14,7 +14,7 @@ std::string WindowEventKeysTest::test()
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		"window event buttons test"
+		"window event keys test"
 	};
 
 	for (int i{ (int)WindowsPlatform::WindowsButtons::keyboard_ESC }; i < (int)WindowsPlatform::WindowsButtons::windowsButtonsSize; i++)

@@ -11,7 +11,7 @@ WindowDefaultMinimiseTest::~WindowDefaultMinimiseTest()
 
 std::string WindowDefaultMinimiseTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "").getMinimise() == false)
+	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default minimise test").getMinimise() == false)
 	{
 		return std::string();
 	}

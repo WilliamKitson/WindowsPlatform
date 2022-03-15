@@ -11,7 +11,7 @@ WindowDefaultMouseTest::~WindowDefaultMouseTest()
 
 std::string WindowDefaultMouseTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "").getMouse() == WindowsPlatform::MouseState())
+	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default mouse test").getMouse() == WindowsPlatform::MouseState())
 	{
 		return std::string();
 	}

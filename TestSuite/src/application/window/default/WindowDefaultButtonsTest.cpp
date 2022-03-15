@@ -14,7 +14,7 @@ std::string WindowDefaultButtonsTest::test()
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		""
+		"window default buttons test"
 	};
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::WindowsButtons::windowsButtonsSize; i++)

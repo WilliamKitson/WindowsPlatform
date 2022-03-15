@@ -11,7 +11,7 @@ WindowDefaultQuitTest::~WindowDefaultQuitTest()
 
 std::string WindowDefaultQuitTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "").getQuit() == false)
+	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default quit test").getQuit() == false)
 	{
 		return std::string();
 	}
