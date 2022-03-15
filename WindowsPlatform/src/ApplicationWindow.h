@@ -52,6 +52,7 @@ namespace WindowsPlatform
 		static void processMouseWheel(WPARAM);
 		static void processXbuttonUp(WPARAM);
 		static void processKeyDown(WPARAM);
+		static void processKeyUp(WPARAM);
 
 
 	private:
