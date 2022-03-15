@@ -25,10 +25,10 @@ std::string WindowEventKeysTest::test()
 
 		postUp(unit.getWindow(), (WindowsPlatform::WindowsButtons)i);
 		unit.update();
-		successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+		successes -= unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
 	}
 
-	if ((successes / 2) == ((int)WindowsPlatform::WindowsButtons::windowsButtonsSize - (int)WindowsPlatform::WindowsButtons::keyboard_ESC))
+	if (successes == 0)
 	{
 		return std::string();
 	}
