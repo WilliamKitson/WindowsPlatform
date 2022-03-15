@@ -4,6 +4,7 @@
 #include <string>
 
 #include "WindowDefaultQuitTest.h"
+#include "WindowDefaultMinimiseTest.h"
 
 class WindowDefaultTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testQuit();
+	std::string testMinimise();
 
 
 private:

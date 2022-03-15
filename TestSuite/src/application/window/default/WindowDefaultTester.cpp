@@ -14,6 +14,7 @@ std::string WindowDefaultTester::test()
 	std::string failures{ "" };
 
 	failures += testQuit();
+	failures += testMinimise();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string WindowDefaultTester::test()
 std::string WindowDefaultTester::testQuit()
 {
 	return WindowDefaultQuitTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowDefaultTester::testMinimise()
+{
+	return WindowDefaultMinimiseTest(hInstance, nCmdShow).test();
 }
