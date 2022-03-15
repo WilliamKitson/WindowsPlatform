@@ -373,561 +373,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_KEYDOWN:
 	{
-		switch (wParam)
-		{
-		case VK_ESCAPE:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_ESC] = true;
-			return 0;
-		}
-		break;
-		case VK_F1:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F1] = true;
-			return 0;
-		}
-		break;
-		case VK_F2:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F2] = true;
-			return 0;
-		}
-		break;
-		case VK_F3:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F3] = true;
-			return 0;
-		}
-		break;
-		case VK_F4:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F4] = true;
-			return 0;
-		}
-		break;
-		case VK_F5:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F5] = true;
-			return 0;
-		}
-		break;
-		case VK_F6:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F6] = true;
-			return 0;
-		}
-		break;
-		case VK_F7:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F7] = true;
-			return 0;
-		}
-		break;
-		case VK_F8:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F8] = true;
-			return 0;
-		}
-		break;
-		case VK_F9:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F9] = true;
-			return 0;
-		}
-		break;
-		case VK_SCROLL:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_scrollLock] = true;
-			return 0;
-		}
-		break;
-		case VK_PAUSE:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_pause] = true;
-			return 0;
-		}
-		break;
-		case 0x31:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_1] = true;
-			return 0;
-		}
-		break;
-		case 0x32:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_2] = true;
-			return 0;
-		}
-		break;
-		case 0x33:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_3] = true;
-			return 0;
-		}
-		break;
-		case 0x34:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_4] = true;
-			return 0;
-		}
-		break;
-		case 0x35:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_5] = true;
-			return 0;
-		}
-		break;
-		case 0x36:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_6] = true;
-			return 0;
-		}
-		break;
-		case 0x37:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_7] = true;
-			return 0;
-		}
-		break;
-		case 0x38:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_8] = true;
-			return 0;
-		}
-		break;
-		case 0x39:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_9] = true;
-			return 0;
-		}
-		break;
-		case 0x30:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_0] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_MINUS:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_dash] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_PLUS:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_equals] = true;
-			return 0;
-		}
-		break;
-		case VK_BACK:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_backspace] = true;
-			return 0;
-		}
-		break;
-		case VK_INSERT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_insert] = true;
-			return 0;
-		}
-		break;
-		case VK_HOME:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_home] = true;
-			return 0;
-		}
-		break;
-		case VK_PRIOR:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_pageUp] = true;
-			return 0;
-		}
-		break;
-		case VK_TAB:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_tab] = true;
-			return 0;
-		}
-		break;
-		case 0x51:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_q] = true;
-			return 0;
-		}
-		break;
-		case 0x57:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_w] = true;
-			return 0;
-		}
-		break;
-		case 0x45:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_e] = true;
-			return 0;
-		}
-		break;
-		case 0x52:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_r] = true;
-			return 0;
-		}
-		break;
-		case 0x54:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_t] = true;
-			return 0;
-		}
-		break;
-		case 0x59:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_y] = true;
-			return 0;
-		}
-		break;
-		case 0x55:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_u] = true;
-			return 0;
-		}
-		break;
-		case 0x49:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_i] = true;
-			return 0;
-		}
-		break;
-		case 0x4F:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_o] = true;
-			return 0;
-		}
-		break;
-		case 0x50:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_p] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_4:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_openBrace] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_6:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_closeBrace] = true;
-			return 0;
-		}
-		break;
-		case VK_RETURN:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_enter] = true;
-			return 0;
-		}
-		break;
-		case VK_DELETE:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_delete] = true;
-			return 0;
-		}
-		break;
-		case VK_END:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_end] = true;
-			return 0;
-		}
-		break;
-		case VK_NEXT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_pageDown] = true;
-			return 0;
-		}
-		break;
-		case VK_CAPITAL:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_caps] = true;
-			return 0;
-		}
-		break;
-		case 0x41:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_a] = true;
-			return 0;
-		}
-		break;
-		case 0x53:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_s] = true;
-			return 0;
-		}
-		break;
-		case 0x44:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_d] = true;
-			return 0;
-		}
-		break;
-		case 0x46:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_f] = true;
-			return 0;
-		}
-		break;
-		case 0x47:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_g] = true;
-			return 0;
-		}
-		break;
-		case 0x48:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_h] = true;
-			return 0;
-		}
-		break;
-		case 0x4A:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_j] = true;
-			return 0;
-		}
-		break;
-		case 0x4B:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_k] = true;
-			return 0;
-		}
-		break;
-		case 0x4C:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_l] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_1:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_semicolon] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_3:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_at] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_7:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_hash] = true;
-			return 0;
-		}
-		break;
-		case VK_SHIFT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_shift] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_5:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_backslash] = true;
-			return 0;
-		}
-		break;
-		case 0x5A:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_z] = true;
-			return 0;
-		}
-		break;
-		case 0x58:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_x] = true;
-			return 0;
-		}
-		break;
-		case 0x43:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_c] = true;
-			return 0;
-		}
-		break;
-		case 0x56:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_v] = true;
-			return 0;
-		}
-		break;
-		case 0x42:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_b] = true;
-			return 0;
-		}
-		break;
-		case 0x4E:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_n] = true;
-			return 0;
-		}
-		break;
-		case 0x4D:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_m] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_COMMA:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_comma] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_PERIOD:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_stop] = true;
-			return 0;
-		}
-		break;
-		case VK_OEM_2:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_forwardslash] = true;
-			return 0;
-		}
-		break;
-		case VK_CONTROL:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_control] = true;
-			return 0;
-		}
-		break;
-		case VK_SPACE:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_space] = true;
-			return 0;
-		}
-		break;
-		case VK_UP:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_up] = true;
-			return 0;
-		}
-		break;
-		case VK_DOWN:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_down] = true;
-			return 0;
-		}
-		break;
-		case VK_LEFT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_left] = true;
-			return 0;
-		}
-		break;
-		case VK_RIGHT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_right] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMLOCK:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_numlock] = true;
-			return 0;
-		}
-		break;
-		case VK_DIVIDE:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_divide] = true;
-			return 0;
-		}
-		break;
-		case VK_MULTIPLY:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_multiply] = true;
-			return 0;
-		}
-		break;
-		case VK_SUBTRACT:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_subtract] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD7:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_7] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD8:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_8] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD9:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_9] = true;
-			return 0;
-		}
-		break;
-		case VK_ADD:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_add] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD4:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_4] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD5:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_5] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD6:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_6] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD1:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_1] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD2:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_2] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD3:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_3] = true;
-			return 0;
-		}
-		break;
-		case VK_NUMPAD0:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_0] = true;
-			return 0;
-		}
-		break;
-		case VK_DECIMAL:
-		{
-			active->buttons[(unsigned int)WindowsButtons::numpad_stop] = true;
-			return 0;
-		}
-		break;
-		}
+		processKeyDown(wParam);
+		return 0;
 	}
 	break;
 	case WM_KEYUP:
@@ -1595,6 +1042,473 @@ void WindowsPlatform::ApplicationWindow::processXbuttonUp(WPARAM wParam)
 	}
 
 	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = false;
+}
+
+void WindowsPlatform::ApplicationWindow::processKeyDown(WPARAM wParam)
+{
+	switch (wParam)
+	{
+	case VK_ESCAPE:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_ESC] = true;
+	}
+	break;
+	case VK_F1:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F1] = true;
+	}
+	break;
+	case VK_F2:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F2] = true;
+	}
+	break;
+	case VK_F3:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F3] = true;
+	}
+	break;
+	case VK_F4:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F4] = true;
+	}
+	break;
+	case VK_F5:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F5] = true;
+	}
+	break;
+	case VK_F6:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F6] = true;
+	}
+	break;
+	case VK_F7:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F7] = true;
+	}
+	break;
+	case VK_F8:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F8] = true;
+	}
+	break;
+	case VK_F9:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F9] = true;
+	}
+	break;
+	case VK_SCROLL:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_scrollLock] = true;
+	}
+	break;
+	case VK_PAUSE:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_pause] = true;
+	}
+	break;
+	case 0x31:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_1] = true;
+	}
+	break;
+	case 0x32:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_2] = true;
+	}
+	break;
+	case 0x33:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_3] = true;
+	}
+	break;
+	case 0x34:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_4] = true;
+	}
+	break;
+	case 0x35:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_5] = true;
+	}
+	break;
+	case 0x36:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_6] = true;
+	}
+	break;
+	case 0x37:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_7] = true;
+	}
+	break;
+	case 0x38:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_8] = true;
+	}
+	break;
+	case 0x39:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_9] = true;
+	}
+	break;
+	case 0x30:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_0] = true;
+	}
+	break;
+	case VK_OEM_MINUS:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_dash] = true;
+	}
+	break;
+	case VK_OEM_PLUS:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_equals] = true;
+	}
+	break;
+	case VK_BACK:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_backspace] = true;
+	}
+	break;
+	case VK_INSERT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_insert] = true;
+	}
+	break;
+	case VK_HOME:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_home] = true;
+	}
+	break;
+	case VK_PRIOR:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_pageUp] = true;
+	}
+	break;
+	case VK_TAB:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_tab] = true;
+	}
+	break;
+	case 0x51:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_q] = true;
+	}
+	break;
+	case 0x57:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_w] = true;
+	}
+	break;
+	case 0x45:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_e] = true;
+	}
+	break;
+	case 0x52:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_r] = true;
+	}
+	break;
+	case 0x54:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_t] = true;
+	}
+	break;
+	case 0x59:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_y] = true;
+	}
+	break;
+	case 0x55:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_u] = true;
+	}
+	break;
+	case 0x49:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_i] = true;
+	}
+	break;
+	case 0x4F:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_o] = true;
+	}
+	break;
+	case 0x50:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_p] = true;
+	}
+	break;
+	case VK_OEM_4:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_openBrace] = true;
+	}
+	break;
+	case VK_OEM_6:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_closeBrace] = true;
+	}
+	break;
+	case VK_RETURN:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_enter] = true;
+	}
+	break;
+	case VK_DELETE:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_delete] = true;
+	}
+	break;
+	case VK_END:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_end] = true;
+	}
+	break;
+	case VK_NEXT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_pageDown] = true;
+	}
+	break;
+	case VK_CAPITAL:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_caps] = true;
+	}
+	break;
+	case 0x41:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_a] = true;
+	}
+	break;
+	case 0x53:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_s] = true;
+	}
+	break;
+	case 0x44:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_d] = true;
+	}
+	break;
+	case 0x46:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_f] = true;
+	}
+	break;
+	case 0x47:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_g] = true;
+	}
+	break;
+	case 0x48:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_h] = true;
+	}
+	break;
+	case 0x4A:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_j] = true;
+	}
+	break;
+	case 0x4B:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_k] = true;
+	}
+	break;
+	case 0x4C:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_l] = true;
+	}
+	break;
+	case VK_OEM_1:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_semicolon] = true;
+	}
+	break;
+	case VK_OEM_3:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_at] = true;
+	}
+	break;
+	case VK_OEM_7:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_hash] = true;
+	}
+	break;
+	case VK_SHIFT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_shift] = true;
+	}
+	break;
+	case VK_OEM_5:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_backslash] = true;
+	}
+	break;
+	case 0x5A:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_z] = true;
+	}
+	break;
+	case 0x58:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_x] = true;
+	}
+	break;
+	case 0x43:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_c] = true;
+	}
+	break;
+	case 0x56:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_v] = true;
+	}
+	break;
+	case 0x42:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_b] = true;
+	}
+	break;
+	case 0x4E:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_n] = true;
+	}
+	break;
+	case 0x4D:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_m] = true;
+	}
+	break;
+	case VK_OEM_COMMA:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_comma] = true;
+	}
+	break;
+	case VK_OEM_PERIOD:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_stop] = true;
+	}
+	break;
+	case VK_OEM_2:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_forwardslash] = true;
+	}
+	break;
+	case VK_CONTROL:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_control] = true;
+	}
+	break;
+	case VK_SPACE:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_space] = true;
+	}
+	break;
+	case VK_UP:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_up] = true;
+	}
+	break;
+	case VK_DOWN:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_down] = true;
+	}
+	break;
+	case VK_LEFT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_left] = true;
+	}
+	break;
+	case VK_RIGHT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_right] = true;
+	}
+	break;
+	case VK_NUMLOCK:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_numlock] = true;
+	}
+	break;
+	case VK_DIVIDE:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_divide] = true;
+	}
+	break;
+	case VK_MULTIPLY:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_multiply] = true;
+	}
+	break;
+	case VK_SUBTRACT:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_subtract] = true;
+	}
+	break;
+	case VK_NUMPAD7:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_7] = true;
+	}
+	break;
+	case VK_NUMPAD8:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_8] = true;
+	}
+	break;
+	case VK_NUMPAD9:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_9] = true;
+	}
+	break;
+	case VK_ADD:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_add] = true;
+	}
+	break;
+	case VK_NUMPAD4:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_4] = true;
+	}
+	break;
+	case VK_NUMPAD5:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_5] = true;
+	}
+	break;
+	case VK_NUMPAD6:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_6] = true;
+	}
+	break;
+	case VK_NUMPAD1:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_1] = true;
+	}
+	break;
+	case VK_NUMPAD2:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_2] = true;
+	}
+	break;
+	case VK_NUMPAD3:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_3] = true;
+	}
+	break;
+	case VK_NUMPAD0:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_0] = true;
+	}
+	break;
+	case VK_DECIMAL:
+	{
+		active->buttons[(unsigned int)WindowsButtons::numpad_stop] = true;
+	}
+	break;
+	}
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;
