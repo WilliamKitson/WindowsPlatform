@@ -14,13 +14,17 @@ std::string WindowEventOpenPostQuitTest::test()
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		"window open post quit test: QUIT TO CONTINUE"
+		"window open post quit test"
 	};
 
-	while (unit.getQuit() == false)
-	{
-		unit.update();
-	}
+	PostMessage(
+		unit.getWindow(),
+		WM_CLOSE,
+		0,
+		0
+	);
+
+	unit.update();
 
 	if (IsWindow(unit.getWindow()))
 	{
