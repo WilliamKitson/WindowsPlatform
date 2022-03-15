@@ -11,8 +11,8 @@ namespace WindowsPlatform
 	public:
 		int xpos{ 0 };
 		int ypos{ 0 };
-		float xdrag{ 0.0f };
-		float ydrag{ 0.0f };
+		int xdrag{ 0 };
+		int ydrag{ 0 };
 
 
 	private:

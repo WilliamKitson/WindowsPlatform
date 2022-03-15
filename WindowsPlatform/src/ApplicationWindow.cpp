@@ -249,8 +249,8 @@ void WindowsPlatform::ApplicationWindow::resetMinimise()
 
 void WindowsPlatform::ApplicationWindow::resetDrag()
 {
-	mouse.xdrag = 0.0f;
-	mouse.ydrag = 0.0f;
+	mouse.xdrag = 0;
+	mouse.ydrag = 0;
 }
 
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
@@ -1570,8 +1570,8 @@ void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
 
 	if (rawinput->header.dwType == RIM_TYPEMOUSE)
 	{
-		active->mouse.xdrag = (float)rawinput->data.mouse.lLastX;
-		active->mouse.ydrag = (float)rawinput->data.mouse.lLastY;
+		active->mouse.xdrag = rawinput->data.mouse.lLastX;
+		active->mouse.ydrag = rawinput->data.mouse.lLastY;
 	}
 }
 

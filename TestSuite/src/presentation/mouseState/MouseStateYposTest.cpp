@@ -13,8 +13,8 @@ std::string MouseStateYposTest::test()
 	WindowsPlatform::MouseState unit{
 		0,
 		1,
-		0.0f,
-		0.0f
+		0,
+		0
 	};
 
 	if ((unit == WindowsPlatform::MouseState()) == false)

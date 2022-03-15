@@ -13,8 +13,8 @@ std::string MouseStateXposTest::test()
 	WindowsPlatform::MouseState unit{
 		1,
 		0,
-		0.0f,
-		0.0f
+		0,
+		0
 	};
 
 	if ((unit == WindowsPlatform::MouseState()) == false)

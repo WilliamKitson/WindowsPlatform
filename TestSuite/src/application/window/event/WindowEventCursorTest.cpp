@@ -22,8 +22,8 @@ std::string WindowEventCursorTest::test()
 		WindowsPlatform::MouseState state{
 			i + 1,
 			i + 2,
-			0.0f,
-			0.0f
+			0,
+			0
 		};
 
 		PostMessage(
