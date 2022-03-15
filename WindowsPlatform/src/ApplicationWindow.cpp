@@ -310,8 +310,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_MOUSEMOVE:
 	{
-		active->mouse.xpos = GET_X_LPARAM(lParam);
-		active->mouse.ypos = GET_Y_LPARAM(lParam);
+		processMousePos(lParam);
+		return 0;
 	}
 	break;
 	case WM_INPUT:
@@ -1557,6 +1557,12 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	}
 
 	return DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+void WindowsPlatform::ApplicationWindow::processMousePos(LPARAM lParam)
+{
+	active->mouse.xpos = GET_X_LPARAM(lParam);
+	active->mouse.ypos = GET_Y_LPARAM(lParam);
 }
 
 void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
