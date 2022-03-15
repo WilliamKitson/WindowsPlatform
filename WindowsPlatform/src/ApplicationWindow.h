@@ -45,6 +45,7 @@ namespace WindowsPlatform
 		void resetScrollBackwards();
 		void messageLoop();
 		static LRESULT CALLBACK applicationWindowProcedure(HWND, UINT, WPARAM, LPARAM);
+		static LRESULT processMessage(HWND, UINT, WPARAM, LPARAM);
 		static void processMinimise(WPARAM);
 		static void processMousePos(LPARAM);
 		static void processMouseDrag(LPARAM);

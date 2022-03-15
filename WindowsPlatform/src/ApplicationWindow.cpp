@@ -272,7 +272,6 @@ void WindowsPlatform::ApplicationWindow::resetScrollBackwards()
 void WindowsPlatform::ApplicationWindow::messageLoop()
 {
 	MSG message;
-
 	active = this;
 
 	while (PeekMessage(&message, window, 0, 0, PM_REMOVE))
@@ -286,11 +285,16 @@ void WindowsPlatform::ApplicationWindow::messageLoop()
 
 LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
-	if (!active)
+	if (active)
 	{
-		return DefWindowProc(hWnd, msg, wParam, lParam);
+		return processMessage(hWnd, msg, wParam, lParam);
 	}
 
+	return DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+{
 	switch (msg)
 	{
 	case WM_CLOSE:
