@@ -135,21 +135,6 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventButtonsTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventCursorXTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventCursorYTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventDragXTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventDragYTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -348,21 +333,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventButtonsTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventCursorXTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventCursorYTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventDragXTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventDragYTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h">
