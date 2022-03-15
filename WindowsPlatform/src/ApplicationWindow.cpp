@@ -15,6 +15,7 @@ void WindowsPlatform::ApplicationWindow::update()
 {
 	resetQuit();
 	resetMinimise();
+	resetDrag();
 	resetScrollForwards();
 	resetScrollBackwards();
 	messageLoop();
@@ -246,6 +247,12 @@ void WindowsPlatform::ApplicationWindow::resetMinimise()
 	}
 }
 
+void WindowsPlatform::ApplicationWindow::resetDrag()
+{
+	mouse.xdrag = 0.0f;
+	mouse.ydrag = 0.0f;
+}
+
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
 {
 	if (buttons[(unsigned int)WindowsButtons::mouse_scrollForwards])
@@ -318,8 +325,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 
 		if (rawinput->header.dwType == RIM_TYPEMOUSE)
 		{
-			//active->dragX = rawinput->data.mouse.lLastX;
-			//active->dragY = rawinput->data.mouse.lLastY;
+			active->mouse.xdrag = rawinput->data.mouse.lLastX;
+			active->mouse.ydrag = rawinput->data.mouse.lLastY;
 		}
 
 		return 0;

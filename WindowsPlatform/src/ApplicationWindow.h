@@ -40,6 +40,7 @@ namespace WindowsPlatform
 		int validateHeight(int);
 		void resetQuit();
 		void resetMinimise();
+		void resetDrag();
 		void resetScrollForwards();
 		void resetScrollBackwards();
 		void messageLoop();

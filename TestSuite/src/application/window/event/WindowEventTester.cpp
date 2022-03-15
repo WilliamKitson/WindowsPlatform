@@ -16,6 +16,7 @@ std::string WindowEventTester::test()
 	failures += testQuit();
 	failures += testMinimise();
 	failures += testCursor();
+	failures += testDrag();
 	failures += testButtons();
 	failures += testKeys();
 
@@ -35,6 +36,11 @@ std::string WindowEventTester::testMinimise()
 std::string WindowEventTester::testCursor()
 {
 	return WindowEventCursorTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowEventTester::testDrag()
+{
+	return WindowEventDragTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testButtons()

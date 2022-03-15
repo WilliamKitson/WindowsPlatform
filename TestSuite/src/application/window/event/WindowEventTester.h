@@ -6,6 +6,7 @@
 #include "WindowEventQuitTest.h"
 #include "WindowEventMinimiseTest.h"
 #include "WindowEventCursorTest.h"
+#include "WindowEventDragTest.h"
 #include "WindowEventButtonsTest.h"
 #include "WindowEventKeysTest.h"
 
@@ -22,6 +23,7 @@ private:
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testCursor();
+	std::string testDrag();
 	std::string testButtons();
 	std::string testKeys();
 
