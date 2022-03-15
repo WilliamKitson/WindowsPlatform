@@ -14,17 +14,19 @@ std::string WindowEventMinimiseTest::test()
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		"window event minimise test: MINIMISE TO CONTINUE"
+		"window event minimise test"
 	};
 
-	while (unit.getMinimise() == false)
-	{
-		unit.update();
-	}
+	PostMessage(
+		unit.getWindow(),
+		WM_SIZE,
+		SIZE_MINIMIZED,
+		0
+	);
 
 	unit.update();
 
-	if (unit.getMinimise() == false)
+	if (unit.getMinimise() == true)
 	{
 		return std::string();
 	}
