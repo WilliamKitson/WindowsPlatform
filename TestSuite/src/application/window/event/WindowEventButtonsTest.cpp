@@ -17,9 +17,9 @@ std::string WindowEventButtonsTest::test()
 		"window event buttons test"
 	};
 
-	for (unsigned int i{ 0 }; i < (unsigned int)WindowsButtons::windowsButtonsSize; i++)
+	for (unsigned int i{ 0 }; i < (unsigned int)WindowsPlatform::WindowsButtons::windowsButtonsSize; i++)
 	{
-		if (unit.getButton((WindowsButtons)i) == true)
+		if (unit.getButton((WindowsPlatform::WindowsButtons)i) == true)
 		{
 			return "window event buttons test failed\n";
 		}
