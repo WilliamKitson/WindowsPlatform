@@ -316,19 +316,7 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_INPUT:
 	{
-		UINT dwSize = sizeof(RAWINPUT);
-		static BYTE lpb[sizeof(RAWINPUT)];
-
-		GetRawInputData((HRAWINPUT)lParam, RID_INPUT, lpb, &dwSize, sizeof(RAWINPUTHEADER));
-
-		RAWINPUT* rawinput = (RAWINPUT*)lpb;
-
-		if (rawinput->header.dwType == RIM_TYPEMOUSE)
-		{
-			active->mouse.xdrag = rawinput->data.mouse.lLastX;
-			active->mouse.ydrag = rawinput->data.mouse.lLastY;
-		}
-
+		processMouseDrag(lParam);
 		return 0;
 	}
 	break;
@@ -1569,6 +1557,22 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	}
 
 	return DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
+{
+	UINT dwSize = sizeof(RAWINPUT);
+	static BYTE lpb[sizeof(RAWINPUT)];
+
+	GetRawInputData((HRAWINPUT)lParam, RID_INPUT, lpb, &dwSize, sizeof(RAWINPUTHEADER));
+
+	RAWINPUT* rawinput = (RAWINPUT*)lpb;
+
+	if (rawinput->header.dwType == RIM_TYPEMOUSE)
+	{
+		active->mouse.xdrag = (float)rawinput->data.mouse.lLastX;
+		active->mouse.ydrag = (float)rawinput->data.mouse.lLastY;
+	}
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;
