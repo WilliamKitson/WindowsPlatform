@@ -5,11 +5,11 @@
 
 #include "ApplicationWindow.h"
 
-class WindowEventOpenPostQuitTest
+class WindowOpenPostQuitTest
 {
 public:
-	WindowEventOpenPostQuitTest(HINSTANCE, int);
-	~WindowEventOpenPostQuitTest();
+	WindowOpenPostQuitTest(HINSTANCE, int);
+	~WindowOpenPostQuitTest();
 
 	std::string test();
 

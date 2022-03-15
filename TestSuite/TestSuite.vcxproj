@@ -169,7 +169,6 @@
     <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventKeysTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp" />
-    <ClCompile Include="src\application\window\event\WindowEventOpenPostQuit.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventQuitTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventTester.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.cpp" />
@@ -189,6 +188,7 @@
     <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
     <ClCompile Include="src\application\window\WindowDestroyedTest.cpp" />
+    <ClCompile Include="src\application\window\WindowOpenPostQuitTest.cpp" />
     <ClCompile Include="src\application\window\WindowTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp" />
@@ -241,7 +241,6 @@
     <ClInclude Include="src\application\window\event\WindowEventCursorTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventKeysTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h" />
-    <ClInclude Include="src\application\window\event\WindowEventOpenPostQuit.h" />
     <ClInclude Include="src\application\window\event\WindowEventQuitTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventTester.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.h" />
@@ -261,6 +260,7 @@
     <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
     <ClInclude Include="src\application\window\WindowDestroyedTest.h" />
+    <ClInclude Include="src\application\window\WindowOpenPostQuitTest.h" />
     <ClInclude Include="src\application\window\WindowTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h" />

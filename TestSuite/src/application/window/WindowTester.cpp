@@ -13,19 +13,15 @@ std::string WindowTester::test()
 {
 	std::string failures{ "" };
 
-	failures += testDestroyed();
 	failures += testDefault();
 	failures += testTag();
 	failures += testResolution();
 	failures += testStyle();
 	failures += testEvent();
+	failures += testDestroyed();
+	failures += testOpenPostQuit();
 
 	return failures;
-}
-
-std::string WindowTester::testDestroyed()
-{
-	return WindowDestoroyedTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testDefault()
@@ -51,4 +47,14 @@ std::string WindowTester::testStyle()
 std::string WindowTester::testEvent()
 {
 	return WindowEventTester(hInstance, nCmdShow).test();
+}
+
+std::string WindowTester::testDestroyed()
+{
+	return WindowDestroyedTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowTester::testOpenPostQuit()
+{
+	return WindowOpenPostQuitTest(hInstance, nCmdShow).test();
 }

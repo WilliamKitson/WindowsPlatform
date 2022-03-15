@@ -3,12 +3,13 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowDestroyedTest.h"
 #include "default/WindowDefaultTester.h"
 #include "tag/WindowTagTester.h"
 #include "resolution/WindowResolutionTester.h"
 #include "style/WindowStyleTester.h"
 #include "event/WindowEventTester.h"
+#include "WindowDestroyedTest.h"
+#include "WindowOpenPostQuitTest.h"
 
 class WindowTester
 {
@@ -20,12 +21,13 @@ public:
 
 
 private:
-	std::string testDestroyed();
 	std::string testDefault();
 	std::string testTag();
 	std::string testResolution();
 	std::string testStyle();
 	std::string testEvent();
+	std::string testDestroyed();
+	std::string testOpenPostQuit();
 
 
 private:

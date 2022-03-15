@@ -1,15 +1,15 @@
-#include "WindowEventOpenPostQuit.h"
+#include "WindowOpenPostQuitTest.h"
 
-WindowEventOpenPostQuitTest::WindowEventOpenPostQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+WindowOpenPostQuitTest::WindowOpenPostQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowEventOpenPostQuitTest::~WindowEventOpenPostQuitTest()
+WindowOpenPostQuitTest::~WindowOpenPostQuitTest()
 {
 }
 
-std::string WindowEventOpenPostQuitTest::test()
+std::string WindowOpenPostQuitTest::test()
 {
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
@@ -31,5 +31,5 @@ std::string WindowEventOpenPostQuitTest::test()
 		return std::string();
 	}
 
-	return "window event open post quit test failed\n";
+	return "window open post quit test failed\n";
 }

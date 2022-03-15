@@ -1,11 +1,11 @@
 #include "WindowDestroyedTest.h"
 
-WindowDestoroyedTest::WindowDestoroyedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+WindowDestroyedTest::WindowDestroyedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDestoroyedTest::~WindowDestoroyedTest()
+WindowDestroyedTest::~WindowDestroyedTest()
 {
 }
 
@@ -37,7 +37,7 @@ BOOL CALLBACK destroyedTestEnumProcedure(HWND window, LPARAM)
 	return TRUE;
 }
 
-std::string WindowDestoroyedTest::test()
+std::string WindowDestroyedTest::test()
 {
 	WindowsPlatform::ApplicationWindow* unit = new WindowsPlatform::ApplicationWindow(
 		hInstance,

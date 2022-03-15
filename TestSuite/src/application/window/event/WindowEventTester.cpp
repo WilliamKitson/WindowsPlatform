@@ -14,7 +14,6 @@ std::string WindowEventTester::test()
 	std::string failures{ "" };
 
 	failures += testQuit();
-	failures += testOpenPostQuit();
 	failures += testMinimise();
 	failures += testCursor();
 	failures += testButtons();
@@ -26,11 +25,6 @@ std::string WindowEventTester::test()
 std::string WindowEventTester::testQuit()
 {
 	return WindowEventQuitTest(hInstance, nCmdShow).test();
-}
-
-std::string WindowEventTester::testOpenPostQuit()
-{
-	return WindowEventOpenPostQuitTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testMinimise()

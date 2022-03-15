@@ -6,11 +6,11 @@
 
 #include "ApplicationWindow.h"
 
-class WindowDestoroyedTest
+class WindowDestroyedTest
 {
 public:
-	WindowDestoroyedTest(HINSTANCE, int);
-	~WindowDestoroyedTest();
+	WindowDestroyedTest(HINSTANCE, int);
+	~WindowDestroyedTest();
 
 	std::string test();
 
