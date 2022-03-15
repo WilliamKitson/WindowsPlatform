@@ -23,10 +23,6 @@ namespace WindowsPlatform
 		bool getQuit();
 		bool getMinimise();
 		MouseState getMouse();
-		unsigned int getCursorX();
-		unsigned int getCursorY();
-		int getDragX();
-		int getDragY();
 		bool getButton(WindowsButtons);
 		void setTag(std::string);
 		void setResolution(Resolution);
@@ -44,8 +40,6 @@ namespace WindowsPlatform
 		int validateHeight(int);
 		void resetQuit();
 		void resetMinimise();
-		void resetDragX();
-		void resetDragY();
 		void resetScrollForwards();
 		void resetScrollBackwards();
 		void messageLoop();
@@ -58,10 +52,6 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
-		int cursorX;
-		int cursorY;
-		int dragX;
-		int dragY;
 		bool buttons[(unsigned int)WindowsButtons::windowsButtonsSize];
 		static ApplicationWindow* active;
 	};

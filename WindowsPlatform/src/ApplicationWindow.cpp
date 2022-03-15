@@ -1,7 +1,7 @@
 #include "ApplicationWindow.h"
 
 WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, cursorX{ 0 }, cursorY{ 0 }, dragX{ 0 }, dragY{ 0 }, buttons{ false }
+	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, buttons{ false }
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -15,8 +15,6 @@ void WindowsPlatform::ApplicationWindow::update()
 {
 	resetQuit();
 	resetMinimise();
-	resetDragX();
-	resetDragY();
 	resetScrollForwards();
 	resetScrollBackwards();
 	messageLoop();
@@ -40,26 +38,6 @@ bool WindowsPlatform::ApplicationWindow::getMinimise()
 WindowsPlatform::MouseState WindowsPlatform::ApplicationWindow::getMouse()
 {
 	return MouseState();
-}
-
-unsigned int WindowsPlatform::ApplicationWindow::getCursorX()
-{
-	return cursorX;
-}
-
-unsigned int WindowsPlatform::ApplicationWindow::getCursorY()
-{
-	return cursorY;
-}
-
-int WindowsPlatform::ApplicationWindow::getDragX()
-{
-	return dragX;
-}
-
-int WindowsPlatform::ApplicationWindow::getDragY()
-{
-	return dragY;
 }
 
 bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
@@ -268,22 +246,6 @@ void WindowsPlatform::ApplicationWindow::resetMinimise()
 	}
 }
 
-void WindowsPlatform::ApplicationWindow::resetDragX()
-{
-	if (dragX)
-	{
-		dragX = 0;
-	}
-}
-
-void WindowsPlatform::ApplicationWindow::resetDragY()
-{
-	if (dragY)
-	{
-		dragY = 0;
-	}
-}
-
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
 {
 	if (buttons[(unsigned int)WindowsButtons::mouse_scrollForwards])
@@ -341,8 +303,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_MOUSEMOVE:
 	{
-		active->cursorX = GET_X_LPARAM(lParam);
-		active->cursorY = GET_Y_LPARAM(lParam);
+		//active->cursorX = GET_X_LPARAM(lParam);
+		//active->cursorY = GET_Y_LPARAM(lParam);
 	}
 	break;
 	case WM_INPUT:
@@ -356,8 +318,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 
 		if (rawinput->header.dwType == RIM_TYPEMOUSE)
 		{
-			active->dragX = rawinput->data.mouse.lLastX;
-			active->dragY = rawinput->data.mouse.lLastY;
+			//active->dragX = rawinput->data.mouse.lLastX;
+			//active->dragY = rawinput->data.mouse.lLastY;
 		}
 
 		return 0;
