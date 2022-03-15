@@ -6,6 +6,7 @@
 #include "WindowEventQuitTest.h"
 #include "WindowEventOpenPostQuit.h"
 #include "WindowEventMinimiseTest.h"
+#include "WindowEventKeysTest.h"
 
 class WindowEventTester
 {
@@ -20,6 +21,7 @@ private:
 	std::string testQuit();
 	std::string testOpenPostQuit();
 	std::string testMinimise();
+	std::string testKeys();
 
 
 private:

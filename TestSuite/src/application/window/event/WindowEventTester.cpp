@@ -16,6 +16,7 @@ std::string WindowEventTester::test()
 	failures += testQuit();
 	failures += testOpenPostQuit();
 	failures += testMinimise();
+	failures += testKeys();
 
 	return failures;
 }
@@ -33,4 +34,9 @@ std::string WindowEventTester::testOpenPostQuit()
 std::string WindowEventTester::testMinimise()
 {
 	return WindowEventMinimiseTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowEventTester::testKeys()
+{
+	return WindowEventKeysTest(hInstance, nCmdShow).test();
 }
