@@ -166,6 +166,7 @@
     <ClCompile Include="src\application\window\default\WindowDefaultQuitTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventButtonsTest.cpp" />
+    <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventKeysTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventOpenPostQuit.cpp" />
@@ -237,6 +238,7 @@
     <ClInclude Include="src\application\window\default\WindowDefaultQuitTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultTester.h" />
     <ClInclude Include="src\application\window\event\WindowEventButtonsTest.h" />
+    <ClInclude Include="src\application\window\event\WindowEventCursorTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventKeysTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventOpenPostQuit.h" />

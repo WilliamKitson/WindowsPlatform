@@ -52,6 +52,7 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
+		MouseState mouse;
 		bool buttons[(unsigned int)WindowsButtons::windowsButtonsSize];
 		static ApplicationWindow* active;
 	};

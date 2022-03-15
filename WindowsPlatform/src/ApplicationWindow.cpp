@@ -1,7 +1,7 @@
 #include "ApplicationWindow.h"
 
 WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, buttons{ false }
+	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, mouse(), buttons{ false }
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -37,7 +37,7 @@ bool WindowsPlatform::ApplicationWindow::getMinimise()
 
 WindowsPlatform::MouseState WindowsPlatform::ApplicationWindow::getMouse()
 {
-	return MouseState();
+	return mouse;
 }
 
 bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
@@ -303,8 +303,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_MOUSEMOVE:
 	{
-		//active->cursorX = GET_X_LPARAM(lParam);
-		//active->cursorY = GET_Y_LPARAM(lParam);
+		active->mouse.xpos = GET_X_LPARAM(lParam);
+		active->mouse.ypos = GET_Y_LPARAM(lParam);
 	}
 	break;
 	case WM_INPUT:

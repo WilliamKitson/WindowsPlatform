@@ -6,6 +6,7 @@
 #include "WindowEventQuitTest.h"
 #include "WindowEventOpenPostQuit.h"
 #include "WindowEventMinimiseTest.h"
+#include "WindowEventCursorTest.h"
 #include "WindowEventButtonsTest.h"
 #include "WindowEventKeysTest.h"
 
@@ -22,6 +23,7 @@ private:
 	std::string testQuit();
 	std::string testOpenPostQuit();
 	std::string testMinimise();
+	std::string testCursor();
 	std::string testButtons();
 	std::string testKeys();
 
