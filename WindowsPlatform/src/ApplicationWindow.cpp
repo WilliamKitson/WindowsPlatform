@@ -301,11 +301,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_SIZE:
 	{
-		if (wParam == SIZE_MINIMIZED)
-		{
-			active->minimise = true;
-			return 0;
-		}
+		processMinimise(wParam);
+		return 0;
 	}
 	break;
 	case WM_MOUSEMOVE:
@@ -1557,6 +1554,16 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	}
 
 	return DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
+{
+	if (wParam != SIZE_MINIMIZED)
+	{
+		return;
+	}
+
+	active->minimise = true;
 }
 
 void WindowsPlatform::ApplicationWindow::processMousePos(LPARAM lParam)
