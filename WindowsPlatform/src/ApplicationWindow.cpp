@@ -343,16 +343,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_MOUSEWHEEL:
 	{
-		if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = true;
-			return 0;
-		}
-		else
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = true;
-			return 0;
-		}
+		processMouseWheel(wParam);
+		return 0;
 	}
 	break;
 	case WM_LBUTTONUP:
@@ -1589,6 +1581,17 @@ void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
 	}
 	
 	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = true;
+}
+
+void WindowsPlatform::ApplicationWindow::processMouseWheel(WPARAM wParam)
+{
+	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
+	{
+		active->buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = true;
+		return;
+	}
+
+	active->buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = true;
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;

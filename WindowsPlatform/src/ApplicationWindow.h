@@ -49,6 +49,7 @@ namespace WindowsPlatform
 		static void processMousePos(LPARAM);
 		static void processMouseDrag(LPARAM);
 		static void processXbuttonDown(WPARAM);
+		static void processMouseWheel(WPARAM);
 
 
 	private:
