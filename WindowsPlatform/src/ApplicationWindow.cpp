@@ -337,16 +337,8 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	break;
 	case WM_XBUTTONDOWN:
 	{
-		if (GET_XBUTTON_WPARAM(wParam) == XBUTTON1)
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = true;
-			return 0;
-		}
-		else
-		{
-			active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = true;
-			return 0;
-		}
+		processXbuttonDown(wParam);
+		return 0;
 	}
 	break;
 	case WM_MOUSEWHEEL:
@@ -1586,6 +1578,17 @@ void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
 		active->mouse.xdrag = rawinput->data.mouse.lLastX;
 		active->mouse.ydrag = rawinput->data.mouse.lLastY;
 	}
+}
+
+void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
+{
+	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
+	{
+		active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = true;
+		return;
+	}
+	
+	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = true;
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;
