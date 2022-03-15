@@ -389,21 +389,8 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_SYSKEYDOWN:
 	{
-		switch (wParam)
-		{
-		case VK_F10:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = true;
-			return 0;
-		}
-		break;
-		case VK_MENU:
-		{
-			active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = true;
-			return 0;
-		}
-		break;
-		}
+		processSyskeyDown(wParam);
+		return 0;
 	}
 	break;
 	case WM_SYSKEYUP:
@@ -1424,6 +1411,23 @@ void WindowsPlatform::ApplicationWindow::processKeyUp(WPARAM wParam)
 	case VK_DECIMAL:
 	{
 		active->buttons[(unsigned int)WindowsButtons::numpad_stop] = false;
+	}
+	break;
+	}
+}
+
+void WindowsPlatform::ApplicationWindow::processSyskeyDown(WPARAM wParam)
+{
+	switch (wParam)
+	{
+	case VK_F10:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = true;
+	}
+	break;
+	case VK_MENU:
+	{
+		active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = true;
 	}
 	break;
 	}

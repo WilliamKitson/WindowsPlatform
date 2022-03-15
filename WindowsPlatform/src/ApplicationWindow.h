@@ -54,6 +54,7 @@ namespace WindowsPlatform
 		static void processXbuttonUp(WPARAM);
 		static void processKeyDown(WPARAM);
 		static void processKeyUp(WPARAM);
+		static void processSyskeyDown(WPARAM);
 
 
 	private:
