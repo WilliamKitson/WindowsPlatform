@@ -10,6 +10,11 @@ namespace WindowsPlatform
 
 		int getWidth();
 		int getHeight();
+		void setResolution(int, int);
+
+
+	private:
+		int width;
 	};
 }
 

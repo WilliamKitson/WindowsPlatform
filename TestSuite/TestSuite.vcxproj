@@ -199,6 +199,8 @@
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterTester.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterWidthTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\ResolutionValidatorTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
@@ -276,6 +278,8 @@
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.h" />
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.h" />
+    <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterTester.h" />
+    <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterWidthTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\ResolutionValidatorTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />
