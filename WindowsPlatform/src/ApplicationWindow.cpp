@@ -56,15 +56,7 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 
 void WindowsPlatform::ApplicationWindow::setResolution(Resolution value)
 {
-	ResolutionValidator validator;
-	validator.setResolution(value.width, value.height);
-
-	RECT windowRect = {
-		0,
-		0,
-		validator.getWidth(),
-		validator.getHeight()
-	};
+	RECT windowRect = getWindowRectangle(value);
 
 	if (!AdjustWindowRect(&windowRect, (DWORD)GetWindowLongPtr(window, GWL_STYLE), FALSE))
 	{
@@ -149,14 +141,7 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindowClass(HINSTANCE hIns
 
 HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 {
-	ResolutionValidator validator;
-
-	RECT windowRect = {
-		0,
-		0,
-		validator.getWidth(),
-		validator.getHeight()
-	};
+	RECT windowRect = getWindowRectangle(Resolution());
 
 	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
 	{
@@ -188,6 +173,21 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 	}
 
 	return S_OK;
+}
+
+RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Resolution value)
+{
+	ResolutionValidator validator;
+	validator.setResolution(value.width, value.height);
+
+	RECT windowRect = {
+		0,
+		0,
+		validator.getWidth(),
+		validator.getHeight()
+	};
+
+	return windowRect;
 }
 
 DWORD WindowsPlatform::ApplicationWindow::getWindowed()

@@ -35,6 +35,7 @@ namespace WindowsPlatform
 		void initialise(HINSTANCE, std::wstring);
 		HRESULT initialiseWindowClass(HINSTANCE, std::wstring);
 		HRESULT initialiseWindow(std::wstring);
+		RECT getWindowRectangle(Resolution);
 		DWORD getWindowed();
 		HRESULT initialiseRawInput();
 		void resetQuit();
