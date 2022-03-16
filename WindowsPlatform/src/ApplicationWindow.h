@@ -8,8 +8,8 @@
 
 #include "MouseState.h"
 #include "WindowsButtons.h"
-#include "ResolutionValidator.h"
 #include "Resolution.h"
+#include "ResolutionValidator.h"
 
 namespace WindowsPlatform
 {
