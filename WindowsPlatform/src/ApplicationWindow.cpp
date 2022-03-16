@@ -422,18 +422,23 @@ void WindowsPlatform::ApplicationWindow::processMousePos(LPARAM lParam)
 
 void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
 {
+	RAWINPUT* rawInput = initialiseRawInputData(lParam);
+
+	if (rawInput->header.dwType == RIM_TYPEMOUSE)
+	{
+		active->mouse.xdrag = rawInput->data.mouse.lLastX;
+		active->mouse.ydrag = rawInput->data.mouse.lLastY;
+	}
+}
+
+RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lParam)
+{
 	UINT dwSize = sizeof(RAWINPUT);
 	static BYTE lpb[sizeof(RAWINPUT)];
 
 	GetRawInputData((HRAWINPUT)lParam, RID_INPUT, lpb, &dwSize, sizeof(RAWINPUTHEADER));
 
-	RAWINPUT* rawinput = (RAWINPUT*)lpb;
-
-	if (rawinput->header.dwType == RIM_TYPEMOUSE)
-	{
-		active->mouse.xdrag = rawinput->data.mouse.lLastX;
-		active->mouse.ydrag = rawinput->data.mouse.lLastY;
-	}
+	return (RAWINPUT*)lpb;
 }
 
 void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
