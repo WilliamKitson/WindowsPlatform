@@ -196,6 +196,9 @@
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserRangeSetTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\ResolutionValidatorTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateDefaultTest.cpp" />
@@ -269,6 +272,9 @@
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserRangeSetTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserTester.h" />
+    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.h" />
+    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.h" />
+    <ClInclude Include="src\domain\resolutionValidator\ResolutionValidatorTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateJoystickLXTest.h" />

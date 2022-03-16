@@ -154,6 +154,7 @@
     <ClInclude Include="src\MouseState.h" />
     <ClInclude Include="src\Normaliser.h" />
     <ClInclude Include="src\Resolution.h" />
+    <ClInclude Include="src\ResolutionValidator.h" />
     <ClInclude Include="src\Vibration.h" />
     <ClInclude Include="src\WindowsButtons.h" />
     <ClInclude Include="src\XInputGamepad.h" />
@@ -165,6 +166,7 @@
     <ClCompile Include="src\MouseState.cpp" />
     <ClCompile Include="src\Normaliser.cpp" />
     <ClCompile Include="src\Resolution.cpp" />
+    <ClCompile Include="src\ResolutionValidator.cpp" />
     <ClCompile Include="src\Vibration.cpp" />
     <ClCompile Include="src\XInputGamepad.cpp" />
   </ItemGroup>
