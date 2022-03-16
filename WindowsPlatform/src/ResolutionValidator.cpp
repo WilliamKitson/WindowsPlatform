@@ -3,8 +3,7 @@
 WindowsPlatform::ResolutionValidator::ResolutionValidator()
 	: resolution()
 {
-	resolution[0] = 960;
-	resolution[1] = 540;
+	setResolution(0, 0);
 }
 
 WindowsPlatform::ResolutionValidator::~ResolutionValidator()
