@@ -13,6 +13,7 @@ std::string ResolutionValidatorParameterTester::test()
 	std::string failures{ "" };
 
 	failures += testWidth();
+	failures += testHeight();
 
 	return failures;
 }
@@ -20,4 +21,9 @@ std::string ResolutionValidatorParameterTester::test()
 std::string ResolutionValidatorParameterTester::testWidth()
 {
 	return ResolutionValidatorParameterWidthTest().test();
+}
+
+std::string ResolutionValidatorParameterTester::testHeight()
+{
+	return ResolutionValidatorParameterHeightTest().test();
 }

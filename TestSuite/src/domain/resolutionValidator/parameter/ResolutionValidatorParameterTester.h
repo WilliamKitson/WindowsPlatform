@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "ResolutionValidatorParameterWidthTest.h"
+#include "ResolutionValidatorParameterHeightTest.h"
 
 class ResolutionValidatorParameterTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testWidth();
+	std::string testHeight();
 };
 

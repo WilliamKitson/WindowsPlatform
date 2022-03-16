@@ -14,7 +14,7 @@ namespace WindowsPlatform
 
 
 	private:
-		int width;
+		int resolution[2];
 	};
 }
 

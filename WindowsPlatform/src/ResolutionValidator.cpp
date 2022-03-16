@@ -1,8 +1,10 @@
 #include "ResolutionValidator.h"
 
 WindowsPlatform::ResolutionValidator::ResolutionValidator()
-	: width{ 960 }
+	: resolution()
 {
+	resolution[0] = 960;
+	resolution[1] = 540;
 }
 
 WindowsPlatform::ResolutionValidator::~ResolutionValidator()
@@ -11,15 +13,16 @@ WindowsPlatform::ResolutionValidator::~ResolutionValidator()
 
 int WindowsPlatform::ResolutionValidator::getWidth()
 {
-	return width;
+	return resolution[0];
 }
 
 int WindowsPlatform::ResolutionValidator::getHeight()
 {
-	return 540;
+	return resolution[1];
 }
 
-void WindowsPlatform::ResolutionValidator::setResolution(int w, int)
+void WindowsPlatform::ResolutionValidator::setResolution(int width, int height)
 {
-	width = w;
+	resolution[0] = width;
+	resolution[1] = height;
 }
