@@ -9,6 +9,7 @@ namespace WindowsPlatform
 		~ResolutionValidator();
 
 		int getWidth();
+		int getHeight();
 	};
 }
 

@@ -12,3 +12,8 @@ int WindowsPlatform::ResolutionValidator::getWidth()
 {
 	return 960;
 }
+
+int WindowsPlatform::ResolutionValidator::getHeight()
+{
+	return 540;
+}

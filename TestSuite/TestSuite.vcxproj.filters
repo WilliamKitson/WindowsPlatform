@@ -237,6 +237,9 @@
     <ClCompile Include="src\domain\resolutionValidator\ResolutionValidatorTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -456,6 +459,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\resolutionValidator\ResolutionValidatorTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
