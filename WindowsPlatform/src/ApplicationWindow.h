@@ -8,6 +8,7 @@
 
 #include "MouseState.h"
 #include "WindowsButtons.h"
+#include "ResolutionValidator.h"
 #include "Resolution.h"
 
 namespace WindowsPlatform
@@ -36,8 +37,6 @@ namespace WindowsPlatform
 		HRESULT initialiseWindow(std::wstring);
 		DWORD getWindowed();
 		HRESULT initialiseRawInput();
-		int validateWidth(int);
-		int validateHeight(int);
 		void resetQuit();
 		void resetMinimise();
 		void resetDrag();

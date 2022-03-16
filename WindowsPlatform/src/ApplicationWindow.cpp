@@ -56,11 +56,14 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 
 void WindowsPlatform::ApplicationWindow::setResolution(Resolution value)
 {
+	ResolutionValidator validator;
+	validator.setResolution(value.width, value.height);
+
 	RECT windowRect = {
 		0,
 		0,
-		validateWidth(value.width),
-		validateHeight(value.height)
+		validator.getWidth(),
+		validator.getHeight()
 	};
 
 	if (!AdjustWindowRect(&windowRect, (DWORD)GetWindowLongPtr(window, GWL_STYLE), FALSE))
@@ -146,11 +149,13 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindowClass(HINSTANCE hIns
 
 HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 {
+	ResolutionValidator validator;
+
 	RECT windowRect = {
 		0,
 		0,
-		validateWidth(0),
-		validateHeight(0)
+		validator.getWidth(),
+		validator.getHeight()
 	};
 
 	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
@@ -205,30 +210,6 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
 	}
 
 	return E_FAIL;
-}
-
-int WindowsPlatform::ApplicationWindow::validateWidth(int width)
-{
-	const int min{ 960 };
-
-	if (width < min)
-	{
-		return min;
-	}
-
-	return width;
-}
-
-int WindowsPlatform::ApplicationWindow::validateHeight(int height)
-{
-	const int min{ 540 };
-
-	if (height < min)
-	{
-		return min;
-	}
-
-	return height;
 }
 
 void WindowsPlatform::ApplicationWindow::resetQuit()
