@@ -14,7 +14,7 @@ namespace WindowsPlatform
 
 
 	private:
-		int validateWidth(int);
+		int validateMinimum(int, int);
 
 
 	private:
