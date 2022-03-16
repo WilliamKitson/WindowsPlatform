@@ -14,6 +14,7 @@ std::string ResolutionValidatorTester::test()
 
 	failures += testDefault();
 	failures += testParameter();
+	failures += testMinimum();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string ResolutionValidatorTester::testDefault()
 std::string ResolutionValidatorTester::testParameter()
 {
 	return ResolutionValidatorParameterTester().test();
+}
+
+std::string ResolutionValidatorTester::testMinimum()
+{
+	return ResolutionValidatorMinimumTester().test();
 }

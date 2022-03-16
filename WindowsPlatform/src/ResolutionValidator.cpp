@@ -23,6 +23,18 @@ int WindowsPlatform::ResolutionValidator::getHeight()
 
 void WindowsPlatform::ResolutionValidator::setResolution(int width, int height)
 {
-	resolution[0] = width;
+	resolution[0] = validateWidth(width);
 	resolution[1] = height;
+}
+
+int WindowsPlatform::ResolutionValidator::validateWidth(int value)
+{
+	int minimum = 960;
+
+	if (value < minimum)
+	{
+		return minimum;
+	}
+
+	return value;
 }

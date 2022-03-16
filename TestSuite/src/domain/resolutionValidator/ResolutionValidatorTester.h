@@ -4,6 +4,7 @@
 
 #include "default/ResolutionValidatorDefaultTester.h"
 #include "parameter/ResolutionValidatorParameterTester.h"
+#include "minimum/ResolutionValidatorMinimumTester.h"
 
 class ResolutionValidatorTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testParameter();
+	std::string testMinimum();
 };
 

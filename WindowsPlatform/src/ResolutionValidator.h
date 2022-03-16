@@ -14,6 +14,10 @@ namespace WindowsPlatform
 
 
 	private:
+		int validateWidth(int);
+
+
+	private:
 		int resolution[2];
 	};
 }
