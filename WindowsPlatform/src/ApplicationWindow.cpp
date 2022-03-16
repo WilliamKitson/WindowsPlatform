@@ -389,13 +389,13 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_SYSKEYDOWN:
 	{
-		processSyskeyDown(wParam);
+		processKeyDown(wParam);
 		return 0;
 	}
 	break;
 	case WM_SYSKEYUP:
 	{
-		processSyskeyUp(wParam);
+		processKeyUp(wParam);
 		return 0;
 	}
 	break;
@@ -479,40 +479,6 @@ void WindowsPlatform::ApplicationWindow::processKeyUp(WPARAM wParam)
 	active->buttons[(unsigned int)getButtonIndex(wParam)] = false;
 }
 
-void WindowsPlatform::ApplicationWindow::processSyskeyDown(WPARAM wParam)
-{
-	switch (wParam)
-	{
-	case VK_F10:
-	{
-		active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = true;
-	}
-	break;
-	case VK_MENU:
-	{
-		active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = true;
-	}
-	break;
-	}
-}
-
-void WindowsPlatform::ApplicationWindow::processSyskeyUp(WPARAM wParam)
-{
-	switch (wParam)
-	{
-	case VK_F10:
-	{
-		active->buttons[(unsigned int)WindowsButtons::keyboard_F10] = false;
-	}
-	break;
-	case VK_MENU:
-	{
-		active->buttons[(unsigned int)WindowsButtons::keyboard_alt] = false;
-	}
-	break;
-	}
-}
-
 WindowsPlatform::WindowsButtons WindowsPlatform::ApplicationWindow::getButtonIndex(WPARAM wParam)
 {
 	switch (wParam)
@@ -569,7 +535,7 @@ WindowsPlatform::WindowsButtons WindowsPlatform::ApplicationWindow::getButtonInd
 	break;
 	case VK_F10:
 	{
-		WindowsButtons::keyboard_F10;
+		return WindowsButtons::keyboard_F10;
 	}
 	break;
 	case VK_SCROLL:
