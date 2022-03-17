@@ -20,7 +20,7 @@ std::string ResolutionValidatorMinimumTester::test()
 
 std::string ResolutionValidatorMinimumTester::testWidth()
 {
-	return ResolutionValidatorMinimumWidthTest().test();
+	return ResolutionMinimumWidthTest().test();
 }
 
 std::string ResolutionValidatorMinimumTester::testHeight()
