@@ -1,9 +1,7 @@
 #pragma once
 
 #include <string>
-
 #include "vector2/VectorTester.h"
-#include "vibration/VibrationTester.h"
 
 class PresentationTester
 {
@@ -16,6 +14,5 @@ public:
 
 private:
 	std::string testVector();
-	std::string testVibration();
 };
 

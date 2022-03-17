@@ -27,18 +27,6 @@
     <ClCompile Include="src\SubordinateTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\presentation\vibration\VibrationDefaultTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\vibration\VibrationTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\vibration\VibrationLeftTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\vibration\VibrationRightTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -216,18 +204,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\SubordinateTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\vibration\VibrationDefaultTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\vibration\VibrationTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\vibration\VibrationLeftTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\vibration\VibrationRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h">
