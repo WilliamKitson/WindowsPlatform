@@ -333,7 +333,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_MOUSEWHEEL:
 	{
-		processMouseWheel(wParam);
+		processWheel(wParam);
 		return 0;
 	}
 	break;
@@ -440,7 +440,7 @@ void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
 	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = true;
 }
 
-void WindowsPlatform::ApplicationWindow::processMouseWheel(WPARAM wParam)
+void WindowsPlatform::ApplicationWindow::processWheel(WPARAM wParam)
 {
 	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
 	{
