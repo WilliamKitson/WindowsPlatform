@@ -230,6 +230,7 @@
     <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp" />
     <ClCompile Include="src\presentation\vector2\VectorTester.cpp" />
     <ClCompile Include="src\presentation\vector2\VectorXTest.cpp" />
+    <ClCompile Include="src\presentation\vector2\VectorYTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationDefaultTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationLeftTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationRightTest.cpp" />
@@ -315,6 +316,7 @@
     <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h" />
     <ClInclude Include="src\presentation\vector2\VectorTester.h" />
     <ClInclude Include="src\presentation\vector2\VectorXTest.h" />
+    <ClInclude Include="src\presentation\vector2\VectorYTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationDefaultTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationLeftTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationRightTest.h" />

@@ -4,6 +4,7 @@
 
 #include "VectorDefaultTest.h"
 #include "VectorXTest.h"
+#include "VectorYTest.h"
 
 class VectorTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testX();
+	std::string testY();
 };
 

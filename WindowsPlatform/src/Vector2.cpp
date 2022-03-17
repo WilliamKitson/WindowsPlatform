@@ -12,5 +12,15 @@ bool WindowsPlatform::Vector2::equalX(Vector2 value)
         return false;
     }
 
+    return equalY(value);
+}
+
+bool WindowsPlatform::Vector2::equalY(Vector2 value)
+{
+    if (y != value.y)
+    {
+        return false;
+    }
+
     return true;
 }

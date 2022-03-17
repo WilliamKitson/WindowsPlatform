@@ -267,6 +267,9 @@
     <ClCompile Include="src\presentation\vector2\VectorXTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\vector2\VectorYTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -516,6 +519,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\vector2\VectorXTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\vector2\VectorYTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

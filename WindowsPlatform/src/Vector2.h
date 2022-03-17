@@ -15,6 +15,7 @@ namespace WindowsPlatform
 
 	private:
 		bool equalX(Vector2);
+		bool equalY(Vector2);
 	};
 }
 

@@ -14,6 +14,7 @@ std::string VectorTester::test()
 
 	failures += testDefault();
 	failures += testX();
+	failures += testY();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string VectorTester::testDefault()
 std::string VectorTester::testX()
 {
 	return VectorXTest().test();
+}
+
+std::string VectorTester::testY()
+{
+	return VectorYTest().test();
 }
