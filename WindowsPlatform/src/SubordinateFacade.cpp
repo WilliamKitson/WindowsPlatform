@@ -45,7 +45,3 @@ bool WindowsPlatform::SubordinateFacade::getButton(WindowsButtons)
 void WindowsPlatform::SubordinateFacade::setTag(std::string)
 {
 }
-
-void WindowsPlatform::SubordinateFacade::setResolution(Vector2)
-{
-}

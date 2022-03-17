@@ -11,7 +11,6 @@
 #include "FacadeWindowButtonsTest.h"
 #include "FacadeWindowKeysTest.h"
 #include "FacadeWindowTagTest.h"
-#include "FacadeWindowWidthTest.h"
 
 class FacadeWindowTester
 {
@@ -31,7 +30,6 @@ private:
 	std::string testButtons();
 	std::string testKeys();
 	std::string testTag();
-	std::string testWidth();
 
 
 private:

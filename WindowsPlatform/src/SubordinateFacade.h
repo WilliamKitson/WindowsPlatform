@@ -22,7 +22,6 @@ namespace WindowsPlatform
 		virtual Vector2 getDrag();
 		virtual bool getButton(WindowsButtons);
 		virtual void setTag(std::string);
-		virtual void setResolution(Vector2);
 	};
 }
 
