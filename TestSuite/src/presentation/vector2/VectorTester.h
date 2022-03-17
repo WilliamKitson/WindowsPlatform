@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "VectorDefaultTest.h"
+#include "VectorXTest.h"
 
 class VectorTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testX();
 };
 
