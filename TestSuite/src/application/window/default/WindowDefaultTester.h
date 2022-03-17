@@ -6,6 +6,7 @@
 #include "WindowDefaultQuitTest.h"
 #include "WindowDefaultMinimiseTest.h"
 #include "WindowDefaultMouseTest.h"
+#include "WindowDefaultCursorTest.h"
 #include "WindowDefaultButtonsTest.h"
 
 class WindowDefaultTester
@@ -21,6 +22,7 @@ private:
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testMouse();
+	std::string testCursor();
 	std::string testButtons();
 
 

@@ -6,6 +6,7 @@
 #include <string>
 #include <codecvt>
 
+#include "Vector2.h"
 #include "MouseState.h"
 #include "WindowsButtons.h"
 #include "Resolution.h"
@@ -23,6 +24,7 @@ namespace WindowsPlatform
 		HWND getWindow();
 		bool getQuit();
 		bool getMinimise();
+		Vector2 getCursor();
 		MouseState getMouse();
 		bool getButton(WindowsButtons);
 		void setTag(std::string);

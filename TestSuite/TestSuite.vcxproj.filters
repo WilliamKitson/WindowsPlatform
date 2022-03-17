@@ -270,6 +270,9 @@
     <ClCompile Include="src\presentation\vector2\VectorYTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\window\default\WindowDefaultCursorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -522,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\vector2\VectorYTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\default\WindowDefaultCursorTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
