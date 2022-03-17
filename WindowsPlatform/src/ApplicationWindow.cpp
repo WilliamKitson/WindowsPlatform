@@ -245,10 +245,7 @@ void WindowsPlatform::ApplicationWindow::resetScrollForwards()
 
 void WindowsPlatform::ApplicationWindow::resetScrollBackwards()
 {
-	if (buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards])
-	{
-		buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = false;
-	}
+	buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = false;
 }
 
 void WindowsPlatform::ApplicationWindow::messageLoop()
