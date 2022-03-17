@@ -20,6 +20,7 @@ namespace WindowsPlatform
 		virtual bool getQuit();
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();
+		virtual bool getButton(WindowsButtons);
 
 
 	private:

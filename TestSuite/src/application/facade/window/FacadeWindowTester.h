@@ -6,6 +6,7 @@
 #include "FacadeWindowQuitTest.h"
 #include "FacadeWindowMinimiseTest.h"
 #include "FacadeWindowCursorTest.h"
+#include "FacadeWindowKeysTest.h"
 
 class FacadeWindowTester
 {
@@ -20,6 +21,7 @@ private:
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testCursor();
+	std::string testKeys();
 
 
 private:

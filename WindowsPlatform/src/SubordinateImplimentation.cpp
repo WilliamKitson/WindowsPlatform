@@ -33,3 +33,8 @@ WindowsPlatform::Vector2 WindowsPlatform::SubordinateImplimentation::getCursor()
 {
 	return window.getCursor();
 }
+
+bool WindowsPlatform::SubordinateImplimentation::getButton(WindowsButtons button)
+{
+	return window.getButton(button);
+}
