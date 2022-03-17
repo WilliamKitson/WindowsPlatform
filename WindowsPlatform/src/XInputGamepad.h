@@ -11,6 +11,7 @@ namespace WindowsPlatform
 		~XInputGamepad();
 
 		Vector2 getJoystickLeft();
+		Vector2 getJoystickRight();
 	};
 }
 

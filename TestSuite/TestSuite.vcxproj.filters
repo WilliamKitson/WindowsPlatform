@@ -204,6 +204,9 @@
     <ClCompile Include="src\application\gamepad\GamepadTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -390,6 +393,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\gamepad\GamepadTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
