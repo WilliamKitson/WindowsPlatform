@@ -7,7 +7,6 @@
 #include <codecvt>
 
 #include "Vector2.h"
-#include "MouseState.h"
 #include "WindowsButtons.h"
 #include "Resolution.h"
 #include "ResolutionValidator.h"
@@ -26,7 +25,6 @@ namespace WindowsPlatform
 		bool getMinimise();
 		Vector2 getCursor();
 		Vector2 getDrag();
-		MouseState getMouse();
 		bool getButton(WindowsButtons);
 		void setTag(std::string);
 		void setResolution(Resolution);
@@ -67,7 +65,8 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
-		MouseState mouse;
+		Vector2 cursor;
+		Vector2 drag;
 		bool buttons[(unsigned int)WindowsButtons::windowsButtonsSize];
 		static ApplicationWindow* active;
 	};

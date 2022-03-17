@@ -21,28 +21,10 @@
     <ClCompile Include="src\MemoryTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateDefaultTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\presentation\PresentationTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\SubordinateTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateXposTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateYposTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateXdragTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\mouseState\MouseStateYdragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp">
@@ -207,9 +189,6 @@
     <ClCompile Include="src\application\window\default\WindowDefaultMinimiseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\default\WindowDefaultMouseTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\default\WindowDefaultButtonsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -281,28 +260,10 @@
     <ClInclude Include="src\MemoryTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateDefaultTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\presentation\PresentationTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\SubordinateTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateXposTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateYposTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateXdragTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\mouseState\MouseStateYdragTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h">
@@ -465,9 +426,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\WindowDefaultMinimiseTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\default\WindowDefaultMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\WindowDefaultButtonsTest.h">

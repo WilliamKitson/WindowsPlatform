@@ -14,7 +14,6 @@ std::string PresentationTester::test()
 
 	failures += testVector();
 	failures += testResolution();
-	failures += testMouseState();
 	failures += testGamepadState();
 	failures += testVibration();
 
@@ -29,11 +28,6 @@ std::string PresentationTester::testVector()
 std::string PresentationTester::testResolution()
 {
 	return ResolutionTester().test();
-}
-
-std::string PresentationTester::testMouseState()
-{
-	return MouseStateTester().test();
 }
 
 std::string PresentationTester::testGamepadState()

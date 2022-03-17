@@ -5,7 +5,6 @@
 
 #include "WindowDefaultQuitTest.h"
 #include "WindowDefaultMinimiseTest.h"
-#include "WindowDefaultMouseTest.h"
 #include "WindowDefaultCursorTest.h"
 #include "WindowDefaultDragTest.h"
 #include "WindowDefaultButtonsTest.h"
@@ -22,7 +21,6 @@ public:
 private:
 	std::string testQuit();
 	std::string testMinimise();
-	std::string testMouse();
 	std::string testCursor();
 	std::string testDrag();
 	std::string testButtons();

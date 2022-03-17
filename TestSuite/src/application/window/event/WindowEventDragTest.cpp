@@ -22,7 +22,7 @@ std::string WindowEventDragTest::test()
 		Sleep(1);
 		unit.update();
 
-		std::string tag = tagPrefix + "(x:" + std::to_string(unit.getMouse().xdrag) + "/y:" + std::to_string(unit.getMouse().ydrag) + ")";
+		std::string tag = tagPrefix + "(x:" + std::to_string(unit.getDrag().x) + "/y:" + std::to_string(unit.getDrag().y) + ")";
 		unit.setTag(tag);
 	}
 

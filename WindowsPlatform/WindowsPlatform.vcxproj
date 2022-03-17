@@ -151,7 +151,6 @@
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\GamepadButtons.h" />
     <ClInclude Include="src\GamepadState.h" />
-    <ClInclude Include="src\MouseState.h" />
     <ClInclude Include="src\Normaliser.h" />
     <ClInclude Include="src\Resolution.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
@@ -164,7 +163,6 @@
     <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\GamepadState.cpp" />
-    <ClCompile Include="src\MouseState.cpp" />
     <ClCompile Include="src\Normaliser.cpp" />
     <ClCompile Include="src\Resolution.cpp" />
     <ClCompile Include="src\ResolutionValidator.cpp" />

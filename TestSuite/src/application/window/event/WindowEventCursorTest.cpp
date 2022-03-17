@@ -19,22 +19,20 @@ std::string WindowEventCursorTest::test()
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		WindowsPlatform::MouseState state{
-			i + 1,
-			i + 2,
-			0,
-			0
+		WindowsPlatform::Vector2 state{
+			(float)i + 1.0f,
+			(float)i + 2.0f,
 		};
 
 		PostMessage(
 			unit.getWindow(),
 			WM_MOUSEMOVE,
 			0,
-			MAKELPARAM(state.xpos, state.ypos)
+			MAKELPARAM(state.x, state.y)
 		);
 
 		unit.update();
-		successes += unit.getMouse() == state;
+		successes += unit.getCursor() == state;
 	}
 
 	if (successes == itterations)

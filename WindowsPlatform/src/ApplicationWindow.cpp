@@ -1,7 +1,7 @@
 #include "ApplicationWindow.h"
 
 WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, mouse(), buttons{ false }
+	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, cursor(), drag(), buttons{ false }
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -38,17 +38,12 @@ bool WindowsPlatform::ApplicationWindow::getMinimise()
 
 WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getCursor()
 {
-	return Vector2();
+	return cursor;
 }
 
 WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getDrag()
 {
-	return Vector2();
-}
-
-WindowsPlatform::MouseState WindowsPlatform::ApplicationWindow::getMouse()
-{
-	return mouse;
+	return drag;
 }
 
 bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
@@ -240,8 +235,8 @@ void WindowsPlatform::ApplicationWindow::resetMinimise()
 
 void WindowsPlatform::ApplicationWindow::resetDrag()
 {
-	mouse.xdrag = 0;
-	mouse.ydrag = 0;
+	drag.x = 0.0f;
+	drag.y = 0.0f;
 }
 
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
@@ -407,19 +402,21 @@ void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
 
 void WindowsPlatform::ApplicationWindow::processMousePos(LPARAM lParam)
 {
-	active->mouse.xpos = GET_X_LPARAM(lParam);
-	active->mouse.ypos = GET_Y_LPARAM(lParam);
+	active->cursor.x = (float)GET_X_LPARAM(lParam);
+	active->cursor.y = (float)GET_Y_LPARAM(lParam);
 }
 
 void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
 {
 	RAWINPUT* rawInput = initialiseRawInputData(lParam);
 
-	if (rawInput->header.dwType == RIM_TYPEMOUSE)
+	if (rawInput->header.dwType != RIM_TYPEMOUSE)
 	{
-		active->mouse.xdrag = rawInput->data.mouse.lLastX;
-		active->mouse.ydrag = rawInput->data.mouse.lLastY;
+		return;
 	}
+
+	active->drag.x = (float)rawInput->data.mouse.lLastX;
+	active->drag.y = (float)rawInput->data.mouse.lLastY;
 }
 
 RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lParam)
