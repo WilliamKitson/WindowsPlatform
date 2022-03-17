@@ -12,15 +12,15 @@ std::string DomainTester::test()
 {
 	std::string failures{ "" };
 
-	failures += testResolutionValidator();
+	failures += testResolution();
 	failures += testNormaliser();
 
 	return failures;
 }
 
-std::string DomainTester::testResolutionValidator()
+std::string DomainTester::testResolution()
 {
-	return ResolutionValidatorTester().test();
+	return ResolutionTester().test();
 }
 
 std::string DomainTester::testNormaliser()

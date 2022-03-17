@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "resolutionValidator/ResolutionValidatorTester.h"
+#include "resolutionValidator/ResolutionTester.h"
 #include "normaliser/NormaliserTester.h"
 
 class DomainTester
@@ -15,7 +15,7 @@ public:
 
 
 private:
-	std::string testResolutionValidator();
+	std::string testResolution();
 	std::string testNormaliser();
 };
 

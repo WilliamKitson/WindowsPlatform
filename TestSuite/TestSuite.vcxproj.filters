@@ -147,9 +147,6 @@
     <ClCompile Include="src\application\window\event\WindowEventDragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\resolutionValidator\ResolutionValidatorTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -193,6 +190,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionMinimumTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\resolutionValidator\ResolutionTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -326,9 +326,6 @@
     <ClInclude Include="src\application\window\event\WindowEventDragTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\resolutionValidator\ResolutionValidatorTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -372,6 +369,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionMinimumTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\resolutionValidator\ResolutionTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

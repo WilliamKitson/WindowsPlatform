@@ -6,11 +6,11 @@
 #include "parameter/ResolutionParameterTester.h"
 #include "minimum/ResolutionMinimumTester.h"
 
-class ResolutionValidatorTester
+class ResolutionTester
 {
 public:
-	ResolutionValidatorTester();
-	~ResolutionValidatorTester();
+	ResolutionTester();
+	~ResolutionTester();
 
 	std::string test();
 
