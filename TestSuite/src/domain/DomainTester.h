@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "resolutionValidator/ResolutionTester.h"
+#include "resolution/ResolutionTester.h"
 #include "normaliser/NormaliserTester.h"
 
 class DomainTester
