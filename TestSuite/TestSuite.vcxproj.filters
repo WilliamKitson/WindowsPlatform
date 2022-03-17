@@ -210,6 +210,9 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -402,6 +405,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -13,6 +13,7 @@ namespace WindowsPlatform
 		Vector2 getJoystickLeft();
 		Vector2 getJoystickRight();
 		float getTriggerLeft();
+		float getTriggerRight();
 	};
 }
 

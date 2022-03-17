@@ -22,3 +22,8 @@ float WindowsPlatform::XInputGamepad::getTriggerLeft()
 {
 	return 0.0f;
 }
+
+float WindowsPlatform::XInputGamepad::getTriggerRight()
+{
+	return 0.0f;
+}
