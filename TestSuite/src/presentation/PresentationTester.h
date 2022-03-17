@@ -3,7 +3,6 @@
 #include <string>
 
 #include "vector2/VectorTester.h"
-#include "gamepadState/GamepadStateTester.h"
 #include "vibration/VibrationTester.h"
 
 class PresentationTester
@@ -17,7 +16,6 @@ public:
 
 private:
 	std::string testVector();
-	std::string testGamepadState();
 	std::string testVibration();
 };
 
