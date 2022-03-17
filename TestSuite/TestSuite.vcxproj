@@ -156,6 +156,7 @@
     <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
@@ -224,6 +225,7 @@
     <ClInclude Include="src\application\delta\DeltaResetTest.h" />
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />

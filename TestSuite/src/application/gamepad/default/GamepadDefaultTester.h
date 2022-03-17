@@ -6,6 +6,7 @@
 #include "GamepadDefaultJoystickRightTest.h"
 #include "GamepadDefaultTriggerLeftTest.h"
 #include "GamepadDefaultTriggerRightTest.h"
+#include "GamepadDefaultButtonsTest.h"
 
 class GamepadDefaultTester
 {
@@ -21,5 +22,6 @@ private:
 	std::string testJoystickRight();
 	std::string testTriggerLeft();
 	std::string testTriggerRight();
+	std::string testButtons();
 };
 

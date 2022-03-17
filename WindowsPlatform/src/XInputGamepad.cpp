@@ -27,3 +27,8 @@ float WindowsPlatform::XInputGamepad::getTriggerRight()
 {
 	return 0.0f;
 }
+
+bool WindowsPlatform::XInputGamepad::getButton(GamepadButtons)
+{
+	return false;
+}

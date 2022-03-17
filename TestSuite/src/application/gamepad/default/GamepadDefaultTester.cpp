@@ -16,6 +16,7 @@ std::string GamepadDefaultTester::test()
 	failures += testJoystickRight();
 	failures += testTriggerLeft();
 	failures += testTriggerRight();
+	failures += testButtons();
 
 	return failures;
 }
@@ -38,4 +39,9 @@ std::string GamepadDefaultTester::testTriggerLeft()
 std::string GamepadDefaultTester::testTriggerRight()
 {
 	return GamepadDefaultTriggerRightTest().test();
+}
+
+std::string GamepadDefaultTester::testButtons()
+{
+	return GamepadDefaultButtonsTest().test();
 }
