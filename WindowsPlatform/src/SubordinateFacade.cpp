@@ -32,6 +32,11 @@ WindowsPlatform::Vector2 WindowsPlatform::SubordinateFacade::getCursor()
 	return Vector2();
 }
 
+WindowsPlatform::Vector2 WindowsPlatform::SubordinateFacade::getDrag()
+{
+	return Vector2();
+}
+
 bool WindowsPlatform::SubordinateFacade::getButton(WindowsButtons)
 {
 	return false;

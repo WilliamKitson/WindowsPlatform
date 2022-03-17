@@ -159,6 +159,7 @@
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowButtonsTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowCursorTest.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowDragTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowKeysTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowMinimiseTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowParameterTest.cpp" />
@@ -237,6 +238,7 @@
     <ClInclude Include="src\application\facade\FacadeTester.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowButtonsTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowCursorTest.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowDragTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowKeysTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowMinimiseTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowParameterTest.h" />
