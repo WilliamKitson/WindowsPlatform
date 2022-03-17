@@ -182,14 +182,14 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 
 RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
 {
-	ResolutionValidator validator;
-	validator.setResolution((int)value.x, (int)value.y);
+	ResolutionValidator resolution;
+	resolution.setResolution((int)value.x, (int)value.y);
 
 	RECT windowRect = {
 		0,
 		0,
-		validator.getWidth(),
-		validator.getHeight()
+		resolution.getWidth(),
+		resolution.getHeight()
 	};
 
 	return windowRect;
