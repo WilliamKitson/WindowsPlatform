@@ -228,6 +228,9 @@
     <ClCompile Include="src\application\facade\window\FacadeWindowMinimiseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\facade\window\FacadeWindowCursorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -438,6 +441,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\window\FacadeWindowMinimiseTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\window\FacadeWindowCursorTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

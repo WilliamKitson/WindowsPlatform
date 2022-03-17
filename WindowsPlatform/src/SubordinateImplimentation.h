@@ -19,6 +19,7 @@ namespace WindowsPlatform
 		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();
+		virtual Vector2 getCursor();
 
 
 	private:

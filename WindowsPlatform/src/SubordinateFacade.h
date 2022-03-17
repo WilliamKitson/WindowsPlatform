@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Windows.h>
+#include "Vector2.h"
 
 namespace WindowsPlatform
 {
@@ -14,6 +15,7 @@ namespace WindowsPlatform
 		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();
+		virtual Vector2 getCursor();
 	};
 }
 

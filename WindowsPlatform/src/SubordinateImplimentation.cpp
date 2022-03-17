@@ -28,3 +28,8 @@ bool WindowsPlatform::SubordinateImplimentation::getMinimise()
 {
 	return window.getMinimise();
 }
+
+WindowsPlatform::Vector2 WindowsPlatform::SubordinateImplimentation::getCursor()
+{
+	return window.getCursor();
+}
