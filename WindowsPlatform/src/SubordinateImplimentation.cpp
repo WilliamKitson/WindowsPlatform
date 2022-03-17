@@ -48,3 +48,8 @@ void WindowsPlatform::SubordinateImplimentation::setTag(std::string tag)
 {
 	window.setTag(tag);
 }
+
+void WindowsPlatform::SubordinateImplimentation::setResolution(Vector2 resolution)
+{
+	window.setResolution(resolution);
+}
