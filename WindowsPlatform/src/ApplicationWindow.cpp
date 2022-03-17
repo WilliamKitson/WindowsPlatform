@@ -948,7 +948,7 @@ WindowsPlatform::WindowsButtons WindowsPlatform::ApplicationWindow::getButtonInd
 	break;
 	}
 
-	return WindowsButtons::windowsButtonsSize;
+	return WindowsButtons::size;
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;

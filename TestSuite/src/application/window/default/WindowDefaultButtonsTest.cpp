@@ -17,12 +17,12 @@ std::string WindowDefaultButtonsTest::test()
 		"window default buttons test"
 	};
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::WindowsButtons::windowsButtonsSize; i++)
+	for (int i{ 0 }; i < (int)WindowsPlatform::WindowsButtons::size; i++)
 	{
 		successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::WindowsButtons::windowsButtonsSize)
+	if (successes == (int)WindowsPlatform::WindowsButtons::size)
 	{
 		return std::string();
 	}

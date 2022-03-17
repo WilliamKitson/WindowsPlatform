@@ -17,7 +17,7 @@ std::string WindowEventKeysTest::test()
 		"window event keys test"
 	};
 
-	for (int i{ (int)WindowsPlatform::WindowsButtons::keyboard_ESC }; i < (int)WindowsPlatform::WindowsButtons::windowsButtonsSize; i++)
+	for (int i{ (int)WindowsPlatform::WindowsButtons::keyboard_ESC }; i < (int)WindowsPlatform::WindowsButtons::size; i++)
 	{
 		postDown(unit.getWindow(), (WindowsPlatform::WindowsButtons)i);
 		unit.update();
@@ -28,7 +28,7 @@ std::string WindowEventKeysTest::test()
 		successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
 	}
 
-	if ((successes / 2) == ((int)WindowsPlatform::WindowsButtons::windowsButtonsSize - (int)WindowsPlatform::WindowsButtons::keyboard_ESC))
+	if ((successes / 2) == ((int)WindowsPlatform::WindowsButtons::size - (int)WindowsPlatform::WindowsButtons::keyboard_ESC))
 	{
 		return std::string();
 	}

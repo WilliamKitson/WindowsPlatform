@@ -105,7 +105,7 @@ namespace WindowsPlatform
 		numpad_3,
 		numpad_0,
 		numpad_stop,
-		windowsButtonsSize
+		size
 	};
 }
 

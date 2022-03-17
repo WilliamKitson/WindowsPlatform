@@ -66,7 +66,7 @@ namespace WindowsPlatform
 		bool minimise;
 		Vector2 cursor;
 		Vector2 drag;
-		bool buttons[(unsigned int)WindowsButtons::windowsButtonsSize];
+		bool buttons[(unsigned int)WindowsButtons::size];
 		static ApplicationWindow* active;
 	};
 }
