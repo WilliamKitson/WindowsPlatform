@@ -20,5 +20,5 @@ std::string ResolutionParameterWidthTest::test()
 		return std::string();
 	}
 
-	return "resolution validator parameter width test failed\n";
+	return "resolution parameter width test failed\n";
 }

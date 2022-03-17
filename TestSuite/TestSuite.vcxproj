@@ -200,8 +200,8 @@
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumWidthTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionParameterHeightTest.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionParameterTester.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionParameterWidthTest.cpp" />
-    <ClCompile Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterTester.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\ResolutionValidatorTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
@@ -262,8 +262,8 @@
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.h" />
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumWidthTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionParameterHeightTest.h" />
+    <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionParameterTester.h" />
     <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionParameterWidthTest.h" />
-    <ClInclude Include="src\domain\resolutionValidator\parameter\ResolutionValidatorParameterTester.h" />
     <ClInclude Include="src\domain\resolutionValidator\ResolutionValidatorTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
     <ClInclude Include="src\presentation\PresentationTester.h" />

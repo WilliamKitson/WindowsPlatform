@@ -20,5 +20,5 @@ std::string ResolutionParameterHeightTest::test()
 		return std::string();
 	}
 
-	return "resolution validator parameter height test failed\n";
+	return "resolution parameter height test failed\n";
 }

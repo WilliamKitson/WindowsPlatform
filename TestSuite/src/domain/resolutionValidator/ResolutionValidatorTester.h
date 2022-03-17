@@ -3,7 +3,7 @@
 #include <string>
 
 #include "default/ResolutionDefaultTester.h"
-#include "parameter/ResolutionValidatorParameterTester.h"
+#include "parameter/ResolutionParameterTester.h"
 #include "minimum/ResolutionValidatorMinimumTester.h"
 
 class ResolutionValidatorTester
