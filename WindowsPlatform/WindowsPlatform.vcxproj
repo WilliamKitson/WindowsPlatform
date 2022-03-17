@@ -152,6 +152,8 @@
     <ClInclude Include="src\GamepadButtons.h" />
     <ClInclude Include="src\RangeNormaliser.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
+    <ClInclude Include="src\SubordinateFacade.h" />
+    <ClInclude Include="src\SubordinateImplimentation.h" />
     <ClInclude Include="src\Vector2.h" />
     <ClInclude Include="src\WindowsButtons.h" />
     <ClInclude Include="src\XInputGamepad.h" />
@@ -161,6 +163,8 @@
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\RangeNormaliser.cpp" />
     <ClCompile Include="src\ResolutionValidator.cpp" />
+    <ClCompile Include="src\SubordinateFacade.cpp" />
+    <ClCompile Include="src\SubordinateImplimentation.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
     <ClCompile Include="src\XInputGamepad.cpp" />
   </ItemGroup>

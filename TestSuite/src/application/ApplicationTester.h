@@ -6,6 +6,7 @@
 #include "window/WindowTester.h"
 #include "delta/DeltaTester.h"
 #include "gamepad/GamepadTester.h"
+#include "facade/FacadeTester.h"
 
 class ApplicationTester
 {
@@ -20,6 +21,7 @@ private:
 	std::string testWindow();
 	std::string testDelta();
 	std::string testGamepad();
+	std::string testFacade();
 
 
 private:
