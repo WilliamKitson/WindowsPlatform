@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "FacadeWindowParameterTest.h"
 #include "FacadeWindowQuitTest.h"
 #include "FacadeWindowMinimiseTest.h"
 #include "FacadeWindowCursorTest.h"
@@ -19,6 +20,7 @@ public:
 
 
 private:
+	std::string testParameter();
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testCursor();

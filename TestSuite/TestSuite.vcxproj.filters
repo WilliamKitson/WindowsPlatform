@@ -237,6 +237,9 @@
     <ClCompile Include="src\application\facade\window\FacadeWindowButtonsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\facade\window\FacadeWindowParameterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -456,6 +459,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\window\FacadeWindowButtonsTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\window\FacadeWindowParameterTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

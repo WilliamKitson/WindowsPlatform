@@ -13,6 +13,7 @@ std::string FacadeWindowTester::test()
 {
 	std::string failures{ "" };
 
+	failures += testParameter();
 	failures += testQuit();
 	failures += testMinimise();
 	failures += testCursor();
@@ -20,6 +21,11 @@ std::string FacadeWindowTester::test()
 	failures += testKeys();
 
 	return failures;
+}
+
+std::string FacadeWindowTester::testParameter()
+{
+	return FacadeWindowParameterTest(hInstance, nCmdShow).test();
 }
 
 std::string FacadeWindowTester::testQuit()
