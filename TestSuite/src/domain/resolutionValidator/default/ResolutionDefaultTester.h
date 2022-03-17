@@ -5,11 +5,11 @@
 #include "ResolutionDefaultWidthTest.h"
 #include "ResolutionDefaultHeightTest.h"
 
-class ResolutionValidatorDefaultTester
+class ResolutionDefaultTester
 {
 public:
-	ResolutionValidatorDefaultTester();
-	~ResolutionValidatorDefaultTester();
+	ResolutionDefaultTester();
+	~ResolutionDefaultTester();
 
 	std::string test();
 
