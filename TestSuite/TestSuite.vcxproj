@@ -156,6 +156,9 @@
     <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
+    <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultCursorTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultDragTest.cpp" />
@@ -218,6 +221,9 @@
     <ClInclude Include="src\application\delta\DeltaResetTest.h" />
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
+    <ClInclude Include="src\application\gamepad\GamepadTester.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultButtonsTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultCursorTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultDragTest.h" />
