@@ -25,5 +25,5 @@ std::string ResolutionValidatorDefaultTester::testWidth()
 
 std::string ResolutionValidatorDefaultTester::testHeight()
 {
-	return ResolutionValidatorDefaultHeightTest().test();
+	return ResolutionDefaultHeightTest().test();
 }

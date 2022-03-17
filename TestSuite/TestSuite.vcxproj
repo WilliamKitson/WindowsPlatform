@@ -193,8 +193,8 @@
     <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserRangeSetTest.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp" />
+    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionDefaultHeightTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionDefaultWidthTest.cpp" />
-    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumHeightTest.cpp" />
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.cpp" />
@@ -255,8 +255,8 @@
     <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserRangeSetTest.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserTester.h" />
+    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionDefaultHeightTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionDefaultWidthTest.h" />
-    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultHeightTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.h" />
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumHeightTest.h" />
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.h" />

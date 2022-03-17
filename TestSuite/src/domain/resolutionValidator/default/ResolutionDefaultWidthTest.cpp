@@ -15,5 +15,5 @@ std::string ResolutionDefaultWidthTest::test()
 		return std::string();
 	}
 
-	return "resolution validator default width test failed\n";
+	return "resolution default width test failed\n";
 }
