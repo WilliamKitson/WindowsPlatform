@@ -48,7 +48,7 @@ namespace WindowsPlatform
 		static LRESULT processMessage(HWND, UINT, WPARAM, LPARAM);
 		static void processMinimise(WPARAM);
 		static void processCursor(LPARAM);
-		static void processMouseDrag(LPARAM);
+		static void processDrag(LPARAM);
 		static RAWINPUT* initialiseRawInputData(LPARAM);
 		static void processXbuttonDown(WPARAM);
 		static void processMouseWheel(WPARAM);

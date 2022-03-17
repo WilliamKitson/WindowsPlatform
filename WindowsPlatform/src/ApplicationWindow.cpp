@@ -303,7 +303,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_INPUT:
 	{
-		processMouseDrag(lParam);
+		processDrag(lParam);
 		return 0;
 	}
 	break;
@@ -406,7 +406,7 @@ void WindowsPlatform::ApplicationWindow::processCursor(LPARAM lParam)
 	active->cursor.y = (float)GET_Y_LPARAM(lParam);
 }
 
-void WindowsPlatform::ApplicationWindow::processMouseDrag(LPARAM lParam)
+void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)
 {
 	RAWINPUT* rawInput = initialiseRawInputData(lParam);
 
