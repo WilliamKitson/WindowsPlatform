@@ -297,7 +297,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_MOUSEMOVE:
 	{
-		processMousePos(lParam);
+		processCursor(lParam);
 		return 0;
 	}
 	break;
@@ -400,7 +400,7 @@ void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
 	active->minimise = true;
 }
 
-void WindowsPlatform::ApplicationWindow::processMousePos(LPARAM lParam)
+void WindowsPlatform::ApplicationWindow::processCursor(LPARAM lParam)
 {
 	active->cursor.x = (float)GET_X_LPARAM(lParam);
 	active->cursor.y = (float)GET_Y_LPARAM(lParam);
