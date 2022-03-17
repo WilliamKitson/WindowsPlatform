@@ -20,7 +20,7 @@ namespace WindowsPlatform
 		A,
 		X,
 		B,
-		gamepadButtonsSize
+		size
 	};
 }
 
