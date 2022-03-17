@@ -219,10 +219,7 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
 
 void WindowsPlatform::ApplicationWindow::resetQuit()
 {
-	if (quit)
-	{
-		quit = false;
-	}
+	quit = false;
 }
 
 void WindowsPlatform::ApplicationWindow::resetMinimise()
