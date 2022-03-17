@@ -23,3 +23,8 @@ bool WindowsPlatform::SubordinateImplimentation::getQuit()
 {
 	return window.getQuit();
 }
+
+bool WindowsPlatform::SubordinateImplimentation::getMinimise()
+{
+	return window.getMinimise();
+}

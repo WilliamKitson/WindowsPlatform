@@ -13,6 +13,7 @@ namespace WindowsPlatform
 		virtual void update();
 		virtual HWND getWindow();
 		virtual bool getQuit();
+		virtual bool getMinimise();
 	};
 }
 

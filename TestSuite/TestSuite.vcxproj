@@ -157,6 +157,7 @@
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowMinimiseTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowQuitTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowTester.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp" />
@@ -229,6 +230,7 @@
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowMinimiseTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowQuitTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowTester.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h" />

@@ -21,3 +21,8 @@ bool WindowsPlatform::SubordinateFacade::getQuit()
 {
 	return false;
 }
+
+bool WindowsPlatform::SubordinateFacade::getMinimise()
+{
+	return false;
+}
