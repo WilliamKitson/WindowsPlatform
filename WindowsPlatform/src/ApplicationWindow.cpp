@@ -389,8 +389,12 @@ void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
 
 void WindowsPlatform::ApplicationWindow::processCursor(LPARAM lParam)
 {
-	active->cursor.x = (float)GET_X_LPARAM(lParam);
-	active->cursor.y = (float)GET_Y_LPARAM(lParam);
+	Vector2 lParamCursor{
+		(float)GET_X_LPARAM(lParam),
+		(float)GET_Y_LPARAM(lParam)
+	};
+
+	active->cursor = lParamCursor;
 }
 
 void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)
