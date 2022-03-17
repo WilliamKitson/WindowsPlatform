@@ -93,18 +93,6 @@
     <ClCompile Include="src\application\ApplicationTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultStateTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\GamepadTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -318,18 +306,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\ApplicationTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultStateTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\GamepadTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h">

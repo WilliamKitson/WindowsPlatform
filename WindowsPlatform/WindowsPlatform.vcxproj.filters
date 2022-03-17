@@ -27,9 +27,6 @@
     <ClInclude Include="src\DeltaTimer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\XInputGamepad.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\GamepadButtons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -57,9 +54,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\DeltaTimer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\XInputGamepad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\ApplicationWindow.cpp">
