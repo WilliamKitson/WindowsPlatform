@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "ResolutionValidatorDefaultWidthTest.h"
+#include "ResolutionDefaultWidthTest.h"
 #include "ResolutionValidatorDefaultHeightTest.h"
 
 class ResolutionValidatorDefaultTester

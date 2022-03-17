@@ -147,9 +147,6 @@
     <ClCompile Include="src\application\window\event\WindowEventDragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -193,6 +190,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\window\default\WindowDefaultDragTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\resolutionValidator\default\ResolutionDefaultWidthTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -326,9 +326,6 @@
     <ClInclude Include="src\application\window\event\WindowEventDragTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultWidthTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\domain\resolutionValidator\default\ResolutionValidatorDefaultTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -372,6 +369,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\WindowDefaultDragTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\resolutionValidator\default\ResolutionDefaultWidthTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
