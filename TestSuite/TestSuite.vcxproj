@@ -159,6 +159,7 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
+    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.cpp" />
     <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultCursorTest.cpp" />
@@ -225,6 +226,7 @@
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
+    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.h" />
     <ClInclude Include="src\application\gamepad\GamepadTester.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultButtonsTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultCursorTest.h" />

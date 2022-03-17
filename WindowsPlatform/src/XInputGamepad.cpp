@@ -17,3 +17,8 @@ WindowsPlatform::Vector2 WindowsPlatform::XInputGamepad::getJoystickRight()
 {
 	return Vector2();
 }
+
+float WindowsPlatform::XInputGamepad::getTriggerLeft()
+{
+	return 0.0f;
+}
