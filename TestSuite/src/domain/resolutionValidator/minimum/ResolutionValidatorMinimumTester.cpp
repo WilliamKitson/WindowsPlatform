@@ -25,5 +25,5 @@ std::string ResolutionValidatorMinimumTester::testWidth()
 
 std::string ResolutionValidatorMinimumTester::testHeight()
 {
-	return ResolutionValidatorMinimumHeightTest().test();
+	return ResolutionMinimumHeightTest().test();
 }

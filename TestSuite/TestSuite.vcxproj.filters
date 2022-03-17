@@ -153,9 +153,6 @@
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumHeightTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -193,6 +190,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionMinimumWidthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\resolutionValidator\minimum\ResolutionMinimumHeightTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -332,9 +332,6 @@
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionValidatorMinimumHeightTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -372,6 +369,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionMinimumWidthTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\resolutionValidator\minimum\ResolutionMinimumHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

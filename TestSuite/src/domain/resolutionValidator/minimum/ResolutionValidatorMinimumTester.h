@@ -3,7 +3,7 @@
 #include <string>
 
 #include "ResolutionMinimumWidthTest.h"
-#include "ResolutionValidatorMinimumHeightTest.h"
+#include "ResolutionMinimumHeightTest.h"
 
 class ResolutionValidatorMinimumTester
 {
