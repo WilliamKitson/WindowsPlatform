@@ -22,6 +22,7 @@ std::string FacadeWindowTester::test()
 	failures += testKeys();
 	failures += testTag();
 	failures += testWidth();
+	failures += testHeight();
 
 	return failures;
 }
@@ -69,4 +70,9 @@ std::string FacadeWindowTester::testTag()
 std::string FacadeWindowTester::testWidth()
 {
 	return FacadeWindowWidthTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeWindowTester::testHeight()
+{
+	return FacadeWindowHeightTest(hInstance, nCmdShow).test();
 }

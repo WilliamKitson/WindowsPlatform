@@ -249,6 +249,9 @@
     <ClCompile Include="src\application\facade\window\FacadeWindowWidthTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\facade\window\FacadeWindowHeightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -480,6 +483,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\window\FacadeWindowWidthTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\window\FacadeWindowHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
