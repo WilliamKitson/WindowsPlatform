@@ -406,8 +406,12 @@ void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)
 		return;
 	}
 
-	active->drag.x = (float)rawInput->data.mouse.lLastX;
-	active->drag.y = (float)rawInput->data.mouse.lLastY;
+	Vector2 rawInputDrag{
+		(float)rawInput->data.mouse.lLastX,
+		(float)rawInput->data.mouse.lLastY
+	};
+
+	active->drag = rawInputDrag;
 }
 
 RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lParam)
