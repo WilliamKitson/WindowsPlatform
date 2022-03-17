@@ -227,10 +227,7 @@ void WindowsPlatform::ApplicationWindow::resetQuit()
 
 void WindowsPlatform::ApplicationWindow::resetMinimise()
 {
-	if (minimise)
-	{
-		minimise = false;
-	}
+	minimise = false;
 }
 
 void WindowsPlatform::ApplicationWindow::resetDrag()
