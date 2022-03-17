@@ -3,7 +3,7 @@
 #include <string>
 
 #include "ResolutionParameterWidthTest.h"
-#include "ResolutionValidatorParameterHeightTest.h"
+#include "ResolutionParameterHeightTest.h"
 
 class ResolutionValidatorParameterTester
 {
