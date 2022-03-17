@@ -240,10 +240,7 @@ void WindowsPlatform::ApplicationWindow::resetDrag()
 
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
 {
-	if (buttons[(unsigned int)WindowsButtons::mouse_scrollForwards])
-	{
-		buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = false;
-	}
+	buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = false;
 }
 
 void WindowsPlatform::ApplicationWindow::resetScrollBackwards()
