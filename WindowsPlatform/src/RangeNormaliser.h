@@ -2,11 +2,11 @@
 
 namespace WindowsPlatform
 {
-	class Normaliser
+	class RangeNormaliser
 	{
 	public:
-		Normaliser();
-		~Normaliser();
+		RangeNormaliser();
+		~RangeNormaliser();
 
 		void normalise(float, float, float);
 		float getNormalised();

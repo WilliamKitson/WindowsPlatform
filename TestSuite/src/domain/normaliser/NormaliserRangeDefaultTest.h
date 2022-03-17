@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "Normaliser.h"
+#include "RangeNormaliser.h"
 
 class NormaliserRangeDefaultTest
 {

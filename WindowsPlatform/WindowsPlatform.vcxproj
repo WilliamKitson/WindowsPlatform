@@ -150,7 +150,7 @@
     <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\GamepadButtons.h" />
-    <ClInclude Include="src\Normaliser.h" />
+    <ClInclude Include="src\RangeNormaliser.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
     <ClInclude Include="src\Vector2.h" />
     <ClInclude Include="src\WindowsButtons.h" />
@@ -158,7 +158,7 @@
   <ItemGroup>
     <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
-    <ClCompile Include="src\Normaliser.cpp" />
+    <ClCompile Include="src\RangeNormaliser.cpp" />
     <ClCompile Include="src\ResolutionValidator.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
   </ItemGroup>
