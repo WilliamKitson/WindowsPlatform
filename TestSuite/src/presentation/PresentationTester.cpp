@@ -13,7 +13,6 @@ std::string PresentationTester::test()
 	std::string failures{ "" };
 
 	failures += testVector();
-	failures += testResolution();
 	failures += testGamepadState();
 	failures += testVibration();
 
@@ -23,11 +22,6 @@ std::string PresentationTester::test()
 std::string PresentationTester::testVector()
 {
 	return VectorTester().test();
-}
-
-std::string PresentationTester::testResolution()
-{
-	return ResolutionTester().test();
 }
 
 std::string PresentationTester::testGamepadState()

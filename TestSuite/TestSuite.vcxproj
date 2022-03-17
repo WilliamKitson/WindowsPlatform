@@ -218,10 +218,6 @@
     <ClCompile Include="src\presentation\gamepadState\GamepadStateTriggerLTest.cpp" />
     <ClCompile Include="src\presentation\gamepadState\GamepadStateTriggerRTest.cpp" />
     <ClCompile Include="src\presentation\PresentationTester.cpp" />
-    <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp" />
-    <ClCompile Include="src\presentation\resolution\ResolutionHeightTest.cpp" />
-    <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp" />
-    <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp" />
     <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp" />
     <ClCompile Include="src\presentation\vector2\VectorTester.cpp" />
     <ClCompile Include="src\presentation\vector2\VectorXTest.cpp" />
@@ -299,10 +295,6 @@
     <ClInclude Include="src\presentation\gamepadState\GamepadStateTriggerLTest.h" />
     <ClInclude Include="src\presentation\gamepadState\GamepadStateTriggerRTest.h" />
     <ClInclude Include="src\presentation\PresentationTester.h" />
-    <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h" />
-    <ClInclude Include="src\presentation\resolution\ResolutionHeightTest.h" />
-    <ClInclude Include="src\presentation\resolution\ResolutionTester.h" />
-    <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h" />
     <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h" />
     <ClInclude Include="src\presentation\vector2\VectorTester.h" />
     <ClInclude Include="src\presentation\vector2\VectorXTest.h" />

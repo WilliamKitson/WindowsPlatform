@@ -17,8 +17,8 @@ std::string WindowsResolutionSetWidthTest::test()
 		"window resolution set width test"
 	};
 
-	WindowsPlatform::Resolution set{
-		width,
+	WindowsPlatform::Vector2 set{
+		(float)width,
 		0
 	};
 

@@ -17,9 +17,9 @@ std::string WindowResolutionSetHeightTest::test()
 		"window resolution set height test"
 	};
 
-	WindowsPlatform::Resolution set{
+	WindowsPlatform::Vector2 set{
 		0,
-		height
+		(float)height
 	};
 
 	unit.setResolution(set);

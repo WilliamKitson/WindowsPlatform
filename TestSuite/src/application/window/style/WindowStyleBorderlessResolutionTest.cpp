@@ -19,7 +19,7 @@ std::string WindowStyleBorderlessResolutionTest::test()
 
 	unit.setBorderless();
 
-	WindowsPlatform::Resolution set{
+	WindowsPlatform::Vector2 set{
 		1000,
 		1000
 	};

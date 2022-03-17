@@ -59,7 +59,7 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 	);
 }
 
-void WindowsPlatform::ApplicationWindow::setResolution(Resolution value)
+void WindowsPlatform::ApplicationWindow::setResolution(Vector2 value)
 {
 	RECT windowRect = getWindowRectangle(value);
 
@@ -146,7 +146,7 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindowClass(HINSTANCE hIns
 
 HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 {
-	RECT windowRect = getWindowRectangle(Resolution());
+	RECT windowRect = getWindowRectangle(Vector2());
 
 	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
 	{
@@ -180,10 +180,10 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 	return S_OK;
 }
 
-RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Resolution value)
+RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
 {
 	ResolutionValidator validator;
-	validator.setResolution(value.width, value.height);
+	validator.setResolution((int)value.x, (int)value.y);
 
 	RECT windowRect = {
 		0,

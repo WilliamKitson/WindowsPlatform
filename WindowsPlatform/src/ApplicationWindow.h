@@ -8,7 +8,6 @@
 
 #include "Vector2.h"
 #include "WindowsButtons.h"
-#include "Resolution.h"
 #include "ResolutionValidator.h"
 
 namespace WindowsPlatform
@@ -27,7 +26,7 @@ namespace WindowsPlatform
 		Vector2 getDrag();
 		bool getButton(WindowsButtons);
 		void setTag(std::string);
-		void setResolution(Resolution);
+		void setResolution(Vector2);
 		void setBorderless();
 		void setWindowed();
 
@@ -36,7 +35,7 @@ namespace WindowsPlatform
 		void initialise(HINSTANCE, std::wstring);
 		HRESULT initialiseWindowClass(HINSTANCE, std::wstring);
 		HRESULT initialiseWindow(std::wstring);
-		RECT getWindowRectangle(Resolution);
+		RECT getWindowRectangle(Vector2);
 		DWORD getWindowed();
 		HRESULT initialiseRawInput();
 		void resetQuit();

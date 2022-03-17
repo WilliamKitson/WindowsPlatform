@@ -27,18 +27,6 @@
     <ClCompile Include="src\SubordinateTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\presentation\resolution\ResolutionDefaultTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\presentation\resolution\ResolutionHeightTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\presentation\gamepadState\GamepadStateDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -264,18 +252,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\SubordinateTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\resolution\ResolutionDefaultTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\resolution\ResolutionTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\presentation\resolution\ResolutionHeightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\gamepadState\GamepadStateDefaultTest.h">
