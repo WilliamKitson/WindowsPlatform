@@ -38,3 +38,8 @@ bool WindowsPlatform::SubordinateImplimentation::getButton(WindowsButtons button
 {
 	return window.getButton(button);
 }
+
+void WindowsPlatform::SubordinateImplimentation::setTag(std::string tag)
+{
+	window.setTag(tag);
+}

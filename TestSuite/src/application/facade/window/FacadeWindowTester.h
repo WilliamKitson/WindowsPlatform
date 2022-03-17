@@ -9,6 +9,7 @@
 #include "FacadeWindowCursorTest.h"
 #include "FacadeWindowButtonsTest.h"
 #include "FacadeWindowKeysTest.h"
+#include "FacadeWindowTagTest.h"
 
 class FacadeWindowTester
 {
@@ -26,6 +27,7 @@ private:
 	std::string testCursor();
 	std::string testButtons();
 	std::string testKeys();
+	std::string testTag();
 
 
 private:

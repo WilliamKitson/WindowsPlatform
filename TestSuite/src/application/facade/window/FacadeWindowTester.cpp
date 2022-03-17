@@ -19,6 +19,7 @@ std::string FacadeWindowTester::test()
 	failures += testCursor();
 	failures += testButtons();
 	failures += testKeys();
+	failures += testTag();
 
 	return failures;
 }
@@ -51,4 +52,9 @@ std::string FacadeWindowTester::testButtons()
 std::string FacadeWindowTester::testKeys()
 {
 	return FacadeWindowKeysTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeWindowTester::testTag()
+{
+	return FacadeWindowTagTest(hInstance, nCmdShow).test();
 }

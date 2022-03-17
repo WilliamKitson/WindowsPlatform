@@ -21,6 +21,7 @@ namespace WindowsPlatform
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();
 		virtual bool getButton(WindowsButtons);
+		virtual void setTag(std::string);
 
 
 	private:

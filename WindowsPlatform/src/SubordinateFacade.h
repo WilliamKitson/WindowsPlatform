@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Windows.h>
+#include <string>
 
 #include "Vector2.h"
 #include "WindowsButtons.h"
@@ -19,6 +20,7 @@ namespace WindowsPlatform
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();
 		virtual bool getButton(WindowsButtons);
+		virtual void setTag(std::string);
 	};
 }
 

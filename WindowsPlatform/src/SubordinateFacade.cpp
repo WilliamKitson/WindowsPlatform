@@ -36,3 +36,7 @@ bool WindowsPlatform::SubordinateFacade::getButton(WindowsButtons)
 {
 	return false;
 }
+
+void WindowsPlatform::SubordinateFacade::setTag(std::string)
+{
+}
