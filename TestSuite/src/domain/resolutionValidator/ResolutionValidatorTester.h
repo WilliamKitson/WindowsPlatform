@@ -4,7 +4,7 @@
 
 #include "default/ResolutionDefaultTester.h"
 #include "parameter/ResolutionParameterTester.h"
-#include "minimum/ResolutionValidatorMinimumTester.h"
+#include "minimum/ResolutionMinimumTester.h"
 
 class ResolutionValidatorTester
 {

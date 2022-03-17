@@ -5,11 +5,11 @@
 #include "ResolutionMinimumWidthTest.h"
 #include "ResolutionMinimumHeightTest.h"
 
-class ResolutionValidatorMinimumTester
+class ResolutionMinimumTester
 {
 public:
-	ResolutionValidatorMinimumTester();
-	~ResolutionValidatorMinimumTester();
+	ResolutionMinimumTester();
+	~ResolutionMinimumTester();
 
 	std::string test();
 

@@ -31,5 +31,5 @@ std::string ResolutionValidatorTester::testParameter()
 
 std::string ResolutionValidatorTester::testMinimum()
 {
-	return ResolutionValidatorMinimumTester().test();
+	return ResolutionMinimumTester().test();
 }
