@@ -235,8 +235,7 @@ void WindowsPlatform::ApplicationWindow::resetMinimise()
 
 void WindowsPlatform::ApplicationWindow::resetDrag()
 {
-	drag.x = 0.0f;
-	drag.y = 0.0f;
+	drag = Vector2();
 }
 
 void WindowsPlatform::ApplicationWindow::resetScrollForwards()
