@@ -227,6 +227,8 @@
     <ClCompile Include="src\presentation\resolution\ResolutionHeightTest.cpp" />
     <ClCompile Include="src\presentation\resolution\ResolutionTester.cpp" />
     <ClCompile Include="src\presentation\resolution\ResolutionWidthTest.cpp" />
+    <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp" />
+    <ClCompile Include="src\presentation\vector2\VectorTester.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationDefaultTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationLeftTest.cpp" />
     <ClCompile Include="src\presentation\vibration\VibrationRightTest.cpp" />
@@ -309,6 +311,8 @@
     <ClInclude Include="src\presentation\resolution\ResolutionHeightTest.h" />
     <ClInclude Include="src\presentation\resolution\ResolutionTester.h" />
     <ClInclude Include="src\presentation\resolution\ResolutionWidthTest.h" />
+    <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h" />
+    <ClInclude Include="src\presentation\vector2\VectorTester.h" />
     <ClInclude Include="src\presentation\vibration\VibrationDefaultTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationLeftTest.h" />
     <ClInclude Include="src\presentation\vibration\VibrationRightTest.h" />

@@ -12,12 +12,18 @@ std::string PresentationTester::test()
 {
 	std::string failures{ "" };
 
+	failures += testVector();
 	failures += testResolution();
 	failures += testMouseState();
 	failures += testGamepadState();
 	failures += testVibration();
 
 	return failures;
+}
+
+std::string PresentationTester::testVector()
+{
+	return VectorTester().test();
 }
 
 std::string PresentationTester::testResolution()

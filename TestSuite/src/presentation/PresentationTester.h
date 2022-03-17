@@ -2,6 +2,7 @@
 
 #include <string>
 
+#include "vector2/VectorTester.h"
 #include "resolution/ResolutionTester.h"
 #include "mouseState/MouseStateTester.h"
 #include "gamepadState/GamepadStateTester.h"
@@ -17,6 +18,7 @@ public:
 
 
 private:
+	std::string testVector();
 	std::string testResolution();
 	std::string testMouseState();
 	std::string testGamepadState();
