@@ -25,6 +25,7 @@ namespace WindowsPlatform
 
 	private:
 		void initialiseButtons();
+		MouseButtons xbuttonIndex(WPARAM);
 
 
 	private:

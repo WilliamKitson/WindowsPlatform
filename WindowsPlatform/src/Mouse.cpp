@@ -25,14 +25,7 @@ void WindowsPlatform::Mouse::press(MouseButtons index)
 
 void WindowsPlatform::Mouse::press(WPARAM wParam)
 {
-	MouseButtons index = MouseButtons::mouse_MB5;
-
-	if (wParam != XBUTTON2)
-	{
-		index = MouseButtons::mouse_MB4;
-	}
-
-	buttons[(int)index] = true;
+	buttons[(int)xbuttonIndex(wParam)] = true;
 }
 
 void WindowsPlatform::Mouse::release(MouseButtons index)
@@ -42,14 +35,7 @@ void WindowsPlatform::Mouse::release(MouseButtons index)
 
 void WindowsPlatform::Mouse::release(WPARAM wParam)
 {
-	MouseButtons index = MouseButtons::mouse_MB5;
-
-	if (wParam != XBUTTON2)
-	{
-		index = MouseButtons::mouse_MB4;
-	}
-
-	buttons[(int)index] = false;
+	buttons[(int)xbuttonIndex(wParam)] = false;
 }
 
 WindowsPlatform::Vector2 WindowsPlatform::Mouse::getCursor()
@@ -68,4 +54,14 @@ void WindowsPlatform::Mouse::initialiseButtons()
 	{
 		buttons[i] = false;
 	}
+}
+
+WindowsPlatform::MouseButtons WindowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
+{
+	if (wParam != XBUTTON2)
+	{
+		return MouseButtons::mouse_MB4;
+	}
+
+	return MouseButtons::mouse_MB5;
 }
