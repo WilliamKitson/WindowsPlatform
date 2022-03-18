@@ -240,6 +240,9 @@
     <ClCompile Include="src\application\mouse\default\MouseDefaultDragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\mouse\default\MouseDefaultButtonsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -462,6 +465,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\mouse\default\MouseDefaultDragTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\default\MouseDefaultButtonsTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

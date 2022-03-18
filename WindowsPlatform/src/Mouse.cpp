@@ -17,3 +17,8 @@ WindowsPlatform::Vector2 WindowsPlatform::Mouse::getDrag()
 {
 	return Vector2();
 }
+
+bool WindowsPlatform::Mouse::getButton(MouseButtons)
+{
+	return false;
+}

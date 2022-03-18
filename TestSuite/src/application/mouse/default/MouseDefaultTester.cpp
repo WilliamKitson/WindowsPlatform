@@ -14,6 +14,7 @@ std::string MouseDefaultTester::test()
 
 	failures += testCursor();
 	failures += testDrag();
+	failures += testButtons();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string MouseDefaultTester::testCursor()
 std::string MouseDefaultTester::testDrag()
 {
 	return MouseDefaultDragTest().test();
+}
+
+std::string MouseDefaultTester::testButtons()
+{
+	return MouseDefaultButtonsTest().test();
 }

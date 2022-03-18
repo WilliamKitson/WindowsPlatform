@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Vector2.h"
+#include "MouseButtons.h"
 
 namespace WindowsPlatform
 {
@@ -12,6 +13,7 @@ namespace WindowsPlatform
 
 		Vector2 getCursor();
 		Vector2 getDrag();
+		bool getButton(MouseButtons);
 	};
 }
 

@@ -4,6 +4,7 @@
 
 #include "MouseDefaultCursorTest.h"
 #include "MouseDefaultDragTest.h"
+#include "MouseDefaultButtonsTest.h"
 
 class MouseDefaultTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testCursor();
 	std::string testDrag();
+	std::string testButtons();
 };
 
