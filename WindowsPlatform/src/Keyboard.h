@@ -12,6 +12,7 @@ namespace WindowsPlatform
 		~Keyboard();
 
 		void press(WPARAM);
+		void release(WPARAM);
 		bool getKey(KeyboardKeys);
 
 

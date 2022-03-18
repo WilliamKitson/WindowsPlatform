@@ -15,6 +15,11 @@ void WindowsPlatform::Keyboard::press(WPARAM wParam)
 	keys[(int)getIndex(wParam)] = true;
 }
 
+void WindowsPlatform::Keyboard::release(WPARAM wParam)
+{
+	keys[(int)getIndex(wParam)] = false;
+}
+
 bool WindowsPlatform::Keyboard::getKey(KeyboardKeys index)
 {
 	return keys[(int)index];

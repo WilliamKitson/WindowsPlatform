@@ -14,6 +14,7 @@ std::string KeyboardTester::test()
 
 	failures += testDefault();
 	failures += testPress();
+	failures += testRelease();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string KeyboardTester::testDefault()
 std::string KeyboardTester::testPress()
 {
 	return KeyboardPressTest().test();
+}
+
+std::string KeyboardTester::testRelease()
+{
+	return KeyboardReleaseTest().test();
 }

@@ -4,6 +4,7 @@
 
 #include "KeyboardDefaultTest.h"
 #include "KeyboardPressTest.h"
+#include "KeyboardReleaseTest.h"
 
 class KeyboardTester
 {
@@ -17,5 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testPress();
+	std::string testRelease();
 };
 
