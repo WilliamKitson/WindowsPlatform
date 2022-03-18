@@ -12,3 +12,8 @@ WindowsPlatform::Vector2 WindowsPlatform::Mouse::getCursor()
 {
 	return Vector2();
 }
+
+WindowsPlatform::Vector2 WindowsPlatform::Mouse::getDrag()
+{
+	return Vector2();
+}
