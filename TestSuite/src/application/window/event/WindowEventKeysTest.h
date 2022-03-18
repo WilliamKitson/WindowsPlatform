@@ -15,10 +15,10 @@ public:
 
 
 private:
-	void postDown(HWND, WindowsPlatform::WindowsButtons);
-	void postUp(HWND, WindowsPlatform::WindowsButtons);
-	bool isSysKey(WindowsPlatform::WindowsButtons);
-	int getKeyCode(WindowsPlatform::WindowsButtons);
+	void postDown(HWND, WindowsPlatform::KeyboardKeys);
+	void postUp(HWND, WindowsPlatform::KeyboardKeys);
+	bool isSysKey(WindowsPlatform::KeyboardKeys);
+	WPARAM getKeyCode(WindowsPlatform::KeyboardKeys);
 
 
 private:

@@ -17,7 +17,6 @@ std::string ApplicationTester::test()
 	failures += testDelta();
 	failures += testKeyboard();
 	failures += testGamepad();
-	failures += testFacade();
 
 	return failures;
 }
@@ -40,9 +39,4 @@ std::string ApplicationTester::testKeyboard()
 std::string ApplicationTester::testGamepad()
 {
 	return GamepadTester().test();
-}
-
-std::string ApplicationTester::testFacade()
-{
-	return FacadeTester(hInstance, nCmdShow).test();
 }

@@ -7,7 +7,6 @@
 #include "delta/DeltaTester.h"
 #include "keyboard/KeyboardTester.h"
 #include "gamepad/GamepadTester.h"
-#include "facade/FacadeTester.h"
 
 class ApplicationTester
 {
@@ -23,7 +22,6 @@ private:
 	std::string testDelta();
 	std::string testKeyboard();
 	std::string testGamepad();
-	std::string testFacade();
 
 
 private:

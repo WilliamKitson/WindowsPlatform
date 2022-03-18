@@ -8,6 +8,7 @@
 
 #include "Vector2.h"
 #include "WindowsButtons.h"
+#include "Keyboard.h"
 #include "ResolutionValidator.h"
 
 namespace WindowsPlatform
@@ -25,6 +26,7 @@ namespace WindowsPlatform
 		Vector2 getCursor();
 		Vector2 getDrag();
 		bool getButton(WindowsButtons);
+		bool getKeyboard(KeyboardKeys);
 		void setTag(std::string);
 		void setResolution(Vector2);
 		void setBorderless();
@@ -53,9 +55,6 @@ namespace WindowsPlatform
 		static void processXbuttonDown(WPARAM);
 		static void processWheel(WPARAM);
 		static void processXbuttonUp(WPARAM);
-		static void processKeyDown(WPARAM);
-		static void processKeyUp(WPARAM);
-		static WindowsButtons getButtonIndex(WPARAM);
 
 
 	private:
@@ -64,6 +63,7 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
+		Keyboard keyboard;
 		Vector2 cursor;
 		Vector2 drag;
 		bool buttons[(unsigned int)WindowsButtons::size];

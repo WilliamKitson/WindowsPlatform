@@ -17,7 +17,7 @@ std::string WindowEventDragTest::test()
 		tagPrefix
 	};
 
-	while (unit.getButton(WindowsPlatform::WindowsButtons::keyboard_ESC) == false)
+	while (unit.getKeyboard(WindowsPlatform::KeyboardKeys::keyboard_ESC) == false)
 	{
 		Sleep(1);
 		unit.update();
