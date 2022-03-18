@@ -24,6 +24,7 @@ namespace WindowsPlatform
 		virtual void setTag(std::string);
 		virtual void setResolution(Vector2);
 		virtual void setBorderless();
+		virtual void setWindowed();
 	};
 }
 

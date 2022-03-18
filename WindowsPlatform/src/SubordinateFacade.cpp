@@ -53,3 +53,7 @@ void WindowsPlatform::SubordinateFacade::setResolution(Vector2)
 void WindowsPlatform::SubordinateFacade::setBorderless()
 {
 }
+
+void WindowsPlatform::SubordinateFacade::setWindowed()
+{
+}

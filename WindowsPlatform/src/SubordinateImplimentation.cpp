@@ -58,3 +58,8 @@ void WindowsPlatform::SubordinateImplimentation::setBorderless()
 {
 	window.setBorderless();
 }
+
+void WindowsPlatform::SubordinateImplimentation::setWindowed()
+{
+	window.setWindowed();
+}
