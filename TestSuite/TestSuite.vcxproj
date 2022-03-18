@@ -156,6 +156,7 @@
     <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
+    <ClCompile Include="src\application\facade\FacadeDeltaTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowBorderlessTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowButtonsTest.cpp" />
@@ -238,6 +239,7 @@
     <ClInclude Include="src\application\delta\DeltaResetTest.h" />
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
+    <ClInclude Include="src\application\facade\FacadeDeltaTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowBorderlessTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowButtonsTest.h" />

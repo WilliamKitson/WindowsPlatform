@@ -1,7 +1,7 @@
 #include "SubordinateImplimentation.h"
 
 WindowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShow, std::string tag)
-	: SubordinateFacade(), window(hInstance, nCmdShow, tag)
+	: SubordinateFacade(), window(hInstance, nCmdShow, tag), delta()
 {
 }
 
@@ -12,6 +12,7 @@ WindowsPlatform::SubordinateImplimentation::~SubordinateImplimentation()
 void WindowsPlatform::SubordinateImplimentation::update()
 {
 	window.update();
+	delta.update();
 }
 
 HWND WindowsPlatform::SubordinateImplimentation::getWindow()
@@ -42,6 +43,11 @@ WindowsPlatform::Vector2 WindowsPlatform::SubordinateImplimentation::getDrag()
 bool WindowsPlatform::SubordinateImplimentation::getButton(WindowsButtons button)
 {
 	return window.getButton(button);
+}
+
+float WindowsPlatform::SubordinateImplimentation::getDelta()
+{
+	return delta.getDelta();
 }
 
 void WindowsPlatform::SubordinateImplimentation::setTag(std::string tag)

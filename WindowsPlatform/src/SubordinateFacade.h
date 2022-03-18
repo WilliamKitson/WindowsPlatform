@@ -21,6 +21,7 @@ namespace WindowsPlatform
 		virtual Vector2 getCursor();
 		virtual Vector2 getDrag();
 		virtual bool getButton(WindowsButtons);
+		virtual float getDelta();
 		virtual void setTag(std::string);
 		virtual void setResolution(Vector2);
 		virtual void setBorderless();

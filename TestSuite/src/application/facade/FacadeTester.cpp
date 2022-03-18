@@ -14,6 +14,7 @@ std::string FacadeTester::test()
 	std::string failures{ "" };
 
 	failures += testWindow();
+	failures += testDelta();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string FacadeTester::test()
 std::string FacadeTester::testWindow()
 {
 	return FacadeWindowTester(hInstance, nCmdShow).test();
+}
+
+std::string FacadeTester::testDelta()
+{
+	return FacadeDeltaTest(hInstance, nCmdShow).test();
 }

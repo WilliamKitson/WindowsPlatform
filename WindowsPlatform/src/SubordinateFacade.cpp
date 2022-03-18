@@ -42,6 +42,11 @@ bool WindowsPlatform::SubordinateFacade::getButton(WindowsButtons)
 	return false;
 }
 
+float WindowsPlatform::SubordinateFacade::getDelta()
+{
+	return 0.0f;
+}
+
 void WindowsPlatform::SubordinateFacade::setTag(std::string)
 {
 }

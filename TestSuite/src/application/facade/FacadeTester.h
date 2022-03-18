@@ -4,6 +4,7 @@
 #include <string>
 
 #include "window/FacadeWindowTester.h"
+#include "FacadeDeltaTest.h"
 
 class FacadeTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testWindow();
+	std::string testDelta();
 
 
 private:
