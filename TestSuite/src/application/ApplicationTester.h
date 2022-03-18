@@ -5,6 +5,7 @@
 
 #include "window/WindowTester.h"
 #include "delta/DeltaTester.h"
+#include "keyboard/KeyboardTester.h"
 #include "gamepad/GamepadTester.h"
 #include "facade/FacadeTester.h"
 
@@ -20,6 +21,7 @@ public:
 private:
 	std::string testWindow();
 	std::string testDelta();
+	std::string testKeyboard();
 	std::string testGamepad();
 	std::string testFacade();
 

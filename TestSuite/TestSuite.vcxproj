@@ -177,6 +177,8 @@
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.cpp" />
     <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
+    <ClCompile Include="src\application\keyboard\KeyboardDefaultTest.cpp" />
+    <ClCompile Include="src\application\keyboard\KeyboardTester.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultCursorTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultDragTest.cpp" />
@@ -260,6 +262,8 @@
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.h" />
     <ClInclude Include="src\application\gamepad\GamepadTester.h" />
+    <ClInclude Include="src\application\keyboard\KeyboardDefaultTest.h" />
+    <ClInclude Include="src\application\keyboard\KeyboardTester.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultButtonsTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultCursorTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultDragTest.h" />
