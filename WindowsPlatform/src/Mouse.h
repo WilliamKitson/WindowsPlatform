@@ -15,12 +15,18 @@ namespace WindowsPlatform
 		~Mouse();
 
 		void move(LPARAM);
+		void press(MouseButtons);
 		Vector2 getCursor();
 		bool getButton(MouseButtons);
 
 
 	private:
+		void initialiseButtons();
+
+
+	private:
 		Vector2 cursor;
+		bool buttons[(int)MouseButtons::size];
 	};
 }
 
