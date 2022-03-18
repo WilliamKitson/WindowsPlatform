@@ -12,7 +12,6 @@ namespace WindowsPlatform
 		~Mouse();
 
 		Vector2 getCursor();
-		Vector2 getDrag();
 		bool getButton(MouseButtons);
 	};
 }

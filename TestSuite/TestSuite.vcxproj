@@ -169,7 +169,6 @@
     <ClCompile Include="src\application\keyboard\KeyboardTester.cpp" />
     <ClCompile Include="src\application\mouse\default\MouseDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\mouse\default\MouseDefaultCursorTest.cpp" />
-    <ClCompile Include="src\application\mouse\default\MouseDefaultDragTest.cpp" />
     <ClCompile Include="src\application\mouse\default\MouseDefaultTester.cpp" />
     <ClCompile Include="src\application\mouse\MouseTester.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultButtonsTest.cpp" />
@@ -247,7 +246,6 @@
     <ClInclude Include="src\application\keyboard\KeyboardTester.h" />
     <ClInclude Include="src\application\mouse\default\MouseDefaultButtonsTest.h" />
     <ClInclude Include="src\application\mouse\default\MouseDefaultCursorTest.h" />
-    <ClInclude Include="src\application\mouse\default\MouseDefaultDragTest.h" />
     <ClInclude Include="src\application\mouse\default\MouseDefaultTester.h" />
     <ClInclude Include="src\application\mouse\MouseTester.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultButtonsTest.h" />
