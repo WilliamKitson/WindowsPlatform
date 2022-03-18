@@ -5,11 +5,11 @@
 
 namespace WindowsPlatform
 {
-	class XInputGamepad
+	class Gamepad
 	{
 	public:
-		XInputGamepad();
-		~XInputGamepad();
+		Gamepad();
+		~Gamepad();
 
 		Vector2 getJoystickLeft();
 		Vector2 getJoystickRight();

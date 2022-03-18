@@ -36,13 +36,13 @@
     <ClInclude Include="src\RangeNormaliser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\XInputGamepad.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\SubordinateFacade.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\SubordinateImplimentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gamepad.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,13 +62,13 @@
     <ClCompile Include="src\RangeNormaliser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\XInputGamepad.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\SubordinateFacade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\SubordinateImplimentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gamepad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

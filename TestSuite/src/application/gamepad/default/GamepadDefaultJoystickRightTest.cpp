@@ -10,7 +10,7 @@ GamepadDefaultJoystickRightTest::~GamepadDefaultJoystickRightTest()
 
 std::string GamepadDefaultJoystickRightTest::test()
 {
-	if (WindowsPlatform::XInputGamepad().getJoystickRight() == WindowsPlatform::Vector2())
+	if (WindowsPlatform::Gamepad().getJoystickRight() == WindowsPlatform::Vector2())
 	{
 		return std::string();
 	}

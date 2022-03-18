@@ -11,7 +11,7 @@ GamepadDefaultButtonsTest::~GamepadDefaultButtonsTest()
 
 std::string GamepadDefaultButtonsTest::test()
 {
-	WindowsPlatform::XInputGamepad unit;
+	WindowsPlatform::Gamepad unit;
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::GamepadButtons::size; i++)
 	{
