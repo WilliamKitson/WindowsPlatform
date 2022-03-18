@@ -24,6 +24,7 @@ namespace WindowsPlatform
 		virtual bool getButton(WindowsButtons);
 		virtual void setTag(std::string);
 		virtual void setResolution(Vector2);
+		virtual void setBorderless();
 
 
 	private:

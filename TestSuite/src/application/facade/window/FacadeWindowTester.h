@@ -12,6 +12,7 @@
 #include "FacadeWindowKeysTest.h"
 #include "FacadeWindowTagTest.h"
 #include "FacadeWindowResolutionTest.h"
+#include "FacadeWindowBorderlessTest.h"
 
 class FacadeWindowTester
 {
@@ -32,6 +33,7 @@ private:
 	std::string testKeys();
 	std::string testTag();
 	std::string testResolution();
+	std::string testBorderless();
 
 
 private:

@@ -53,3 +53,8 @@ void WindowsPlatform::SubordinateImplimentation::setResolution(Vector2 resolutio
 {
 	window.setResolution(resolution);
 }
+
+void WindowsPlatform::SubordinateImplimentation::setBorderless()
+{
+	window.setBorderless();
+}

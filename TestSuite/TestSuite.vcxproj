@@ -157,6 +157,7 @@
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowBorderlessTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowButtonsTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowCursorTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowDragTest.cpp" />
@@ -237,6 +238,7 @@
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowBorderlessTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowButtonsTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowCursorTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowDragTest.h" />

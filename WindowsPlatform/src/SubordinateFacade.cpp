@@ -49,3 +49,7 @@ void WindowsPlatform::SubordinateFacade::setTag(std::string)
 void WindowsPlatform::SubordinateFacade::setResolution(Vector2)
 {
 }
+
+void WindowsPlatform::SubordinateFacade::setBorderless()
+{
+}
