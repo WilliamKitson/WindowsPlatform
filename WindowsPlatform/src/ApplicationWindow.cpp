@@ -204,10 +204,12 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
 {
 	RAWINPUTDEVICE rawInputDevice[1];
 
-	rawInputDevice[0].usUsagePage = HID_USAGE_PAGE_GENERIC;
-	rawInputDevice[0].usUsage = HID_USAGE_GENERIC_MOUSE;
-	rawInputDevice[0].dwFlags = RIDEV_INPUTSINK;
-	rawInputDevice[0].hwndTarget = window;
+	rawInputDevice[0] = RAWINPUTDEVICE{
+		HID_USAGE_PAGE_GENERIC,
+		HID_USAGE_GENERIC_MOUSE,
+		RIDEV_INPUTSINK,
+		window
+	};
 
 	if (RegisterRawInputDevices(rawInputDevice, 1, sizeof(rawInputDevice[0])))
 	{
