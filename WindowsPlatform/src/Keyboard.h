@@ -1,5 +1,6 @@
 #pragma once
 
+#include <Windows.h>
 #include "KeyboardKeys.h"
 
 namespace WindowsPlatform
@@ -10,7 +11,17 @@ namespace WindowsPlatform
 		Keyboard();
 		~Keyboard();
 
+		void press(WPARAM);
 		bool getKey(KeyboardKeys);
+
+
+	private:
+		void initialiseKeys();
+		KeyboardKeys getIndex(WPARAM);
+
+
+	private:
+		bool keys[(int)KeyboardKeys::size];
 	};
 }
 

@@ -264,6 +264,9 @@
     <ClCompile Include="src\application\keyboard\KeyboardTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\keyboard\KeyboardPressTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -510,6 +513,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\keyboard\KeyboardTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\keyboard\KeyboardPressTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "KeyboardDefaultTest.h"
+#include "KeyboardPressTest.h"
 
 class KeyboardTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testPress();
 };
 
