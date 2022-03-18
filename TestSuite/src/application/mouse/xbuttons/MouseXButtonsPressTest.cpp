@@ -1,6 +1,7 @@
 #include "MouseXButtonsPressTest.h"
 
 MouseXButtonsPressTest::MouseXButtonsPressTest()
+	: successes{ 0 }
 {
 }
 
@@ -11,8 +12,6 @@ MouseXButtonsPressTest::~MouseXButtonsPressTest()
 std::string MouseXButtonsPressTest::test()
 {
 	WindowsPlatform::Mouse unit;
-
-	int successes{ 0 };
 
 	unit.press(XBUTTON1);
 	successes += unit.getButton(WindowsPlatform::MouseButtons::mouse_MB4) == true;

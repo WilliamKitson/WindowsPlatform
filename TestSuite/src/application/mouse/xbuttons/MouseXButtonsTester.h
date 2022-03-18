@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "MouseXButtonsPressTest.h"
+#include "MouseXButtonsReleaseTest.h"
 
 class MouseXButtonsTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testPress();
+	std::string testRelease();
 };
 

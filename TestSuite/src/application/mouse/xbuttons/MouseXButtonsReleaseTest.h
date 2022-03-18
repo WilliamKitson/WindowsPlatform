@@ -3,11 +3,11 @@
 #include <string>
 #include "Mouse.h"
 
-class MouseXButtonsPressTest
+class MouseXButtonsReleaseTest
 {
 public:
-	MouseXButtonsPressTest();
-	~MouseXButtonsPressTest();
+	MouseXButtonsReleaseTest();
+	~MouseXButtonsReleaseTest();
 
 	std::string test();
 

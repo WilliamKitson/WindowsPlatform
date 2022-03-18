@@ -40,6 +40,18 @@ void WindowsPlatform::Mouse::release(MouseButtons index)
 	buttons[(int)index] = false;
 }
 
+void WindowsPlatform::Mouse::release(WPARAM wParam)
+{
+	MouseButtons index = MouseButtons::mouse_MB5;
+
+	if (wParam != XBUTTON2)
+	{
+		index = MouseButtons::mouse_MB4;
+	}
+
+	buttons[(int)index] = false;
+}
+
 WindowsPlatform::Vector2 WindowsPlatform::Mouse::getCursor()
 {
 	return cursor;
