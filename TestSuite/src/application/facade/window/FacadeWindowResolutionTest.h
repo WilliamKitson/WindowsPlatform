@@ -1,0 +1,22 @@
+#pragma once
+
+#include <Windows.h>
+#include <string>
+
+#include "SubordinateFacade.h"
+#include "SubordinateImplimentation.h"
+
+class FacadeWindowResolutionTest
+{
+public:
+	FacadeWindowResolutionTest(HINSTANCE, int);
+	~FacadeWindowResolutionTest();
+
+	std::string test();
+
+
+private:
+	HINSTANCE hInstance;
+	int nCmdShow;
+};
+
