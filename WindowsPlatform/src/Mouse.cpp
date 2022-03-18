@@ -23,6 +23,11 @@ void WindowsPlatform::Mouse::press(MouseButtons index)
 	buttons[(int)index] = true;
 }
 
+void WindowsPlatform::Mouse::release(MouseButtons index)
+{
+	buttons[(int)index] = false;
+}
+
 WindowsPlatform::Vector2 WindowsPlatform::Mouse::getCursor()
 {
 	return cursor;

@@ -249,6 +249,9 @@
     <ClCompile Include="src\application\mouse\buttons\MouseButtonsTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\mouse\buttons\MouseButtonsReleaseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -480,6 +483,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\mouse\buttons\MouseButtonsTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\buttons\MouseButtonsReleaseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
