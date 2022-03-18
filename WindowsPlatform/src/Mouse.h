@@ -16,6 +16,7 @@ namespace WindowsPlatform
 
 		void move(LPARAM);
 		void press(MouseButtons);
+		void press(WPARAM);
 		void release(MouseButtons);
 		Vector2 getCursor();
 		bool getButton(MouseButtons);

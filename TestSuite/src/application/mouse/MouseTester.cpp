@@ -14,6 +14,7 @@ std::string MouseTester::test()
 
 	failures += testDefault();
 	failures += testButtons();
+	failures += testXButtons();
 	failures += testCursor();
 
 	return failures;
@@ -27,6 +28,11 @@ std::string MouseTester::testDefault()
 std::string MouseTester::testButtons()
 {
 	return MouseButtonsTester().test();
+}
+
+std::string MouseTester::testXButtons()
+{
+	return MouseXButtonsTester().test();
 }
 
 std::string MouseTester::testCursor()
