@@ -28,6 +28,17 @@ void WindowsPlatform::Mouse::press(WPARAM wParam)
 	buttons[(int)xbuttonIndex(wParam)] = true;
 }
 
+void WindowsPlatform::Mouse::wheel(WPARAM wParam)
+{
+	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
+	{
+		buttons[(unsigned int)MouseButtons::mouse_scrollForwards] = true;
+		return;
+	}
+
+	buttons[(unsigned int)MouseButtons::mouse_scrollBackwards] = true;
+}
+
 void WindowsPlatform::Mouse::release(MouseButtons index)
 {
 	buttons[(int)index] = false;

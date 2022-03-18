@@ -175,6 +175,8 @@
     <ClCompile Include="src\application\mouse\default\MouseDefaultTester.cpp" />
     <ClCompile Include="src\application\mouse\MouseCursorTest.cpp" />
     <ClCompile Include="src\application\mouse\MouseTester.cpp" />
+    <ClCompile Include="src\application\mouse\wheel\MouseWheelPressTest.cpp" />
+    <ClCompile Include="src\application\mouse\wheel\MouseWheelTester.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsPressTest.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsTester.cpp" />
@@ -259,6 +261,8 @@
     <ClInclude Include="src\application\mouse\default\MouseDefaultTester.h" />
     <ClInclude Include="src\application\mouse\MouseCursorTest.h" />
     <ClInclude Include="src\application\mouse\MouseTester.h" />
+    <ClInclude Include="src\application\mouse\wheel\MouseWheelPressTest.h" />
+    <ClInclude Include="src\application\mouse\wheel\MouseWheelTester.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsPressTest.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsTester.h" />

@@ -261,6 +261,12 @@
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\mouse\wheel\MouseWheelPressTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\mouse\wheel\MouseWheelTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -504,6 +510,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\wheel\MouseWheelPressTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\wheel\MouseWheelTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

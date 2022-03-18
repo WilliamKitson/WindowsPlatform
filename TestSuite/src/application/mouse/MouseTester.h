@@ -5,6 +5,7 @@
 #include "default/MouseDefaultTester.h"
 #include "buttons/MouseButtonsTester.h"
 #include "xbuttons/MouseXButtonsTester.h"
+#include "wheel/MouseWheelTester.h"
 #include "MouseCursorTest.h"
 
 class MouseTester
@@ -20,6 +21,7 @@ private:
 	std::string testDefault();
 	std::string testButtons();
 	std::string testXButtons();
+	std::string testWheel();
 	std::string testCursor();
 };
 
