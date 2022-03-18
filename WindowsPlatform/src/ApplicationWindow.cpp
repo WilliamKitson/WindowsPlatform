@@ -111,7 +111,7 @@ void WindowsPlatform::ApplicationWindow::setWindowed()
 
 void WindowsPlatform::ApplicationWindow::initialise(HINSTANCE hInstance, std::wstring tag)
 {
-	if (FAILED(initialiseWindowClass(hInstance, tag)))
+	if (FAILED(registerWindowClass(hInstance, tag)))
 	{
 		return;
 	}
@@ -127,7 +127,7 @@ void WindowsPlatform::ApplicationWindow::initialise(HINSTANCE hInstance, std::ws
 	}
 }
 
-HRESULT WindowsPlatform::ApplicationWindow::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
+HRESULT WindowsPlatform::ApplicationWindow::registerWindowClass(HINSTANCE hInstance, std::wstring tag)
 {
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;

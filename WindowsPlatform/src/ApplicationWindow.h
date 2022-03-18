@@ -33,7 +33,7 @@ namespace WindowsPlatform
 
 	private:
 		void initialise(HINSTANCE, std::wstring);
-		HRESULT initialiseWindowClass(HINSTANCE, std::wstring);
+		HRESULT registerWindowClass(HINSTANCE, std::wstring);
 		HRESULT initialiseWindow(std::wstring);
 		RECT getWindowRectangle(Vector2);
 		DWORD getWindowed();
