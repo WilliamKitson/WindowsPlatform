@@ -20,6 +20,7 @@ namespace WindowsPlatform
 		void wheel(WPARAM);
 		void release(MouseButtons);
 		void release(WPARAM);
+		void reset();
 		Vector2 getCursor();
 		bool getButton(MouseButtons);
 
