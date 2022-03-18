@@ -228,6 +228,15 @@
     <ClCompile Include="src\application\keyboard\KeyboardReleaseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\mouse\default\MouseDefaultCursorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\mouse\default\MouseDefaultTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\mouse\MouseTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -438,6 +447,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\keyboard\KeyboardReleaseTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\default\MouseDefaultCursorTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\default\MouseDefaultTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\mouse\MouseTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
