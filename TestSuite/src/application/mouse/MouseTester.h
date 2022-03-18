@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "default/MouseDefaultTester.h"
+#include "MouseCursorTest.h"
 
 class MouseTester
 {
@@ -14,5 +16,6 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testCursor();
 };
 

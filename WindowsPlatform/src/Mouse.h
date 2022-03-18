@@ -1,5 +1,8 @@
 #pragma once
 
+#include <Windows.h>
+#include <windowsx.h>
+
 #include "Vector2.h"
 #include "MouseButtons.h"
 
@@ -11,8 +14,13 @@ namespace WindowsPlatform
 		Mouse();
 		~Mouse();
 
+		void move(LPARAM);
 		Vector2 getCursor();
 		bool getButton(MouseButtons);
+
+
+	private:
+		Vector2 cursor;
 	};
 }
 
