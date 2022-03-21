@@ -41,7 +41,7 @@ std::string WindowTester::testResolution()
 
 std::string WindowTester::testStyle()
 {
-	return WindowStyleTester(hInstance, nCmdShow).test();
+	return FacadeStyleTester(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testEvent()

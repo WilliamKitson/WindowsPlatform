@@ -1,15 +1,15 @@
-#include "WindowStyleTester.h"
+#include "FacadeStyleTester.h"
 
-WindowStyleTester::WindowStyleTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeStyleTester::FacadeStyleTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowStyleTester::~WindowStyleTester()
+FacadeStyleTester::~FacadeStyleTester()
 {
 }
 
-std::string WindowStyleTester::test()
+std::string FacadeStyleTester::test()
 {
 	std::string failures{ "" };
 
@@ -22,27 +22,27 @@ std::string WindowStyleTester::test()
 	return failures;
 }
 
-std::string WindowStyleTester::testDefault()
+std::string FacadeStyleTester::testDefault()
 {
 	return FacadeStyleDefaultTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowStyleTester::testBorderless()
+std::string FacadeStyleTester::testBorderless()
 {
 	return FacadeStyleBorderlessTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowStyleTester::testBorderlessResolution()
+std::string FacadeStyleTester::testBorderlessResolution()
 {
 	return FacadeStyleBorderlessResolutionTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowStyleTester::testWindowed()
+std::string FacadeStyleTester::testWindowed()
 {
 	return FacadeStyleWindowedTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowStyleTester::testWindowedResolution()
+std::string FacadeStyleTester::testWindowedResolution()
 {
 	return FacadeStyleWindowedResolutionTest(hInstance, nCmdShow).test();
 }

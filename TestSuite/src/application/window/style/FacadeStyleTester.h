@@ -9,11 +9,11 @@
 #include "FacadeStyleWindowedTest.h"
 #include "FacadeStyleWindowedResolutionTest.h"
 
-class WindowStyleTester
+class FacadeStyleTester
 {
 public:
-	WindowStyleTester(HINSTANCE, int);
-	~WindowStyleTester();
+	FacadeStyleTester(HINSTANCE, int);
+	~FacadeStyleTester();
 
 	std::string test();
 
