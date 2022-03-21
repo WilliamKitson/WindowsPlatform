@@ -32,3 +32,8 @@ bool WindowsPlatform::SubordianteFacade::getMouse(MouseButtons)
 {
 	return false;
 }
+
+bool WindowsPlatform::SubordianteFacade::getKeyboard(KeyboardKeys)
+{
+	return false;
+}

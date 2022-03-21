@@ -11,21 +11,24 @@ WindowDefaultKeyboardTest::~WindowDefaultKeyboardTest()
 
 std::string WindowDefaultKeyboardTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window default keyboard test"
-	};
+		"facade default keyboard test"
+	);
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::KeyboardKeys::size; i++)
 	{
-		successes += unit.getKeyboard((WindowsPlatform::KeyboardKeys)i) == false;
+		successes += unit->getKeyboard((WindowsPlatform::KeyboardKeys)i) == false;
 	}
+
+	delete unit;
+	unit = nullptr;
 
 	if (successes == (int)WindowsPlatform::KeyboardKeys::size)
 	{
 		return std::string();
 	}
 
-	return "window default keyboard test failed\n";
+	return "facade default keyboard test failed\n";
 }
