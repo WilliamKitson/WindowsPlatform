@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowResolutionDefaultWidthTest.h"
+#include "FacadeResolutionDefaultWidthTest.h"
 #include "WindowResolutionDefaultHeightTest.h"
 #include "WindowResolutionSetWidthTest.h"
 #include "WindowResolutionSetHeightTest.h"

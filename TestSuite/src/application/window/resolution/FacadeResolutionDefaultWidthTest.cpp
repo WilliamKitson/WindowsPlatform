@@ -1,15 +1,15 @@
-#include "WindowResolutionDefaultWidthTest.h"
+#include "FacadeResolutionDefaultWidthTest.h"
 
-WindowResolutionDefaultWidthTest::WindowResolutionDefaultWidthTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeResolutionDefaultWidthTest::FacadeResolutionDefaultWidthTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowResolutionDefaultWidthTest::~WindowResolutionDefaultWidthTest()
+FacadeResolutionDefaultWidthTest::~FacadeResolutionDefaultWidthTest()
 {
 }
 
-std::string WindowResolutionDefaultWidthTest::test()
+std::string FacadeResolutionDefaultWidthTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

@@ -69,9 +69,6 @@
     <ClCompile Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\resolution\WindowResolutionDefaultWidthTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\resolution\WindowResolutionMinimumHeightTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -273,6 +270,9 @@
     <ClCompile Include="src\application\window\tag\FacadeTagTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -324,9 +324,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\resolution\WindowResolutionDefaultWidthTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\resolution\WindowResolutionMinimumHeightTest.h">
@@ -528,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\tag\FacadeTagTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
