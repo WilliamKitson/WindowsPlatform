@@ -50,7 +50,6 @@ namespace WindowsPlatform
 		static void processDrag(LPARAM);
 		static RAWINPUT* initialiseRawInputData(LPARAM);
 		static void processXbuttonDown(WPARAM);
-		static void processWheel(WPARAM);
 		static void processXbuttonUp(WPARAM);
 
 

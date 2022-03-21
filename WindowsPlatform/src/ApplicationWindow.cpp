@@ -316,7 +316,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_MOUSEWHEEL:
 	{
-		processWheel(wParam);
+		active->mouse.wheel(wParam);
 		return 0;
 	}
 	break;
@@ -419,17 +419,6 @@ void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
 	}
 	
 	active->mouse.press(MouseButtons::mouse_MB5);
-}
-
-void WindowsPlatform::ApplicationWindow::processWheel(WPARAM wParam)
-{
-	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
-	{
-		active->mouse.press(MouseButtons::mouse_scrollForwards);
-		return;
-	}
-
-	active->mouse.press(MouseButtons::mouse_scrollBackwards);
 }
 
 void WindowsPlatform::ApplicationWindow::processXbuttonUp(WPARAM wParam)
