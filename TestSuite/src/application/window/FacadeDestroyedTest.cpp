@@ -1,11 +1,11 @@
-#include "WindowDestroyedTest.h"
+#include "FacadeDestroyedTest.h"
 
-WindowDestroyedTest::WindowDestroyedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDestroyedTest::FacadeDestroyedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDestroyedTest::~WindowDestroyedTest()
+FacadeDestroyedTest::~FacadeDestroyedTest()
 {
 }
 
@@ -37,7 +37,7 @@ BOOL CALLBACK destroyedTestEnumProcedure(HWND window, LPARAM)
 	return TRUE;
 }
 
-std::string WindowDestroyedTest::test()
+std::string FacadeDestroyedTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

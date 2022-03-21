@@ -8,7 +8,7 @@
 #include "resolution/FacadeResolutionTester.h"
 #include "style/FacadeStyleTester.h"
 #include "event/FacadeEventTester.h"
-#include "WindowDestroyedTest.h"
+#include "FacadeDestroyedTest.h"
 #include "WindowOpenPostQuitTest.h"
 
 class WindowTester

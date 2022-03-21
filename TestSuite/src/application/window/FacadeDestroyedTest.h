@@ -7,11 +7,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDestroyedTest
+class FacadeDestroyedTest
 {
 public:
-	WindowDestroyedTest(HINSTANCE, int);
-	~WindowDestroyedTest();
+	FacadeDestroyedTest(HINSTANCE, int);
+	~FacadeDestroyedTest();
 
 	std::string test();
 

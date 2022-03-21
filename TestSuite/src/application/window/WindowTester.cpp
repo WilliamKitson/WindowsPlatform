@@ -51,7 +51,7 @@ std::string WindowTester::testEvent()
 
 std::string WindowTester::testDestroyed()
 {
-	return WindowDestroyedTest(hInstance, nCmdShow).test();
+	return FacadeDestroyedTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testOpenPostQuit()

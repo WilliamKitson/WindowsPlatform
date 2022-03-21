@@ -195,6 +195,7 @@
     <ClCompile Include="src\application\window\event\FacadeEventMouseTest.cpp" />
     <ClCompile Include="src\application\window\event\FacadeEventQuitTest.cpp" />
     <ClCompile Include="src\application\window\event\FacadeEventTester.cpp" />
+    <ClCompile Include="src\application\window\FacadeDestroyedTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionMinimumHeightTest.cpp" />
@@ -211,7 +212,6 @@
     <ClCompile Include="src\application\window\tag\FacadeTagParameterTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagTester.cpp" />
-    <ClCompile Include="src\application\window\WindowDestroyedTest.cpp" />
     <ClCompile Include="src\application\window\WindowOpenPostQuitTest.cpp" />
     <ClCompile Include="src\application\window\WindowTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
@@ -283,6 +283,7 @@
     <ClInclude Include="src\application\window\event\FacadeEventMouseTest.h" />
     <ClInclude Include="src\application\window\event\FacadeEventQuitTest.h" />
     <ClInclude Include="src\application\window\event\FacadeEventTester.h" />
+    <ClInclude Include="src\application\window\FacadeDestroyedTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionMinimumHeightTest.h" />
@@ -299,7 +300,6 @@
     <ClInclude Include="src\application\window\tag\FacadeTagParameterTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagTester.h" />
-    <ClInclude Include="src\application\window\WindowDestroyedTest.h" />
     <ClInclude Include="src\application\window\WindowOpenPostQuitTest.h" />
     <ClInclude Include="src\application\window\WindowTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
