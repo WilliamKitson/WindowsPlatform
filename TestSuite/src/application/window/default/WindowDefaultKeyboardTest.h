@@ -5,11 +5,11 @@
 
 #include "ApplicationWindow.h"
 
-class WindowDefaultButtonsTest
+class WindowDefaultKeyboardTest
 {
 public:
-	WindowDefaultButtonsTest(HINSTANCE, int);
-	~WindowDefaultButtonsTest();
+	WindowDefaultKeyboardTest(HINSTANCE, int);
+	~WindowDefaultKeyboardTest();
 
 	std::string test();
 

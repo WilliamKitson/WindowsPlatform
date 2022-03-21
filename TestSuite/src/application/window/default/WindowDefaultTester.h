@@ -8,7 +8,7 @@
 #include "WindowDefaultCursorTest.h"
 #include "WindowDefaultDragTest.h"
 #include "WindowDefaultMouseTest.h"
-#include "WindowDefaultButtonsTest.h"
+#include "WindowDefaultKeyboardTest.h"
 
 class WindowDefaultTester
 {
@@ -25,7 +25,7 @@ private:
 	std::string testCursor();
 	std::string testDrag();
 	std::string testMouse();
-	std::string testButtons();
+	std::string testKeyboard();
 
 
 private:

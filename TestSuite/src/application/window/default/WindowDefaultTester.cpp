@@ -18,7 +18,7 @@ std::string WindowDefaultTester::test()
 	failures += testCursor();
 	failures += testDrag();
 	failures += testMouse();
-	failures += testButtons();
+	failures += testKeyboard();
 
 	return failures;
 }
@@ -48,7 +48,7 @@ std::string WindowDefaultTester::testMouse()
 	return WindowDefaultMouseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testButtons()
+std::string WindowDefaultTester::testKeyboard()
 {
-	return WindowDefaultButtonsTest(hInstance, nCmdShow).test();
+	return WindowDefaultKeyboardTest(hInstance, nCmdShow).test();
 }
