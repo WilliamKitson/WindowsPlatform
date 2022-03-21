@@ -11,20 +11,23 @@ WindowEventDragTest::~WindowEventDragTest()
 
 std::string WindowEventDragTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		tagPrefix
-	};
+	);
 
-	while (unit.getKeyboard(WindowsPlatform::KeyboardKeys::keyboard_ESC) == false)
+	while (unit->getQuit() == false)
 	{
 		Sleep(1);
-		unit.update();
+		unit->update();
 
-		std::string tag = tagPrefix + "(x:" + std::to_string(unit.getDrag().x) + "/y:" + std::to_string(unit.getDrag().y) + ")";
-		unit.setTag(tag);
+		std::string tag = tagPrefix + "(x:" + std::to_string(unit->getDrag().x) + "/y:" + std::to_string(unit->getDrag().y) + ")";
+		unit->setTag(tag);
 	}
+
+	delete unit;
+	unit = nullptr;
 
 	return std::string();
 }

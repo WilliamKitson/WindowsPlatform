@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "WindowEventDragTest.h"
 #include "SubordinateImplimentation.h"
 
 class WindowEventDragTest
