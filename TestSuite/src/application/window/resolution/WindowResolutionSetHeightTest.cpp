@@ -11,30 +11,33 @@ WindowResolutionSetHeightTest::~WindowResolutionSetHeightTest()
 
 std::string WindowResolutionSetHeightTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution set height test"
-	};
+		"facade resolution set height test"
+	);
 
 	WindowsPlatform::Vector2 set{
 		0,
 		(float)height
 	};
 
-	unit.setResolution(set);
+	unit->setResolution(set);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.bottom - resolution.top) == height)
 	{
 		return std::string();
 	}
 
-	return "windows resolution set height test failed\n";
+	return "facade resolution set height test failed\n";
 }
