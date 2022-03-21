@@ -11,10 +11,21 @@ WindowDefaultCursorTest::~WindowDefaultCursorTest()
 
 std::string WindowDefaultCursorTest::test()
 {
-	if (WindowsPlatform::SubordinateImplimentation(hInstance, nCmdShow, "window default cursor test").getCursor() == WindowsPlatform::Vector2())
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+		hInstance,
+		nCmdShow,
+		"facade default cursor test"
+	);
+
+	WindowsPlatform::Vector2 cursor = unit->getCursor();
+
+	delete unit;
+	unit = nullptr;
+
+	if (cursor == WindowsPlatform::Vector2())
 	{
 		return std::string();
 	}
 
-	return "windows default cursor test failed\n";
+	return "facade default cursor test failed\n";
 }

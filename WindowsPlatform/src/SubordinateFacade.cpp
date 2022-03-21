@@ -17,3 +17,8 @@ bool WindowsPlatform::SubordianteFacade::getMinimise()
 {
 	return false;
 }
+
+WindowsPlatform::Vector2 WindowsPlatform::SubordianteFacade::getCursor()
+{
+	return Vector2();
+}

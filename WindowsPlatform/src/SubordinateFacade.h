@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Vector2.h"
+
 namespace WindowsPlatform
 {
 	class SubordianteFacade
@@ -10,6 +12,7 @@ namespace WindowsPlatform
 
 		virtual bool getQuit();
 		virtual bool getMinimise();
+		virtual Vector2 getCursor();
 	};
 }
 
