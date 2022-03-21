@@ -1,15 +1,15 @@
-#include "WindowEventDragTest.h"
+#include "FacadeEventDragTest.h"
 
-WindowEventDragTest::WindowEventDragTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventDragTest::FacadeEventDragTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tagPrefix{ "window event drag test, ESC TO CONTINUE" }
 {
 }
 
-WindowEventDragTest::~WindowEventDragTest()
+FacadeEventDragTest::~FacadeEventDragTest()
 {
 }
 
-std::string WindowEventDragTest::test()
+std::string FacadeEventDragTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

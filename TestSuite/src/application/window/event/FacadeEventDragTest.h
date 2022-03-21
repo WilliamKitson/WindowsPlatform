@@ -3,14 +3,14 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowEventDragTest.h"
+#include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowEventDragTest
+class FacadeEventDragTest
 {
 public:
-	WindowEventDragTest(HINSTANCE, int);
-	~WindowEventDragTest();
+	FacadeEventDragTest(HINSTANCE, int);
+	~FacadeEventDragTest();
 
 	std::string test();
 

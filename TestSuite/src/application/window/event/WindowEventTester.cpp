@@ -40,7 +40,7 @@ std::string WindowEventTester::testCursor()
 
 std::string WindowEventTester::testDrag()
 {
-	return WindowEventDragTest(hInstance, nCmdShow).test();
+	return FacadeEventDragTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testMouse()

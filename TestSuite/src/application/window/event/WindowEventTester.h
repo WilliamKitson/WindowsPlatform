@@ -6,7 +6,7 @@
 #include "FacadeEventQuitTest.h"
 #include "FacadeEventMinimiseTest.h"
 #include "FacadeEventCursorTest.h"
-#include "WindowEventDragTest.h"
+#include "FacadeEventDragTest.h"
 #include "WindowEventMouseTest.h"
 #include "WindowEventKeyboardTest.h"
 
