@@ -205,9 +205,9 @@
     <ClCompile Include="src\application\window\style\FacadeStyleBorderlessResolutionTest.cpp" />
     <ClCompile Include="src\application\window\style\FacadeStyleBorderlessTest.cpp" />
     <ClCompile Include="src\application\window\style\FacadeStyleDefaultTest.cpp" />
+    <ClCompile Include="src\application\window\style\FacadeStyleWindowedTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleTester.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleWindowedResolutionTest.cpp" />
-    <ClCompile Include="src\application\window\style\WindowStyleWindowedTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagParameterTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagTester.cpp" />
@@ -293,9 +293,9 @@
     <ClInclude Include="src\application\window\style\FacadeStyleBorderlessResolutionTest.h" />
     <ClInclude Include="src\application\window\style\FacadeStyleBorderlessTest.h" />
     <ClInclude Include="src\application\window\style\FacadeStyleDefaultTest.h" />
+    <ClInclude Include="src\application\window\style\FacadeStyleWindowedTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleTester.h" />
     <ClInclude Include="src\application\window\style\WindowStyleWindowedResolutionTest.h" />
-    <ClInclude Include="src\application\window\style\WindowStyleWindowedTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagParameterTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagTester.h" />

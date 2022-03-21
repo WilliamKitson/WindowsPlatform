@@ -39,7 +39,7 @@ std::string WindowStyleTester::testBorderlessResolution()
 
 std::string WindowStyleTester::testWindowed()
 {
-	return WindowStyleWindowedTest(hInstance, nCmdShow).test();
+	return FacadeStyleWindowedTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowStyleTester::testWindowedResolution()

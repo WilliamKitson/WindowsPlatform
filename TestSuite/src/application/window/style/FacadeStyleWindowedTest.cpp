@@ -1,15 +1,15 @@
-#include "WindowStyleWindowedTest.h"
+#include "FacadeStyleWindowedTest.h"
 
-WindowStyleWindowedTest::WindowStyleWindowedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeStyleWindowedTest::FacadeStyleWindowedTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowStyleWindowedTest::~WindowStyleWindowedTest()
+FacadeStyleWindowedTest::~FacadeStyleWindowedTest()
 {
 }
 
-std::string WindowStyleWindowedTest::test()
+std::string FacadeStyleWindowedTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

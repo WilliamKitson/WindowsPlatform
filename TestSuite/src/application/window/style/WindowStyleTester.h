@@ -6,7 +6,7 @@
 #include "FacadeStyleDefaultTest.h"
 #include "FacadeStyleBorderlessTest.h"
 #include "FacadeStyleBorderlessResolutionTest.h"
-#include "WindowStyleWindowedTest.h"
+#include "FacadeStyleWindowedTest.h"
 #include "WindowStyleWindowedResolutionTest.h"
 
 class WindowStyleTester
