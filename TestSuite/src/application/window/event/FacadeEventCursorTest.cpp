@@ -1,15 +1,15 @@
-#include "WindowEventCursorTest.h"
+#include "FacadeEventCursorTest.h"
 
-WindowEventCursorTest::WindowEventCursorTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventCursorTest::FacadeEventCursorTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, itterations{ 4 }, successes{ 0 }
 {
 }
 
-WindowEventCursorTest::~WindowEventCursorTest()
+FacadeEventCursorTest::~FacadeEventCursorTest()
 {
 }
 
-std::string WindowEventCursorTest::test()
+std::string FacadeEventCursorTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

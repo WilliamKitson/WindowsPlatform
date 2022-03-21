@@ -35,7 +35,7 @@ std::string WindowEventTester::testMinimise()
 
 std::string WindowEventTester::testCursor()
 {
-	return WindowEventCursorTest(hInstance, nCmdShow).test();
+	return FacadeEventCursorTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testDrag()
