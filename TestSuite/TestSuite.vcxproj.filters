@@ -279,6 +279,9 @@
     <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\facade\quit\FacadeQuitResetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -540,6 +543,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\quit\FacadeQuitResetTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,7 @@
 
 #include "FacadeQuitDefaultTest.h"
 #include "FacadeQuitEventTest.h"
+#include "FacadeQuitResetTest.h"
 
 class FacadeQuitTester
 {
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testDefault();
 	std::string testEvent();
+	std::string testReset();
 
 
 private:
