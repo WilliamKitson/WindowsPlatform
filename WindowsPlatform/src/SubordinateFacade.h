@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Windows.h>
+#include <string>
 
 #include "Vector2.h"
 #include "MouseButtons.h"
@@ -21,6 +22,7 @@ namespace WindowsPlatform
 		virtual Vector2 getDrag();
 		virtual bool getMouse(MouseButtons);
 		virtual bool getKeyboard(KeyboardKeys);
+		virtual void setTag(std::string);
 	};
 }
 

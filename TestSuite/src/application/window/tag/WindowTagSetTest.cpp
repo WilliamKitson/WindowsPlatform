@@ -11,20 +11,24 @@ WindowTagSetTest::~WindowTagSetTest()
 
 std::string WindowTagSetTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window tag set test"
-	};
+		"facade tag set test"
+	);
 
-	unit.setTag(tag);
+	unit->setTag(tag);
+	std::wstring title = getWindowTitle(unit->getWindow());
 
-	if (std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag) == getWindowTitle(unit.getWindow()))
+	delete unit;
+	unit = nullptr;
+
+	if (std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag) == title)
 	{
 		return std::string();
 	}
 
-	return "window tag set test failed\n";
+	return "facade tag set test failed\n";
 }
 
 std::wstring WindowTagSetTest::getWindowTitle(HWND window)

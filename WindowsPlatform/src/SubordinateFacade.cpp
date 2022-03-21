@@ -42,3 +42,7 @@ bool WindowsPlatform::SubordianteFacade::getKeyboard(KeyboardKeys)
 {
 	return false;
 }
+
+void WindowsPlatform::SubordianteFacade::setTag(std::string)
+{
+}
