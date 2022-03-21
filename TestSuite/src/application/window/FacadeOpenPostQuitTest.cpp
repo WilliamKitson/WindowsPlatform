@@ -1,15 +1,15 @@
-#include "WindowOpenPostQuitTest.h"
+#include "FacadeOpenPostQuitTest.h"
 
-WindowOpenPostQuitTest::WindowOpenPostQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeOpenPostQuitTest::FacadeOpenPostQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowOpenPostQuitTest::~WindowOpenPostQuitTest()
+FacadeOpenPostQuitTest::~FacadeOpenPostQuitTest()
 {
 }
 
-std::string WindowOpenPostQuitTest::test()
+std::string FacadeOpenPostQuitTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

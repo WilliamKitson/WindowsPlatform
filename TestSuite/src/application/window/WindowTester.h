@@ -9,7 +9,7 @@
 #include "style/FacadeStyleTester.h"
 #include "event/FacadeEventTester.h"
 #include "FacadeDestroyedTest.h"
-#include "WindowOpenPostQuitTest.h"
+#include "FacadeOpenPostQuitTest.h"
 
 class WindowTester
 {

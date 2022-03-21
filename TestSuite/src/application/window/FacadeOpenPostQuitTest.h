@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowOpenPostQuitTest
+class FacadeOpenPostQuitTest
 {
 public:
-	WindowOpenPostQuitTest(HINSTANCE, int);
-	~WindowOpenPostQuitTest();
+	FacadeOpenPostQuitTest(HINSTANCE, int);
+	~FacadeOpenPostQuitTest();
 
 	std::string test();
 
