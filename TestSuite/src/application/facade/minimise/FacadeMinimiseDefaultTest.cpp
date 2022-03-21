@@ -1,4 +1,4 @@
-#include "FacadeDefaultMinimiseTest.h"
+#include "FacadeMinimiseDefaultTest.h"
 
 FacadeDefaultMinimiseTest::FacadeDefaultMinimiseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
@@ -14,7 +14,7 @@ std::string FacadeDefaultMinimiseTest::test()
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance, 
 		nCmdShow, 
-		"facade default minimise test"
+		"facade minimise defualt test"
 	);
 
 	bool minimise = unit->getMinimise();
@@ -27,5 +27,5 @@ std::string FacadeDefaultMinimiseTest::test()
 		return std::string();
 	}
 
-	return "facade default minimise test failed\n";
+	return "facade minimise default test failed\n";
 }

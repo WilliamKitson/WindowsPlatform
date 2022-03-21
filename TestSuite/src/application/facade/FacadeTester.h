@@ -4,6 +4,7 @@
 #include <string>
 
 #include "quit/FacadeQuitTester.h"
+#include "minimise/FacadeMinimiseTester.h"
 #include "default/FacadeDefaultTester.h"
 #include "tag/FacadeTagTester.h"
 #include "resolution/FacadeResolutionTester.h"
@@ -24,6 +25,7 @@ public:
 
 private:
 	std::string testQuit();
+	std::string testMinimise();
 	std::string testDefault();
 	std::string testTag();
 	std::string testResolution();
