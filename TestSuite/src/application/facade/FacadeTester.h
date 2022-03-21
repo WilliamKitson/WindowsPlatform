@@ -10,6 +10,7 @@
 #include "event/FacadeEventTester.h"
 #include "FacadeDestroyedTest.h"
 #include "FacadeOpenPostQuitTest.h"
+#include "FacadeDeltaTest.h"
 
 class FacadeTester
 {
@@ -28,6 +29,7 @@ private:
 	std::string testEvent();
 	std::string testDestroyed();
 	std::string testOpenPostQuit();
+	std::string testDelta();
 
 
 private:

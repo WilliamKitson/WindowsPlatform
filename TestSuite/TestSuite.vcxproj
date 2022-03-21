@@ -170,6 +170,7 @@
     <ClCompile Include="src\application\facade\event\FacadeEventMouseTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventQuitTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventTester.cpp" />
+    <ClCompile Include="src\application\facade\FacadeDeltaTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeDestroyedTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeOpenPostQuitTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
@@ -258,6 +259,7 @@
     <ClInclude Include="src\application\facade\event\FacadeEventMouseTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventQuitTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventTester.h" />
+    <ClInclude Include="src\application\facade\FacadeDeltaTest.h" />
     <ClInclude Include="src\application\facade\FacadeDestroyedTest.h" />
     <ClInclude Include="src\application\facade\FacadeOpenPostQuitTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />

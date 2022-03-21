@@ -10,6 +10,7 @@
 #include "Vector2.h"
 #include "Mouse.h"
 #include "Keyboard.h"
+#include "DeltaTimer.h"
 #include "ResolutionValidator.h"
 
 namespace WindowsPlatform
@@ -29,6 +30,7 @@ namespace WindowsPlatform
 		virtual Vector2 getDrag();
 		virtual bool getMouse(MouseButtons);
 		virtual bool getKeyboard(KeyboardKeys);
+		virtual float getDelta();
 		virtual void setTag(std::string);
 		virtual void setResolution(Vector2);
 		virtual void setBorderless();
@@ -62,6 +64,7 @@ namespace WindowsPlatform
 		Vector2 drag;
 		Mouse mouse;
 		Keyboard keyboard;
+		DeltaTimer delta;
 		static SubordinateImplimentation* active;
 	};
 }

@@ -47,6 +47,11 @@ bool WindowsPlatform::SubordianteFacade::getKeyboard(KeyboardKeys)
 	return false;
 }
 
+float WindowsPlatform::SubordianteFacade::getDelta()
+{
+	return 0.0f;
+}
+
 void WindowsPlatform::SubordianteFacade::setTag(std::string)
 {
 }

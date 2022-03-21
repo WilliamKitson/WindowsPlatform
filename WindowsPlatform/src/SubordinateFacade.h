@@ -23,6 +23,7 @@ namespace WindowsPlatform
 		virtual Vector2 getDrag();
 		virtual bool getMouse(MouseButtons);
 		virtual bool getKeyboard(KeyboardKeys);
+		virtual float getDelta();
 		virtual void setTag(std::string);
 		virtual void setResolution(Vector2);
 		virtual void setBorderless();

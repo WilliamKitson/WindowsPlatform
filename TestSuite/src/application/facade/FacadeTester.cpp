@@ -20,6 +20,7 @@ std::string FacadeTester::test()
 	failures += testEvent();
 	failures += testDestroyed();
 	failures += testOpenPostQuit();
+	failures += testDelta();
 
 	return failures;
 }
@@ -57,4 +58,9 @@ std::string FacadeTester::testDestroyed()
 std::string FacadeTester::testOpenPostQuit()
 {
 	return FacadeOpenPostQuitTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeTester::testDelta()
+{
+	return FacadeDeltaTest(hInstance, nCmdShow).test();
 }

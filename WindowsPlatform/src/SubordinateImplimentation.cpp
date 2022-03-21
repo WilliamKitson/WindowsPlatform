@@ -1,7 +1,7 @@
 #include "SubordinateImplimentation.h"
 
 WindowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: SubordianteFacade(), nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, drag(), mouse(), keyboard()
+	: SubordianteFacade(), nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -18,6 +18,7 @@ void WindowsPlatform::SubordinateImplimentation::update()
 	resetDrag();
 	mouse.reset();
 	messageLoop();
+	delta.update();
 }
 
 HWND WindowsPlatform::SubordinateImplimentation::getWindow()
@@ -53,6 +54,11 @@ bool WindowsPlatform::SubordinateImplimentation::getMouse(MouseButtons button)
 bool WindowsPlatform::SubordinateImplimentation::getKeyboard(KeyboardKeys key)
 {
 	return keyboard.getKey(key);
+}
+
+float WindowsPlatform::SubordinateImplimentation::getDelta()
+{
+	return delta.getDelta();
 }
 
 void WindowsPlatform::SubordinateImplimentation::setTag(std::string value)
