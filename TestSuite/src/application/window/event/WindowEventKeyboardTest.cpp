@@ -11,29 +11,32 @@ WindowEventKeyboardTest::~WindowEventKeyboardTest()
 
 std::string WindowEventKeyboardTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window event keyboard test"
-	};
+		"facade event keyboard test"
+	);
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::KeyboardKeys::size; i++)
 	{
-		postDown(unit.getWindow(), (WindowsPlatform::KeyboardKeys)i);
-		unit.update();
-		successes += unit.getKeyboard((WindowsPlatform::KeyboardKeys)i) == true;
+		postDown(unit->getWindow(), (WindowsPlatform::KeyboardKeys)i);
+		unit->update();
+		successes += unit->getKeyboard((WindowsPlatform::KeyboardKeys)i) == true;
 
-		postUp(unit.getWindow(), (WindowsPlatform::KeyboardKeys)i);
-		unit.update();
-		successes += unit.getKeyboard((WindowsPlatform::KeyboardKeys)i) == false;
+		postUp(unit->getWindow(), (WindowsPlatform::KeyboardKeys)i);
+		unit->update();
+		successes += unit->getKeyboard((WindowsPlatform::KeyboardKeys)i) == false;
 	}
+
+	delete unit;
+	unit = nullptr;
 
 	if ((successes / 2) == (int)WindowsPlatform::KeyboardKeys::size)
 	{
 		return std::string();
 	}
 
-	return "window event keyboard test failed\n";
+	return "facade event keyboard test failed\n";
 }
 
 void WindowEventKeyboardTest::postDown(HWND window, WindowsPlatform::KeyboardKeys key)

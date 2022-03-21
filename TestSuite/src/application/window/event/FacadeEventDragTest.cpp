@@ -1,7 +1,7 @@
 #include "FacadeEventDragTest.h"
 
 FacadeEventDragTest::FacadeEventDragTest(HINSTANCE hInstanceValue, int nCmdShowValue)
-	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tagPrefix{ "window event drag test, ESC TO CONTINUE" }
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tagPrefix{ "window event drag test, QUIT TO CONTINUE" }
 {
 }
 
