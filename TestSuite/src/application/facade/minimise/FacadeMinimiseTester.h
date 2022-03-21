@@ -4,6 +4,7 @@
 #include <string>
 
 #include "FacadeMinimiseDefaultTest.h"
+#include "FacadeMinimiseEventTest.h"
 
 class FacadeMinimiseTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testEvent();
 
 
 private:

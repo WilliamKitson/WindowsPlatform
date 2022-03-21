@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class FacadeEventMinimiseTest
+class FacadeMinimiseEventTest
 {
 public:
-	FacadeEventMinimiseTest(HINSTANCE, int);
-	~FacadeEventMinimiseTest();
+	FacadeMinimiseEventTest(HINSTANCE, int);
+	~FacadeMinimiseEventTest();
 
 	std::string test();
 

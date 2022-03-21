@@ -198,9 +198,6 @@
     <ClCompile Include="src\application\facade\event\FacadeEventKeyboardTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\facade\event\FacadeEventMinimiseTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\facade\event\FacadeEventMouseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -283,6 +280,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\facade\minimise\FacadeMinimiseEventTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -467,9 +467,6 @@
     <ClInclude Include="src\application\facade\event\FacadeEventKeyboardTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\facade\event\FacadeEventMinimiseTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\application\facade\event\FacadeEventMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -552,6 +549,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\minimise\FacadeMinimiseEventTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

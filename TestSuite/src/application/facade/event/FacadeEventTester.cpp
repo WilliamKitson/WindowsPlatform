@@ -13,18 +13,12 @@ std::string FacadeEventTester::test()
 {
 	std::string failures{ "" };
 
-	failures += testMinimise();
 	failures += testCursor();
 	failures += testDrag();
 	failures += testMouse();
 	failures += testKeyboard();
 
 	return failures;
-}
-
-std::string FacadeEventTester::testMinimise()
-{
-	return FacadeEventMinimiseTest(hInstance, nCmdShow).test();
 }
 
 std::string FacadeEventTester::testCursor()

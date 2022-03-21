@@ -164,7 +164,6 @@
     <ClCompile Include="src\application\facade\event\FacadeEventCursorTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventDragTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventKeyboardTest.cpp" />
-    <ClCompile Include="src\application\facade\event\FacadeEventMinimiseTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventMouseTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventTester.cpp" />
     <ClCompile Include="src\application\facade\FacadeDeltaTest.cpp" />
@@ -172,6 +171,7 @@
     <ClCompile Include="src\application\facade\FacadeOpenPostQuitTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseDefaultTest.cpp" />
+    <ClCompile Include="src\application\facade\minimise\FacadeMinimiseEventTest.cpp" />
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseTester.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitDefaultTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp" />
@@ -256,7 +256,6 @@
     <ClInclude Include="src\application\facade\event\FacadeEventCursorTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventDragTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventKeyboardTest.h" />
-    <ClInclude Include="src\application\facade\event\FacadeEventMinimiseTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventMouseTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventTester.h" />
     <ClInclude Include="src\application\facade\FacadeDeltaTest.h" />
@@ -264,6 +263,7 @@
     <ClInclude Include="src\application\facade\FacadeOpenPostQuitTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseDefaultTest.h" />
+    <ClInclude Include="src\application\facade\minimise\FacadeMinimiseEventTest.h" />
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseTester.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitDefaultTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h" />
