@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowResolutionMinimumWidthTest
+class FacadeResolutionMinimumWidthTest
 {
 public:
-	WindowResolutionMinimumWidthTest(HINSTANCE, int);
-	~WindowResolutionMinimumWidthTest();
+	FacadeResolutionMinimumWidthTest(HINSTANCE, int);
+	~FacadeResolutionMinimumWidthTest();
 
 	std::string test();
 

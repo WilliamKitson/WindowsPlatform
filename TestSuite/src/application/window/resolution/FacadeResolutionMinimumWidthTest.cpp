@@ -1,15 +1,15 @@
-#include "WindowResolutionMinimumWidthTest.h"
+#include "FacadeResolutionMinimumWidthTest.h"
 
-WindowResolutionMinimumWidthTest::WindowResolutionMinimumWidthTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeResolutionMinimumWidthTest::FacadeResolutionMinimumWidthTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowResolutionMinimumWidthTest::~WindowResolutionMinimumWidthTest()
+FacadeResolutionMinimumWidthTest::~FacadeResolutionMinimumWidthTest()
 {
 }
 
-std::string WindowResolutionMinimumWidthTest::test()
+std::string FacadeResolutionMinimumWidthTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
