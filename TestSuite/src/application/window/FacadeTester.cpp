@@ -1,15 +1,15 @@
-#include "WindowTester.h"
+#include "FacadeTester.h"
 
-WindowTester::WindowTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeTester::FacadeTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowTester::~WindowTester()
+FacadeTester::~FacadeTester()
 {
 }
 
-std::string WindowTester::test()
+std::string FacadeTester::test()
 {
 	std::string failures{ "" };
 
@@ -24,37 +24,37 @@ std::string WindowTester::test()
 	return failures;
 }
 
-std::string WindowTester::testDefault()
+std::string FacadeTester::testDefault()
 {
 	return FacadeDefaultTester(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testTag()
+std::string FacadeTester::testTag()
 {
 	return FacadeTagTester(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testResolution()
+std::string FacadeTester::testResolution()
 {
 	return FacadeResolutionTester(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testStyle()
+std::string FacadeTester::testStyle()
 {
 	return FacadeStyleTester(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testEvent()
+std::string FacadeTester::testEvent()
 {
 	return FacadeEventTester(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testDestroyed()
+std::string FacadeTester::testDestroyed()
 {
 	return FacadeDestroyedTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowTester::testOpenPostQuit()
+std::string FacadeTester::testOpenPostQuit()
 {
 	return FacadeOpenPostQuitTest(hInstance, nCmdShow).test();
 }

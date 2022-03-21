@@ -11,11 +11,11 @@
 #include "FacadeDestroyedTest.h"
 #include "FacadeOpenPostQuitTest.h"
 
-class WindowTester
+class FacadeTester
 {
 public:
-	WindowTester(HINSTANCE, int);
-	~WindowTester();
+	FacadeTester(HINSTANCE, int);
+	~FacadeTester();
 
 	std::string test();
 

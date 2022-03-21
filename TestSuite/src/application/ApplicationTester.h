@@ -3,11 +3,11 @@
 #include <Windows.h>
 #include <string>
 
-#include "window/WindowTester.h"
 #include "delta/DeltaTester.h"
 #include "mouse/MouseTester.h"
 #include "keyboard/KeyboardTester.h"
 #include "gamepad/GamepadTester.h"
+#include "window/FacadeTester.h"
 
 class ApplicationTester
 {
@@ -19,11 +19,11 @@ public:
 
 
 private:
-	std::string testWindow();
 	std::string testDelta();
 	std::string testMouse();
 	std::string testKeyboard();
 	std::string testGamepad();
+	std::string testFacade();
 
 
 private:

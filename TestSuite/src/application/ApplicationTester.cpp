@@ -13,18 +13,13 @@ std::string ApplicationTester::test()
 {
 	std::string failures{ "" };
 
-	failures += testWindow();
 	failures += testDelta();
 	failures += testMouse();
 	failures += testKeyboard();
 	failures += testGamepad();
+	failures += testFacade();
 
 	return failures;
-}
-
-std::string ApplicationTester::testWindow()
-{
-	return WindowTester(hInstance, nCmdShow).test();
 }
 
 std::string ApplicationTester::testDelta()
@@ -45,4 +40,9 @@ std::string ApplicationTester::testKeyboard()
 std::string ApplicationTester::testGamepad()
 {
 	return GamepadTester().test();
+}
+
+std::string ApplicationTester::testFacade()
+{
+	return FacadeTester(hInstance, nCmdShow).test();
 }
