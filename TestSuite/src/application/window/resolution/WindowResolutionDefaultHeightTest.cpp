@@ -11,23 +11,26 @@ WindowResolutionDefaultHeightTest::~WindowResolutionDefaultHeightTest()
 
 std::string WindowResolutionDefaultHeightTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution default height test"
-	};
+		"facade resolution default height test"
+	);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.bottom - resolution.top) == 540)
 	{
 		return std::string();
 	}
 
-	return "window resolution default height test failed\n";
+	return "facade resolution default height test failed\n";
 }
