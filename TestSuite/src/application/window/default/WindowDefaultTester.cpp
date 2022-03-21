@@ -50,5 +50,5 @@ std::string WindowDefaultTester::testMouse()
 
 std::string WindowDefaultTester::testKeyboard()
 {
-	return WindowDefaultKeyboardTest(hInstance, nCmdShow).test();
+	return FacadeDefaultKeyboardTest(hInstance, nCmdShow).test();
 }

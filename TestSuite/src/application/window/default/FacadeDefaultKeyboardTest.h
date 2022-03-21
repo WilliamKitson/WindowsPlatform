@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDefaultKeyboardTest
+class FacadeDefaultKeyboardTest
 {
 public:
-	WindowDefaultKeyboardTest(HINSTANCE, int);
-	~WindowDefaultKeyboardTest();
+	FacadeDefaultKeyboardTest(HINSTANCE, int);
+	~FacadeDefaultKeyboardTest();
 
 	std::string test();
 

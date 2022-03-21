@@ -8,7 +8,7 @@
 #include "FacadeDefaultCursorTest.h"
 #include "FacadeDefaultDragTest.h"
 #include "FacadeDefaultMouseTest.h"
-#include "WindowDefaultKeyboardTest.h"
+#include "FacadeDefaultKeyboardTest.h"
 
 class WindowDefaultTester
 {

@@ -1,15 +1,15 @@
-#include "WindowDefaultKeyboardTest.h"
+#include "FacadeDefaultKeyboardTest.h"
 
-WindowDefaultKeyboardTest::WindowDefaultKeyboardTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultKeyboardTest::FacadeDefaultKeyboardTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowDefaultKeyboardTest::~WindowDefaultKeyboardTest()
+FacadeDefaultKeyboardTest::~FacadeDefaultKeyboardTest()
 {
 }
 
-std::string WindowDefaultKeyboardTest::test()
+std::string FacadeDefaultKeyboardTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
