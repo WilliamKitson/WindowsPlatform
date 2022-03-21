@@ -44,5 +44,5 @@ std::string WindowStyleTester::testWindowed()
 
 std::string WindowStyleTester::testWindowedResolution()
 {
-	return WindowStyleWindowedResolutionTest(hInstance, nCmdShow).test();
+	return FacadeStyleWindowedResolutionTest(hInstance, nCmdShow).test();
 }

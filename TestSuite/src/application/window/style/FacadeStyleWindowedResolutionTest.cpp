@@ -1,15 +1,15 @@
-#include "WindowStyleWindowedResolutionTest.h"
+#include "FacadeStyleWindowedResolutionTest.h"
 
-WindowStyleWindowedResolutionTest::WindowStyleWindowedResolutionTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeStyleWindowedResolutionTest::FacadeStyleWindowedResolutionTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowStyleWindowedResolutionTest::~WindowStyleWindowedResolutionTest()
+FacadeStyleWindowedResolutionTest::~FacadeStyleWindowedResolutionTest()
 {
 }
 
-std::string WindowStyleWindowedResolutionTest::test()
+std::string FacadeStyleWindowedResolutionTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
