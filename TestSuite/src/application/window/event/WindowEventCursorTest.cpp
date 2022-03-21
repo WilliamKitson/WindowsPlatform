@@ -11,11 +11,11 @@ WindowEventCursorTest::~WindowEventCursorTest()
 
 std::string WindowEventCursorTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window event cursor test"
-	};
+		"facade event cursor test"
+	);
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -25,20 +25,23 @@ std::string WindowEventCursorTest::test()
 		};
 
 		PostMessage(
-			unit.getWindow(),
+			unit->getWindow(),
 			WM_MOUSEMOVE,
 			0,
 			MAKELPARAM(state.x, state.y)
 		);
 
-		unit.update();
-		successes += unit.getCursor() == state;
+		unit->update();
+		successes += unit->getCursor() == state;
 	}
+
+	delete unit;
+	unit = nullptr;
 
 	if (successes == itterations)
 	{
 		return std::string();
 	}
 
-	return "window event cursor test failed\n";
+	return "facade event cursor test failed\n";
 }
