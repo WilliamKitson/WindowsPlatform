@@ -39,10 +39,10 @@ BOOL CALLBACK destroyedTestEnumProcedure(HWND window, LPARAM)
 
 std::string WindowDestroyedTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation* unit = new WindowsPlatform::SubordinateImplimentation(
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window destroyed test"
+		"facade destroyed test"
 	);
 
 	delete unit;
@@ -53,5 +53,5 @@ std::string WindowDestroyedTest::test()
 		return std::string();
 	}
 
-	return "window destroyed test failed\n";
+	return "facade destroyed test failed\n";
 }
