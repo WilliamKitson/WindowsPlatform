@@ -1,15 +1,15 @@
-#include "WindowEventMinimiseTest.h"
+#include "FacadeEventMinimiseTest.h"
 
-WindowEventMinimiseTest::WindowEventMinimiseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventMinimiseTest::FacadeEventMinimiseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowEventMinimiseTest::~WindowEventMinimiseTest()
+FacadeEventMinimiseTest::~FacadeEventMinimiseTest()
 {
 }
 
-std::string WindowEventMinimiseTest::test()
+std::string FacadeEventMinimiseTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

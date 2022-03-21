@@ -4,7 +4,7 @@
 #include <string>
 
 #include "FacadeEventQuitTest.h"
-#include "WindowEventMinimiseTest.h"
+#include "FacadeEventMinimiseTest.h"
 #include "WindowEventCursorTest.h"
 #include "WindowEventDragTest.h"
 #include "WindowEventMouseTest.h"

@@ -188,11 +188,11 @@
     <ClCompile Include="src\application\window\default\FacadeDefaultMouseTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultQuitTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultTester.cpp" />
+    <ClCompile Include="src\application\window\event\FacadeEventMinimiseTest.cpp" />
     <ClCompile Include="src\application\window\event\FacadeEventQuitTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventDragTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventKeyboardTest.cpp" />
-    <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventMouseTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventTester.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.cpp" />
@@ -276,11 +276,11 @@
     <ClInclude Include="src\application\window\default\FacadeDefaultMouseTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultQuitTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultTester.h" />
+    <ClInclude Include="src\application\window\event\FacadeEventMinimiseTest.h" />
     <ClInclude Include="src\application\window\event\FacadeEventQuitTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventCursorTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventDragTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventKeyboardTest.h" />
-    <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventMouseTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventTester.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.h" />

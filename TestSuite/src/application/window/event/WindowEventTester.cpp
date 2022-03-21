@@ -30,7 +30,7 @@ std::string WindowEventTester::testQuit()
 
 std::string WindowEventTester::testMinimise()
 {
-	return WindowEventMinimiseTest(hInstance, nCmdShow).test();
+	return FacadeEventMinimiseTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testCursor()
