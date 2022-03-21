@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
 class WindowsStyleBorderlessTest

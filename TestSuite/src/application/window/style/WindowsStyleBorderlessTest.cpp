@@ -11,20 +11,26 @@ WindowsStyleBorderlessTest::~WindowsStyleBorderlessTest()
 
 std::string WindowsStyleBorderlessTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window style borderless test"
-	};
+		"facade style borderless test"
+	);
 
-	unit.setBorderless();
+	unit->setBorderless();
 
-	DWORD style = (DWORD)GetWindowLongPtr(unit.getWindow(), GWL_STYLE);
+	DWORD style = (DWORD)GetWindowLongPtr(
+		unit->getWindow(),
+		GWL_STYLE
+	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((style & WS_POPUPWINDOW) == WS_POPUPWINDOW)
 	{
 		return std::string();
 	}
 
-	return "windows style borderless test failed\n";
+	return "facade style borderless test failed\n";
 }
