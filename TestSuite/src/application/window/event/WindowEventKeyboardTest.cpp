@@ -1,20 +1,20 @@
-#include "WindowEventKeysTest.h"
+#include "WindowEventKeyboardTest.h"
 
-WindowEventKeysTest::WindowEventKeysTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+WindowEventKeyboardTest::WindowEventKeyboardTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowEventKeysTest::~WindowEventKeysTest()
+WindowEventKeyboardTest::~WindowEventKeyboardTest()
 {
 }
 
-std::string WindowEventKeysTest::test()
+std::string WindowEventKeyboardTest::test()
 {
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		"window event keys test"
+		"window event keyboard test"
 	};
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::KeyboardKeys::size; i++)
@@ -33,10 +33,10 @@ std::string WindowEventKeysTest::test()
 		return std::string();
 	}
 
-	return "window event keys test failed\n";
+	return "window event keyboard test failed\n";
 }
 
-void WindowEventKeysTest::postDown(HWND window, WindowsPlatform::KeyboardKeys key)
+void WindowEventKeyboardTest::postDown(HWND window, WindowsPlatform::KeyboardKeys key)
 {
 	if (isSysKey(key))
 	{
@@ -58,7 +58,7 @@ void WindowEventKeysTest::postDown(HWND window, WindowsPlatform::KeyboardKeys ke
 	);
 }
 
-void WindowEventKeysTest::postUp(HWND window, WindowsPlatform::KeyboardKeys button)
+void WindowEventKeyboardTest::postUp(HWND window, WindowsPlatform::KeyboardKeys button)
 {
 	if (isSysKey(button))
 	{
@@ -80,7 +80,7 @@ void WindowEventKeysTest::postUp(HWND window, WindowsPlatform::KeyboardKeys butt
 	);
 }
 
-bool WindowEventKeysTest::isSysKey(WindowsPlatform::KeyboardKeys button)
+bool WindowEventKeyboardTest::isSysKey(WindowsPlatform::KeyboardKeys button)
 {
 	if (button == WindowsPlatform::KeyboardKeys::keyboard_F10)
 	{
@@ -95,7 +95,7 @@ bool WindowEventKeysTest::isSysKey(WindowsPlatform::KeyboardKeys button)
 	return false;
 }
 
-WPARAM WindowEventKeysTest::getKeyCode(WindowsPlatform::KeyboardKeys key)
+WPARAM WindowEventKeyboardTest::getKeyCode(WindowsPlatform::KeyboardKeys key)
 {
 	switch (key)
 	{

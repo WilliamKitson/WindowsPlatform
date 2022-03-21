@@ -5,11 +5,11 @@
 
 #include "ApplicationWindow.h"
 
-class WindowEventKeysTest
+class WindowEventKeyboardTest
 {
 public:
-	WindowEventKeysTest(HINSTANCE, int);
-	~WindowEventKeysTest();
+	WindowEventKeyboardTest(HINSTANCE, int);
+	~WindowEventKeyboardTest();
 
 	std::string test();
 

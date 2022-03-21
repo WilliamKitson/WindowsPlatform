@@ -18,7 +18,7 @@ std::string WindowEventTester::test()
 	failures += testCursor();
 	failures += testDrag();
 	failures += testMouse();
-	failures += testKeys();
+	failures += testKeyboard();
 
 	return failures;
 }
@@ -48,7 +48,7 @@ std::string WindowEventTester::testMouse()
 	return WindowEventMouseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testKeys()
+std::string WindowEventTester::testKeyboard()
 {
-	return WindowEventKeysTest(hInstance, nCmdShow).test();
+	return WindowEventKeyboardTest(hInstance, nCmdShow).test();
 }
