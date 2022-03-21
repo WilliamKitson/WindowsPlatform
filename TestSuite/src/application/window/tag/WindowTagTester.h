@@ -4,7 +4,7 @@
 #include <string>
 
 #include "FacadeTagParameterTest.h"
-#include "WindowTagSetTest.h"
+#include "FacadeTagSetTest.h"
 
 class WindowTagTester
 {

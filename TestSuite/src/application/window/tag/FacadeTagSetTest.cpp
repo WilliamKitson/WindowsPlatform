@@ -1,15 +1,15 @@
-#include "WindowTagSetTest.h"
+#include "FacadeTagSetTest.h"
 
-WindowTagSetTest::WindowTagSetTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeTagSetTest::FacadeTagSetTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tag{ "set test" }
 {
 }
 
-WindowTagSetTest::~WindowTagSetTest()
+FacadeTagSetTest::~FacadeTagSetTest()
 {
 }
 
-std::string WindowTagSetTest::test()
+std::string FacadeTagSetTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
@@ -31,7 +31,7 @@ std::string WindowTagSetTest::test()
 	return "facade tag set test failed\n";
 }
 
-std::wstring WindowTagSetTest::getWindowTitle(HWND window)
+std::wstring FacadeTagSetTest::getWindowTitle(HWND window)
 {
 	int size = GetWindowTextLength(window);
 	size++;

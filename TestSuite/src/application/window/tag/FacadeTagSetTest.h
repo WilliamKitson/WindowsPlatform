@@ -8,11 +8,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowTagSetTest
+class FacadeTagSetTest
 {
 public:
-	WindowTagSetTest(HINSTANCE, int);
-	~WindowTagSetTest();
+	FacadeTagSetTest(HINSTANCE, int);
+	~FacadeTagSetTest();
 
 	std::string test();
 

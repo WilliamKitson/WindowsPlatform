@@ -209,7 +209,7 @@
     <ClCompile Include="src\application\window\style\WindowStyleWindowedResolutionTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleWindowedTest.cpp" />
     <ClCompile Include="src\application\window\tag\FacadeTagParameterTest.cpp" />
-    <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
+    <ClCompile Include="src\application\window\tag\FacadeTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
     <ClCompile Include="src\application\window\WindowDestroyedTest.cpp" />
     <ClCompile Include="src\application\window\WindowOpenPostQuitTest.cpp" />
@@ -297,7 +297,7 @@
     <ClInclude Include="src\application\window\style\WindowStyleWindowedResolutionTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleWindowedTest.h" />
     <ClInclude Include="src\application\window\tag\FacadeTagParameterTest.h" />
-    <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
+    <ClInclude Include="src\application\window\tag\FacadeTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
     <ClInclude Include="src\application\window\WindowDestroyedTest.h" />
     <ClInclude Include="src\application\window\WindowOpenPostQuitTest.h" />
