@@ -1,15 +1,15 @@
-#include "WindowResolutionMinimumHeightTest.h"
+#include "FacadeResolutionMinimumHeightTest.h"
 
-WindowResolutionMinimumHeightTest::WindowResolutionMinimumHeightTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeResolutionMinimumHeightTest::FacadeResolutionMinimumHeightTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowResolutionMinimumHeightTest::~WindowResolutionMinimumHeightTest()
+FacadeResolutionMinimumHeightTest::~FacadeResolutionMinimumHeightTest()
 {
 }
 
-std::string WindowResolutionMinimumHeightTest::test()
+std::string FacadeResolutionMinimumHeightTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

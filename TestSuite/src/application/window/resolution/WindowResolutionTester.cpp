@@ -50,5 +50,5 @@ std::string WindowResolutionTester::testMinimumWidth()
 
 std::string WindowResolutionTester::testMinimumHeight()
 {
-	return WindowResolutionMinimumHeightTest(hInstance, nCmdShow).test();
+	return FacadeResolutionMinimumHeightTest(hInstance, nCmdShow).test();
 }
