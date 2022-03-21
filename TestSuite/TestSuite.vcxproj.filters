@@ -144,9 +144,6 @@
     <ClCompile Include="src\presentation\vector2\VectorYTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\default\WindowDefaultDragTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\domain\resolution\default\ResolutionDefaultWidthTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -271,6 +268,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\window\default\FacadeDefaultCursorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\window\default\FacadeDefaultDragTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -401,9 +401,6 @@
     <ClInclude Include="src\presentation\vector2\VectorYTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\window\default\WindowDefaultDragTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\domain\resolution\default\ResolutionDefaultWidthTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -528,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\FacadeDefaultCursorTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\default\FacadeDefaultDragTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

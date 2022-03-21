@@ -40,7 +40,7 @@ std::string WindowDefaultTester::testCursor()
 
 std::string WindowDefaultTester::testDrag()
 {
-	return WindowDefaultDragTest(hInstance, nCmdShow).test();
+	return FacadeDefaultDragTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testMouse()

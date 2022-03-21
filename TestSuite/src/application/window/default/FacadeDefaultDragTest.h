@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDefaultDragTest
+class FacadeDefaultDragTest
 {
 public:
-	WindowDefaultDragTest(HINSTANCE, int);
-	~WindowDefaultDragTest();
+	FacadeDefaultDragTest(HINSTANCE, int);
+	~FacadeDefaultDragTest();
 
 	std::string test();
 

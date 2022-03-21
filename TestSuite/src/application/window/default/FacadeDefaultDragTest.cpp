@@ -1,15 +1,15 @@
-#include "WindowDefaultDragTest.h"
+#include "FacadeDefaultDragTest.h"
 
-WindowDefaultDragTest::WindowDefaultDragTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultDragTest::FacadeDefaultDragTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDefaultDragTest::~WindowDefaultDragTest()
+FacadeDefaultDragTest::~FacadeDefaultDragTest()
 {
 }
 
-std::string WindowDefaultDragTest::test()
+std::string FacadeDefaultDragTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance, 
