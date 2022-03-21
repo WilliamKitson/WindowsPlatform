@@ -1,15 +1,15 @@
-#include "WindowStyleBorderlessResolutionTest.h"
+#include "FacadeStyleBorderlessResolutionTest.h"
 
-WindowStyleBorderlessResolutionTest::WindowStyleBorderlessResolutionTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeStyleBorderlessResolutionTest::FacadeStyleBorderlessResolutionTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowStyleBorderlessResolutionTest::~WindowStyleBorderlessResolutionTest()
+FacadeStyleBorderlessResolutionTest::~FacadeStyleBorderlessResolutionTest()
 {
 }
 
-std::string WindowStyleBorderlessResolutionTest::test()
+std::string FacadeStyleBorderlessResolutionTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
