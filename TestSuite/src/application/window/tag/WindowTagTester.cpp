@@ -21,7 +21,7 @@ std::string WindowTagTester::test()
 
 std::string WindowTagTester::testParameter()
 {
-	return WindowTagParameterTest(hInstance, nCmdShow).test();
+	return FacadeTagParameterTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowTagTester::testSet()

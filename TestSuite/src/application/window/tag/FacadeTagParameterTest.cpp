@@ -1,15 +1,15 @@
-#include "WindowTagParameterTest.h"
+#include "FacadeTagParameterTest.h"
 
-WindowTagParameterTest::WindowTagParameterTest(HINSTANCE hInstanceValue, int nCmdShowValue)
-	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tag{ "window tag parameter test" }
+FacadeTagParameterTest::FacadeTagParameterTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, tag{ "facade tag parameter test" }
 {
 }
 
-WindowTagParameterTest::~WindowTagParameterTest()
+FacadeTagParameterTest::~FacadeTagParameterTest()
 {
 }
 
-std::string WindowTagParameterTest::test()
+std::string FacadeTagParameterTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
@@ -27,10 +27,10 @@ std::string WindowTagParameterTest::test()
 		return std::string();
 	}
 
-	return "window tag parameter test failed\n";
+	return "facade tag parameter test failed\n";
 }
 
-std::wstring WindowTagParameterTest::getWindowTitle(HWND window)
+std::wstring FacadeTagParameterTest::getWindowTitle(HWND window)
 {
 	int size = GetWindowTextLength(window);
 	size++;

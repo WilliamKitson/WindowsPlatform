@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowTagParameterTest.h"
+#include "FacadeTagParameterTest.h"
 #include "WindowTagSetTest.h"
 
 class WindowTagTester
