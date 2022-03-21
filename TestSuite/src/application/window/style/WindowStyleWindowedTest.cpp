@@ -11,16 +11,23 @@ WindowStyleWindowedTest::~WindowStyleWindowedTest()
 
 std::string WindowStyleWindowedTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window style windowed test"
-	};
+		"facade style windowed test"
+	);
 
-	unit.setBorderless();
-	unit.setWindowed();
+	unit->setBorderless();
+	unit->setWindowed();
 
-	DWORD style = (DWORD)GetWindowLongPtr(unit.getWindow(), GWL_STYLE);
+	DWORD style = (DWORD)GetWindowLongPtr(
+		unit->getWindow(), 
+		GWL_STYLE
+	);
+
+	delete unit;
+	unit = nullptr;
+
 	DWORD windowed{ WS_TILED | WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION };
 
 	if ((style & windowed) == windowed)
@@ -28,5 +35,5 @@ std::string WindowStyleWindowedTest::test()
 		return std::string();
 	}
 
-	return "window style windowed test failed\n";
+	return "facade style windowed test failed\n";
 }
