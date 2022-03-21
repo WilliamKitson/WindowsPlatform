@@ -157,6 +157,7 @@
     <ClInclude Include="src\MouseButtons.h" />
     <ClInclude Include="src\RangeNormaliser.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
+    <ClInclude Include="src\SubordinateFacade.h" />
     <ClInclude Include="src\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +168,7 @@
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\RangeNormaliser.cpp" />
     <ClCompile Include="src\ResolutionValidator.cpp" />
+    <ClCompile Include="src\SubordinateFacade.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

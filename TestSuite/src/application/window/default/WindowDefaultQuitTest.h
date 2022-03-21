@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "SubordinateFacade.h"
 #include "ApplicationWindow.h"
 
 class WindowDefaultQuitTest

@@ -48,6 +48,9 @@
     <ClInclude Include="src\MouseButtons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SubordinateFacade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DeltaTimer.cpp">
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SubordinateFacade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

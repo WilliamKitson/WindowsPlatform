@@ -6,6 +6,7 @@
 #include <string>
 #include <codecvt>
 
+#include "SubordinateFacade.h"
 #include "Vector2.h"
 #include "Mouse.h"
 #include "Keyboard.h"
@@ -14,14 +15,15 @@
 namespace WindowsPlatform
 {
 	class ApplicationWindow
+		: public SubordianteFacade
 	{
 	public:
 		ApplicationWindow(HINSTANCE, int, std::string);
-		~ApplicationWindow();
+		virtual ~ApplicationWindow();
 
 		void update();
 		HWND getWindow();
-		bool getQuit();
+		virtual bool getQuit();
 		bool getMinimise();
 		Vector2 getCursor();
 		Vector2 getDrag();

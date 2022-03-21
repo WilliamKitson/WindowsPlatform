@@ -11,10 +11,21 @@ WindowDefaultQuitTest::~WindowDefaultQuitTest()
 
 std::string WindowDefaultQuitTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default quit test").getQuit() == false)
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::ApplicationWindow(
+		hInstance, 
+		nCmdShow, 
+		"facade default quit test"
+	);
+
+	bool quit = unit->getQuit();
+
+	delete unit;
+	unit = nullptr;
+
+	if (quit == false)
 	{
 		return std::string();
 	}
 
-	return "window default quit test failed\n";
+	return "facade default quit test failed\n";
 }
