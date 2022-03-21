@@ -5,7 +5,7 @@
 
 #include "FacadeResolutionDefaultWidthTest.h"
 #include "FacadeResolutionDefaultHeightTest.h"
-#include "WindowResolutionSetWidthTest.h"
+#include "FacadeResolutionSetWidthTest.h"
 #include "WindowResolutionSetHeightTest.h"
 #include "WindowResolutionMinimumWidthTest.h"
 #include "WindowResolutionMinimumHeightTest.h"

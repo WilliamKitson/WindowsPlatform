@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowsResolutionSetWidthTest
+class FacadeResolutionSetWidthTest
 {
 public:
-	WindowsResolutionSetWidthTest(HINSTANCE, int);
-	~WindowsResolutionSetWidthTest();
+	FacadeResolutionSetWidthTest(HINSTANCE, int);
+	~FacadeResolutionSetWidthTest();
 
 	std::string test();
 

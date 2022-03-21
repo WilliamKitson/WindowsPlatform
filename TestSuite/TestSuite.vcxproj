@@ -197,10 +197,10 @@
     <ClCompile Include="src\application\window\event\WindowEventTester.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.cpp" />
+    <ClCompile Include="src\application\window\resolution\FacadeResolutionSetWidthTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionMinimumHeightTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionMinimumWidthTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionSetHeightTest.cpp" />
-    <ClCompile Include="src\application\window\resolution\WindowResolutionSetWidthTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionTester.cpp" />
     <ClCompile Include="src\application\window\style\WindowsStyleBorderlessTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleBorderlessResolutionTest.cpp" />
@@ -285,10 +285,10 @@
     <ClInclude Include="src\application\window\event\WindowEventTester.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultHeightTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionDefaultWidthTest.h" />
+    <ClInclude Include="src\application\window\resolution\FacadeResolutionSetWidthTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionMinimumHeightTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionMinimumWidthTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionSetHeightTest.h" />
-    <ClInclude Include="src\application\window\resolution\WindowResolutionSetWidthTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionTester.h" />
     <ClInclude Include="src\application\window\style\WindowsStyleBorderlessTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleBorderlessResolutionTest.h" />
