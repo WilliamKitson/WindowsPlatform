@@ -7,7 +7,7 @@
 #include "WindowEventMinimiseTest.h"
 #include "WindowEventCursorTest.h"
 #include "WindowEventDragTest.h"
-#include "WindowEventButtonsTest.h"
+#include "WindowEventMouseTest.h"
 #include "WindowEventKeysTest.h"
 
 class WindowEventTester
@@ -24,7 +24,7 @@ private:
 	std::string testMinimise();
 	std::string testCursor();
 	std::string testDrag();
-	std::string testButtons();
+	std::string testMouse();
 	std::string testKeys();
 
 

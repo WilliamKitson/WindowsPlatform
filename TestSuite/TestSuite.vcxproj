@@ -188,11 +188,11 @@
     <ClCompile Include="src\application\window\default\WindowDefaultMouseTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultQuitTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp" />
-    <ClCompile Include="src\application\window\event\WindowEventButtonsTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventDragTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventKeysTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventMinimiseTest.cpp" />
+    <ClCompile Include="src\application\window\event\WindowEventMouseTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventQuitTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventTester.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.cpp" />
@@ -276,11 +276,11 @@
     <ClInclude Include="src\application\window\default\WindowDefaultMouseTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultQuitTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultTester.h" />
-    <ClInclude Include="src\application\window\event\WindowEventButtonsTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventCursorTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventDragTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventKeysTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventMinimiseTest.h" />
+    <ClInclude Include="src\application\window\event\WindowEventMouseTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventQuitTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventTester.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionDefaultHeightTest.h" />

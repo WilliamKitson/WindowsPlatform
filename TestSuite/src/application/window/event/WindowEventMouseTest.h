@@ -5,11 +5,11 @@
 
 #include "ApplicationWindow.h"
 
-class WindowEventButtonsTest
+class WindowEventMouseTest
 {
 public:
-	WindowEventButtonsTest(HINSTANCE, int);
-	~WindowEventButtonsTest();
+	WindowEventMouseTest(HINSTANCE, int);
+	~WindowEventMouseTest();
 
 	std::string test();
 

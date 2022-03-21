@@ -1,15 +1,15 @@
-#include "WindowEventButtonsTest.h"
+#include "WindowEventMouseTest.h"
 
-WindowEventButtonsTest::WindowEventButtonsTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+WindowEventMouseTest::WindowEventMouseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowEventButtonsTest::~WindowEventButtonsTest()
+WindowEventMouseTest::~WindowEventMouseTest()
 {
 }
 
-std::string WindowEventButtonsTest::test()
+std::string WindowEventMouseTest::test()
 {
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
