@@ -10,11 +10,11 @@
 #include "FacadeResolutionMinimumWidthTest.h"
 #include "FacadeResolutionMinimumHeightTest.h"
 
-class WindowResolutionTester
+class FacadeResolutionTester
 {
 public:
-	WindowResolutionTester(HINSTANCE, int);
-	~WindowResolutionTester();
+	FacadeResolutionTester(HINSTANCE, int);
+	~FacadeResolutionTester();
 
 	std::string test();
 

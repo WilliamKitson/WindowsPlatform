@@ -1,15 +1,15 @@
-#include "WindowResolutionTester.h"
+#include "FacadeResolutionTester.h"
 
-WindowResolutionTester::WindowResolutionTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeResolutionTester::FacadeResolutionTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowResolutionTester::~WindowResolutionTester()
+FacadeResolutionTester::~FacadeResolutionTester()
 {
 }
 
-std::string WindowResolutionTester::test()
+std::string FacadeResolutionTester::test()
 {
 	std::string failures{ "" };
 
@@ -23,32 +23,32 @@ std::string WindowResolutionTester::test()
 	return failures;
 }
 
-std::string WindowResolutionTester::testDefaultWidth()
+std::string FacadeResolutionTester::testDefaultWidth()
 {
 	return FacadeResolutionDefaultWidthTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowResolutionTester::testDefaultHeight()
+std::string FacadeResolutionTester::testDefaultHeight()
 {
 	return FacadeResolutionDefaultHeightTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowResolutionTester::testSetWidth()
+std::string FacadeResolutionTester::testSetWidth()
 {
 	return FacadeResolutionSetWidthTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowResolutionTester::testSetHeight()
+std::string FacadeResolutionTester::testSetHeight()
 {
 	return FacadeResolutionSetHeightTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowResolutionTester::testMinimumWidth()
+std::string FacadeResolutionTester::testMinimumWidth()
 {
 	return FacadeResolutionMinimumWidthTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowResolutionTester::testMinimumHeight()
+std::string FacadeResolutionTester::testMinimumHeight()
 {
 	return FacadeResolutionMinimumHeightTest(hInstance, nCmdShow).test();
 }
