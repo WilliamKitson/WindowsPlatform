@@ -1,15 +1,15 @@
-#include "WindowEventQuitTest.h"
+#include "FacadeEventQuitTest.h"
 
-WindowEventQuitTest::WindowEventQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventQuitTest::FacadeEventQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowEventQuitTest::~WindowEventQuitTest()
+FacadeEventQuitTest::~FacadeEventQuitTest()
 {
 }
 
-std::string WindowEventQuitTest::test()
+std::string FacadeEventQuitTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

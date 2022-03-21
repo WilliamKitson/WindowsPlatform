@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowEventQuitTest.h"
+#include "FacadeEventQuitTest.h"
 #include "WindowEventMinimiseTest.h"
 #include "WindowEventCursorTest.h"
 #include "WindowEventDragTest.h"

@@ -25,7 +25,7 @@ std::string WindowEventTester::test()
 
 std::string WindowEventTester::testQuit()
 {
-	return WindowEventQuitTest(hInstance, nCmdShow).test();
+	return FacadeEventQuitTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testMinimise()
