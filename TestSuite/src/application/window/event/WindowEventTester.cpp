@@ -50,5 +50,5 @@ std::string WindowEventTester::testMouse()
 
 std::string WindowEventTester::testKeyboard()
 {
-	return WindowEventKeyboardTest(hInstance, nCmdShow).test();
+	return FacadeEventKeyboardTest(hInstance, nCmdShow).test();
 }

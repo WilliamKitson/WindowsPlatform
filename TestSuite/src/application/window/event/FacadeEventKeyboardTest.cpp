@@ -1,15 +1,15 @@
-#include "WindowEventKeyboardTest.h"
+#include "FacadeEventKeyboardTest.h"
 
-WindowEventKeyboardTest::WindowEventKeyboardTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventKeyboardTest::FacadeEventKeyboardTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowEventKeyboardTest::~WindowEventKeyboardTest()
+FacadeEventKeyboardTest::~FacadeEventKeyboardTest()
 {
 }
 
-std::string WindowEventKeyboardTest::test()
+std::string FacadeEventKeyboardTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
@@ -39,7 +39,7 @@ std::string WindowEventKeyboardTest::test()
 	return "facade event keyboard test failed\n";
 }
 
-void WindowEventKeyboardTest::postDown(HWND window, WindowsPlatform::KeyboardKeys key)
+void FacadeEventKeyboardTest::postDown(HWND window, WindowsPlatform::KeyboardKeys key)
 {
 	if (isSysKey(key))
 	{
@@ -61,7 +61,7 @@ void WindowEventKeyboardTest::postDown(HWND window, WindowsPlatform::KeyboardKey
 	);
 }
 
-void WindowEventKeyboardTest::postUp(HWND window, WindowsPlatform::KeyboardKeys button)
+void FacadeEventKeyboardTest::postUp(HWND window, WindowsPlatform::KeyboardKeys button)
 {
 	if (isSysKey(button))
 	{
@@ -83,7 +83,7 @@ void WindowEventKeyboardTest::postUp(HWND window, WindowsPlatform::KeyboardKeys 
 	);
 }
 
-bool WindowEventKeyboardTest::isSysKey(WindowsPlatform::KeyboardKeys button)
+bool FacadeEventKeyboardTest::isSysKey(WindowsPlatform::KeyboardKeys button)
 {
 	if (button == WindowsPlatform::KeyboardKeys::keyboard_F10)
 	{
@@ -98,7 +98,7 @@ bool WindowEventKeyboardTest::isSysKey(WindowsPlatform::KeyboardKeys button)
 	return false;
 }
 
-WPARAM WindowEventKeyboardTest::getKeyCode(WindowsPlatform::KeyboardKeys key)
+WPARAM FacadeEventKeyboardTest::getKeyCode(WindowsPlatform::KeyboardKeys key)
 {
 	switch (key)
 	{

@@ -8,7 +8,7 @@
 #include "FacadeEventCursorTest.h"
 #include "FacadeEventDragTest.h"
 #include "FacadeEventMouseTest.h"
-#include "WindowEventKeyboardTest.h"
+#include "FacadeEventKeyboardTest.h"
 
 class WindowEventTester
 {
