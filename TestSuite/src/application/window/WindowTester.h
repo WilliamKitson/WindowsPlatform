@@ -7,7 +7,7 @@
 #include "tag/FacadeTagTester.h"
 #include "resolution/FacadeResolutionTester.h"
 #include "style/FacadeStyleTester.h"
-#include "event/WindowEventTester.h"
+#include "event/FacadeEventTester.h"
 #include "WindowDestroyedTest.h"
 #include "WindowOpenPostQuitTest.h"
 

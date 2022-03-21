@@ -10,11 +10,11 @@
 #include "FacadeEventMouseTest.h"
 #include "FacadeEventKeyboardTest.h"
 
-class WindowEventTester
+class FacadeEventTester
 {
 public:
-	WindowEventTester(HINSTANCE, int);
-	~WindowEventTester();
+	FacadeEventTester(HINSTANCE, int);
+	~FacadeEventTester();
 
 	std::string test();
 

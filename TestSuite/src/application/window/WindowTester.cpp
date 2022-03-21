@@ -46,7 +46,7 @@ std::string WindowTester::testStyle()
 
 std::string WindowTester::testEvent()
 {
-	return WindowEventTester(hInstance, nCmdShow).test();
+	return FacadeEventTester(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testDestroyed()

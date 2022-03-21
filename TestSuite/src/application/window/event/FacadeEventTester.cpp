@@ -1,15 +1,15 @@
-#include "WindowEventTester.h"
+#include "FacadeEventTester.h"
 
-WindowEventTester::WindowEventTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventTester::FacadeEventTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowEventTester::~WindowEventTester()
+FacadeEventTester::~FacadeEventTester()
 {
 }
 
-std::string WindowEventTester::test()
+std::string FacadeEventTester::test()
 {
 	std::string failures{ "" };
 
@@ -23,32 +23,32 @@ std::string WindowEventTester::test()
 	return failures;
 }
 
-std::string WindowEventTester::testQuit()
+std::string FacadeEventTester::testQuit()
 {
 	return FacadeEventQuitTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testMinimise()
+std::string FacadeEventTester::testMinimise()
 {
 	return FacadeEventMinimiseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testCursor()
+std::string FacadeEventTester::testCursor()
 {
 	return FacadeEventCursorTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testDrag()
+std::string FacadeEventTester::testDrag()
 {
 	return FacadeEventDragTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testMouse()
+std::string FacadeEventTester::testMouse()
 {
 	return FacadeEventMouseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowEventTester::testKeyboard()
+std::string FacadeEventTester::testKeyboard()
 {
 	return FacadeEventKeyboardTest(hInstance, nCmdShow).test();
 }
