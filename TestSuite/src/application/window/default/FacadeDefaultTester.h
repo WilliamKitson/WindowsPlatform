@@ -10,11 +10,11 @@
 #include "FacadeDefaultMouseTest.h"
 #include "FacadeDefaultKeyboardTest.h"
 
-class WindowDefaultTester
+class FacadeDefaultTester
 {
 public:
-	WindowDefaultTester(HINSTANCE, int);
-	~WindowDefaultTester();
+	FacadeDefaultTester(HINSTANCE, int);
+	~FacadeDefaultTester();
 
 	std::string test();
 

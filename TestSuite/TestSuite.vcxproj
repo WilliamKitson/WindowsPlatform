@@ -187,7 +187,7 @@
     <ClCompile Include="src\application\window\default\FacadeDefaultMinimiseTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultMouseTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultQuitTest.cpp" />
-    <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp" />
+    <ClCompile Include="src\application\window\default\FacadeDefaultTester.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventDragTest.cpp" />
     <ClCompile Include="src\application\window\event\WindowEventKeyboardTest.cpp" />
@@ -275,7 +275,7 @@
     <ClInclude Include="src\application\window\default\FacadeDefaultMinimiseTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultMouseTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultQuitTest.h" />
-    <ClInclude Include="src\application\window\default\WindowDefaultTester.h" />
+    <ClInclude Include="src\application\window\default\FacadeDefaultTester.h" />
     <ClInclude Include="src\application\window\event\WindowEventCursorTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventDragTest.h" />
     <ClInclude Include="src\application\window\event\WindowEventKeyboardTest.h" />

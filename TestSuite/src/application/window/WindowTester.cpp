@@ -26,7 +26,7 @@ std::string WindowTester::test()
 
 std::string WindowTester::testDefault()
 {
-	return WindowDefaultTester(hInstance, nCmdShow).test();
+	return FacadeDefaultTester(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testTag()

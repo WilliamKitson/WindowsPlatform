@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "default/WindowDefaultTester.h"
+#include "default/FacadeDefaultTester.h"
 #include "tag/WindowTagTester.h"
 #include "resolution/WindowResolutionTester.h"
 #include "style/WindowStyleTester.h"

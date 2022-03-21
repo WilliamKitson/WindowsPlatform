@@ -1,15 +1,15 @@
-#include "WindowDefaultTester.h"
+#include "FacadeDefaultTester.h"
 
-WindowDefaultTester::WindowDefaultTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultTester::FacadeDefaultTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDefaultTester::~WindowDefaultTester()
+FacadeDefaultTester::~FacadeDefaultTester()
 {
 }
 
-std::string WindowDefaultTester::test()
+std::string FacadeDefaultTester::test()
 {
 	std::string failures{ "" };
 
@@ -23,32 +23,32 @@ std::string WindowDefaultTester::test()
 	return failures;
 }
 
-std::string WindowDefaultTester::testQuit()
+std::string FacadeDefaultTester::testQuit()
 {
 	return FacadeDefaultQuitTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testMinimise()
+std::string FacadeDefaultTester::testMinimise()
 {
 	return FacadeDefaultMinimiseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testCursor()
+std::string FacadeDefaultTester::testCursor()
 {
 	return FacadeDefaultCursorTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testDrag()
+std::string FacadeDefaultTester::testDrag()
 {
 	return FacadeDefaultDragTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testMouse()
+std::string FacadeDefaultTester::testMouse()
 {
 	return FacadeDefaultMouseTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowDefaultTester::testKeyboard()
+std::string FacadeDefaultTester::testKeyboard()
 {
 	return FacadeDefaultKeyboardTest(hInstance, nCmdShow).test();
 }
