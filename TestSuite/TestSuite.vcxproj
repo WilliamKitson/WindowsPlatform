@@ -202,9 +202,9 @@
     <ClCompile Include="src\application\window\resolution\FacadeResolutionSetHeightTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionSetWidthTest.cpp" />
     <ClCompile Include="src\application\window\resolution\FacadeResolutionTester.cpp" />
+    <ClCompile Include="src\application\window\style\FacadeStyleDefaultTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowsStyleBorderlessTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleBorderlessResolutionTest.cpp" />
-    <ClCompile Include="src\application\window\style\WindowStyleDefaultTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleTester.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleWindowedResolutionTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleWindowedTest.cpp" />
@@ -290,9 +290,9 @@
     <ClInclude Include="src\application\window\resolution\FacadeResolutionSetHeightTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionSetWidthTest.h" />
     <ClInclude Include="src\application\window\resolution\FacadeResolutionTester.h" />
+    <ClInclude Include="src\application\window\style\FacadeStyleDefaultTest.h" />
     <ClInclude Include="src\application\window\style\WindowsStyleBorderlessTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleBorderlessResolutionTest.h" />
-    <ClInclude Include="src\application\window\style\WindowStyleDefaultTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleTester.h" />
     <ClInclude Include="src\application\window\style\WindowStyleWindowedResolutionTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleWindowedTest.h" />

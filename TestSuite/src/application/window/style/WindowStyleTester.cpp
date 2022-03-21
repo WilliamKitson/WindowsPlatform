@@ -24,7 +24,7 @@ std::string WindowStyleTester::test()
 
 std::string WindowStyleTester::testDefault()
 {
-	return WindowStyleDefaultTest(hInstance, nCmdShow).test();
+	return FacadeStyleDefaultTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowStyleTester::testBorderless()

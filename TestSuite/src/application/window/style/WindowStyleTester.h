@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowStyleDefaultTest.h"
+#include "FacadeStyleDefaultTest.h"
 #include "WindowsStyleBorderlessTest.h"
 #include "WindowStyleBorderlessResolutionTest.h"
 #include "WindowStyleWindowedTest.h"
