@@ -11,25 +11,29 @@ WindowOpenPostQuitTest::~WindowOpenPostQuitTest()
 
 std::string WindowOpenPostQuitTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window open post quit test"
-	};
+		"facade open post quit test"
+	);
 
 	PostMessage(
-		unit.getWindow(),
+		unit->getWindow(),
 		WM_CLOSE,
 		0,
 		0
 	);
 
-	unit.update();
+	unit->update();
+	bool open = IsWindow(unit->getWindow());
 
-	if (IsWindow(unit.getWindow()))
+	delete unit;
+	unit = nullptr;
+
+	if (open)
 	{
 		return std::string();
 	}
 
-	return "window open post quit test failed\n";
+	return "facade open post quit test failed\n";
 }

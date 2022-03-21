@@ -29,7 +29,7 @@ BOOL CALLBACK destroyedTestEnumProcedure(HWND window, LPARAM)
 
 	std::wstring title = &buffer[0];
 
-	if (title == L"window destroyed test")
+	if (title == L"facade destroyed test")
 	{
 		return FALSE;
 	}
