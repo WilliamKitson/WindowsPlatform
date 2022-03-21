@@ -5,6 +5,7 @@
 
 #include "FacadeMinimiseDefaultTest.h"
 #include "FacadeMinimiseEventTest.h"
+#include "FacadeMinimiseResetTest.h"
 
 class FacadeMinimiseTester
 {
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testDefault();
 	std::string testEvent();
+	std::string testReset();
 
 
 private:

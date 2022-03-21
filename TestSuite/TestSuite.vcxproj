@@ -172,6 +172,7 @@
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseDefaultTest.cpp" />
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseEventTest.cpp" />
+    <ClCompile Include="src\application\facade\minimise\FacadeMinimiseResetTest.cpp" />
     <ClCompile Include="src\application\facade\minimise\FacadeMinimiseTester.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitDefaultTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp" />
@@ -264,6 +265,7 @@
     <ClInclude Include="src\application\facade\FacadeTester.h" />
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseDefaultTest.h" />
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseEventTest.h" />
+    <ClInclude Include="src\application\facade\minimise\FacadeMinimiseResetTest.h" />
     <ClInclude Include="src\application\facade\minimise\FacadeMinimiseTester.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitDefaultTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h" />

@@ -15,6 +15,7 @@ std::string FacadeMinimiseTester::test()
 
 	failures += testDefault();
 	failures += testEvent();
+	failures += testReset();
 
 	return failures;
 }
@@ -27,4 +28,9 @@ std::string FacadeMinimiseTester::testDefault()
 std::string FacadeMinimiseTester::testEvent()
 {
 	return FacadeMinimiseEventTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeMinimiseTester::testReset()
+{
+	return FacadeMinimiseResetTest(hInstance, nCmdShow).test();
 }
