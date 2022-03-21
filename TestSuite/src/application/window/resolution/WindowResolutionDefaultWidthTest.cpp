@@ -11,23 +11,26 @@ WindowResolutionDefaultWidthTest::~WindowResolutionDefaultWidthTest()
 
 std::string WindowResolutionDefaultWidthTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution default width test"
-	};
+		"facade resolution default width test"
+	);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.right - resolution.left) == 960)
 	{
 		return std::string();
 	}
 
-	return "window resolution default test failed\n";
+	return "facade resolution default test failed\n";
 }
