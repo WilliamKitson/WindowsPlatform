@@ -340,7 +340,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_XBUTTONUP:
 	{
-		processXbuttonUp(wParam);
+		active->mouse.release(wParam);
 		return 0;
 	}
 	break;
@@ -408,17 +408,6 @@ RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lPar
 	GetRawInputData((HRAWINPUT)lParam, RID_INPUT, lpb, &dwSize, sizeof(RAWINPUTHEADER));
 
 	return (RAWINPUT*)lpb;
-}
-
-void WindowsPlatform::ApplicationWindow::processXbuttonUp(WPARAM wParam)
-{
-	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
-	{
-		active->mouse.release(MouseButtons::mouse_MB4);
-		return;
-	}
-
-	active->mouse.release(MouseButtons::mouse_MB5);
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;

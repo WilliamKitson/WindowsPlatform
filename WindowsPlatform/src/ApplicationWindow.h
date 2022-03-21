@@ -49,7 +49,6 @@ namespace WindowsPlatform
 		static void processMinimise(WPARAM);
 		static void processDrag(LPARAM);
 		static RAWINPUT* initialiseRawInputData(LPARAM);
-		static void processXbuttonUp(WPARAM);
 
 
 	private:
