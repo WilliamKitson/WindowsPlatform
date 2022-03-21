@@ -189,9 +189,6 @@
     <ClCompile Include="src\application\facade\default\FacadeDefaultMouseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultQuitTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\facade\default\FacadeDefaultTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -274,6 +271,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\facade\FacadeDeltaTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\facade\quit\FacadeQuitTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\facade\quit\FacadeQuitDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -449,9 +452,6 @@
     <ClInclude Include="src\application\facade\default\FacadeDefaultMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultQuitTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\application\facade\default\FacadeDefaultTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -534,6 +534,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\FacadeDeltaTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\quit\FacadeQuitTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\quit\FacadeQuitDefaultTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

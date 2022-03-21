@@ -1,20 +1,20 @@
-#include "FacadeDefaultQuitTest.h"
+#include "FacadeQuitDefaultTest.h"
 
-FacadeDefaultQuitTest::FacadeDefaultQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeQuitDefaultTest::FacadeQuitDefaultTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-FacadeDefaultQuitTest::~FacadeDefaultQuitTest()
+FacadeQuitDefaultTest::~FacadeQuitDefaultTest()
 {
 }
 
-std::string FacadeDefaultQuitTest::test()
+std::string FacadeQuitDefaultTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance, 
 		nCmdShow, 
-		"facade default quit test"
+		"facade quit default test"
 	);
 
 	bool quit = unit->getQuit();
@@ -27,5 +27,5 @@ std::string FacadeDefaultQuitTest::test()
 		return std::string();
 	}
 
-	return "facade default quit test failed\n";
+	return "facade quit default test failed\n";
 }

@@ -13,6 +13,7 @@ std::string FacadeTester::test()
 {
 	std::string failures{ "" };
 
+	failures += testQuit();
 	failures += testDefault();
 	failures += testTag();
 	failures += testResolution();
@@ -23,6 +24,11 @@ std::string FacadeTester::test()
 	failures += testDelta();
 
 	return failures;
+}
+
+std::string FacadeTester::testQuit()
+{
+	return FacadeQuitTester(hInstance, nCmdShow).test();
 }
 
 std::string FacadeTester::testDefault()

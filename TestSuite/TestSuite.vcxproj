@@ -161,7 +161,6 @@
     <ClCompile Include="src\application\facade\default\FacadeDefaultKeyboardTest.cpp" />
     <ClCompile Include="src\application\facade\default\FacadeDefaultMinimiseTest.cpp" />
     <ClCompile Include="src\application\facade\default\FacadeDefaultMouseTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultQuitTest.cpp" />
     <ClCompile Include="src\application\facade\default\FacadeDefaultTester.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventCursorTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventDragTest.cpp" />
@@ -174,6 +173,8 @@
     <ClCompile Include="src\application\facade\FacadeDestroyedTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeOpenPostQuitTest.cpp" />
     <ClCompile Include="src\application\facade\FacadeTester.cpp" />
+    <ClCompile Include="src\application\facade\quit\FacadeQuitDefaultTest.cpp" />
+    <ClCompile Include="src\application\facade\quit\FacadeQuitTester.cpp" />
     <ClCompile Include="src\application\facade\resolution\FacadeResolutionDefaultHeightTest.cpp" />
     <ClCompile Include="src\application\facade\resolution\FacadeResolutionDefaultWidthTest.cpp" />
     <ClCompile Include="src\application\facade\resolution\FacadeResolutionMinimumHeightTest.cpp" />
@@ -250,7 +251,6 @@
     <ClInclude Include="src\application\facade\default\FacadeDefaultKeyboardTest.h" />
     <ClInclude Include="src\application\facade\default\FacadeDefaultMinimiseTest.h" />
     <ClInclude Include="src\application\facade\default\FacadeDefaultMouseTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultQuitTest.h" />
     <ClInclude Include="src\application\facade\default\FacadeDefaultTester.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventCursorTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventDragTest.h" />
@@ -263,6 +263,8 @@
     <ClInclude Include="src\application\facade\FacadeDestroyedTest.h" />
     <ClInclude Include="src\application\facade\FacadeOpenPostQuitTest.h" />
     <ClInclude Include="src\application\facade\FacadeTester.h" />
+    <ClInclude Include="src\application\facade\quit\FacadeQuitDefaultTest.h" />
+    <ClInclude Include="src\application\facade\quit\FacadeQuitTester.h" />
     <ClInclude Include="src\application\facade\resolution\FacadeResolutionDefaultHeightTest.h" />
     <ClInclude Include="src\application\facade\resolution\FacadeResolutionDefaultWidthTest.h" />
     <ClInclude Include="src\application\facade\resolution\FacadeResolutionMinimumHeightTest.h" />

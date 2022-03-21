@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "quit/FacadeQuitTester.h"
 #include "default/FacadeDefaultTester.h"
 #include "tag/FacadeTagTester.h"
 #include "resolution/FacadeResolutionTester.h"
@@ -22,6 +23,7 @@ public:
 
 
 private:
+	std::string testQuit();
 	std::string testDefault();
 	std::string testTag();
 	std::string testResolution();
