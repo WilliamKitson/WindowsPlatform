@@ -7,7 +7,7 @@
 #include "mouse/MouseTester.h"
 #include "keyboard/KeyboardTester.h"
 #include "gamepad/GamepadTester.h"
-#include "window/FacadeTester.h"
+#include "facade/FacadeTester.h"
 
 class ApplicationTester
 {
