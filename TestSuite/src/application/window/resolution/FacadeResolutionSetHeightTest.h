@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowResolutionSetHeightTest
+class FacadeResolutionSetHeightTest
 {
 public:
-	WindowResolutionSetHeightTest(HINSTANCE, int);
-	~WindowResolutionSetHeightTest();
+	FacadeResolutionSetHeightTest(HINSTANCE, int);
+	~FacadeResolutionSetHeightTest();
 
 	std::string test();
 
