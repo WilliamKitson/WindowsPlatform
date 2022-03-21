@@ -23,6 +23,7 @@ namespace WindowsPlatform
 		virtual bool getMouse(MouseButtons);
 		virtual bool getKeyboard(KeyboardKeys);
 		virtual void setTag(std::string);
+		virtual void setResolution(Vector2);
 	};
 }
 

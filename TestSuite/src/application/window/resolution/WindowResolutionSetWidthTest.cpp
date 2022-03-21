@@ -11,30 +11,33 @@ WindowsResolutionSetWidthTest::~WindowsResolutionSetWidthTest()
 
 std::string WindowsResolutionSetWidthTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution set width test"
-	};
+		"facade resolution set width test"
+	);
 
 	WindowsPlatform::Vector2 set{
 		(float)width,
 		0
 	};
 
-	unit.setResolution(set);
+	unit->setResolution(set);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.right - resolution.left) == width)
 	{
 		return std::string();
 	}
 
-	return "windows resolution set width test failed\n";
+	return "facade resolution set width test failed\n";
 }
