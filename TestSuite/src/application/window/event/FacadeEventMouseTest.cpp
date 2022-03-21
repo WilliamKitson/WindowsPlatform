@@ -1,15 +1,15 @@
-#include "WindowEventMouseTest.h"
+#include "FacadeEventMouseTest.h"
 
-WindowEventMouseTest::WindowEventMouseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeEventMouseTest::FacadeEventMouseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowEventMouseTest::~WindowEventMouseTest()
+FacadeEventMouseTest::~FacadeEventMouseTest()
 {
 }
 
-std::string WindowEventMouseTest::test()
+std::string FacadeEventMouseTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

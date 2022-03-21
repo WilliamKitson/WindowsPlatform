@@ -45,7 +45,7 @@ std::string WindowEventTester::testDrag()
 
 std::string WindowEventTester::testMouse()
 {
-	return WindowEventMouseTest(hInstance, nCmdShow).test();
+	return FacadeEventMouseTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowEventTester::testKeyboard()

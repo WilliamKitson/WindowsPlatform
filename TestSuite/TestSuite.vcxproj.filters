@@ -186,9 +186,6 @@
     <ClCompile Include="src\application\mouse\wheel\MouseWheelResetTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\event\WindowEventMouseTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\event\WindowEventKeyboardTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -271,6 +268,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\window\event\FacadeEventDragTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\window\event\FacadeEventMouseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -443,9 +443,6 @@
     <ClInclude Include="src\application\mouse\wheel\MouseWheelResetTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\window\event\WindowEventMouseTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\application\window\event\WindowEventKeyboardTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -528,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\event\FacadeEventDragTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\event\FacadeEventMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
