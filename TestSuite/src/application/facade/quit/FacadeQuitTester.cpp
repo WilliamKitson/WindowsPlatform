@@ -14,6 +14,7 @@ std::string FacadeQuitTester::test()
 	std::string failures{ "" };
 
 	failures += testDefault();
+	failures += testEvent();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string FacadeQuitTester::test()
 std::string FacadeQuitTester::testDefault()
 {
 	return FacadeQuitDefaultTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeQuitTester::testEvent()
+{
+	return FacadeQuitEventTest(hInstance, nCmdShow).test();
 }

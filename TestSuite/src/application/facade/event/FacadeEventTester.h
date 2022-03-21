@@ -3,7 +3,6 @@
 #include <Windows.h>
 #include <string>
 
-#include "FacadeEventQuitTest.h"
 #include "FacadeEventMinimiseTest.h"
 #include "FacadeEventCursorTest.h"
 #include "FacadeEventDragTest.h"
@@ -20,7 +19,6 @@ public:
 
 
 private:
-	std::string testQuit();
 	std::string testMinimise();
 	std::string testCursor();
 	std::string testDrag();

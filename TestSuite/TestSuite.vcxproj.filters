@@ -207,9 +207,6 @@
     <ClCompile Include="src\application\facade\event\FacadeEventMouseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\facade\event\FacadeEventQuitTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\facade\event\FacadeEventTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -277,6 +274,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\facade\quit\FacadeQuitDefaultTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -470,9 +470,6 @@
     <ClInclude Include="src\application\facade\event\FacadeEventMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\facade\event\FacadeEventQuitTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\application\facade\event\FacadeEventTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -540,6 +537,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\quit\FacadeQuitDefaultTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

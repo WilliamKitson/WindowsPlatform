@@ -4,6 +4,7 @@
 #include <string>
 
 #include "FacadeQuitDefaultTest.h"
+#include "FacadeQuitEventTest.h"
 
 class FacadeQuitTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testEvent();
 
 
 private:

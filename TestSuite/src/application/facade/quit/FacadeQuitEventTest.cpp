@@ -1,20 +1,20 @@
-#include "FacadeEventQuitTest.h"
+#include "FacadeQuitEventTest.h"
 
-FacadeEventQuitTest::FacadeEventQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeQuitEventTest::FacadeQuitEventTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-FacadeEventQuitTest::~FacadeEventQuitTest()
+FacadeQuitEventTest::~FacadeQuitEventTest()
 {
 }
 
-std::string FacadeEventQuitTest::test()
+std::string FacadeQuitEventTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"facade event quit test"
+		"facade quit event test"
 	);
 
 	PostMessage(
@@ -35,5 +35,5 @@ std::string FacadeEventQuitTest::test()
 		return std::string();
 	}
 
-	return "facade event quit test failed\n";
+	return "facade quit event test failed\n";
 }
