@@ -30,7 +30,7 @@ std::string WindowDefaultTester::testQuit()
 
 std::string WindowDefaultTester::testMinimise()
 {
-	return WindowDefaultMinimiseTest(hInstance, nCmdShow).test();
+	return FacadeDefaultMinimiseTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testCursor()

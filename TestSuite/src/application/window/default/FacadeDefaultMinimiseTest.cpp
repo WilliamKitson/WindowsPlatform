@@ -1,15 +1,15 @@
-#include "WindowDefaultMinimiseTest.h"
+#include "FacadeDefaultMinimiseTest.h"
 
-WindowDefaultMinimiseTest::WindowDefaultMinimiseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultMinimiseTest::FacadeDefaultMinimiseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDefaultMinimiseTest::~WindowDefaultMinimiseTest()
+FacadeDefaultMinimiseTest::~FacadeDefaultMinimiseTest()
 {
 }
 
-std::string WindowDefaultMinimiseTest::test()
+std::string FacadeDefaultMinimiseTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance, 

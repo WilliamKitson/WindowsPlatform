@@ -123,9 +123,6 @@
     <ClCompile Include="src\application\window\default\WindowDefaultTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\window\default\WindowDefaultMinimiseTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window\event\WindowEventCursorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -273,6 +270,9 @@
     <ClCompile Include="src\application\window\default\FacadeDefaultQuitTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\window\default\FacadeDefaultMinimiseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -378,9 +378,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\WindowDefaultTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\window\default\WindowDefaultMinimiseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\event\WindowEventCursorTest.h">
@@ -528,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\default\FacadeDefaultQuitTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\default\FacadeDefaultMinimiseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

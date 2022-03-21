@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDefaultMinimiseTest
+class FacadeDefaultMinimiseTest
 {
 public:
-	WindowDefaultMinimiseTest(HINSTANCE, int);
-	~WindowDefaultMinimiseTest();
+	FacadeDefaultMinimiseTest(HINSTANCE, int);
+	~FacadeDefaultMinimiseTest();
 
 	std::string test();
 
