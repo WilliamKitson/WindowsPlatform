@@ -1,15 +1,15 @@
-#include "WindowResolutionDefaultHeightTest.h"
+#include "FacadeResolutionDefaultHeightTest.h"
 
-WindowResolutionDefaultHeightTest::WindowResolutionDefaultHeightTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeResolutionDefaultHeightTest::FacadeResolutionDefaultHeightTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowResolutionDefaultHeightTest::~WindowResolutionDefaultHeightTest()
+FacadeResolutionDefaultHeightTest::~FacadeResolutionDefaultHeightTest()
 {
 }
 
-std::string WindowResolutionDefaultHeightTest::test()
+std::string FacadeResolutionDefaultHeightTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

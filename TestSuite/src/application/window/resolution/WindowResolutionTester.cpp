@@ -30,7 +30,7 @@ std::string WindowResolutionTester::testDefaultWidth()
 
 std::string WindowResolutionTester::testDefaultHeight()
 {
-	return WindowResolutionDefaultHeightTest(hInstance, nCmdShow).test();
+	return FacadeResolutionDefaultHeightTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowResolutionTester::testSetWidth()
