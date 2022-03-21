@@ -45,7 +45,7 @@ std::string WindowDefaultTester::testDrag()
 
 std::string WindowDefaultTester::testMouse()
 {
-	return WindowDefaultMouseTest(hInstance, nCmdShow).test();
+	return FacadeDefaultMouseTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testKeyboard()

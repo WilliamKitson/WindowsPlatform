@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDefaultMouseTest
+class FacadeDefaultMouseTest
 {
 public:
-	WindowDefaultMouseTest(HINSTANCE, int);
-	~WindowDefaultMouseTest();
+	FacadeDefaultMouseTest(HINSTANCE, int);
+	~FacadeDefaultMouseTest();
 
 	std::string test();
 

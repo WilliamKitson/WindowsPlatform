@@ -1,15 +1,15 @@
-#include "WindowDefaultMouseTest.h"
+#include "FacadeDefaultMouseTest.h"
 
-WindowDefaultMouseTest::WindowDefaultMouseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultMouseTest::FacadeDefaultMouseTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, successes{ 0 }
 {
 }
 
-WindowDefaultMouseTest::~WindowDefaultMouseTest()
+FacadeDefaultMouseTest::~FacadeDefaultMouseTest()
 {
 }
 
-std::string WindowDefaultMouseTest::test()
+std::string FacadeDefaultMouseTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
