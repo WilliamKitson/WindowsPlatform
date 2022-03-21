@@ -35,7 +35,7 @@ std::string WindowDefaultTester::testMinimise()
 
 std::string WindowDefaultTester::testCursor()
 {
-	return WindowDefaultCursorTest(hInstance, nCmdShow).test();
+	return FacadeDefaultCursorTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testDrag()

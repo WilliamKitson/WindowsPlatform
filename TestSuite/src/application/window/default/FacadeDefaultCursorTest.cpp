@@ -1,15 +1,15 @@
-#include "WindowDefaultCursorTest.h"
+#include "FacadeDefaultCursorTest.h"
 
-WindowDefaultCursorTest::WindowDefaultCursorTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultCursorTest::FacadeDefaultCursorTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDefaultCursorTest::~WindowDefaultCursorTest()
+FacadeDefaultCursorTest::~FacadeDefaultCursorTest()
 {
 }
 
-std::string WindowDefaultCursorTest::test()
+std::string FacadeDefaultCursorTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

@@ -5,7 +5,7 @@
 
 #include "FacadeDefaultQuitTest.h"
 #include "FacadeDefaultMinimiseTest.h"
-#include "WindowDefaultCursorTest.h"
+#include "FacadeDefaultCursorTest.h"
 #include "WindowDefaultDragTest.h"
 #include "WindowDefaultMouseTest.h"
 #include "WindowDefaultKeyboardTest.h"

@@ -181,9 +181,9 @@
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsPressTest.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsTester.cpp" />
+    <ClCompile Include="src\application\window\default\FacadeDefaultCursorTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultMinimiseTest.cpp" />
     <ClCompile Include="src\application\window\default\FacadeDefaultQuitTest.cpp" />
-    <ClCompile Include="src\application\window\default\WindowDefaultCursorTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultDragTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultKeyboardTest.cpp" />
     <ClCompile Include="src\application\window\default\WindowDefaultMouseTest.cpp" />
@@ -269,9 +269,9 @@
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsPressTest.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsTester.h" />
+    <ClInclude Include="src\application\window\default\FacadeDefaultCursorTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultMinimiseTest.h" />
     <ClInclude Include="src\application\window\default\FacadeDefaultQuitTest.h" />
-    <ClInclude Include="src\application\window\default\WindowDefaultCursorTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultDragTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultKeyboardTest.h" />
     <ClInclude Include="src\application\window\default\WindowDefaultMouseTest.h" />

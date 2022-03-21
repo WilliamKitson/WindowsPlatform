@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowDefaultCursorTest
+class FacadeDefaultCursorTest
 {
 public:
-	WindowDefaultCursorTest(HINSTANCE, int);
-	~WindowDefaultCursorTest();
+	FacadeDefaultCursorTest(HINSTANCE, int);
+	~FacadeDefaultCursorTest();
 
 	std::string test();
 
