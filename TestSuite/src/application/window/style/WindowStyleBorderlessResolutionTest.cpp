@@ -11,32 +11,35 @@ WindowStyleBorderlessResolutionTest::~WindowStyleBorderlessResolutionTest()
 
 std::string WindowStyleBorderlessResolutionTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window style borderless resolution test"
-	};
+		"facade style borderless resolution test"
+	);
 
-	unit.setBorderless();
+	unit->setBorderless();
 
 	WindowsPlatform::Vector2 set{
 		1000,
 		1000
 	};
 
-	unit.setResolution(set);
+	unit->setResolution(set);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.right - resolution.left) + (resolution.bottom - resolution.top) == 2000)
 	{
 		return std::string();
 	}
 
-	return "window style borderless resolution test failed\n";
+	return "facade style borderless resolution test failed\n";
 }
