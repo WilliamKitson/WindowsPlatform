@@ -8,6 +8,11 @@ WindowsPlatform::SubordianteFacade::~SubordianteFacade()
 {
 }
 
+HWND WindowsPlatform::SubordianteFacade::getWindow()
+{
+	return HWND();
+}
+
 bool WindowsPlatform::SubordianteFacade::getQuit()
 {
 	return false;

@@ -11,13 +11,18 @@ WindowTagParameterTest::~WindowTagParameterTest()
 
 std::string WindowTagParameterTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		tag
-	};
+	);
 
-	if (std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag) == getWindowTitle(unit.getWindow()))
+	std::wstring title = getWindowTitle(unit->getWindow());
+
+	delete unit;
+	unit = nullptr;
+
+	if (std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag) == title)
 	{
 		return std::string();
 	}

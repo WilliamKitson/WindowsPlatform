@@ -5,6 +5,7 @@
 #include <vector>
 #include <codecvt>
 
+#include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
 class WindowTagParameterTest

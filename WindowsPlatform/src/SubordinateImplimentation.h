@@ -22,7 +22,7 @@ namespace WindowsPlatform
 		virtual ~SubordinateImplimentation();
 
 		void update();
-		HWND getWindow();
+		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();

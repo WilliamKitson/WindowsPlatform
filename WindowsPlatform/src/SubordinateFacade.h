@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Windows.h>
+
 #include "Vector2.h"
 #include "MouseButtons.h"
 #include "KeyboardKeys.h"
@@ -12,6 +14,7 @@ namespace WindowsPlatform
 		SubordianteFacade();
 		virtual ~SubordianteFacade();
 
+		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();
