@@ -11,25 +11,29 @@ WindowEventMinimiseTest::~WindowEventMinimiseTest()
 
 std::string WindowEventMinimiseTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window event minimise test"
-	};
+		"facade event minimise test"
+	);
 
 	PostMessage(
-		unit.getWindow(),
+		unit->getWindow(),
 		WM_SIZE,
 		SIZE_MINIMIZED,
 		0
 	);
 
-	unit.update();
+	unit->update();
+	bool minimise = unit->getMinimise();
 
-	if (unit.getMinimise() == true)
+	delete unit;
+	unit = nullptr;
+
+	if (minimise == true)
 	{
 		return std::string();
 	}
 
-	return "window event minimise test failed\n";
+	return "facade event minimise test failed\n";
 }
