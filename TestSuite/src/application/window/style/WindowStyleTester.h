@@ -4,7 +4,7 @@
 #include <string>
 
 #include "FacadeStyleDefaultTest.h"
-#include "WindowsStyleBorderlessTest.h"
+#include "FacadeStyleBorderlessTest.h"
 #include "WindowStyleBorderlessResolutionTest.h"
 #include "WindowStyleWindowedTest.h"
 #include "WindowStyleWindowedResolutionTest.h"

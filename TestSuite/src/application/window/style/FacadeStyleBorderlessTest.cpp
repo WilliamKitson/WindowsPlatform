@@ -1,15 +1,15 @@
-#include "WindowsStyleBorderlessTest.h"
+#include "FacadeStyleBorderlessTest.h"
 
-WindowsStyleBorderlessTest::WindowsStyleBorderlessTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeStyleBorderlessTest::FacadeStyleBorderlessTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowsStyleBorderlessTest::~WindowsStyleBorderlessTest()
+FacadeStyleBorderlessTest::~FacadeStyleBorderlessTest()
 {
 }
 
-std::string WindowsStyleBorderlessTest::test()
+std::string FacadeStyleBorderlessTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,

@@ -29,7 +29,7 @@ std::string WindowStyleTester::testDefault()
 
 std::string WindowStyleTester::testBorderless()
 {
-	return WindowsStyleBorderlessTest(hInstance, nCmdShow).test();
+	return FacadeStyleBorderlessTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowStyleTester::testBorderlessResolution()

@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "SubordinateImplimentation.h"
 
-class WindowsStyleBorderlessTest
+class FacadeStyleBorderlessTest
 {
 public:
-	WindowsStyleBorderlessTest(HINSTANCE, int);
-	~WindowsStyleBorderlessTest();
+	FacadeStyleBorderlessTest(HINSTANCE, int);
+	~FacadeStyleBorderlessTest();
 
 	std::string test();
 
