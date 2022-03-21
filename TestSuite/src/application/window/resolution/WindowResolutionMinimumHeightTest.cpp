@@ -11,25 +11,28 @@ WindowResolutionMinimumHeightTest::~WindowResolutionMinimumHeightTest()
 
 std::string WindowResolutionMinimumHeightTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution minimum height test"
-	};
+		"facade resolution minimum height test"
+	);
 
-	unit.setResolution(WindowsPlatform::Vector2());
+	unit->setResolution(WindowsPlatform::Vector2());
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.bottom - resolution.top) == 540)
 	{
 		return std::string();
 	}
 
-	return "window resolution minimum height test failed\n";
+	return "facade resolution minimum height test failed\n";
 }
