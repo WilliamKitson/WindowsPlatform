@@ -11,10 +11,21 @@ WindowDefaultDragTest::~WindowDefaultDragTest()
 
 std::string WindowDefaultDragTest::test()
 {
-	if (WindowsPlatform::SubordinateImplimentation(hInstance, nCmdShow, "window default drag test").getDrag() == WindowsPlatform::Vector2())
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+		hInstance, 
+		nCmdShow, 
+		"facade default drag test"
+	);
+
+	WindowsPlatform::Vector2 drag = unit->getDrag();
+
+	delete unit;
+	unit = nullptr;
+
+	if (drag == WindowsPlatform::Vector2())
 	{
 		return std::string();
 	}
 
-	return "window default drag test failed\n";
+	return "facade default drag test failed\n";
 }

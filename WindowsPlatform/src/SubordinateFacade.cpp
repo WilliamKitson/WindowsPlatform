@@ -22,3 +22,8 @@ WindowsPlatform::Vector2 WindowsPlatform::SubordianteFacade::getCursor()
 {
 	return Vector2();
 }
+
+WindowsPlatform::Vector2 WindowsPlatform::SubordianteFacade::getDrag()
+{
+	return Vector2();
+}
