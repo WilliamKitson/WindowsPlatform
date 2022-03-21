@@ -1,15 +1,15 @@
-#include "WindowTagTester.h"
+#include "FacadeTagTester.h"
 
-WindowTagTester::WindowTagTester(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeTagTester::FacadeTagTester(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowTagTester::~WindowTagTester()
+FacadeTagTester::~FacadeTagTester()
 {
 }
 
-std::string WindowTagTester::test()
+std::string FacadeTagTester::test()
 {
 	std::string failures{ "" };
 
@@ -19,12 +19,12 @@ std::string WindowTagTester::test()
 	return failures;
 }
 
-std::string WindowTagTester::testParameter()
+std::string FacadeTagTester::testParameter()
 {
 	return FacadeTagParameterTest(hInstance, nCmdShow).test();
 }
 
-std::string WindowTagTester::testSet()
+std::string FacadeTagTester::testSet()
 {
 	return FacadeTagSetTest(hInstance, nCmdShow).test();
 }

@@ -4,7 +4,7 @@
 #include <string>
 
 #include "default/FacadeDefaultTester.h"
-#include "tag/WindowTagTester.h"
+#include "tag/FacadeTagTester.h"
 #include "resolution/WindowResolutionTester.h"
 #include "style/WindowStyleTester.h"
 #include "event/WindowEventTester.h"

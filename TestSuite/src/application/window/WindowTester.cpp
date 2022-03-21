@@ -31,7 +31,7 @@ std::string WindowTester::testDefault()
 
 std::string WindowTester::testTag()
 {
-	return WindowTagTester(hInstance, nCmdShow).test();
+	return FacadeTagTester(hInstance, nCmdShow).test();
 }
 
 std::string WindowTester::testResolution()

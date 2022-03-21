@@ -6,11 +6,11 @@
 #include "FacadeTagParameterTest.h"
 #include "FacadeTagSetTest.h"
 
-class WindowTagTester
+class FacadeTagTester
 {
 public:
-	WindowTagTester(HINSTANCE, int);
-	~WindowTagTester();
+	FacadeTagTester(HINSTANCE, int);
+	~FacadeTagTester();
 
 	std::string test();
 
