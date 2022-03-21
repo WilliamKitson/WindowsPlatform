@@ -270,6 +270,9 @@
     <ClCompile Include="src\application\mouse\wheel\MouseWheelResetTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\window\default\WindowDefaultMouseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -522,6 +525,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\mouse\wheel\MouseWheelResetTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\window\default\WindowDefaultMouseTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

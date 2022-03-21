@@ -7,6 +7,7 @@
 #include "WindowDefaultMinimiseTest.h"
 #include "WindowDefaultCursorTest.h"
 #include "WindowDefaultDragTest.h"
+#include "WindowDefaultMouseTest.h"
 #include "WindowDefaultButtonsTest.h"
 
 class WindowDefaultTester
@@ -23,6 +24,7 @@ private:
 	std::string testMinimise();
 	std::string testCursor();
 	std::string testDrag();
+	std::string testMouse();
 	std::string testButtons();
 
 

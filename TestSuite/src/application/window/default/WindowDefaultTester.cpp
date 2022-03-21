@@ -17,6 +17,7 @@ std::string WindowDefaultTester::test()
 	failures += testMinimise();
 	failures += testCursor();
 	failures += testDrag();
+	failures += testMouse();
 	failures += testButtons();
 
 	return failures;
@@ -40,6 +41,11 @@ std::string WindowDefaultTester::testCursor()
 std::string WindowDefaultTester::testDrag()
 {
 	return WindowDefaultDragTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowDefaultTester::testMouse()
+{
+	return WindowDefaultMouseTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testButtons()

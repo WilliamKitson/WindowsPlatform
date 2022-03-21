@@ -51,6 +51,11 @@ bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
 	return buttons[(unsigned int)button];
 }
 
+bool WindowsPlatform::ApplicationWindow::getMouse(MouseButtons)
+{
+	return false;
+}
+
 bool WindowsPlatform::ApplicationWindow::getKeyboard(KeyboardKeys key)
 {
 	return keyboard.getKey(key);

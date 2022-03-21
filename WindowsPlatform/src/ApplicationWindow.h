@@ -8,6 +8,7 @@
 
 #include "Vector2.h"
 #include "WindowsButtons.h"
+#include "Mouse.h"
 #include "Keyboard.h"
 #include "ResolutionValidator.h"
 
@@ -26,6 +27,7 @@ namespace WindowsPlatform
 		Vector2 getCursor();
 		Vector2 getDrag();
 		bool getButton(WindowsButtons);
+		bool getMouse(MouseButtons);
 		bool getKeyboard(KeyboardKeys);
 		void setTag(std::string);
 		void setResolution(Vector2);
