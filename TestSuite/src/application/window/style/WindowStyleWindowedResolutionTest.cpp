@@ -11,33 +11,36 @@ WindowStyleWindowedResolutionTest::~WindowStyleWindowedResolutionTest()
 
 std::string WindowStyleWindowedResolutionTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window style windowed resolution test"
-	};
+		"facade style windowed resolution test"
+	);
 
-	unit.setBorderless();
-	unit.setWindowed();
+	unit->setBorderless();
+	unit->setWindowed();
 
 	WindowsPlatform::Vector2 set{
 		1000,
 		1000
 	};
 
-	unit.setResolution(set);
+	unit->setResolution(set);
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.right - resolution.left) + (resolution.bottom - resolution.top) == 2000)
 	{
 		return std::string();
 	}
 
-	return "window style windowed resolution test failed\n";
+	return "facade style windowed resolution test failed\n";
 }
