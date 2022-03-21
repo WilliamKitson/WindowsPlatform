@@ -21,7 +21,7 @@ namespace WindowsPlatform
 		SubordinateImplimentation(HINSTANCE, int, std::string);
 		virtual ~SubordinateImplimentation();
 
-		void update();
+		virtual void update();
 		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();

@@ -8,6 +8,10 @@ WindowsPlatform::SubordianteFacade::~SubordianteFacade()
 {
 }
 
+void WindowsPlatform::SubordianteFacade::update()
+{
+}
+
 HWND WindowsPlatform::SubordianteFacade::getWindow()
 {
 	return HWND();

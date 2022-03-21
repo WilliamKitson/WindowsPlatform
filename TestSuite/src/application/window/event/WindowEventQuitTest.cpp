@@ -11,25 +11,29 @@ WindowEventQuitTest::~WindowEventQuitTest()
 
 std::string WindowEventQuitTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window event quit test"
-	};
+		"facade event quit test"
+	);
 
 	PostMessage(
-		unit.getWindow(),
+		unit->getWindow(),
 		WM_CLOSE,
 		0,
 		0
 	);
 
-	unit.update();
+	unit->update();
+	bool quit = unit->getQuit();
 
-	if (unit.getQuit() == true)
+	delete unit;
+	unit = nullptr;
+
+	if (quit == true)
 	{
 		return std::string();
 	}
 
-	return "window event quit test failed\n";
+	return "facade event quit test failed\n";
 }

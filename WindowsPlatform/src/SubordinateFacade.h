@@ -15,6 +15,7 @@ namespace WindowsPlatform
 		SubordianteFacade();
 		virtual ~SubordianteFacade();
 
+		virtual void update();
 		virtual HWND getWindow();
 		virtual bool getQuit();
 		virtual bool getMinimise();
