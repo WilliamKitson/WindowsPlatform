@@ -11,7 +11,7 @@ WindowStyleWindowedResolutionTest::~WindowStyleWindowedResolutionTest()
 
 std::string WindowStyleWindowedResolutionTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window style windowed resolution test"

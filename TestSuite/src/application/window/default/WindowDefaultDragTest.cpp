@@ -11,7 +11,7 @@ WindowDefaultDragTest::~WindowDefaultDragTest()
 
 std::string WindowDefaultDragTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default drag test").getDrag() == WindowsPlatform::Vector2())
+	if (WindowsPlatform::SubordinateImplimentation(hInstance, nCmdShow, "window default drag test").getDrag() == WindowsPlatform::Vector2())
 	{
 		return std::string();
 	}

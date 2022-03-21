@@ -4,7 +4,7 @@
 #include <string>
 
 #include "SubordinateFacade.h"
-#include "ApplicationWindow.h"
+#include "SubordinateImplimentation.h"
 
 class FacadeDefaultQuitTest
 {

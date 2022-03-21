@@ -11,7 +11,7 @@ WindowStyleBorderlessResolutionTest::~WindowStyleBorderlessResolutionTest()
 
 std::string WindowStyleBorderlessResolutionTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window style borderless resolution test"

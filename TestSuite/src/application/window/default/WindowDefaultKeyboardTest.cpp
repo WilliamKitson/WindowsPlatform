@@ -11,7 +11,7 @@ WindowDefaultKeyboardTest::~WindowDefaultKeyboardTest()
 
 std::string WindowDefaultKeyboardTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window default keyboard test"

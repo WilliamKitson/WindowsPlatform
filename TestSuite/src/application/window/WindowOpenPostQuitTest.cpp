@@ -11,7 +11,7 @@ WindowOpenPostQuitTest::~WindowOpenPostQuitTest()
 
 std::string WindowOpenPostQuitTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window open post quit test"

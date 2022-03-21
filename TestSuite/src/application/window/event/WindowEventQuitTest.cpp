@@ -11,7 +11,7 @@ WindowEventQuitTest::~WindowEventQuitTest()
 
 std::string WindowEventQuitTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window event quit test"

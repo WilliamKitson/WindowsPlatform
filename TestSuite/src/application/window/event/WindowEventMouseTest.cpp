@@ -11,7 +11,7 @@ WindowEventMouseTest::~WindowEventMouseTest()
 
 std::string WindowEventMouseTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window event mouse test"

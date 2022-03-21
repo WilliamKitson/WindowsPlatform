@@ -11,7 +11,7 @@ WindowDefaultCursorTest::~WindowDefaultCursorTest()
 
 std::string WindowDefaultCursorTest::test()
 {
-	if (WindowsPlatform::ApplicationWindow(hInstance, nCmdShow, "window default cursor test").getCursor() == WindowsPlatform::Vector2())
+	if (WindowsPlatform::SubordinateImplimentation(hInstance, nCmdShow, "window default cursor test").getCursor() == WindowsPlatform::Vector2())
 	{
 		return std::string();
 	}

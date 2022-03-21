@@ -11,7 +11,7 @@ WindowDefaultMouseTest::~WindowDefaultMouseTest()
 
 std::string WindowDefaultMouseTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window default mouse test"

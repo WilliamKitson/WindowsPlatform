@@ -11,7 +11,7 @@ WindowResolutionDefaultHeightTest::~WindowResolutionDefaultHeightTest()
 
 std::string WindowResolutionDefaultHeightTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window resolution default height test"

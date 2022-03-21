@@ -21,9 +21,6 @@
     <ClInclude Include="src\GamepadButtons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\ApplicationWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\ResolutionValidator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,12 +48,12 @@
     <ClInclude Include="src\SubordinateFacade.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SubordinateImplimentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DeltaTimer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ApplicationWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\ResolutionValidator.cpp">
@@ -78,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\SubordinateFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SubordinateImplimentation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -147,7 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\Gamepad.h" />
     <ClInclude Include="src\GamepadButtons.h" />
@@ -158,10 +157,10 @@
     <ClInclude Include="src\RangeNormaliser.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
     <ClInclude Include="src\SubordinateFacade.h" />
+    <ClInclude Include="src\SubordinateImplimentation.h" />
     <ClInclude Include="src\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\Gamepad.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
@@ -169,6 +168,7 @@
     <ClCompile Include="src\RangeNormaliser.cpp" />
     <ClCompile Include="src\ResolutionValidator.cpp" />
     <ClCompile Include="src\SubordinateFacade.cpp" />
+    <ClCompile Include="src\SubordinateImplimentation.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

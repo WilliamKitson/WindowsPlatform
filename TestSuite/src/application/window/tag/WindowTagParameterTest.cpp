@@ -11,7 +11,7 @@ WindowTagParameterTest::~WindowTagParameterTest()
 
 std::string WindowTagParameterTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		tag

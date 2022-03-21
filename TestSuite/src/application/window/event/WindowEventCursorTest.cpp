@@ -11,7 +11,7 @@ WindowEventCursorTest::~WindowEventCursorTest()
 
 std::string WindowEventCursorTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window event cursor test"

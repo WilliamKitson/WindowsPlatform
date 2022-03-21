@@ -11,7 +11,7 @@ WindowEventDragTest::~WindowEventDragTest()
 
 std::string WindowEventDragTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		tagPrefix

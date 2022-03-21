@@ -11,7 +11,7 @@ WindowEventKeyboardTest::~WindowEventKeyboardTest()
 
 std::string WindowEventKeyboardTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window event keyboard test"

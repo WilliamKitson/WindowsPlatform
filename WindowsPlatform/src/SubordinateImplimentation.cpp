@@ -1,17 +1,17 @@
-#include "ApplicationWindow.h"
+#include "SubordinateImplimentation.h"
 
-WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
+WindowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
 	: SubordianteFacade(), nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, drag(), mouse(), keyboard()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
 
-WindowsPlatform::ApplicationWindow::~ApplicationWindow()
+WindowsPlatform::SubordinateImplimentation::~SubordinateImplimentation()
 {
 	DestroyWindow(window);
 }
 
-void WindowsPlatform::ApplicationWindow::update()
+void WindowsPlatform::SubordinateImplimentation::update()
 {
 	resetQuit();
 	resetMinimise();
@@ -20,42 +20,42 @@ void WindowsPlatform::ApplicationWindow::update()
 	messageLoop();
 }
 
-HWND WindowsPlatform::ApplicationWindow::getWindow()
+HWND WindowsPlatform::SubordinateImplimentation::getWindow()
 {
     return window;
 }
 
-bool WindowsPlatform::ApplicationWindow::getQuit()
+bool WindowsPlatform::SubordinateImplimentation::getQuit()
 {
 	return quit;
 }
 
-bool WindowsPlatform::ApplicationWindow::getMinimise()
+bool WindowsPlatform::SubordinateImplimentation::getMinimise()
 {
 	return minimise;
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getCursor()
+WindowsPlatform::Vector2 WindowsPlatform::SubordinateImplimentation::getCursor()
 {
 	return mouse.getCursor();
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getDrag()
+WindowsPlatform::Vector2 WindowsPlatform::SubordinateImplimentation::getDrag()
 {
 	return drag;
 }
 
-bool WindowsPlatform::ApplicationWindow::getMouse(MouseButtons button)
+bool WindowsPlatform::SubordinateImplimentation::getMouse(MouseButtons button)
 {
 	return mouse.getButton(button);
 }
 
-bool WindowsPlatform::ApplicationWindow::getKeyboard(KeyboardKeys key)
+bool WindowsPlatform::SubordinateImplimentation::getKeyboard(KeyboardKeys key)
 {
 	return keyboard.getKey(key);
 }
 
-void WindowsPlatform::ApplicationWindow::setTag(std::string value)
+void WindowsPlatform::SubordinateImplimentation::setTag(std::string value)
 {
 	SetWindowTextA(
 		window,
@@ -63,7 +63,7 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 	);
 }
 
-void WindowsPlatform::ApplicationWindow::setResolution(Vector2 value)
+void WindowsPlatform::SubordinateImplimentation::setResolution(Vector2 value)
 {
 	RECT windowRect = getWindowRectangle(value);
 
@@ -85,7 +85,7 @@ void WindowsPlatform::ApplicationWindow::setResolution(Vector2 value)
 	}
 }
 
-void WindowsPlatform::ApplicationWindow::setBorderless()
+void WindowsPlatform::SubordinateImplimentation::setBorderless()
 {
 	SetWindowLongPtr(
 		window,
@@ -99,7 +99,7 @@ void WindowsPlatform::ApplicationWindow::setBorderless()
 	);
 }
 
-void WindowsPlatform::ApplicationWindow::setWindowed()
+void WindowsPlatform::SubordinateImplimentation::setWindowed()
 {
 	SetWindowLongPtr(
 		window,
@@ -113,7 +113,7 @@ void WindowsPlatform::ApplicationWindow::setWindowed()
 	);
 }
 
-void WindowsPlatform::ApplicationWindow::initialise(HINSTANCE hInstance, std::wstring tag)
+void WindowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance, std::wstring tag)
 {
 	if (FAILED(registerWindowClass(hInstance, tag)))
 	{
@@ -131,7 +131,7 @@ void WindowsPlatform::ApplicationWindow::initialise(HINSTANCE hInstance, std::ws
 	}
 }
 
-HRESULT WindowsPlatform::ApplicationWindow::registerWindowClass(HINSTANCE hInstance, std::wstring tag)
+HRESULT WindowsPlatform::SubordinateImplimentation::registerWindowClass(HINSTANCE hInstance, std::wstring tag)
 {
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -148,7 +148,7 @@ HRESULT WindowsPlatform::ApplicationWindow::registerWindowClass(HINSTANCE hInsta
 	return E_FAIL;
 }
 
-HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
+HRESULT WindowsPlatform::SubordinateImplimentation::initialiseWindow(std::wstring tag)
 {
 	RECT windowRect = getWindowRectangle(Vector2());
 
@@ -184,7 +184,7 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(std::wstring tag)
 	return S_OK;
 }
 
-RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
+RECT WindowsPlatform::SubordinateImplimentation::getWindowRectangle(Vector2 value)
 {
 	ResolutionValidator resolution;
 	resolution.setResolution((int)value.x, (int)value.y);
@@ -199,12 +199,12 @@ RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
 	return windowRect;
 }
 
-DWORD WindowsPlatform::ApplicationWindow::getWindowed()
+DWORD WindowsPlatform::SubordinateImplimentation::getWindowed()
 {
 	return { WS_TILED | WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION };
 }
 
-HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
+HRESULT WindowsPlatform::SubordinateImplimentation::initialiseRawInput()
 {
 	RAWINPUTDEVICE rawInputDevice[1];
 
@@ -223,22 +223,22 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseRawInput()
 	return E_FAIL;
 }
 
-void WindowsPlatform::ApplicationWindow::resetQuit()
+void WindowsPlatform::SubordinateImplimentation::resetQuit()
 {
 	quit = false;
 }
 
-void WindowsPlatform::ApplicationWindow::resetMinimise()
+void WindowsPlatform::SubordinateImplimentation::resetMinimise()
 {
 	minimise = false;
 }
 
-void WindowsPlatform::ApplicationWindow::resetDrag()
+void WindowsPlatform::SubordinateImplimentation::resetDrag()
 {
 	drag = Vector2();
 }
 
-void WindowsPlatform::ApplicationWindow::messageLoop()
+void WindowsPlatform::SubordinateImplimentation::messageLoop()
 {
 	MSG message;
 	active = this;
@@ -252,7 +252,7 @@ void WindowsPlatform::ApplicationWindow::messageLoop()
 	active = nullptr;
 }
 
-LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT CALLBACK WindowsPlatform::SubordinateImplimentation::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	if (active)
 	{
@@ -262,7 +262,7 @@ LRESULT CALLBACK WindowsPlatform::ApplicationWindow::applicationWindowProcedure(
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT WindowsPlatform::SubordinateImplimentation::processMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch (msg)
 	{
@@ -373,7 +373,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
+void WindowsPlatform::SubordinateImplimentation::processMinimise(WPARAM wParam)
 {
 	if (wParam != SIZE_MINIMIZED)
 	{
@@ -383,7 +383,7 @@ void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
 	active->minimise = true;
 }
 
-void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)
+void WindowsPlatform::SubordinateImplimentation::processDrag(LPARAM lParam)
 {
 	RAWINPUT* rawInput = initialiseRawInputData(lParam);
 
@@ -400,7 +400,7 @@ void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)
 	active->drag = rawInputDrag;
 }
 
-RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lParam)
+RAWINPUT* WindowsPlatform::SubordinateImplimentation::initialiseRawInputData(LPARAM lParam)
 {
 	UINT dwSize = sizeof(RAWINPUT);
 	static BYTE lpb[sizeof(RAWINPUT)];
@@ -410,4 +410,4 @@ RAWINPUT* WindowsPlatform::ApplicationWindow::initialiseRawInputData(LPARAM lPar
 	return (RAWINPUT*)lpb;
 }
 
-WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;
+WindowsPlatform::SubordinateImplimentation* WindowsPlatform::SubordinateImplimentation::active = nullptr;

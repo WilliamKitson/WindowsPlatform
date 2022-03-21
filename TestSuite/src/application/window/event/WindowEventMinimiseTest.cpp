@@ -11,7 +11,7 @@ WindowEventMinimiseTest::~WindowEventMinimiseTest()
 
 std::string WindowEventMinimiseTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	WindowsPlatform::SubordinateImplimentation unit{
 		hInstance,
 		nCmdShow,
 		"window event minimise test"

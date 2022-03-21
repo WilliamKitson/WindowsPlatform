@@ -14,12 +14,12 @@
 
 namespace WindowsPlatform
 {
-	class ApplicationWindow
+	class SubordinateImplimentation
 		: public SubordianteFacade
 	{
 	public:
-		ApplicationWindow(HINSTANCE, int, std::string);
-		virtual ~ApplicationWindow();
+		SubordinateImplimentation(HINSTANCE, int, std::string);
+		virtual ~SubordinateImplimentation();
 
 		void update();
 		HWND getWindow();
@@ -62,7 +62,7 @@ namespace WindowsPlatform
 		Vector2 drag;
 		Mouse mouse;
 		Keyboard keyboard;
-		static ApplicationWindow* active;
+		static SubordinateImplimentation* active;
 	};
 }
 

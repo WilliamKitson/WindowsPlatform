@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "ApplicationWindow.h"
+#include "SubordinateImplimentation.h"
 
 class WindowDestroyedTest
 {
