@@ -11,21 +11,24 @@ WindowDefaultMouseTest::~WindowDefaultMouseTest()
 
 std::string WindowDefaultMouseTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window default mouse test"
-	};
+		"facade default mouse test"
+	);
 
 	for (int i{ 0 }; i < (int)WindowsPlatform::MouseButtons::size; i++)
 	{
-		successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
+		successes += unit->getMouse((WindowsPlatform::MouseButtons)i) == false;
 	}
+
+	delete unit;
+	unit = nullptr;
 
 	if (successes == (int)WindowsPlatform::MouseButtons::size)
 	{
 		return std::string();
 	}
 
-	return "window default mouse test failed\n";
+	return "facade default mouse test failed\n";
 }
