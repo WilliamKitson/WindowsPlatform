@@ -11,25 +11,28 @@ WindowResolutionMinimumWidthTest::~WindowResolutionMinimumWidthTest()
 
 std::string WindowResolutionMinimumWidthTest::test()
 {
-	WindowsPlatform::SubordinateImplimentation unit{
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
-		"window resolution minimum width test"
-	};
+		"facade resolution minimum width test"
+	);
 
-	unit.setResolution(WindowsPlatform::Vector2());
+	unit->setResolution(WindowsPlatform::Vector2());
 
 	RECT resolution;
 
 	GetClientRect(
-		unit.getWindow(),
+		unit->getWindow(),
 		&resolution
 	);
+
+	delete unit;
+	unit = nullptr;
 
 	if ((resolution.right - resolution.left) == 960)
 	{
 		return std::string();
 	}
 
-	return "window resolution minimum width test failed\n";
+	return "facade resolution minimum width test failed\n";
 }
