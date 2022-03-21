@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "WindowDefaultQuitTest.h"
+#include "FacadeDefaultQuitTest.h"
 #include "WindowDefaultMinimiseTest.h"
 #include "WindowDefaultCursorTest.h"
 #include "WindowDefaultDragTest.h"

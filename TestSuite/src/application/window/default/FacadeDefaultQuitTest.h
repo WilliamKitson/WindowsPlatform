@@ -6,11 +6,11 @@
 #include "SubordinateFacade.h"
 #include "ApplicationWindow.h"
 
-class WindowDefaultQuitTest
+class FacadeDefaultQuitTest
 {
 public:
-	WindowDefaultQuitTest(HINSTANCE, int);
-	~WindowDefaultQuitTest();
+	FacadeDefaultQuitTest(HINSTANCE, int);
+	~FacadeDefaultQuitTest();
 
 	std::string test();
 

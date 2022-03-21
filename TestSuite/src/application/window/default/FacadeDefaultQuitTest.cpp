@@ -1,15 +1,15 @@
-#include "WindowDefaultQuitTest.h"
+#include "FacadeDefaultQuitTest.h"
 
-WindowDefaultQuitTest::WindowDefaultQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+FacadeDefaultQuitTest::FacadeDefaultQuitTest(HINSTANCE hInstanceValue, int nCmdShowValue)
 	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }
 {
 }
 
-WindowDefaultQuitTest::~WindowDefaultQuitTest()
+FacadeDefaultQuitTest::~FacadeDefaultQuitTest()
 {
 }
 
-std::string WindowDefaultQuitTest::test()
+std::string FacadeDefaultQuitTest::test()
 {
 	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::ApplicationWindow(
 		hInstance, 

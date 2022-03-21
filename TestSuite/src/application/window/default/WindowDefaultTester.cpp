@@ -25,7 +25,7 @@ std::string WindowDefaultTester::test()
 
 std::string WindowDefaultTester::testQuit()
 {
-	return WindowDefaultQuitTest(hInstance, nCmdShow).test();
+	return FacadeDefaultQuitTest(hInstance, nCmdShow).test();
 }
 
 std::string WindowDefaultTester::testMinimise()
