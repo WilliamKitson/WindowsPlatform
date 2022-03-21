@@ -7,7 +7,6 @@
 #include <codecvt>
 
 #include "Vector2.h"
-#include "WindowsButtons.h"
 #include "Mouse.h"
 #include "Keyboard.h"
 #include "ResolutionValidator.h"
@@ -26,7 +25,6 @@ namespace WindowsPlatform
 		bool getMinimise();
 		Vector2 getCursor();
 		Vector2 getDrag();
-		bool getButton(WindowsButtons);
 		bool getMouse(MouseButtons);
 		bool getKeyboard(KeyboardKeys);
 		void setTag(std::string);
@@ -45,8 +43,6 @@ namespace WindowsPlatform
 		void resetQuit();
 		void resetMinimise();
 		void resetDrag();
-		void resetScrollForwards();
-		void resetScrollBackwards();
 		void messageLoop();
 		static LRESULT CALLBACK applicationWindowProcedure(HWND, UINT, WPARAM, LPARAM);
 		static LRESULT processMessage(HWND, UINT, WPARAM, LPARAM);
@@ -65,10 +61,10 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
-		Keyboard keyboard;
 		Vector2 cursor;
 		Vector2 drag;
-		bool buttons[(unsigned int)WindowsButtons::size];
+		Mouse mouse;
+		Keyboard keyboard;
 		static ApplicationWindow* active;
 	};
 }

@@ -1,7 +1,7 @@
 #include "ApplicationWindow.h"
 
 WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, keyboard(), cursor(), drag(), buttons{ false }
+	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, cursor(), drag(), mouse(), keyboard()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -16,8 +16,7 @@ void WindowsPlatform::ApplicationWindow::update()
 	resetQuit();
 	resetMinimise();
 	resetDrag();
-	resetScrollForwards();
-	resetScrollBackwards();
+	mouse.reset();
 	messageLoop();
 }
 
@@ -46,14 +45,9 @@ WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getDrag()
 	return drag;
 }
 
-bool WindowsPlatform::ApplicationWindow::getButton(WindowsButtons button)
+bool WindowsPlatform::ApplicationWindow::getMouse(MouseButtons button)
 {
-	return buttons[(unsigned int)button];
-}
-
-bool WindowsPlatform::ApplicationWindow::getMouse(MouseButtons)
-{
-	return false;
+	return mouse.getButton(button);
 }
 
 bool WindowsPlatform::ApplicationWindow::getKeyboard(KeyboardKeys key)
@@ -244,16 +238,6 @@ void WindowsPlatform::ApplicationWindow::resetDrag()
 	drag = Vector2();
 }
 
-void WindowsPlatform::ApplicationWindow::resetScrollForwards()
-{
-	buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = false;
-}
-
-void WindowsPlatform::ApplicationWindow::resetScrollBackwards()
-{
-	buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = false;
-}
-
 void WindowsPlatform::ApplicationWindow::messageLoop()
 {
 	MSG message;
@@ -308,19 +292,19 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_LBUTTONDOWN:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_LMB] = true;
+		active->mouse.press(MouseButtons::mouse_LMB);
 		return 0;
 	}
 	break;
 	case WM_RBUTTONDOWN:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_RMB] = true;
+		active->mouse.press(MouseButtons::mouse_RMB);
 		return 0;
 	}
 	break;
 	case WM_MBUTTONDOWN:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_MMB] = true;
+		active->mouse.press(MouseButtons::mouse_MMB);
 		return 0;
 	}
 	break;
@@ -338,19 +322,19 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_LBUTTONUP:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_LMB] = false;
+		active->mouse.release(MouseButtons::mouse_LMB);
 		return 0;
 	}
 	break;
 	case WM_RBUTTONUP:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_RMB] = false;
+		active->mouse.release(MouseButtons::mouse_RMB);
 		return 0;
 	}
 	break;
 	case WM_MBUTTONUP:
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_MMB] = false;
+		active->mouse.release(MouseButtons::mouse_MMB);
 		return 0;
 	}
 	break;
@@ -440,33 +424,33 @@ void WindowsPlatform::ApplicationWindow::processXbuttonDown(WPARAM wParam)
 {
 	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = true;
+		active->mouse.press(MouseButtons::mouse_MB4);
 		return;
 	}
 	
-	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = true;
+	active->mouse.press(MouseButtons::mouse_MB5);
 }
 
 void WindowsPlatform::ApplicationWindow::processWheel(WPARAM wParam)
 {
 	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_scrollForwards] = true;
+		active->mouse.press(MouseButtons::mouse_scrollForwards);
 		return;
 	}
 
-	active->buttons[(unsigned int)WindowsButtons::mouse_scrollBackwards] = true;
+	active->mouse.press(MouseButtons::mouse_scrollBackwards);
 }
 
 void WindowsPlatform::ApplicationWindow::processXbuttonUp(WPARAM wParam)
 {
 	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
 	{
-		active->buttons[(unsigned int)WindowsButtons::mouse_MB4] = false;
+		active->mouse.release(MouseButtons::mouse_MB4);
 		return;
 	}
 
-	active->buttons[(unsigned int)WindowsButtons::mouse_MB5] = false;
+	active->mouse.release(MouseButtons::mouse_MB5);
 }
 
 WindowsPlatform::ApplicationWindow* WindowsPlatform::ApplicationWindow::active = nullptr;

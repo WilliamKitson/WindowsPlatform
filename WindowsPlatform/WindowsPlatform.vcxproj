@@ -158,7 +158,6 @@
     <ClInclude Include="src\RangeNormaliser.h" />
     <ClInclude Include="src\ResolutionValidator.h" />
     <ClInclude Include="src\Vector2.h" />
-    <ClInclude Include="src\WindowsButtons.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ApplicationWindow.cpp" />

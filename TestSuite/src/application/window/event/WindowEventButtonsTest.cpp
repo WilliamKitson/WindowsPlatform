@@ -14,14 +14,14 @@ std::string WindowEventButtonsTest::test()
 	WindowsPlatform::ApplicationWindow unit{
 		hInstance,
 		nCmdShow,
-		"window event buttons test"
+		"window event mouse test"
 	};
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::WindowsButtons::keyboard_ESC; i++)
+	for (int i{ 0 }; i < (int)WindowsPlatform::MouseButtons::size; i++)
 	{
-		switch ((WindowsPlatform::WindowsButtons)i)
+		switch ((WindowsPlatform::MouseButtons)i)
 		{
-		case WindowsPlatform::WindowsButtons::mouse_LMB:
+		case WindowsPlatform::MouseButtons::mouse_LMB:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -31,7 +31,7 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			PostMessage(
 				unit.getWindow(),
@@ -41,10 +41,10 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_RMB:
+		case WindowsPlatform::MouseButtons::mouse_RMB:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -54,7 +54,7 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			PostMessage(
 				unit.getWindow(),
@@ -64,10 +64,10 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_MMB:
+		case WindowsPlatform::MouseButtons::mouse_MMB:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -77,7 +77,7 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			PostMessage(
 				unit.getWindow(),
@@ -87,10 +87,10 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_MB4:
+		case WindowsPlatform::MouseButtons::mouse_MB4:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -100,7 +100,7 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			PostMessage(
 				unit.getWindow(),
@@ -110,10 +110,10 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_MB5:
+		case WindowsPlatform::MouseButtons::mouse_MB5:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -123,7 +123,7 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			PostMessage(
 				unit.getWindow(),
@@ -133,10 +133,10 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_scrollForwards:
+		case WindowsPlatform::MouseButtons::mouse_scrollForwards:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -146,13 +146,13 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
-		case WindowsPlatform::WindowsButtons::mouse_scrollBackwards:
+		case WindowsPlatform::MouseButtons::mouse_scrollBackwards:
 		{
 			PostMessage(
 				unit.getWindow(),
@@ -162,19 +162,19 @@ std::string WindowEventButtonsTest::test()
 			);
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == true;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == true;
 
 			unit.update();
-			successes += unit.getButton((WindowsPlatform::WindowsButtons)i) == false;
+			successes += unit.getMouse((WindowsPlatform::MouseButtons)i) == false;
 		}
 		break;
 		}
 	}
 
-	if ((successes / 2) == (int)WindowsPlatform::WindowsButtons::keyboard_ESC)
+	if ((successes / 2) == (int)WindowsPlatform::MouseButtons::size)
 	{
 		return std::string();
 	}
 
-	return "window event buttons test failed\n";
+	return "window event mouse test failed\n";
 }

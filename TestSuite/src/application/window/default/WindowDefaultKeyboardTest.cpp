@@ -17,12 +17,12 @@ std::string WindowDefaultKeyboardTest::test()
 		"window default keyboard test"
 	};
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::WindowsButtons::size; i++)
+	for (int i{ 0 }; i < (int)WindowsPlatform::KeyboardKeys::size; i++)
 	{
 		successes += unit.getKeyboard((WindowsPlatform::KeyboardKeys)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::WindowsButtons::size)
+	if (successes == (int)WindowsPlatform::KeyboardKeys::size)
 	{
 		return std::string();
 	}
