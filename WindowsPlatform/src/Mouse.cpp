@@ -75,7 +75,7 @@ void WindowsPlatform::Mouse::initialiseButtons()
 
 WindowsPlatform::MouseButtons WindowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
 {
-	if (wParam != XBUTTON2)
+	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
 	{
 		return MouseButtons::mouse_MB4;
 	}
