@@ -11,10 +11,21 @@ WindowDefaultMinimiseTest::~WindowDefaultMinimiseTest()
 
 std::string WindowDefaultMinimiseTest::test()
 {
-	if (WindowsPlatform::SubordinateImplimentation(hInstance, nCmdShow, "window default minimise test").getMinimise() == false)
+	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+		hInstance, 
+		nCmdShow, 
+		"facade default minimise test"
+	);
+
+	bool minimise = unit->getMinimise();
+
+	delete unit;
+	unit = nullptr;
+
+	if (minimise == false)
 	{
 		return std::string();
 	}
 
-	return "window default minimise test failed\n";
+	return "facade default minimise test failed\n";
 }

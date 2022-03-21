@@ -9,6 +9,7 @@ namespace WindowsPlatform
 		virtual ~SubordianteFacade();
 
 		virtual bool getQuit();
+		virtual bool getMinimise();
 	};
 }
 
