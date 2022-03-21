@@ -1,7 +1,7 @@
 #include "ApplicationWindow.h"
 
 WindowsPlatform::ApplicationWindow::ApplicationWindow(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, cursor(), drag(), mouse(), keyboard()
+	: nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, drag(), mouse(), keyboard()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
@@ -37,7 +37,7 @@ bool WindowsPlatform::ApplicationWindow::getMinimise()
 
 WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getCursor()
 {
-	return cursor;
+	return mouse.getCursor();
 }
 
 WindowsPlatform::Vector2 WindowsPlatform::ApplicationWindow::getDrag()
@@ -280,7 +280,7 @@ LRESULT WindowsPlatform::ApplicationWindow::processMessage(HWND hWnd, UINT msg, 
 	break;
 	case WM_MOUSEMOVE:
 	{
-		processCursor(lParam);
+		active->mouse.move(lParam);
 		return 0;
 	}
 	break;
@@ -381,16 +381,6 @@ void WindowsPlatform::ApplicationWindow::processMinimise(WPARAM wParam)
 	}
 
 	active->minimise = true;
-}
-
-void WindowsPlatform::ApplicationWindow::processCursor(LPARAM lParam)
-{
-	Vector2 lParamCursor{
-		(float)GET_X_LPARAM(lParam),
-		(float)GET_Y_LPARAM(lParam)
-	};
-
-	active->cursor = lParamCursor;
 }
 
 void WindowsPlatform::ApplicationWindow::processDrag(LPARAM lParam)

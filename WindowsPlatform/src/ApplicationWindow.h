@@ -47,7 +47,6 @@ namespace WindowsPlatform
 		static LRESULT CALLBACK applicationWindowProcedure(HWND, UINT, WPARAM, LPARAM);
 		static LRESULT processMessage(HWND, UINT, WPARAM, LPARAM);
 		static void processMinimise(WPARAM);
-		static void processCursor(LPARAM);
 		static void processDrag(LPARAM);
 		static RAWINPUT* initialiseRawInputData(LPARAM);
 		static void processXbuttonDown(WPARAM);
@@ -61,7 +60,6 @@ namespace WindowsPlatform
 		HWND window;
 		bool quit;
 		bool minimise;
-		Vector2 cursor;
 		Vector2 drag;
 		Mouse mouse;
 		Keyboard keyboard;
