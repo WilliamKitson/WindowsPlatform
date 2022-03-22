@@ -5,6 +5,7 @@
 
 #include "FacadeWindowTagTest.h"
 #include "FacadeWindowResolutionTest.h"
+#include "FacadeWindowWindowedTest.h"
 
 class FacadeWindowTester
 {
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testTag();
 	std::string testResolution();
+	std::string testWindowed();
 
 
 private:
