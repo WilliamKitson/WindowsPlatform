@@ -6,11 +6,7 @@
 #include "quit/FacadeQuitTester.h"
 #include "minimise/FacadeMinimiseTester.h"
 #include "default/FacadeDefaultTester.h"
-#include "tag/FacadeTagTester.h"
-#include "resolution/FacadeResolutionTester.h"
-#include "style/FacadeStyleTester.h"
 #include "event/FacadeEventTester.h"
-#include "FacadeDestroyedTest.h"
 #include "FacadeOpenPostQuitTest.h"
 #include "FacadeDeltaTest.h"
 
@@ -27,11 +23,7 @@ private:
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testDefault();
-	std::string testTag();
-	std::string testResolution();
-	std::string testStyle();
 	std::string testEvent();
-	std::string testDestroyed();
 	std::string testOpenPostQuit();
 	std::string testDelta();
 
