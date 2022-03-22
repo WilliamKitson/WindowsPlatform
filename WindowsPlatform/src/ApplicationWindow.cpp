@@ -29,6 +29,20 @@ void WindowsPlatform::ApplicationWindow::borderless()
 	);
 }
 
+void WindowsPlatform::ApplicationWindow::windowed()
+{
+	SetWindowLongPtr(
+		window,
+		GWL_STYLE,
+		getWindowed()
+	);
+
+	ShowWindow(
+		window,
+		nCmdShow
+	);
+}
+
 HWND WindowsPlatform::ApplicationWindow::getWindow()
 {
     return window;

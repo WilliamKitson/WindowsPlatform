@@ -16,6 +16,7 @@ namespace WindowsPlatform
 
 		void initialise(WNDCLASSEX);
 		void borderless();
+		void windowed();
 		HWND getWindow();
 		void setTag(std::string);
 		void setResolution(Vector2);

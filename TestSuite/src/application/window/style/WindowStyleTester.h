@@ -5,6 +5,7 @@
 
 #include "WindowStyleDefaultTest.h"
 #include "WindowStyleBorderlessTest.h"
+#include "WindowStyleWindowedTest.h"
 
 class WindowStyleTester
 {
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testDefault();
 	std::string testBorderless();
+	std::string testWindowed();
 
 
 private:

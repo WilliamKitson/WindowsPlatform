@@ -226,6 +226,7 @@
     <ClCompile Include="src\application\window\style\WindowStyleBorderlessTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleDefaultTest.cpp" />
     <ClCompile Include="src\application\window\style\WindowStyleTester.cpp" />
+    <ClCompile Include="src\application\window\style\WindowStyleWindowedTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagInitialiseTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
@@ -331,6 +332,7 @@
     <ClInclude Include="src\application\window\style\WindowStyleBorderlessTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleDefaultTest.h" />
     <ClInclude Include="src\application\window\style\WindowStyleTester.h" />
+    <ClInclude Include="src\application\window\style\WindowStyleWindowedTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagInitialiseTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
