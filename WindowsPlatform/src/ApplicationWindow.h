@@ -23,7 +23,6 @@ namespace WindowsPlatform
 
 
 	private:
-		HRESULT initialiseWindow(WNDCLASSEX);
 		DWORD getWindowed();
 		std::wstring getTag(WNDCLASSEX);
 		RECT getWindowRectangle(Vector2);

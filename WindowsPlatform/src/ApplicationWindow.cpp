@@ -12,7 +12,38 @@ WindowsPlatform::ApplicationWindow::~ApplicationWindow()
 
 void WindowsPlatform::ApplicationWindow::initialise(WNDCLASSEX windowClass)
 {
-	initialiseWindow(windowClass);
+	RECT windowRect = getWindowRectangle(Vector2());
+
+	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
+	{
+		return;
+	}
+
+	window = CreateWindow(
+		getTag(windowClass).c_str(),
+		getTag(windowClass).c_str(),
+		getWindowed(),
+		100,
+		100,
+		windowRect.right - windowRect.left,
+		windowRect.bottom - windowRect.top,
+		NULL,
+		NULL,
+		windowClass.hInstance,
+		NULL
+	);
+
+	if (!window)
+	{
+		return;
+	}
+
+	if (ShowWindow(window, nCmdShow))
+	{
+		return;
+	}
+
+	return;
 }
 
 void WindowsPlatform::ApplicationWindow::borderless()
@@ -76,42 +107,6 @@ void WindowsPlatform::ApplicationWindow::setResolution(Vector2 value)
 			true
 		);
 	}
-}
-
-HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(WNDCLASSEX windowClass)
-{
-	RECT windowRect = getWindowRectangle(Vector2());
-
-	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
-	{
-		return E_FAIL;
-	}
-
-	window = CreateWindow(
-		getTag(windowClass).c_str(),
-		getTag(windowClass).c_str(),
-		getWindowed(),
-		100,
-		100,
-		windowRect.right - windowRect.left,
-		windowRect.bottom - windowRect.top,
-		NULL,
-		NULL,
-		windowClass.hInstance,
-		NULL
-	);
-
-	if (!window)
-	{
-		return E_FAIL;
-	}
-
-	if (ShowWindow(window, nCmdShow))
-	{
-		return E_FAIL;
-	}
-
-	return S_OK;
 }
 
 DWORD WindowsPlatform::ApplicationWindow::getWindowed()
