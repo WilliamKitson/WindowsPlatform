@@ -1,7 +1,7 @@
 #include "RangeNormaliser.h"
 
 WindowsPlatform::RangeNormaliser::RangeNormaliser()
-	: minimum{ 0.0f }, maximum{ 1.0f }, normalised{ 0.0f }
+	: minimum{ 0.0f }, maximum{ 0.0f }, normalised{ 0.0f }
 {
 }
 
