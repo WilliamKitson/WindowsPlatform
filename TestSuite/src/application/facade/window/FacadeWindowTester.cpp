@@ -14,6 +14,7 @@ std::string FacadeWindowTester::test()
 	std::string failures{ "" };
 
 	failures += testTag();
+	failures += testResolution();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string FacadeWindowTester::test()
 std::string FacadeWindowTester::testTag()
 {
 	return FacadeWindowTagTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeWindowTester::testResolution()
+{
+	return FacadeWindowResolutionTest(hInstance, nCmdShow).test();
 }
