@@ -7,11 +7,10 @@
 #include <codecvt>
 
 #include "SubordinateFacade.h"
-#include "Vector2.h"
+#include "ApplicationWindow.h"
 #include "Mouse.h"
 #include "Keyboard.h"
 #include "DeltaTimer.h"
-#include "ResolutionValidator.h"
 
 namespace WindowsPlatform
 {
@@ -40,9 +39,6 @@ namespace WindowsPlatform
 	private:
 		void initialise(HINSTANCE, std::wstring);
 		HRESULT registerWindowClass(HINSTANCE, std::wstring);
-		HRESULT initialiseWindow(std::wstring);
-		RECT getWindowRectangle(Vector2);
-		DWORD getWindowed();
 		HRESULT initialiseRawInput();
 		void resetQuit();
 		void resetMinimise();
@@ -56,9 +52,8 @@ namespace WindowsPlatform
 
 
 	private:
-		const int nCmdShow;
 		WNDCLASSEX windowClass;
-		HWND window;
+		ApplicationWindow window;
 		bool quit;
 		bool minimise;
 		Vector2 drag;

@@ -1,14 +1,13 @@
 #include "SubordinateImplimentation.h"
 
-WindowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShowValue, std::string tag)
-	: SubordianteFacade(), nCmdShow{ nCmdShowValue }, windowClass(), window(), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
+WindowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShow, std::string tag)
+	: SubordianteFacade(), windowClass(), window(nCmdShow), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
 
 WindowsPlatform::SubordinateImplimentation::~SubordinateImplimentation()
 {
-	DestroyWindow(window);
 }
 
 void WindowsPlatform::SubordinateImplimentation::update()
@@ -23,7 +22,7 @@ void WindowsPlatform::SubordinateImplimentation::update()
 
 HWND WindowsPlatform::SubordinateImplimentation::getWindow()
 {
-    return window;
+    return window.getWindow();
 }
 
 bool WindowsPlatform::SubordinateImplimentation::getQuit()
@@ -63,70 +62,27 @@ float WindowsPlatform::SubordinateImplimentation::getDelta()
 
 void WindowsPlatform::SubordinateImplimentation::setTag(std::string value)
 {
-	SetWindowTextA(
-		window,
-		value.c_str()
-	);
+	window.setTag(value);
 }
 
 void WindowsPlatform::SubordinateImplimentation::setResolution(Vector2 value)
 {
-	RECT windowRect = getWindowRectangle(value);
-
-	if (!AdjustWindowRect(&windowRect, (DWORD)GetWindowLongPtr(window, GWL_STYLE), FALSE))
-	{
-		return;
-	}
-
-	if (window)
-	{
-		MoveWindow(
-			window,
-			100,
-			100,
-			windowRect.right - windowRect.left,
-			windowRect.bottom - windowRect.top,
-			true
-		);
-	}
+	window.setResolution(value);
 }
 
 void WindowsPlatform::SubordinateImplimentation::setBorderless()
 {
-	SetWindowLongPtr(
-		window,
-		GWL_STYLE,
-		WS_POPUPWINDOW
-	);
-
-	ShowWindow(
-		window,
-		nCmdShow
-	);
+	window.borderless();
 }
 
 void WindowsPlatform::SubordinateImplimentation::setWindowed()
 {
-	SetWindowLongPtr(
-		window,
-		GWL_STYLE,
-		getWindowed()
-	);
-
-	ShowWindow(
-		window,
-		nCmdShow
-	);
+	window.windowed();
 }
 
 void WindowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance, std::wstring tag)
 {
 	if (FAILED(registerWindowClass(hInstance, tag)))
-	{
-		return;
-	}
-
-	if (FAILED(initialiseWindow(tag)))
 	{
 		return;
 	}
@@ -148,66 +104,11 @@ HRESULT WindowsPlatform::SubordinateImplimentation::registerWindowClass(HINSTANC
 
 	if (RegisterClassEx(&windowClass))
 	{
+		window.initialise(windowClass);
 		return S_OK;
 	}
 
 	return E_FAIL;
-}
-
-HRESULT WindowsPlatform::SubordinateImplimentation::initialiseWindow(std::wstring tag)
-{
-	RECT windowRect = getWindowRectangle(Vector2());
-
-	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
-	{
-		return E_FAIL;
-	}
-
-	window = CreateWindow(
-		tag.c_str(),
-		tag.c_str(),
-		getWindowed(),
-		100,
-		100,
-		windowRect.right - windowRect.left,
-		windowRect.bottom - windowRect.top,
-		NULL,
-		NULL,
-		windowClass.hInstance,
-		NULL
-	);
-
-	if (!window)
-	{
-		return E_FAIL;
-	}
-
-	if (ShowWindow(window, nCmdShow))
-	{
-		return E_FAIL;
-	}
-
-	return S_OK;
-}
-
-RECT WindowsPlatform::SubordinateImplimentation::getWindowRectangle(Vector2 value)
-{
-	ResolutionValidator resolution;
-	resolution.setResolution((int)value.x, (int)value.y);
-
-	RECT windowRect = {
-		0,
-		0,
-		resolution.getWidth(),
-		resolution.getHeight()
-	};
-
-	return windowRect;
-}
-
-DWORD WindowsPlatform::SubordinateImplimentation::getWindowed()
-{
-	return { WS_TILED | WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION };
 }
 
 HRESULT WindowsPlatform::SubordinateImplimentation::initialiseRawInput()
@@ -218,7 +119,7 @@ HRESULT WindowsPlatform::SubordinateImplimentation::initialiseRawInput()
 		HID_USAGE_PAGE_GENERIC,
 		HID_USAGE_GENERIC_MOUSE,
 		RIDEV_INPUTSINK,
-		window
+		window.getWindow()
 	};
 
 	if (RegisterRawInputDevices(rawInputDevice, 1, sizeof(rawInputDevice[0])))
@@ -249,7 +150,7 @@ void WindowsPlatform::SubordinateImplimentation::messageLoop()
 	MSG message;
 	active = this;
 
-	while (PeekMessage(&message, window, 0, 0, PM_REMOVE))
+	while (PeekMessage(&message, window.getWindow(), 0, 0, PM_REMOVE))
 	{
 		TranslateMessage(&message);
 		DispatchMessage(&message);
