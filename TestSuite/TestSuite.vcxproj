@@ -223,6 +223,8 @@
     <ClCompile Include="src\application\window\resolution\WindowResolutionMinimumTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionSetTest.cpp" />
     <ClCompile Include="src\application\window\resolution\WindowResolutionTester.cpp" />
+    <ClCompile Include="src\application\window\style\WindowStyleDefaultTest.cpp" />
+    <ClCompile Include="src\application\window\style\WindowStyleTester.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagInitialiseTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
@@ -325,6 +327,8 @@
     <ClInclude Include="src\application\window\resolution\WindowResolutionMinimumTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionSetTest.h" />
     <ClInclude Include="src\application\window\resolution\WindowResolutionTester.h" />
+    <ClInclude Include="src\application\window\style\WindowStyleDefaultTest.h" />
+    <ClInclude Include="src\application\window\style\WindowStyleTester.h" />
     <ClInclude Include="src\application\window\tag\WindowTagInitialiseTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
