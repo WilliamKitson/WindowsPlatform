@@ -19,6 +19,14 @@ HWND WindowsPlatform::ApplicationWindow::getWindow()
     return window;
 }
 
+void WindowsPlatform::ApplicationWindow::setTag(std::string value)
+{
+	SetWindowTextA(
+		window,
+		value.c_str()
+	);
+}
+
 HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(WNDCLASSEX windowClass)
 {
 	RECT windowRect{

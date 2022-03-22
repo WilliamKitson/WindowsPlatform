@@ -14,6 +14,7 @@ std::string WindowTagTester::test()
 	std::string failures{ "" };
 
 	failures += testInitialise();
+	failures += testSet();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string WindowTagTester::test()
 std::string WindowTagTester::testInitialise()
 {
 	return WindowTagInitialiseTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowTagTester::testSet()
+{
+	return WindowTagSetTest(hInstance, nCmdShow).test();
 }

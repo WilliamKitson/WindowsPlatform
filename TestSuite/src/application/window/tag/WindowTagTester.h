@@ -4,6 +4,7 @@
 #include <string>
 
 #include "WindowTagInitialiseTest.h"
+#include "WindowTagSetTest.h"
 
 class WindowTagTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testInitialise();
+	std::string testSet();
 
 
 private:

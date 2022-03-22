@@ -220,6 +220,7 @@
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.cpp" />
     <ClCompile Include="src\application\mouse\xbuttons\MouseXButtonsTester.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagInitialiseTest.cpp" />
+    <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
     <ClCompile Include="src\application\window\WindowTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
@@ -316,6 +317,7 @@
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsReleaseTest.h" />
     <ClInclude Include="src\application\mouse\xbuttons\MouseXButtonsTester.h" />
     <ClInclude Include="src\application\window\tag\WindowTagInitialiseTest.h" />
+    <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
     <ClInclude Include="src\application\window\WindowTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />

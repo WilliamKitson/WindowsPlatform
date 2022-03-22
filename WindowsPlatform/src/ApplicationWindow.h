@@ -13,6 +13,7 @@ namespace WindowsPlatform
 
 		void initialise(WNDCLASSEX);
 		HWND getWindow();
+		void setTag(std::string);
 
 
 	private:
