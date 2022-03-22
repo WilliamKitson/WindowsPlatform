@@ -7,6 +7,7 @@ WindowsPlatform::ApplicationWindow::ApplicationWindow(int value)
 
 WindowsPlatform::ApplicationWindow::~ApplicationWindow()
 {
+	DestroyWindow(window);
 }
 
 void WindowsPlatform::ApplicationWindow::initialise(WNDCLASSEX windowClass)

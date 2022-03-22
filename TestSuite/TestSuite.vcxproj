@@ -226,6 +226,7 @@
     <ClCompile Include="src\application\window\tag\WindowTagInitialiseTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagSetTest.cpp" />
     <ClCompile Include="src\application\window\tag\WindowTagTester.cpp" />
+    <ClCompile Include="src\application\window\WindowDestoryedTest.cpp" />
     <ClCompile Include="src\application\window\WindowTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
     <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp" />
@@ -327,6 +328,7 @@
     <ClInclude Include="src\application\window\tag\WindowTagInitialiseTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagSetTest.h" />
     <ClInclude Include="src\application\window\tag\WindowTagTester.h" />
+    <ClInclude Include="src\application\window\WindowDestoryedTest.h" />
     <ClInclude Include="src\application\window\WindowTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
     <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h" />
