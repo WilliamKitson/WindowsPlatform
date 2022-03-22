@@ -14,6 +14,7 @@ std::string WindowStyleTester::test()
 	std::string failures{ "" };
 
 	failures += testDefault();
+	failures += testBorderless();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string WindowStyleTester::test()
 std::string WindowStyleTester::testDefault()
 {
 	return WindowStyleDefaultTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowStyleTester::testBorderless()
+{
+	return WindowStyleBorderlessTest(hInstance, nCmdShow).test();
 }

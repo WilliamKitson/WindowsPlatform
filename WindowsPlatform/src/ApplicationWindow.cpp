@@ -15,6 +15,20 @@ void WindowsPlatform::ApplicationWindow::initialise(WNDCLASSEX windowClass)
 	initialiseWindow(windowClass);
 }
 
+void WindowsPlatform::ApplicationWindow::borderless()
+{
+	SetWindowLongPtr(
+		window,
+		GWL_STYLE,
+		WS_POPUPWINDOW
+	);
+
+	ShowWindow(
+		window,
+		nCmdShow
+	);
+}
+
 HWND WindowsPlatform::ApplicationWindow::getWindow()
 {
     return window;
