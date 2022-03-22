@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+#include "window/FacadeWindowTester.h"
 #include "quit/FacadeQuitTester.h"
 #include "minimise/FacadeMinimiseTester.h"
 #include "default/FacadeDefaultTester.h"
@@ -20,6 +21,7 @@ public:
 
 
 private:
+	std::string testWindow();
 	std::string testQuit();
 	std::string testMinimise();
 	std::string testDefault();

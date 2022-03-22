@@ -13,6 +13,7 @@ std::string FacadeTester::test()
 {
 	std::string failures{ "" };
 
+	failures += testWindow();
 	failures += testQuit();
 	failures += testMinimise();
 	failures += testDefault();
@@ -21,6 +22,11 @@ std::string FacadeTester::test()
 	failures += testDelta();
 
 	return failures;
+}
+
+std::string FacadeTester::testWindow()
+{
+	return FacadeWindowTester(hInstance, nCmdShow).test();
 }
 
 std::string FacadeTester::testQuit()

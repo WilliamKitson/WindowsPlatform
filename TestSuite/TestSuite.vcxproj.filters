@@ -276,6 +276,12 @@
     <ClCompile Include="src\application\window\style\WindowStyleWindowedTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\facade\window\FacadeWindowTagTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\facade\window\FacadeWindowTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MemoryTest.h">
@@ -534,6 +540,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\window\style\WindowStyleWindowedTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\window\FacadeWindowTagTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\facade\window\FacadeWindowTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

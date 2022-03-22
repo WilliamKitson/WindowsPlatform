@@ -177,6 +177,8 @@
     <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitResetTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitTester.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowTagTest.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowTester.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp" />
     <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp" />
@@ -266,6 +268,8 @@
     <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitResetTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitTester.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowTagTest.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowTester.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h" />
     <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h" />
