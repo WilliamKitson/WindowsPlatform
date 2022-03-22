@@ -4,6 +4,7 @@
 #include <string>
 
 #include "tag/WindowTagTester.h"
+#include "resolution/WindowResolutionTester.h"
 
 class WindowTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testTag();
+	std::string testResolution();
 
 
 private:

@@ -14,6 +14,7 @@ std::string WindowTester::test()
 	std::string failures{ "" };
 
 	failures += testTag();
+	failures += testResolution();
 
 	return failures;
 }
@@ -21,4 +22,9 @@ std::string WindowTester::test()
 std::string WindowTester::testTag()
 {
 	return WindowTagTester(hInstance, nCmdShow).test();
+}
+
+std::string WindowTester::testResolution()
+{
+	return WindowResolutionTester(hInstance, nCmdShow).test();
 }

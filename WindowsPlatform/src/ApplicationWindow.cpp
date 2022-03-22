@@ -32,8 +32,8 @@ HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(WNDCLASSEX windowCl
 	RECT windowRect{
 		0,
 		0,
-		500,
-		500
+		960,
+		540
 	};
 
 	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
