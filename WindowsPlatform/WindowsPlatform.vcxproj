@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\Gamepad.h" />
     <ClInclude Include="src\GamepadButtons.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="src\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\Gamepad.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />

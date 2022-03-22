@@ -14,6 +14,7 @@ std::string ApplicationTester::test()
 	std::string failures{ "" };
 
 	failures += testDelta();
+	failures += testWindow();
 	failures += testMouse();
 	failures += testKeyboard();
 	failures += testGamepad();
@@ -25,6 +26,11 @@ std::string ApplicationTester::test()
 std::string ApplicationTester::testDelta()
 {
 	return DeltaTester().test();
+}
+
+std::string ApplicationTester::testWindow()
+{
+	return WindowTester(hInstance, nCmdShow).test();
 }
 
 std::string ApplicationTester::testMouse()
