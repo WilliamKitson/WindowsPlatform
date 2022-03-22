@@ -15,6 +15,7 @@ std::string FacadeWindowTester::test()
 
 	failures += testTag();
 	failures += testResolution();
+	failures += testBorderless();
 	failures += testWindowed();
 
 	return failures;
@@ -28,6 +29,11 @@ std::string FacadeWindowTester::testTag()
 std::string FacadeWindowTester::testResolution()
 {
 	return FacadeWindowResolutionTest(hInstance, nCmdShow).test();
+}
+
+std::string FacadeWindowTester::testBorderless()
+{
+	return FacadeWindowBorderlessTest(hInstance, nCmdShow).test();
 }
 
 std::string FacadeWindowTester::testWindowed()

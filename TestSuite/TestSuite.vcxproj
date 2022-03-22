@@ -172,6 +172,7 @@
     <ClCompile Include="src\application\facade\quit\FacadeQuitEventTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitResetTest.cpp" />
     <ClCompile Include="src\application\facade\quit\FacadeQuitTester.cpp" />
+    <ClCompile Include="src\application\facade\window\FacadeWindowBorderlessTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowResolutionTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowTagTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowTester.cpp" />
@@ -260,6 +261,7 @@
     <ClInclude Include="src\application\facade\quit\FacadeQuitEventTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitResetTest.h" />
     <ClInclude Include="src\application\facade\quit\FacadeQuitTester.h" />
+    <ClInclude Include="src\application\facade\window\FacadeWindowBorderlessTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowResolutionTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowTagTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowTester.h" />
