@@ -4,6 +4,7 @@
 #include <string>
 
 #include "WindowResolutionDefaultTest.h"
+#include "WindowResolutionSetTest.h"
 
 class WindowResolutionTester
 {
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testSet();
 
 
 private:

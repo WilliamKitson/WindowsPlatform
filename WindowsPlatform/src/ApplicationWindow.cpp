@@ -27,14 +27,31 @@ void WindowsPlatform::ApplicationWindow::setTag(std::string value)
 	);
 }
 
+void WindowsPlatform::ApplicationWindow::setResolution(Vector2 value)
+{
+	RECT windowRect = getWindowRectangle(value);
+
+	if (!AdjustWindowRect(&windowRect, (DWORD)GetWindowLongPtr(window, GWL_STYLE), FALSE))
+	{
+		return;
+	}
+
+	if (window)
+	{
+		MoveWindow(
+			window,
+			100,
+			100,
+			windowRect.right - windowRect.left,
+			windowRect.bottom - windowRect.top,
+			true
+		);
+	}
+}
+
 HRESULT WindowsPlatform::ApplicationWindow::initialiseWindow(WNDCLASSEX windowClass)
 {
-	RECT windowRect{
-		0,
-		0,
-		960,
-		540
-	};
+	RECT windowRect = getWindowRectangle(Vector2());
 
 	if (!AdjustWindowRect(&windowRect, getWindowed(), FALSE))
 	{
@@ -76,4 +93,19 @@ DWORD WindowsPlatform::ApplicationWindow::getWindowed()
 std::wstring WindowsPlatform::ApplicationWindow::getTag(WNDCLASSEX windowClass)
 {
 	return windowClass.lpszClassName;
+}
+
+RECT WindowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
+{
+	ResolutionValidator resolution;
+	resolution.setResolution((int)value.x, (int)value.y);
+
+	RECT windowRect = {
+		0,
+		0,
+		resolution.getWidth(),
+		resolution.getHeight()
+	};
+
+	return windowRect;
 }

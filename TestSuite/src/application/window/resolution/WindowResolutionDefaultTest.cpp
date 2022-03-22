@@ -17,14 +17,13 @@ std::string WindowResolutionDefaultTest::test()
 	};
 
 	unit.initialise(windowClass);
-	WindowsPlatform::Vector2 window = windowResolution(unit.getWindow());
 
 	WindowsPlatform::Vector2 resolution{
 		960.0f,
 		540.0f
 	};
 
-	if (window == resolution)
+	if (windowResolution(unit.getWindow()) == resolution)
 	{
 		return std::string();
 	}
