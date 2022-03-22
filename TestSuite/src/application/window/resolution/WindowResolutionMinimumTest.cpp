@@ -1,0 +1,70 @@
+#include "WindowResolutionMinimumTest.h"
+
+WindowResolutionMinimumTest::WindowResolutionMinimumTest(HINSTANCE hInstanceValue, int nCmdShowValue)
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, windowClass()
+{
+	initialiseWindowClass();
+}
+
+WindowResolutionMinimumTest::~WindowResolutionMinimumTest()
+{
+}
+
+std::string WindowResolutionMinimumTest::test()
+{
+	WindowsPlatform::ApplicationWindow unit{
+		nCmdShow
+	};
+
+	unit.initialise(windowClass);
+	unit.setResolution(WindowsPlatform::Vector2());
+
+	WindowsPlatform::Vector2 resolution{
+		960.0f,
+		540.0f
+	};
+
+	if (windowResolution(unit.getWindow()) == resolution)
+	{
+		return std::string();
+	}
+
+	return "window resolution minimum test failed\n";
+}
+
+HRESULT WindowResolutionMinimumTest::initialiseWindowClass()
+{
+	windowClass.cbSize = sizeof(WNDCLASSEX);
+	windowClass.style = CS_HREDRAW | CS_VREDRAW;
+	windowClass.lpfnWndProc = windowProcedure;
+	windowClass.hInstance = hInstance;
+	windowClass.hCursor = LoadCursor(NULL, IDC_ARROW);
+	windowClass.lpszClassName = L"window resolution default test";
+
+	if (RegisterClassEx(&windowClass))
+	{
+		return S_OK;
+	}
+
+	return E_FAIL;
+}
+
+LRESULT WindowResolutionMinimumTest::windowProcedure(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
+{
+	return DefWindowProc(window, message, wParam, lParam);
+}
+
+WindowsPlatform::Vector2 WindowResolutionMinimumTest::windowResolution(HWND window)
+{
+	RECT windowRect;
+
+	GetClientRect(
+		window,
+		&windowRect
+	);
+
+	return WindowsPlatform::Vector2{
+		(float)(windowRect.right - windowRect.left),
+		(float)(windowRect.bottom - windowRect.top)
+	};
+}

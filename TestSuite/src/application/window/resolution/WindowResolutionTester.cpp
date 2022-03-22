@@ -15,6 +15,7 @@ std::string WindowResolutionTester::test()
 
 	failures += testDefault();
 	failures += testSet();
+	failures += testMinimum();
 
 	return failures;
 }
@@ -27,4 +28,9 @@ std::string WindowResolutionTester::testDefault()
 std::string WindowResolutionTester::testSet()
 {
 	return WindowResolutionSetTest(hInstance, nCmdShow).test();
+}
+
+std::string WindowResolutionTester::testMinimum()
+{
+	return WindowResolutionMinimumTest(hInstance, nCmdShow).test();
 }

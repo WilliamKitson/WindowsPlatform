@@ -5,6 +5,7 @@
 
 #include "WindowResolutionDefaultTest.h"
 #include "WindowResolutionSetTest.h"
+#include "WindowResolutionMinimumTest.h"
 
 class WindowResolutionTester
 {
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testDefault();
 	std::string testSet();
+	std::string testMinimum();
 
 
 private:
