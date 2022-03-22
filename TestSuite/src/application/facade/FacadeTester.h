@@ -6,7 +6,6 @@
 #include "window/FacadeWindowTester.h"
 #include "quit/FacadeQuitTester.h"
 #include "minimise/FacadeMinimiseTester.h"
-#include "default/FacadeDefaultTester.h"
 #include "event/FacadeEventTester.h"
 #include "FacadeOpenPostQuitTest.h"
 #include "FacadeDeltaTest.h"
@@ -24,7 +23,6 @@ private:
 	std::string testWindow();
 	std::string testQuit();
 	std::string testMinimise();
-	std::string testDefault();
 	std::string testEvent();
 	std::string testOpenPostQuit();
 	std::string testDelta();

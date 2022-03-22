@@ -174,21 +174,6 @@
     <ClCompile Include="src\application\mouse\wheel\MouseWheelResetTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultCursorTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultDragTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultKeyboardTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultMouseTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\facade\default\FacadeDefaultTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\facade\event\FacadeEventCursorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -441,21 +426,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\mouse\wheel\MouseWheelResetTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultCursorTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultDragTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultKeyboardTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultMouseTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\facade\default\FacadeDefaultTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\facade\event\FacadeEventCursorTest.h">

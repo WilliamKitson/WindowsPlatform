@@ -156,11 +156,6 @@
     <ClCompile Include="src\application\delta\DeltaResetTest.cpp" />
     <ClCompile Include="src\application\delta\DeltaTester.cpp" />
     <ClCompile Include="src\application\delta\DeltaUpdateTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultCursorTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultDragTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultKeyboardTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultMouseTest.cpp" />
-    <ClCompile Include="src\application\facade\default\FacadeDefaultTester.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventCursorTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventDragTest.cpp" />
     <ClCompile Include="src\application\facade\event\FacadeEventKeyboardTest.cpp" />
@@ -248,11 +243,6 @@
     <ClInclude Include="src\application\delta\DeltaResetTest.h" />
     <ClInclude Include="src\application\delta\DeltaTester.h" />
     <ClInclude Include="src\application\delta\DeltaUpdateTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultCursorTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultDragTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultKeyboardTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultMouseTest.h" />
-    <ClInclude Include="src\application\facade\default\FacadeDefaultTester.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventCursorTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventDragTest.h" />
     <ClInclude Include="src\application\facade\event\FacadeEventKeyboardTest.h" />

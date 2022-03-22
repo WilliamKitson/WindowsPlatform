@@ -16,7 +16,6 @@ std::string FacadeTester::test()
 	failures += testWindow();
 	failures += testQuit();
 	failures += testMinimise();
-	failures += testDefault();
 	failures += testEvent();
 	failures += testOpenPostQuit();
 	failures += testDelta();
@@ -37,11 +36,6 @@ std::string FacadeTester::testQuit()
 std::string FacadeTester::testMinimise()
 {
 	return FacadeMinimiseTester(hInstance, nCmdShow).test();
-}
-
-std::string FacadeTester::testDefault()
-{
-	return FacadeDefaultTester(hInstance, nCmdShow).test();
 }
 
 std::string FacadeTester::testEvent()
