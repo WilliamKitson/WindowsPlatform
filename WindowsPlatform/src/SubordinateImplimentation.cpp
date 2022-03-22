@@ -82,7 +82,7 @@ void WindowsPlatform::SubordinateImplimentation::setWindowed()
 
 void WindowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance, std::wstring tag)
 {
-	if (FAILED(registerWindowClass(hInstance, tag)))
+	if (FAILED(initialiseWindowClass(hInstance, tag)))
 	{
 		return;
 	}
@@ -93,7 +93,7 @@ void WindowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance,
 	}
 }
 
-HRESULT WindowsPlatform::SubordinateImplimentation::registerWindowClass(HINSTANCE hInstance, std::wstring tag)
+HRESULT WindowsPlatform::SubordinateImplimentation::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
 {
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;

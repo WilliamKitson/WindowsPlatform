@@ -38,7 +38,7 @@ namespace WindowsPlatform
 
 	private:
 		void initialise(HINSTANCE, std::wstring);
-		HRESULT registerWindowClass(HINSTANCE, std::wstring);
+		HRESULT initialiseWindowClass(HINSTANCE, std::wstring);
 		HRESULT initialiseRawInput();
 		void resetQuit();
 		void resetMinimise();
