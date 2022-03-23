@@ -19,7 +19,7 @@ public:
 private:
 	HRESULT initialiseWindowClass();
 	static LRESULT CALLBACK windowProcedure(HWND, UINT, WPARAM, LPARAM);
-	WindowsPlatform::Vector2 windowResolution(HWND);
+	windowsPlatform::Vector2 windowResolution(HWND);
 
 
 private:

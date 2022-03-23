@@ -1,31 +1,31 @@
 #include "RangeNormaliser.h"
 
-WindowsPlatform::RangeNormaliser::RangeNormaliser()
+windowsPlatform::RangeNormaliser::RangeNormaliser()
 	: minimum{ 0.0f }, maximum{ 0.0f }, normalised{ 0.0f }
 {
 }
 
-WindowsPlatform::RangeNormaliser::~RangeNormaliser()
+windowsPlatform::RangeNormaliser::~RangeNormaliser()
 {
 }
 
-void WindowsPlatform::RangeNormaliser::normalise(float min, float max, float current)
+void windowsPlatform::RangeNormaliser::normalise(float min, float max, float current)
 {
 	normalised = ((maximum - minimum) * ((current - min) / (max - min)) + minimum);
 }
 
-float WindowsPlatform::RangeNormaliser::getNormalised()
+float windowsPlatform::RangeNormaliser::getNormalised()
 {
 	return normalised;
 }
 
-void WindowsPlatform::RangeNormaliser::setRange(float min, float max)
+void windowsPlatform::RangeNormaliser::setRange(float min, float max)
 {
 	minimum = getSmaller(min, max);
 	maximum = getLarger(min, max);
 }
 
-float WindowsPlatform::RangeNormaliser::getSmaller(float x, float y)
+float windowsPlatform::RangeNormaliser::getSmaller(float x, float y)
 {
 	if (x < y)
 	{
@@ -35,7 +35,7 @@ float WindowsPlatform::RangeNormaliser::getSmaller(float x, float y)
 	return y;
 }
 
-float WindowsPlatform::RangeNormaliser::getLarger(float x, float y)
+float windowsPlatform::RangeNormaliser::getLarger(float x, float y)
 {
 	if (x > y)
 	{

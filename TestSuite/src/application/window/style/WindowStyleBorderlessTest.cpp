@@ -12,7 +12,7 @@ WindowStyleBorderlessTest::~WindowStyleBorderlessTest()
 
 std::string WindowStyleBorderlessTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	windowsPlatform::ApplicationWindow unit{
 		nCmdShow
 	};
 

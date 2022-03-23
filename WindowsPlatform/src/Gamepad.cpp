@@ -1,34 +1,34 @@
 #include "Gamepad.h"
 
-WindowsPlatform::Gamepad::Gamepad()
+windowsPlatform::Gamepad::Gamepad()
 {
 }
 
-WindowsPlatform::Gamepad::~Gamepad()
+windowsPlatform::Gamepad::~Gamepad()
 {
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::Gamepad::getJoystickLeft()
-{
-	return Vector2();
-}
-
-WindowsPlatform::Vector2 WindowsPlatform::Gamepad::getJoystickRight()
+windowsPlatform::Vector2 windowsPlatform::Gamepad::getJoystickLeft()
 {
 	return Vector2();
 }
 
-float WindowsPlatform::Gamepad::getTriggerLeft()
+windowsPlatform::Vector2 windowsPlatform::Gamepad::getJoystickRight()
+{
+	return Vector2();
+}
+
+float windowsPlatform::Gamepad::getTriggerLeft()
 {
 	return 0.0f;
 }
 
-float WindowsPlatform::Gamepad::getTriggerRight()
+float windowsPlatform::Gamepad::getTriggerRight()
 {
 	return 0.0f;
 }
 
-bool WindowsPlatform::Gamepad::getButton(GamepadButtons)
+bool windowsPlatform::Gamepad::getButton(GamepadButtons)
 {
 	return false;
 }

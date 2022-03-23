@@ -11,17 +11,17 @@ MouseButtonsReleaseTest::~MouseButtonsReleaseTest()
 
 std::string MouseButtonsReleaseTest::test()
 {
-	WindowsPlatform::Mouse unit;
+	windowsPlatform::Mouse unit;
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
 	{
-		unit.press((WindowsPlatform::MouseButtons)i);
-		unit.release((WindowsPlatform::MouseButtons)i);
+		unit.press((windowsPlatform::MouseButtons)i);
+		unit.release((windowsPlatform::MouseButtons)i);
 
-		successes += unit.getButton((WindowsPlatform::MouseButtons)i) == false;
+		successes += unit.getButton((windowsPlatform::MouseButtons)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::MouseButtons::size)
+	if (successes == (int)windowsPlatform::MouseButtons::size)
 	{
 		return std::string();
 	}

@@ -10,7 +10,7 @@ NormaliserRangeDefaultTest::~NormaliserRangeDefaultTest()
 
 std::string NormaliserRangeDefaultTest::test()
 {
-	WindowsPlatform::RangeNormaliser unit;
+	windowsPlatform::RangeNormaliser unit;
 	
 	unit.normalise(0.0f, 100.0f, 50.0f);
 

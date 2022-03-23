@@ -6,7 +6,7 @@
 #include "Vector2.h"
 #include "ResolutionValidator.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class ApplicationWindow
 	{

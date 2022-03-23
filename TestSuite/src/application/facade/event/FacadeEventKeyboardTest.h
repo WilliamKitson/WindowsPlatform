@@ -16,10 +16,10 @@ public:
 
 
 private:
-	void postDown(HWND, WindowsPlatform::KeyboardKeys);
-	void postUp(HWND, WindowsPlatform::KeyboardKeys);
-	bool isSysKey(WindowsPlatform::KeyboardKeys);
-	WPARAM getKeyCode(WindowsPlatform::KeyboardKeys);
+	void postDown(HWND, windowsPlatform::KeyboardKeys);
+	void postUp(HWND, windowsPlatform::KeyboardKeys);
+	bool isSysKey(windowsPlatform::KeyboardKeys);
+	WPARAM getKeyCode(windowsPlatform::KeyboardKeys);
 
 
 private:

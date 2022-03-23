@@ -17,12 +17,12 @@ public:
 
 
 private:
-	WindowsPlatform::Vector2 windowResolution(HWND);
+	windowsPlatform::Vector2 windowResolution(HWND);
 
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
-	WindowsPlatform::Vector2 resolution;
+	windowsPlatform::Vector2 resolution;
 };
 

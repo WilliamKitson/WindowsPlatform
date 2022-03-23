@@ -11,7 +11,7 @@ FacadeWindowBorderlessTest::~FacadeWindowBorderlessTest()
 
 std::string FacadeWindowBorderlessTest::test()
 {
-	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade window borderless test"

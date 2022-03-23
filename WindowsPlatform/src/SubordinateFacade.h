@@ -7,7 +7,7 @@
 #include "MouseButtons.h"
 #include "KeyboardKeys.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class SubordianteFacade
 	{

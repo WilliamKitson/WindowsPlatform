@@ -11,13 +11,13 @@ MouseXButtonsPressTest::~MouseXButtonsPressTest()
 
 std::string MouseXButtonsPressTest::test()
 {
-	WindowsPlatform::Mouse unit;
+	windowsPlatform::Mouse unit;
 
 	unit.press((WPARAM)65536);
-	successes += unit.getButton(WindowsPlatform::MouseButtons::mouse_MB4) == true;
+	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_MB4) == true;
 
 	unit.press((WPARAM)131072);
-	successes += unit.getButton(WindowsPlatform::MouseButtons::mouse_MB5) == true;
+	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_MB5) == true;
 
 	if (successes == 2)
 	{

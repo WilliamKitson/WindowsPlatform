@@ -11,14 +11,14 @@ GamepadDefaultButtonsTest::~GamepadDefaultButtonsTest()
 
 std::string GamepadDefaultButtonsTest::test()
 {
-	WindowsPlatform::Gamepad unit;
+	windowsPlatform::Gamepad unit;
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::GamepadButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::GamepadButtons::size; i++)
 	{
-		successes += unit.getButton((WindowsPlatform::GamepadButtons)i) == false;
+		successes += unit.getButton((windowsPlatform::GamepadButtons)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::GamepadButtons::size)
+	if (successes == (int)windowsPlatform::GamepadButtons::size)
 	{
 		return std::string();
 	}

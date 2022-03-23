@@ -2,7 +2,7 @@
 
 #include <chrono>
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class DeltaTimer
 	{

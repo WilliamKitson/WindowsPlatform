@@ -10,7 +10,7 @@ MouseDefaultCursorTest::~MouseDefaultCursorTest()
 
 std::string MouseDefaultCursorTest::test()
 {
-	if (WindowsPlatform::Mouse().getCursor() == WindowsPlatform::Vector2())
+	if (windowsPlatform::Mouse().getCursor() == windowsPlatform::Vector2())
 	{
 		return std::string();
 	}

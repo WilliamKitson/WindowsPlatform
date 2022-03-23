@@ -1,31 +1,31 @@
 #include "Keyboard.h"
 
-WindowsPlatform::Keyboard::Keyboard()
+windowsPlatform::Keyboard::Keyboard()
 	: keys()
 {
 	initialiseKeys();
 }
 
-WindowsPlatform::Keyboard::~Keyboard()
+windowsPlatform::Keyboard::~Keyboard()
 {
 }
 
-void WindowsPlatform::Keyboard::press(WPARAM wParam)
+void windowsPlatform::Keyboard::press(WPARAM wParam)
 {
 	keys[(int)getIndex(wParam)] = true;
 }
 
-void WindowsPlatform::Keyboard::release(WPARAM wParam)
+void windowsPlatform::Keyboard::release(WPARAM wParam)
 {
 	keys[(int)getIndex(wParam)] = false;
 }
 
-bool WindowsPlatform::Keyboard::getKey(KeyboardKeys index)
+bool windowsPlatform::Keyboard::getKey(KeyboardKeys index)
 {
 	return keys[(int)index];
 }
 
-void WindowsPlatform::Keyboard::initialiseKeys()
+void windowsPlatform::Keyboard::initialiseKeys()
 {
 	for (int i{ 0 }; i < (int)KeyboardKeys::size; i++)
 	{
@@ -33,7 +33,7 @@ void WindowsPlatform::Keyboard::initialiseKeys()
 	}
 }
 
-WindowsPlatform::KeyboardKeys WindowsPlatform::Keyboard::getIndex(WPARAM wParam)
+windowsPlatform::KeyboardKeys windowsPlatform::Keyboard::getIndex(WPARAM wParam)
 {
 	switch (wParam)
 	{

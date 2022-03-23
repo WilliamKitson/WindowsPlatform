@@ -11,7 +11,7 @@ ResolutionParameterWidthTest::~ResolutionParameterWidthTest()
 
 std::string ResolutionParameterWidthTest::test()
 {
-	WindowsPlatform::ResolutionValidator unit;
+	windowsPlatform::ResolutionValidator unit;
 
 	unit.setResolution(width, 0);
 

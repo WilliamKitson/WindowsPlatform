@@ -12,13 +12,13 @@ WindowResolutionDefaultTest::~WindowResolutionDefaultTest()
 
 std::string WindowResolutionDefaultTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	windowsPlatform::ApplicationWindow unit{
 		nCmdShow
 	};
 
 	unit.initialise(windowClass);
 
-	WindowsPlatform::Vector2 resolution{
+	windowsPlatform::Vector2 resolution{
 		960.0f,
 		540.0f
 	};
@@ -53,7 +53,7 @@ LRESULT WindowResolutionDefaultTest::windowProcedure(HWND window, UINT message, 
 	return DefWindowProc(window, message, wParam, lParam);
 }
 
-WindowsPlatform::Vector2 WindowResolutionDefaultTest::windowResolution(HWND window)
+windowsPlatform::Vector2 WindowResolutionDefaultTest::windowResolution(HWND window)
 {
 	RECT windowRect;
 
@@ -62,7 +62,7 @@ WindowsPlatform::Vector2 WindowResolutionDefaultTest::windowResolution(HWND wind
 		&windowRect
 	);
 
-	return WindowsPlatform::Vector2{
+	return windowsPlatform::Vector2{
 		(float)(windowRect.right - windowRect.left),
 		(float)(windowRect.bottom - windowRect.top)
 	};

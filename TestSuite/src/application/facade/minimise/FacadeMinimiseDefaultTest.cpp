@@ -11,7 +11,7 @@ FacadeDefaultMinimiseTest::~FacadeDefaultMinimiseTest()
 
 std::string FacadeDefaultMinimiseTest::test()
 {
-	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance, 
 		nCmdShow, 
 		"facade minimise defualt test"

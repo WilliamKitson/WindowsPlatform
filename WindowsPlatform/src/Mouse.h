@@ -6,7 +6,7 @@
 #include "Vector2.h"
 #include "MouseButtons.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class Mouse
 	{

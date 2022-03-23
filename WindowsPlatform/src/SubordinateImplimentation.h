@@ -12,7 +12,7 @@
 #include "Keyboard.h"
 #include "DeltaTimer.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class SubordinateImplimentation
 		: public SubordianteFacade

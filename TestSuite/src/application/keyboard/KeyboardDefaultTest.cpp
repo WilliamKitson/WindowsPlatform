@@ -11,14 +11,14 @@ KeyboardDefaultTest::~KeyboardDefaultTest()
 
 std::string KeyboardDefaultTest::test()
 {
-	WindowsPlatform::Keyboard unit;
+	windowsPlatform::Keyboard unit;
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::KeyboardKeys::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::KeyboardKeys::size; i++)
 	{
-		successes += unit.getKey((WindowsPlatform::KeyboardKeys)i) == false;
+		successes += unit.getKey((windowsPlatform::KeyboardKeys)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::KeyboardKeys::size)
+	if (successes == (int)windowsPlatform::KeyboardKeys::size)
 	{
 		return std::string();
 	}

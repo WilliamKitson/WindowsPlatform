@@ -1,16 +1,16 @@
 #include "Mouse.h"
 
-WindowsPlatform::Mouse::Mouse()
+windowsPlatform::Mouse::Mouse()
 	: cursor(), buttons()
 {
 	initialiseButtons();
 }
 
-WindowsPlatform::Mouse::~Mouse()
+windowsPlatform::Mouse::~Mouse()
 {
 }
 
-void WindowsPlatform::Mouse::move(LPARAM lParam)
+void windowsPlatform::Mouse::move(LPARAM lParam)
 {
 	cursor = Vector2{
 		(float)GET_X_LPARAM(lParam),
@@ -18,17 +18,17 @@ void WindowsPlatform::Mouse::move(LPARAM lParam)
 	};
 }
 
-void WindowsPlatform::Mouse::press(MouseButtons index)
+void windowsPlatform::Mouse::press(MouseButtons index)
 {
 	buttons[(int)index] = true;
 }
 
-void WindowsPlatform::Mouse::press(WPARAM wParam)
+void windowsPlatform::Mouse::press(WPARAM wParam)
 {
 	buttons[(int)xbuttonIndex(wParam)] = true;
 }
 
-void WindowsPlatform::Mouse::wheel(WPARAM wParam)
+void windowsPlatform::Mouse::wheel(WPARAM wParam)
 {
 	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
 	{
@@ -39,33 +39,33 @@ void WindowsPlatform::Mouse::wheel(WPARAM wParam)
 	buttons[(unsigned int)MouseButtons::mouse_scrollBackwards] = true;
 }
 
-void WindowsPlatform::Mouse::release(MouseButtons index)
+void windowsPlatform::Mouse::release(MouseButtons index)
 {
 	buttons[(int)index] = false;
 }
 
-void WindowsPlatform::Mouse::release(WPARAM wParam)
+void windowsPlatform::Mouse::release(WPARAM wParam)
 {
 	buttons[(int)xbuttonIndex(wParam)] = false;
 }
 
-void WindowsPlatform::Mouse::reset()
+void windowsPlatform::Mouse::reset()
 {
 	buttons[(int)MouseButtons::mouse_scrollForwards] = false;
 	buttons[(int)MouseButtons::mouse_scrollBackwards] = false;
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::Mouse::getCursor()
+windowsPlatform::Vector2 windowsPlatform::Mouse::getCursor()
 {
 	return cursor;
 }
 
-bool WindowsPlatform::Mouse::getButton(MouseButtons index)
+bool windowsPlatform::Mouse::getButton(MouseButtons index)
 {
 	return buttons[(int)index];
 }
 
-void WindowsPlatform::Mouse::initialiseButtons()
+void windowsPlatform::Mouse::initialiseButtons()
 {
 	for (int i{ 0 }; i < (int)MouseButtons::size; i++)
 	{
@@ -73,7 +73,7 @@ void WindowsPlatform::Mouse::initialiseButtons()
 	}
 }
 
-WindowsPlatform::MouseButtons WindowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
+windowsPlatform::MouseButtons windowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
 {
 	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
 	{

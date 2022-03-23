@@ -10,12 +10,12 @@ VectorDefaultTest::~VectorDefaultTest()
 
 std::string VectorDefaultTest::test()
 {
-	WindowsPlatform::Vector2 unit{
+	windowsPlatform::Vector2 unit{
 		0.0f,
 		0.0f
 	};
 
-	if (unit == WindowsPlatform::Vector2())
+	if (unit == windowsPlatform::Vector2())
 	{
 		return std::string();
 	}

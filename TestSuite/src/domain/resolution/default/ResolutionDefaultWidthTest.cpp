@@ -10,7 +10,7 @@ ResolutionDefaultWidthTest::~ResolutionDefaultWidthTest()
 
 std::string ResolutionDefaultWidthTest::test()
 {
-	if (WindowsPlatform::ResolutionValidator().getWidth() == 960)
+	if (windowsPlatform::ResolutionValidator().getWidth() == 960)
 	{
 		return std::string();
 	}

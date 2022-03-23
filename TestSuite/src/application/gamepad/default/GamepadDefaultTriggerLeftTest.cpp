@@ -10,7 +10,7 @@ GamepadDefaultTriggerLeftTest::~GamepadDefaultTriggerLeftTest()
 
 std::string GamepadDefaultTriggerLeftTest::test()
 {
-	if (WindowsPlatform::Gamepad().getTriggerLeft() == 0.0f)
+	if (windowsPlatform::Gamepad().getTriggerLeft() == 0.0f)
 	{
 		return std::string();
 	}

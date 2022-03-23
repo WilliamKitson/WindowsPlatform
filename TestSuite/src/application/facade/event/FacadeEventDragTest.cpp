@@ -11,7 +11,7 @@ FacadeEventDragTest::~FacadeEventDragTest()
 
 std::string FacadeEventDragTest::test()
 {
-	WindowsPlatform::SubordianteFacade* unit = new WindowsPlatform::SubordinateImplimentation(
+	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		tagPrefix

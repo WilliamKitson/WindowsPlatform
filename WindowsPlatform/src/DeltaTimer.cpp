@@ -1,31 +1,31 @@
 #include "DeltaTimer.h"
 
-WindowsPlatform::DeltaTimer::DeltaTimer()
+windowsPlatform::DeltaTimer::DeltaTimer()
 	: delta{ 0.0f }, start(std::chrono::high_resolution_clock::now())
 {
 }
 
-WindowsPlatform::DeltaTimer::~DeltaTimer()
+windowsPlatform::DeltaTimer::~DeltaTimer()
 {
 }
 
-void WindowsPlatform::DeltaTimer::update()
+void windowsPlatform::DeltaTimer::update()
 {
 	calculateDelta();
 	resetStart();
 }
 
-float WindowsPlatform::DeltaTimer::getDelta()
+float windowsPlatform::DeltaTimer::getDelta()
 {
 	return delta;
 }
 
-void WindowsPlatform::DeltaTimer::calculateDelta()
+void windowsPlatform::DeltaTimer::calculateDelta()
 {
 	delta = (float)std::chrono::duration<double>(std::chrono::high_resolution_clock::now() - start).count();
 }
 
-void WindowsPlatform::DeltaTimer::resetStart()
+void windowsPlatform::DeltaTimer::resetStart()
 {
 	start = std::chrono::high_resolution_clock::now();
 }

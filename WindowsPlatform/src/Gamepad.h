@@ -3,7 +3,7 @@
 #include "Vector2.h"
 #include "GamepadButtons.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class Gamepad
 	{

@@ -10,7 +10,7 @@ ResolutionMinimumHeightTest::~ResolutionMinimumHeightTest()
 
 std::string ResolutionMinimumHeightTest::test()
 {
-	WindowsPlatform::ResolutionValidator unit;
+	windowsPlatform::ResolutionValidator unit;
 
 	unit.setResolution(0, 0);
 

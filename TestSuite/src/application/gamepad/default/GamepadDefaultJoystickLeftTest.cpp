@@ -10,7 +10,7 @@ GamepadDefaultJoystickLeftTest::~GamepadDefaultJoystickLeftTest()
 
 std::string GamepadDefaultJoystickLeftTest::test()
 {
-	if (WindowsPlatform::Gamepad().getJoystickLeft() == WindowsPlatform::Vector2())
+	if (windowsPlatform::Gamepad().getJoystickLeft() == windowsPlatform::Vector2())
 	{
 		return std::string();
 	}

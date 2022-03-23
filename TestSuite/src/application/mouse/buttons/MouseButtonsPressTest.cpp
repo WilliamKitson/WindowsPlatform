@@ -11,15 +11,15 @@ MouseButtonsPressTest::~MouseButtonsPressTest()
 
 std::string MouseButtonsPressTest::test()
 {
-	WindowsPlatform::Mouse unit;
+	windowsPlatform::Mouse unit;
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
 	{
-		unit.press((WindowsPlatform::MouseButtons)i);
-		successes += unit.getButton((WindowsPlatform::MouseButtons)i) == true;
+		unit.press((windowsPlatform::MouseButtons)i);
+		successes += unit.getButton((windowsPlatform::MouseButtons)i) == true;
 	}
 
-	if (successes == (int)WindowsPlatform::MouseButtons::size)
+	if (successes == (int)windowsPlatform::MouseButtons::size)
 	{
 		return std::string();
 	}

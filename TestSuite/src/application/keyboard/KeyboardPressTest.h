@@ -15,7 +15,7 @@ public:
 
 
 private:
-	WPARAM getWparam(WindowsPlatform::KeyboardKeys);
+	WPARAM getWparam(windowsPlatform::KeyboardKeys);
 
 
 private:

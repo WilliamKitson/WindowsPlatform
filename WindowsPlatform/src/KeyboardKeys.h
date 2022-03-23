@@ -1,6 +1,6 @@
 #pragma once
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	enum class KeyboardKeys
 	{

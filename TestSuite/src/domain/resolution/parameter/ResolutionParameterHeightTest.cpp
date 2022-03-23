@@ -11,7 +11,7 @@ ResolutionParameterHeightTest::~ResolutionParameterHeightTest()
 
 std::string ResolutionParameterHeightTest::test()
 {
-	WindowsPlatform::ResolutionValidator unit;
+	windowsPlatform::ResolutionValidator unit;
 
 	unit.setResolution(0, height);
 

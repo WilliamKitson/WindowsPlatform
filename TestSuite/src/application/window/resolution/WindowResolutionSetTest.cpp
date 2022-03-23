@@ -5,7 +5,7 @@ WindowResolutionSetTest::WindowResolutionSetTest(HINSTANCE hInstanceValue, int n
 {
 	initialiseWindowClass();
 
-	resolution = WindowsPlatform::Vector2{
+	resolution = windowsPlatform::Vector2{
 		1000.0f,
 		1000.0f
 	};
@@ -17,7 +17,7 @@ WindowResolutionSetTest::~WindowResolutionSetTest()
 
 std::string WindowResolutionSetTest::test()
 {
-	WindowsPlatform::ApplicationWindow unit{
+	windowsPlatform::ApplicationWindow unit{
 	nCmdShow
 	};
 
@@ -54,7 +54,7 @@ LRESULT WindowResolutionSetTest::windowProcedure(HWND window, UINT message, WPAR
 	return DefWindowProc(window, message, wParam, lParam);
 }
 
-WindowsPlatform::Vector2 WindowResolutionSetTest::windowResolution(HWND window)
+windowsPlatform::Vector2 WindowResolutionSetTest::windowResolution(HWND window)
 {
 	RECT windowRect;
 
@@ -63,7 +63,7 @@ WindowsPlatform::Vector2 WindowResolutionSetTest::windowResolution(HWND window)
 		&windowRect
 	);
 
-	return WindowsPlatform::Vector2{
+	return windowsPlatform::Vector2{
 		(float)(windowRect.right - windowRect.left),
 		(float)(windowRect.bottom - windowRect.top)
 	};

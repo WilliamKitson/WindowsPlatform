@@ -11,14 +11,14 @@ MouseDefaultButtonsTest::~MouseDefaultButtonsTest()
 
 std::string MouseDefaultButtonsTest::test()
 {
-	WindowsPlatform::Mouse unit;
+	windowsPlatform::Mouse unit;
 
-	for (int i{ 0 }; i < (int)WindowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
 	{
-		successes += unit.getButton((WindowsPlatform::MouseButtons)i) == false;
+		successes += unit.getButton((windowsPlatform::MouseButtons)i) == false;
 	}
 
-	if (successes == (int)WindowsPlatform::MouseButtons::size)
+	if (successes == (int)windowsPlatform::MouseButtons::size)
 	{
 		return std::string();
 	}

@@ -1,69 +1,69 @@
 #include "SubordinateFacade.h"
 
-WindowsPlatform::SubordianteFacade::SubordianteFacade()
+windowsPlatform::SubordianteFacade::SubordianteFacade()
 {
 }
 
-WindowsPlatform::SubordianteFacade::~SubordianteFacade()
+windowsPlatform::SubordianteFacade::~SubordianteFacade()
 {
 }
 
-void WindowsPlatform::SubordianteFacade::update()
+void windowsPlatform::SubordianteFacade::update()
 {
 }
 
-HWND WindowsPlatform::SubordianteFacade::getWindow()
+HWND windowsPlatform::SubordianteFacade::getWindow()
 {
 	return HWND();
 }
 
-bool WindowsPlatform::SubordianteFacade::getQuit()
+bool windowsPlatform::SubordianteFacade::getQuit()
 {
 	return false;
 }
 
-bool WindowsPlatform::SubordianteFacade::getMinimise()
+bool windowsPlatform::SubordianteFacade::getMinimise()
 {
 	return false;
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::SubordianteFacade::getCursor()
+windowsPlatform::Vector2 windowsPlatform::SubordianteFacade::getCursor()
 {
 	return Vector2();
 }
 
-WindowsPlatform::Vector2 WindowsPlatform::SubordianteFacade::getDrag()
+windowsPlatform::Vector2 windowsPlatform::SubordianteFacade::getDrag()
 {
 	return Vector2();
 }
 
-bool WindowsPlatform::SubordianteFacade::getMouse(MouseButtons)
+bool windowsPlatform::SubordianteFacade::getMouse(MouseButtons)
 {
 	return false;
 }
 
-bool WindowsPlatform::SubordianteFacade::getKeyboard(KeyboardKeys)
+bool windowsPlatform::SubordianteFacade::getKeyboard(KeyboardKeys)
 {
 	return false;
 }
 
-float WindowsPlatform::SubordianteFacade::getDelta()
+float windowsPlatform::SubordianteFacade::getDelta()
 {
 	return 0.0f;
 }
 
-void WindowsPlatform::SubordianteFacade::setTag(std::string)
+void windowsPlatform::SubordianteFacade::setTag(std::string)
 {
 }
 
-void WindowsPlatform::SubordianteFacade::setResolution(Vector2)
+void windowsPlatform::SubordianteFacade::setResolution(Vector2)
 {
 }
 
-void WindowsPlatform::SubordianteFacade::setBorderless()
+void windowsPlatform::SubordianteFacade::setBorderless()
 {
 }
 
-void WindowsPlatform::SubordianteFacade::setWindowed()
+void windowsPlatform::SubordianteFacade::setWindowed()
 {
 }

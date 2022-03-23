@@ -10,12 +10,12 @@ VectorYTest::~VectorYTest()
 
 std::string VectorYTest::test()
 {
-	WindowsPlatform::Vector2 unit{
+	windowsPlatform::Vector2 unit{
 		0.0f,
 		1.0f
 	};
 
-	if ((unit == WindowsPlatform::Vector2()) == false)
+	if ((unit == windowsPlatform::Vector2()) == false)
 	{
 		return std::string();
 	}

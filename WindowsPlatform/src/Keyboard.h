@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include "KeyboardKeys.h"
 
-namespace WindowsPlatform
+namespace windowsPlatform
 {
 	class Keyboard
 	{
