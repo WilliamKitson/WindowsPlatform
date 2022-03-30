@@ -15,16 +15,13 @@ public:
 
 	std::string test();
 
-
 private:
 	HRESULT initialiseWindowClass();
 	static LRESULT CALLBACK windowProcedure(HWND, UINT, WPARAM, LPARAM);
 	windowsPlatform::Vector2 windowResolution(HWND);
-
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 	WNDCLASSEX windowClass;
 };
-

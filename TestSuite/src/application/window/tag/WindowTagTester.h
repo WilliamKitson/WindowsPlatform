@@ -14,14 +14,11 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testInitialise();
 	std::string testSet();
-
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

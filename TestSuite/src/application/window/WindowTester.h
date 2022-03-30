@@ -16,16 +16,13 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testTag();
 	std::string testResolution();
 	std::string testStyle();
 	std::string testDestroyed();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

@@ -18,7 +18,6 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testWindow();
 	std::string testQuit();
@@ -27,9 +26,7 @@ private:
 	std::string testOpenPostQuit();
 	std::string testDelta();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

@@ -11,4 +11,3 @@ public:
 
 	std::string test();
 };
-

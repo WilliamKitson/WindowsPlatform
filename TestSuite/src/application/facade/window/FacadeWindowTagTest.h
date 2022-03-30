@@ -15,14 +15,11 @@ public:
 
 	std::string test();
 
-
 private:
 	std::wstring getWindowTitle(HWND);
-
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 	std::string tag;
 };
-

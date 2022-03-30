@@ -11,8 +11,6 @@ public:
 
 	std::string test();
 
-
 private:
 	int successes;
 };
-

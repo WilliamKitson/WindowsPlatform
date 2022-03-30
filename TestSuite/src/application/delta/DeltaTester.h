@@ -14,10 +14,8 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 	std::string testUpdate();
 	std::string testReset();
 };
-

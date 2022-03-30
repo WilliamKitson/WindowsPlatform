@@ -11,8 +11,6 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 };
-

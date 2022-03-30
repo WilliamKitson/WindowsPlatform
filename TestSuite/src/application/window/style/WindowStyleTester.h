@@ -15,15 +15,12 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 	std::string testBorderless();
 	std::string testWindowed();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

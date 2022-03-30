@@ -16,7 +16,6 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 	std::string testButtons();
@@ -24,4 +23,3 @@ private:
 	std::string testWheel();
 	std::string testCursor();
 };
-

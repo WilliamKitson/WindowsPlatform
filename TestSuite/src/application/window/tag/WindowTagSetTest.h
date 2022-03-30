@@ -15,12 +15,10 @@ public:
 
 	std::string test();
 
-
 private:
 	HRESULT initialiseWindowClass();
 	static LRESULT CALLBACK windowProcedure(HWND, UINT, WPARAM, LPARAM);
 	std::wstring getWindowTitle(HWND);
-
 
 private:
 	HINSTANCE hInstance;
@@ -28,4 +26,3 @@ private:
 	WNDCLASSEX windowClass;
 	std::string tag;
 };
-

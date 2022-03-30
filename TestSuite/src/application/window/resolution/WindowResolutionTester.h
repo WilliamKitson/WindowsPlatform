@@ -15,15 +15,12 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 	std::string testSet();
 	std::string testMinimum();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

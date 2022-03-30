@@ -16,7 +16,6 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testJoystickLeft();
 	std::string testJoystickRight();
@@ -24,4 +23,3 @@ private:
 	std::string testTriggerRight();
 	std::string testButtons();
 };
-

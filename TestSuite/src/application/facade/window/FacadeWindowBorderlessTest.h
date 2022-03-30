@@ -15,9 +15,7 @@ public:
 
 	std::string test();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-

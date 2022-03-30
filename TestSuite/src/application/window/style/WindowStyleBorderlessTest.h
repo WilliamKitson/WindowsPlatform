@@ -14,15 +14,12 @@ public:
 
 	std::string test();
 
-
 private:
 	HRESULT initialiseWindowClass();
 	static LRESULT CALLBACK windowProcedure(HWND, UINT, WPARAM, LPARAM);
-
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 	WNDCLASSEX windowClass;
 };
-

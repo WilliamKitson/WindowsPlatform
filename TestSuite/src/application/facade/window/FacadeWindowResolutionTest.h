@@ -15,14 +15,11 @@ public:
 
 	std::string test();
 
-
 private:
 	windowsPlatform::Vector2 windowResolution(HWND);
-
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 	windowsPlatform::Vector2 resolution;
 };
-

@@ -13,9 +13,7 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testResolution();
 	std::string testNormaliser();
 };
-

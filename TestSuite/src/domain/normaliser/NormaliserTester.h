@@ -14,10 +14,8 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDefault();
 	std::string testParameter();
 	std::string testInvalidRange();
 };
-

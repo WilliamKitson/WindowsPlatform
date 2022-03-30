@@ -18,7 +18,6 @@ public:
 
 	std::string test();
 
-
 private:
 	std::string testDelta();
 	std::string testWindow();
@@ -27,9 +26,7 @@ private:
 	std::string testGamepad();
 	std::string testFacade();
 
-
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 };
-
