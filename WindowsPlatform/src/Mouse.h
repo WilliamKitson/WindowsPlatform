@@ -24,15 +24,12 @@ namespace windowsPlatform
 		Vector2 getCursor();
 		bool getButton(MouseButtons);
 
-
 	private:
 		void initialiseButtons();
 		MouseButtons xbuttonIndex(WPARAM);
-
 
 	private:
 		Vector2 cursor;
 		bool buttons[(int)MouseButtons::size];
 	};
 }
-

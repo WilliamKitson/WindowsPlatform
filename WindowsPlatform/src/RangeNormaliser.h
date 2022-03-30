@@ -12,11 +12,9 @@ namespace windowsPlatform
 		float getNormalised();
 		void setRange(float, float);
 
-
 	private:
 		float getSmaller(float, float);
 		float getLarger(float, float);
-
 
 	private:
 		float minimum;
@@ -24,4 +22,3 @@ namespace windowsPlatform
 		float normalised;
 	};
 }
-

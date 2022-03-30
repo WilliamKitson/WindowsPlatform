@@ -30,4 +30,3 @@ namespace windowsPlatform
 		virtual void setWindowed();
 	};
 }
-

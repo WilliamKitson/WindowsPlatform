@@ -21,16 +21,13 @@ namespace windowsPlatform
 		void setTag(std::string);
 		void setResolution(Vector2);
 
-
 	private:
 		DWORD getWindowed();
 		std::wstring getTag(WNDCLASSEX);
 		RECT getWindowRectangle(Vector2);
-
 
 	private:
 		int nCmdShow;
 		HWND window;
 	};
 }
-

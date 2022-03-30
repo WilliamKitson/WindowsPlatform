@@ -23,4 +23,3 @@ namespace windowsPlatform
 		size
 	};
 }
-

@@ -35,7 +35,6 @@ namespace windowsPlatform
 		virtual void setBorderless();
 		virtual void setWindowed();
 
-
 	private:
 		void initialise(HINSTANCE, std::wstring);
 		HRESULT initialiseWindowClass(HINSTANCE, std::wstring);
@@ -50,7 +49,6 @@ namespace windowsPlatform
 		static void processDrag(LPARAM);
 		static RAWINPUT* initialiseRawInputData(LPARAM);
 
-
 	private:
 		WNDCLASSEX windowClass;
 		ApplicationWindow window;
@@ -63,4 +61,3 @@ namespace windowsPlatform
 		static SubordinateImplimentation* active;
 	};
 }
-

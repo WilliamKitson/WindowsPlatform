@@ -18,4 +18,3 @@ namespace windowsPlatform
 		bool getButton(GamepadButtons);
 	};
 }
-
