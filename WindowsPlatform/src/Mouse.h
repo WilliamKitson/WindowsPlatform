@@ -27,6 +27,7 @@ namespace windowsPlatform
 	private:
 		void initialiseButtons();
 		Buttons xbuttonIndex(WPARAM);
+		void resetForward();
 
 	private:
 		Vector2 cursor;

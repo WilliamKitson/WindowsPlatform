@@ -51,7 +51,7 @@ void windowsPlatform::Mouse::release(WPARAM wParam)
 
 void windowsPlatform::Mouse::reset()
 {
-	buttons[(int)Buttons::mouse_scrollForwards] = false;
+	resetForward();
 	buttons[(int)Buttons::mouse_scrollBackwards] = false;
 }
 
@@ -81,4 +81,9 @@ windowsPlatform::Buttons windowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
 	}
 
 	return Buttons::mouse_MB5;
+}
+
+void windowsPlatform::Mouse::resetForward()
+{
+	buttons[(int)Buttons::mouse_scrollForwards] = false;
 }
