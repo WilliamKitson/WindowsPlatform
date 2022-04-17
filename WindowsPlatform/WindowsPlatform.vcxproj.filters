@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ResolutionValidator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -45,11 +42,11 @@
     <ClInclude Include="src\Delta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Resolution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ResolutionValidator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Vector2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -69,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Delta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resolution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

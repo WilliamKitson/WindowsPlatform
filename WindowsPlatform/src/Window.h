@@ -4,7 +4,7 @@
 #include <string>
 
 #include "Vector2.h"
-#include "ResolutionValidator.h"
+#include "Resolution.h"
 
 namespace windowsPlatform
 {

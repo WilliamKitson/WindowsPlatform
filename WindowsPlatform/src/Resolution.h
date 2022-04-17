@@ -2,11 +2,11 @@
 
 namespace windowsPlatform
 {
-	class ResolutionValidator
+	class Resolution
 	{
 	public:
-		ResolutionValidator();
-		~ResolutionValidator();
+		Resolution();
+		~Resolution();
 
 		int getWidth();
 		int getHeight();

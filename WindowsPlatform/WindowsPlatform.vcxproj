@@ -152,7 +152,7 @@
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Keys.h" />
     <ClInclude Include="src\Mouse.h" />
-    <ClInclude Include="src\ResolutionValidator.h" />
+    <ClInclude Include="src\Resolution.h" />
     <ClInclude Include="src\SubordinateFacade.h" />
     <ClInclude Include="src\SubordinateImplimentation.h" />
     <ClInclude Include="src\Vector2.h" />
@@ -162,7 +162,7 @@
     <ClCompile Include="src\Delta.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Mouse.cpp" />
-    <ClCompile Include="src\ResolutionValidator.cpp" />
+    <ClCompile Include="src\Resolution.cpp" />
     <ClCompile Include="src\SubordinateFacade.cpp" />
     <ClCompile Include="src\SubordinateImplimentation.cpp" />
     <ClCompile Include="src\Vector2.cpp" />

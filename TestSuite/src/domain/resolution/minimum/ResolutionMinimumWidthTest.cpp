@@ -10,7 +10,7 @@ ResolutionMinimumWidthTest::~ResolutionMinimumWidthTest()
 
 std::string ResolutionMinimumWidthTest::test()
 {
-	windowsPlatform::ResolutionValidator unit;
+	windowsPlatform::Resolution unit;
 
 	unit.setResolution(0, 0);
 

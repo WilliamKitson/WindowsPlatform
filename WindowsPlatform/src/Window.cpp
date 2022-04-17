@@ -121,7 +121,7 @@ std::wstring windowsPlatform::Window::getTag(WNDCLASSEX windowClass)
 
 RECT windowsPlatform::Window::getWindowRectangle(Vector2 value)
 {
-	ResolutionValidator resolution;
+	Resolution resolution;
 	resolution.setResolution((int)value.x, (int)value.y);
 
 	RECT windowRect = {

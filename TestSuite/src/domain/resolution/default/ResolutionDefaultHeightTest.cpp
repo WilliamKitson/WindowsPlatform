@@ -10,7 +10,7 @@ ResolutionDefaultHeightTest::~ResolutionDefaultHeightTest()
 
 std::string ResolutionDefaultHeightTest::test()
 {
-	if (windowsPlatform::ResolutionValidator().getHeight() == 540)
+	if (windowsPlatform::Resolution().getHeight() == 540)
 	{
 		return std::string();
 	}
