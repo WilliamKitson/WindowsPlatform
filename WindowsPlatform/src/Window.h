@@ -8,11 +8,11 @@
 
 namespace windowsPlatform
 {
-	class ApplicationWindow
+	class Window
 	{
 	public:
-		ApplicationWindow(int);
-		~ApplicationWindow();
+		Window(int);
+		~Window();
 
 		void initialise(WNDCLASSEX);
 		void borderless();

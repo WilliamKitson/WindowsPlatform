@@ -40,7 +40,7 @@ BOOL CALLBACK destroyedEnumProcedure(HWND window, LPARAM)
 
 std::string WindowDestroyedTest::test()
 {
-	windowsPlatform::ApplicationWindow* unit = new windowsPlatform::ApplicationWindow(
+	windowsPlatform::Window* unit = new windowsPlatform::Window(
 		nCmdShow
 	);
 

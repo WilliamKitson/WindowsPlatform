@@ -12,7 +12,7 @@ WindowResolutionMinimumTest::~WindowResolutionMinimumTest()
 
 std::string WindowResolutionMinimumTest::test()
 {
-	windowsPlatform::ApplicationWindow unit{
+	windowsPlatform::Window unit{
 		nCmdShow
 	};
 

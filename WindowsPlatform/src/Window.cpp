@@ -1,16 +1,16 @@
-#include "ApplicationWindow.h"
+#include "Window.h"
 
-windowsPlatform::ApplicationWindow::ApplicationWindow(int value)
+windowsPlatform::Window::Window(int value)
     : nCmdShow{ value }, window()
 {
 }
 
-windowsPlatform::ApplicationWindow::~ApplicationWindow()
+windowsPlatform::Window::~Window()
 {
 	DestroyWindow(window);
 }
 
-void windowsPlatform::ApplicationWindow::initialise(WNDCLASSEX windowClass)
+void windowsPlatform::Window::initialise(WNDCLASSEX windowClass)
 {
 	RECT windowRect = getWindowRectangle(Vector2());
 
@@ -46,7 +46,7 @@ void windowsPlatform::ApplicationWindow::initialise(WNDCLASSEX windowClass)
 	return;
 }
 
-void windowsPlatform::ApplicationWindow::borderless()
+void windowsPlatform::Window::borderless()
 {
 	SetWindowLongPtr(
 		window,
@@ -60,7 +60,7 @@ void windowsPlatform::ApplicationWindow::borderless()
 	);
 }
 
-void windowsPlatform::ApplicationWindow::windowed()
+void windowsPlatform::Window::windowed()
 {
 	SetWindowLongPtr(
 		window,
@@ -74,12 +74,12 @@ void windowsPlatform::ApplicationWindow::windowed()
 	);
 }
 
-HWND windowsPlatform::ApplicationWindow::getWindow()
+HWND windowsPlatform::Window::getWindow()
 {
     return window;
 }
 
-void windowsPlatform::ApplicationWindow::setTag(std::string value)
+void windowsPlatform::Window::setTag(std::string value)
 {
 	SetWindowTextA(
 		window,
@@ -87,7 +87,7 @@ void windowsPlatform::ApplicationWindow::setTag(std::string value)
 	);
 }
 
-void windowsPlatform::ApplicationWindow::setResolution(Vector2 value)
+void windowsPlatform::Window::setResolution(Vector2 value)
 {
 	RECT windowRect = getWindowRectangle(value);
 
@@ -109,17 +109,17 @@ void windowsPlatform::ApplicationWindow::setResolution(Vector2 value)
 	}
 }
 
-DWORD windowsPlatform::ApplicationWindow::getWindowed()
+DWORD windowsPlatform::Window::getWindowed()
 {
 	return WS_TILED | WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION;
 }
 
-std::wstring windowsPlatform::ApplicationWindow::getTag(WNDCLASSEX windowClass)
+std::wstring windowsPlatform::Window::getTag(WNDCLASSEX windowClass)
 {
 	return windowClass.lpszClassName;
 }
 
-RECT windowsPlatform::ApplicationWindow::getWindowRectangle(Vector2 value)
+RECT windowsPlatform::Window::getWindowRectangle(Vector2 value)
 {
 	ResolutionValidator resolution;
 	resolution.setResolution((int)value.x, (int)value.y);

@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "ApplicationWindow.h"
+#include "Window.h"
 #include "Vector2.h"
 
 class WindowResolutionSetTest

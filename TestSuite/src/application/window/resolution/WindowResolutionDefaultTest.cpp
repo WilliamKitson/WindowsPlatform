@@ -12,7 +12,7 @@ WindowResolutionDefaultTest::~WindowResolutionDefaultTest()
 
 std::string WindowResolutionDefaultTest::test()
 {
-	windowsPlatform::ApplicationWindow unit{
+	windowsPlatform::Window unit{
 		nCmdShow
 	};
 

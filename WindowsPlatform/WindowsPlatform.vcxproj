@@ -147,7 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\Buttons.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\Keyboard.h" />
@@ -157,9 +156,9 @@
     <ClInclude Include="src\SubordinateFacade.h" />
     <ClInclude Include="src\SubordinateImplimentation.h" />
     <ClInclude Include="src\Vector2.h" />
+    <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Mouse.cpp" />
@@ -167,6 +166,7 @@
     <ClCompile Include="src\SubordinateFacade.cpp" />
     <ClCompile Include="src\SubordinateImplimentation.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
+    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

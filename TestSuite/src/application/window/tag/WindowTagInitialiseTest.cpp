@@ -12,7 +12,7 @@ WindowTagInitialiseTest::~WindowTagInitialiseTest()
 
 std::string WindowTagInitialiseTest::test()
 {
-	windowsPlatform::ApplicationWindow unit{
+	windowsPlatform::Window unit{
 		nCmdShow
 	};
 

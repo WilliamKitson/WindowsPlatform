@@ -5,7 +5,7 @@
 #include <vector>
 #include <codecvt>
 
-#include "ApplicationWindow.h"
+#include "Window.h"
 
 class WindowTagSetTest
 {

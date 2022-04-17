@@ -12,7 +12,7 @@ WindowStyleDefaultTest::~WindowStyleDefaultTest()
 
 std::string WindowStyleDefaultTest::test()
 {
-	windowsPlatform::ApplicationWindow unit{
+	windowsPlatform::Window unit{
 		nCmdShow
 	};
 

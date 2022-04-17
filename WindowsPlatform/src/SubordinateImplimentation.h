@@ -7,7 +7,7 @@
 #include <codecvt>
 
 #include "SubordinateFacade.h"
-#include "ApplicationWindow.h"
+#include "Window.h"
 #include "Mouse.h"
 #include "Keyboard.h"
 #include "DeltaTimer.h"
@@ -51,7 +51,7 @@ namespace windowsPlatform
 
 	private:
 		WNDCLASSEX windowClass;
-		ApplicationWindow window;
+		Window window;
 		bool quit;
 		bool minimise;
 		Vector2 drag;

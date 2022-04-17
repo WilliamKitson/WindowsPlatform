@@ -36,13 +36,13 @@
     <ClInclude Include="src\SubordinateImplimentation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\ApplicationWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Keys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,7 +68,7 @@
     <ClCompile Include="src\SubordinateImplimentation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ApplicationWindow.cpp">
+    <ClCompile Include="src\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
