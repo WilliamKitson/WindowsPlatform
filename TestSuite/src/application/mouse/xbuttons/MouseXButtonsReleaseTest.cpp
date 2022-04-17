@@ -15,11 +15,11 @@ std::string MouseXButtonsReleaseTest::test()
 
 	unit.press((WPARAM)65536);
 	unit.release((WPARAM)65536);
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_MB4) == false;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_MB4) == false;
 
 	unit.press((WPARAM)131072);
 	unit.release((WPARAM)131072);
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_MB5) == false;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_MB5) == false;
 
 	if (successes == 2)
 	{

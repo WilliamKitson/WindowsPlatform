@@ -13,12 +13,12 @@ std::string MouseDefaultButtonsTest::test()
 {
 	windowsPlatform::Mouse unit;
 
-	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::Buttons::size; i++)
 	{
-		successes += unit.getButton((windowsPlatform::MouseButtons)i) == false;
+		successes += unit.getButton((windowsPlatform::Buttons)i) == false;
 	}
 
-	if (successes == (int)windowsPlatform::MouseButtons::size)
+	if (successes == (int)windowsPlatform::Buttons::size)
 	{
 		return std::string();
 	}

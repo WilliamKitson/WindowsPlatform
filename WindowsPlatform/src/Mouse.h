@@ -4,7 +4,7 @@
 #include <windowsx.h>
 
 #include "Vector2.h"
-#include "MouseButtons.h"
+#include "Buttons.h"
 
 namespace windowsPlatform
 {
@@ -15,21 +15,21 @@ namespace windowsPlatform
 		~Mouse();
 
 		void move(LPARAM);
-		void press(MouseButtons);
+		void press(Buttons);
 		void press(WPARAM);
 		void wheel(WPARAM);
-		void release(MouseButtons);
+		void release(Buttons);
 		void release(WPARAM);
 		void reset();
 		Vector2 getCursor();
-		bool getButton(MouseButtons);
+		bool getButton(Buttons);
 
 	private:
 		void initialiseButtons();
-		MouseButtons xbuttonIndex(WPARAM);
+		Buttons xbuttonIndex(WPARAM);
 
 	private:
 		Vector2 cursor;
-		bool buttons[(int)MouseButtons::size];
+		bool buttons[(int)Buttons::size];
 	};
 }

@@ -14,10 +14,10 @@ std::string MouseWheelPressTest::test()
 	windowsPlatform::Mouse unit;
 
 	unit.wheel(MAKEWPARAM(0, WHEEL_DELTA * 1));
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_scrollForwards) == true;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_scrollForwards) == true;
 
 	unit.wheel(MAKEWPARAM(0, WHEEL_DELTA * -1));
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_scrollBackwards) == true;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_scrollBackwards) == true;
 
 	if (successes == 2)
 	{

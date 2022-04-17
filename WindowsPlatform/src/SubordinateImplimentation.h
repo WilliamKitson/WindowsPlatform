@@ -27,7 +27,7 @@ namespace windowsPlatform
 		virtual bool getMinimise();
 		virtual Vector2 getCursor();
 		virtual Vector2 getDrag();
-		virtual bool getMouse(MouseButtons);
+		virtual bool getMouse(Buttons);
 		virtual bool getKeyboard(Keys);
 		virtual float getDelta();
 		virtual void setTag(std::string);

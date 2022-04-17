@@ -18,7 +18,7 @@ void windowsPlatform::Mouse::move(LPARAM lParam)
 	};
 }
 
-void windowsPlatform::Mouse::press(MouseButtons index)
+void windowsPlatform::Mouse::press(Buttons index)
 {
 	buttons[(int)index] = true;
 }
@@ -32,14 +32,14 @@ void windowsPlatform::Mouse::wheel(WPARAM wParam)
 {
 	if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
 	{
-		buttons[(unsigned int)MouseButtons::mouse_scrollForwards] = true;
+		buttons[(unsigned int)Buttons::mouse_scrollForwards] = true;
 		return;
 	}
 
-	buttons[(unsigned int)MouseButtons::mouse_scrollBackwards] = true;
+	buttons[(unsigned int)Buttons::mouse_scrollBackwards] = true;
 }
 
-void windowsPlatform::Mouse::release(MouseButtons index)
+void windowsPlatform::Mouse::release(Buttons index)
 {
 	buttons[(int)index] = false;
 }
@@ -51,8 +51,8 @@ void windowsPlatform::Mouse::release(WPARAM wParam)
 
 void windowsPlatform::Mouse::reset()
 {
-	buttons[(int)MouseButtons::mouse_scrollForwards] = false;
-	buttons[(int)MouseButtons::mouse_scrollBackwards] = false;
+	buttons[(int)Buttons::mouse_scrollForwards] = false;
+	buttons[(int)Buttons::mouse_scrollBackwards] = false;
 }
 
 windowsPlatform::Vector2 windowsPlatform::Mouse::getCursor()
@@ -60,25 +60,25 @@ windowsPlatform::Vector2 windowsPlatform::Mouse::getCursor()
 	return cursor;
 }
 
-bool windowsPlatform::Mouse::getButton(MouseButtons index)
+bool windowsPlatform::Mouse::getButton(Buttons index)
 {
 	return buttons[(int)index];
 }
 
 void windowsPlatform::Mouse::initialiseButtons()
 {
-	for (int i{ 0 }; i < (int)MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)Buttons::size; i++)
 	{
 		buttons[i] = false;
 	}
 }
 
-windowsPlatform::MouseButtons windowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
+windowsPlatform::Buttons windowsPlatform::Mouse::xbuttonIndex(WPARAM wParam)
 {
 	if (GET_XBUTTON_WPARAM(wParam) != XBUTTON2)
 	{
-		return MouseButtons::mouse_MB4;
+		return Buttons::mouse_MB4;
 	}
 
-	return MouseButtons::mouse_MB5;
+	return Buttons::mouse_MB5;
 }

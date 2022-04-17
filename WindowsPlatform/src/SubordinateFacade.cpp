@@ -37,7 +37,7 @@ windowsPlatform::Vector2 windowsPlatform::SubordianteFacade::getDrag()
 	return Vector2();
 }
 
-bool windowsPlatform::SubordianteFacade::getMouse(MouseButtons)
+bool windowsPlatform::SubordianteFacade::getMouse(Buttons)
 {
 	return false;
 }

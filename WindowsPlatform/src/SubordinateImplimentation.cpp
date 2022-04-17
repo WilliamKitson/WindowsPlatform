@@ -45,7 +45,7 @@ windowsPlatform::Vector2 windowsPlatform::SubordinateImplimentation::getDrag()
 	return drag;
 }
 
-bool windowsPlatform::SubordinateImplimentation::getMouse(MouseButtons button)
+bool windowsPlatform::SubordinateImplimentation::getMouse(Buttons button)
 {
 	return mouse.getButton(button);
 }
@@ -199,19 +199,19 @@ LRESULT windowsPlatform::SubordinateImplimentation::processMessage(HWND hWnd, UI
 	break;
 	case WM_LBUTTONDOWN:
 	{
-		active->mouse.press(MouseButtons::mouse_LMB);
+		active->mouse.press(Buttons::mouse_LMB);
 		return 0;
 	}
 	break;
 	case WM_RBUTTONDOWN:
 	{
-		active->mouse.press(MouseButtons::mouse_RMB);
+		active->mouse.press(Buttons::mouse_RMB);
 		return 0;
 	}
 	break;
 	case WM_MBUTTONDOWN:
 	{
-		active->mouse.press(MouseButtons::mouse_MMB);
+		active->mouse.press(Buttons::mouse_MMB);
 		return 0;
 	}
 	break;
@@ -229,19 +229,19 @@ LRESULT windowsPlatform::SubordinateImplimentation::processMessage(HWND hWnd, UI
 	break;
 	case WM_LBUTTONUP:
 	{
-		active->mouse.release(MouseButtons::mouse_LMB);
+		active->mouse.release(Buttons::mouse_LMB);
 		return 0;
 	}
 	break;
 	case WM_RBUTTONUP:
 	{
-		active->mouse.release(MouseButtons::mouse_RMB);
+		active->mouse.release(Buttons::mouse_RMB);
 		return 0;
 	}
 	break;
 	case WM_MBUTTONUP:
 	{
-		active->mouse.release(MouseButtons::mouse_MMB);
+		active->mouse.release(Buttons::mouse_MMB);
 		return 0;
 	}
 	break;

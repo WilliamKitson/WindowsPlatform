@@ -2,7 +2,7 @@
 
 namespace windowsPlatform
 {
-	enum class MouseButtons
+	enum class Buttons
 	{
 		mouse_LMB,
 		mouse_RMB,

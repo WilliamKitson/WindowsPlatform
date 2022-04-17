@@ -15,11 +15,11 @@ std::string MouseWheelResetTest::test()
 
 	unit.wheel(MAKEWPARAM(0, WHEEL_DELTA * 1));
 	unit.reset();
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_scrollForwards) == false;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_scrollForwards) == false;
 
 	unit.wheel(MAKEWPARAM(0, WHEEL_DELTA * -1));
 	unit.reset();
-	successes += unit.getButton(windowsPlatform::MouseButtons::mouse_scrollBackwards) == false;
+	successes += unit.getButton(windowsPlatform::Buttons::mouse_scrollBackwards) == false;
 
 	if (successes == 2)
 	{

@@ -17,11 +17,11 @@ std::string FacadeEventMouseTest::test()
 		"facade event mouse test"
 	);
 
-	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::Buttons::size; i++)
 	{
-		switch ((windowsPlatform::MouseButtons)i)
+		switch ((windowsPlatform::Buttons)i)
 		{
-		case windowsPlatform::MouseButtons::mouse_LMB:
+		case windowsPlatform::Buttons::mouse_LMB:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -31,7 +31,7 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			PostMessage(
 				unit->getWindow(),
@@ -41,10 +41,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_RMB:
+		case windowsPlatform::Buttons::mouse_RMB:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -54,7 +54,7 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			PostMessage(
 				unit->getWindow(),
@@ -64,10 +64,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_MMB:
+		case windowsPlatform::Buttons::mouse_MMB:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -77,7 +77,7 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			PostMessage(
 				unit->getWindow(),
@@ -87,10 +87,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_MB4:
+		case windowsPlatform::Buttons::mouse_MB4:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -100,7 +100,7 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			PostMessage(
 				unit->getWindow(),
@@ -110,10 +110,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_MB5:
+		case windowsPlatform::Buttons::mouse_MB5:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -123,7 +123,7 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			PostMessage(
 				unit->getWindow(),
@@ -133,10 +133,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_scrollForwards:
+		case windowsPlatform::Buttons::mouse_scrollForwards:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -146,13 +146,13 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
-		case windowsPlatform::MouseButtons::mouse_scrollBackwards:
+		case windowsPlatform::Buttons::mouse_scrollBackwards:
 		{
 			PostMessage(
 				unit->getWindow(),
@@ -162,10 +162,10 @@ std::string FacadeEventMouseTest::test()
 			);
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == true;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == true;
 
 			unit->update();
-			successes += unit->getMouse((windowsPlatform::MouseButtons)i) == false;
+			successes += unit->getMouse((windowsPlatform::Buttons)i) == false;
 		}
 		break;
 		}
@@ -174,7 +174,7 @@ std::string FacadeEventMouseTest::test()
 	delete unit;
 	unit = nullptr;
 
-	if ((successes / 2) == (int)windowsPlatform::MouseButtons::size)
+	if ((successes / 2) == (int)windowsPlatform::Buttons::size)
 	{
 		return std::string();
 	}

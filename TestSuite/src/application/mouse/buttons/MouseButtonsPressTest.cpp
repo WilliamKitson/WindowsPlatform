@@ -13,13 +13,13 @@ std::string MouseButtonsPressTest::test()
 {
 	windowsPlatform::Mouse unit;
 
-	for (int i{ 0 }; i < (int)windowsPlatform::MouseButtons::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::Buttons::size; i++)
 	{
-		unit.press((windowsPlatform::MouseButtons)i);
-		successes += unit.getButton((windowsPlatform::MouseButtons)i) == true;
+		unit.press((windowsPlatform::Buttons)i);
+		successes += unit.getButton((windowsPlatform::Buttons)i) == true;
 	}
 
-	if (successes == (int)windowsPlatform::MouseButtons::size)
+	if (successes == (int)windowsPlatform::Buttons::size)
 	{
 		return std::string();
 	}
