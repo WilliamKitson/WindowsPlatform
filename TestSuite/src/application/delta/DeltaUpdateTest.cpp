@@ -10,7 +10,7 @@ DeltaUpdateTest::~DeltaUpdateTest()
 
 std::string DeltaUpdateTest::test()
 {
-	windowsPlatform::DeltaTimer unit;
+	windowsPlatform::Delta unit;
 
 	Sleep(500);
 	unit.update();

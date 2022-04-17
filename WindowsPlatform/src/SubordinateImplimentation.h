@@ -10,7 +10,7 @@
 #include "Window.h"
 #include "Mouse.h"
 #include "Keyboard.h"
-#include "DeltaTimer.h"
+#include "Delta.h"
 
 namespace windowsPlatform
 {
@@ -57,7 +57,7 @@ namespace windowsPlatform
 		Vector2 drag;
 		Mouse mouse;
 		Keyboard keyboard;
-		DeltaTimer delta;
+		Delta delta;
 		static SubordinateImplimentation* active;
 	};
 }

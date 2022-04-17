@@ -4,11 +4,11 @@
 
 namespace windowsPlatform
 {
-	class DeltaTimer
+	class Delta
 	{
 	public:
-		DeltaTimer();
-		~DeltaTimer();
+		Delta();
+		~Delta();
 
 		void update();
 		float getDelta();

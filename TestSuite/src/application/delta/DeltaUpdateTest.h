@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "DeltaTimer.h"
+#include "Delta.h"
 
 class DeltaUpdateTest
 {
