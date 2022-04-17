@@ -149,8 +149,6 @@
   <ItemGroup>
     <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
-    <ClInclude Include="src\Gamepad.h" />
-    <ClInclude Include="src\GamepadButtons.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\KeyboardKeys.h" />
     <ClInclude Include="src\Mouse.h" />
@@ -164,7 +162,6 @@
   <ItemGroup>
     <ClCompile Include="src\ApplicationWindow.cpp" />
     <ClCompile Include="src\DeltaTimer.cpp" />
-    <ClCompile Include="src\Gamepad.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\RangeNormaliser.cpp" />

@@ -177,13 +177,6 @@
     <ClCompile Include="src\application\facade\window\FacadeWindowTagTest.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowTester.cpp" />
     <ClCompile Include="src\application\facade\window\FacadeWindowWindowedTest.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.cpp" />
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.cpp" />
-    <ClCompile Include="src\application\gamepad\GamepadTester.cpp" />
     <ClCompile Include="src\application\keyboard\KeyboardDefaultTest.cpp" />
     <ClCompile Include="src\application\keyboard\KeyboardPressTest.cpp" />
     <ClCompile Include="src\application\keyboard\KeyboardReleaseTest.cpp" />
@@ -266,13 +259,6 @@
     <ClInclude Include="src\application\facade\window\FacadeWindowTagTest.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowTester.h" />
     <ClInclude Include="src\application\facade\window\FacadeWindowWindowedTest.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.h" />
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.h" />
-    <ClInclude Include="src\application\gamepad\GamepadTester.h" />
     <ClInclude Include="src\application\keyboard\KeyboardDefaultTest.h" />
     <ClInclude Include="src\application\keyboard\KeyboardPressTest.h" />
     <ClInclude Include="src\application\keyboard\KeyboardReleaseTest.h" />

@@ -99,27 +99,6 @@
     <ClCompile Include="src\domain\resolution\ResolutionTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\GamepadTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\application\gamepad\default\GamepadDefaultButtonsTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\keyboard\KeyboardDefaultTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -357,27 +336,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\resolution\ResolutionTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickLeftTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\GamepadTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultJoystickRightTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerLeftTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultTriggerRightTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\application\gamepad\default\GamepadDefaultButtonsTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\keyboard\KeyboardDefaultTest.h">

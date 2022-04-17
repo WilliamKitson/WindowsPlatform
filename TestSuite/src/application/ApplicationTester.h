@@ -7,7 +7,6 @@
 #include "window/WindowTester.h"
 #include "mouse/MouseTester.h"
 #include "keyboard/KeyboardTester.h"
-#include "gamepad/GamepadTester.h"
 #include "facade/FacadeTester.h"
 
 class ApplicationTester
@@ -23,7 +22,6 @@ private:
 	std::string testWindow();
 	std::string testMouse();
 	std::string testKeyboard();
-	std::string testGamepad();
 	std::string testFacade();
 
 private:
