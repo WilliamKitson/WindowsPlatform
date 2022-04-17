@@ -20,494 +20,494 @@ void windowsPlatform::Keyboard::release(WPARAM wParam)
 	keys[(int)getIndex(wParam)] = false;
 }
 
-bool windowsPlatform::Keyboard::getKey(KeyboardKeys index)
+bool windowsPlatform::Keyboard::getKey(Keys index)
 {
 	return keys[(int)index];
 }
 
 void windowsPlatform::Keyboard::initialiseKeys()
 {
-	for (int i{ 0 }; i < (int)KeyboardKeys::size; i++)
+	for (int i{ 0 }; i < (int)Keys::size; i++)
 	{
 		keys[i] = false;
 	}
 }
 
-windowsPlatform::KeyboardKeys windowsPlatform::Keyboard::getIndex(WPARAM wParam)
+windowsPlatform::Keys windowsPlatform::Keyboard::getIndex(WPARAM wParam)
 {
 	switch (wParam)
 	{
 	case VK_ESCAPE:
 	{
-		return KeyboardKeys::keyboard_ESC;
+		return Keys::keyboard_ESC;
 	}
 	break;
 	case VK_F1:
 	{
-		return KeyboardKeys::keyboard_F1;
+		return Keys::keyboard_F1;
 	}
 	break;
 	case VK_F2:
 	{
-		return KeyboardKeys::keyboard_F2;
+		return Keys::keyboard_F2;
 	}
 	break;
 	case VK_F3:
 	{
-		return KeyboardKeys::keyboard_F3;
+		return Keys::keyboard_F3;
 	}
 	break;
 	case VK_F4:
 	{
-		return KeyboardKeys::keyboard_F4;
+		return Keys::keyboard_F4;
 	}
 	break;
 	case VK_F5:
 	{
-		return KeyboardKeys::keyboard_F5;
+		return Keys::keyboard_F5;
 	}
 	break;
 	case VK_F6:
 	{
-		return KeyboardKeys::keyboard_F6;
+		return Keys::keyboard_F6;
 	}
 	break;
 	case VK_F7:
 	{
-		return KeyboardKeys::keyboard_F7;
+		return Keys::keyboard_F7;
 	}
 	break;
 	case VK_F8:
 	{
-		return KeyboardKeys::keyboard_F8;
+		return Keys::keyboard_F8;
 	}
 	break;
 	case VK_F9:
 	{
-		return KeyboardKeys::keyboard_F9;
+		return Keys::keyboard_F9;
 	}
 	break;
 	case VK_F10:
 	{
-		return KeyboardKeys::keyboard_F10;
+		return Keys::keyboard_F10;
 	}
 	break;
 	case VK_SCROLL:
 	{
-		return KeyboardKeys::keyboard_scrollLock;
+		return Keys::keyboard_scrollLock;
 	}
 	break;
 	case VK_PAUSE:
 	{
-		return KeyboardKeys::keyboard_pause;
+		return Keys::keyboard_pause;
 	}
 	break;
 	case 0x31:
 	{
-		return KeyboardKeys::keyboard_1;
+		return Keys::keyboard_1;
 	}
 	break;
 	case 0x32:
 	{
-		return KeyboardKeys::keyboard_2;
+		return Keys::keyboard_2;
 	}
 	break;
 	case 0x33:
 	{
-		return KeyboardKeys::keyboard_3;
+		return Keys::keyboard_3;
 	}
 	break;
 	case 0x34:
 	{
-		return KeyboardKeys::keyboard_4;
+		return Keys::keyboard_4;
 	}
 	break;
 	case 0x35:
 	{
-		return KeyboardKeys::keyboard_5;
+		return Keys::keyboard_5;
 	}
 	break;
 	case 0x36:
 	{
-		return KeyboardKeys::keyboard_6;
+		return Keys::keyboard_6;
 	}
 	break;
 	case 0x37:
 	{
-		return KeyboardKeys::keyboard_7;
+		return Keys::keyboard_7;
 	}
 	break;
 	case 0x38:
 	{
-		return KeyboardKeys::keyboard_8;
+		return Keys::keyboard_8;
 	}
 	break;
 	case 0x39:
 	{
-		return KeyboardKeys::keyboard_9;
+		return Keys::keyboard_9;
 	}
 	break;
 	case 0x30:
 	{
-		return KeyboardKeys::keyboard_0;
+		return Keys::keyboard_0;
 	}
 	break;
 	case VK_OEM_MINUS:
 	{
-		return KeyboardKeys::keyboard_dash;
+		return Keys::keyboard_dash;
 	}
 	break;
 	case VK_OEM_PLUS:
 	{
-		return KeyboardKeys::keyboard_equals;
+		return Keys::keyboard_equals;
 	}
 	break;
 	case VK_BACK:
 	{
-		return KeyboardKeys::keyboard_backspace;
+		return Keys::keyboard_backspace;
 	}
 	break;
 	case VK_INSERT:
 	{
-		return KeyboardKeys::keyboard_insert;
+		return Keys::keyboard_insert;
 	}
 	break;
 	case VK_HOME:
 	{
-		return KeyboardKeys::keyboard_home;
+		return Keys::keyboard_home;
 	}
 	break;
 	case VK_PRIOR:
 	{
-		return KeyboardKeys::keyboard_pageUp;
+		return Keys::keyboard_pageUp;
 	}
 	break;
 	case VK_TAB:
 	{
-		return KeyboardKeys::keyboard_tab;
+		return Keys::keyboard_tab;
 	}
 	break;
 	case 0x51:
 	{
-		return KeyboardKeys::keyboard_q;
+		return Keys::keyboard_q;
 	}
 	break;
 	case 0x57:
 	{
-		return KeyboardKeys::keyboard_w;
+		return Keys::keyboard_w;
 	}
 	break;
 	case 0x45:
 	{
-		return KeyboardKeys::keyboard_e;
+		return Keys::keyboard_e;
 	}
 	break;
 	case 0x52:
 	{
-		return KeyboardKeys::keyboard_r;
+		return Keys::keyboard_r;
 	}
 	break;
 	case 0x54:
 	{
-		return KeyboardKeys::keyboard_t;
+		return Keys::keyboard_t;
 	}
 	break;
 	case 0x59:
 	{
-		return KeyboardKeys::keyboard_y;
+		return Keys::keyboard_y;
 	}
 	break;
 	case 0x55:
 	{
-		return KeyboardKeys::keyboard_u;
+		return Keys::keyboard_u;
 	}
 	break;
 	case 0x49:
 	{
-		return KeyboardKeys::keyboard_i;
+		return Keys::keyboard_i;
 	}
 	break;
 	case 0x4F:
 	{
-		return KeyboardKeys::keyboard_o;
+		return Keys::keyboard_o;
 	}
 	break;
 	case 0x50:
 	{
-		return KeyboardKeys::keyboard_p;
+		return Keys::keyboard_p;
 	}
 	break;
 	case VK_OEM_4:
 	{
-		return KeyboardKeys::keyboard_openBrace;
+		return Keys::keyboard_openBrace;
 	}
 	break;
 	case VK_OEM_6:
 	{
-		return KeyboardKeys::keyboard_closeBrace;
+		return Keys::keyboard_closeBrace;
 	}
 	break;
 	case VK_RETURN:
 	{
-		return KeyboardKeys::keyboard_enter;
+		return Keys::keyboard_enter;
 	}
 	break;
 	case VK_DELETE:
 	{
-		return KeyboardKeys::keyboard_delete;
+		return Keys::keyboard_delete;
 	}
 	break;
 	case VK_END:
 	{
-		return KeyboardKeys::keyboard_end;
+		return Keys::keyboard_end;
 	}
 	break;
 	case VK_NEXT:
 	{
-		return KeyboardKeys::keyboard_pageDown;
+		return Keys::keyboard_pageDown;
 	}
 	break;
 	case VK_CAPITAL:
 	{
-		return KeyboardKeys::keyboard_caps;
+		return Keys::keyboard_caps;
 	}
 	break;
 	case 0x41:
 	{
-		return KeyboardKeys::keyboard_a;
+		return Keys::keyboard_a;
 	}
 	break;
 	case 0x53:
 	{
-		return KeyboardKeys::keyboard_s;
+		return Keys::keyboard_s;
 	}
 	break;
 	case 0x44:
 	{
-		return KeyboardKeys::keyboard_d;
+		return Keys::keyboard_d;
 	}
 	break;
 	case 0x46:
 	{
-		return KeyboardKeys::keyboard_f;
+		return Keys::keyboard_f;
 	}
 	break;
 	case 0x47:
 	{
-		return KeyboardKeys::keyboard_g;
+		return Keys::keyboard_g;
 	}
 	break;
 	case 0x48:
 	{
-		return KeyboardKeys::keyboard_h;
+		return Keys::keyboard_h;
 	}
 	break;
 	case 0x4A:
 	{
-		return KeyboardKeys::keyboard_j;
+		return Keys::keyboard_j;
 	}
 	break;
 	case 0x4B:
 	{
-		return KeyboardKeys::keyboard_k;
+		return Keys::keyboard_k;
 	}
 	break;
 	case 0x4C:
 	{
-		return KeyboardKeys::keyboard_l;
+		return Keys::keyboard_l;
 	}
 	break;
 	case VK_OEM_1:
 	{
-		return KeyboardKeys::keyboard_semicolon;
+		return Keys::keyboard_semicolon;
 	}
 	break;
 	case VK_OEM_3:
 	{
-		return KeyboardKeys::keyboard_at;
+		return Keys::keyboard_at;
 	}
 	break;
 	case VK_OEM_7:
 	{
-		return KeyboardKeys::keyboard_hash;
+		return Keys::keyboard_hash;
 	}
 	break;
 	case VK_SHIFT:
 	{
-		return KeyboardKeys::keyboard_shift;
+		return Keys::keyboard_shift;
 	}
 	break;
 	case VK_OEM_5:
 	{
-		return KeyboardKeys::keyboard_backslash;
+		return Keys::keyboard_backslash;
 	}
 	break;
 	case 0x5A:
 	{
-		return KeyboardKeys::keyboard_z;
+		return Keys::keyboard_z;
 	}
 	break;
 	case 0x58:
 	{
-		return KeyboardKeys::keyboard_x;
+		return Keys::keyboard_x;
 	}
 	break;
 	case 0x43:
 	{
-		return KeyboardKeys::keyboard_c;
+		return Keys::keyboard_c;
 	}
 	break;
 	case 0x56:
 	{
-		return KeyboardKeys::keyboard_v;
+		return Keys::keyboard_v;
 	}
 	break;
 	case 0x42:
 	{
-		return KeyboardKeys::keyboard_b;
+		return Keys::keyboard_b;
 	}
 	break;
 	case 0x4E:
 	{
-		return KeyboardKeys::keyboard_n;
+		return Keys::keyboard_n;
 	}
 	break;
 	case 0x4D:
 	{
-		return KeyboardKeys::keyboard_m;
+		return Keys::keyboard_m;
 	}
 	break;
 	case VK_OEM_COMMA:
 	{
-		return KeyboardKeys::keyboard_comma;
+		return Keys::keyboard_comma;
 	}
 	break;
 	case VK_OEM_PERIOD:
 	{
-		return KeyboardKeys::keyboard_stop;
+		return Keys::keyboard_stop;
 	}
 	break;
 	case VK_OEM_2:
 	{
-		return KeyboardKeys::keyboard_forwardslash;
+		return Keys::keyboard_forwardslash;
 	}
 	break;
 	case VK_CONTROL:
 	{
-		return KeyboardKeys::keyboard_control;
+		return Keys::keyboard_control;
 	}
 	break;
 	case VK_MENU:
 	{
-		return KeyboardKeys::keyboard_alt;
+		return Keys::keyboard_alt;
 	}
 	break;
 	case VK_SPACE:
 	{
-		return KeyboardKeys::keyboard_space;
+		return Keys::keyboard_space;
 	}
 	break;
 	case VK_UP:
 	{
-		return KeyboardKeys::keyboard_up;
+		return Keys::keyboard_up;
 	}
 	break;
 	case VK_DOWN:
 	{
-		return KeyboardKeys::keyboard_down;
+		return Keys::keyboard_down;
 	}
 	break;
 	case VK_LEFT:
 	{
-		return KeyboardKeys::keyboard_left;
+		return Keys::keyboard_left;
 	}
 	break;
 	case VK_RIGHT:
 	{
-		return KeyboardKeys::keyboard_right;
+		return Keys::keyboard_right;
 	}
 	break;
 	case VK_NUMLOCK:
 	{
-		return KeyboardKeys::numpad_numlock;
+		return Keys::numpad_numlock;
 	}
 	break;
 	case VK_DIVIDE:
 	{
-		return KeyboardKeys::numpad_divide;
+		return Keys::numpad_divide;
 	}
 	break;
 	case VK_MULTIPLY:
 	{
-		return KeyboardKeys::numpad_multiply;
+		return Keys::numpad_multiply;
 	}
 	break;
 	case VK_SUBTRACT:
 	{
-		return KeyboardKeys::numpad_subtract;
+		return Keys::numpad_subtract;
 	}
 	break;
 	case VK_NUMPAD7:
 	{
-		return KeyboardKeys::numpad_7;
+		return Keys::numpad_7;
 	}
 	break;
 	case VK_NUMPAD8:
 	{
-		return KeyboardKeys::numpad_8;
+		return Keys::numpad_8;
 	}
 	break;
 	case VK_NUMPAD9:
 	{
-		return KeyboardKeys::numpad_9;
+		return Keys::numpad_9;
 	}
 	break;
 	case VK_ADD:
 	{
-		return KeyboardKeys::numpad_add;
+		return Keys::numpad_add;
 	}
 	break;
 	case VK_NUMPAD4:
 	{
-		return KeyboardKeys::numpad_4;
+		return Keys::numpad_4;
 	}
 	break;
 	case VK_NUMPAD5:
 	{
-		return KeyboardKeys::numpad_5;
+		return Keys::numpad_5;
 	}
 	break;
 	case VK_NUMPAD6:
 	{
-		return KeyboardKeys::numpad_6;
+		return Keys::numpad_6;
 	}
 	break;
 	case VK_NUMPAD1:
 	{
-		return KeyboardKeys::numpad_1;
+		return Keys::numpad_1;
 	}
 	break;
 	case VK_NUMPAD2:
 	{
-		return KeyboardKeys::numpad_2;
+		return Keys::numpad_2;
 	}
 	break;
 	case VK_NUMPAD3:
 	{
-		return KeyboardKeys::numpad_3;
+		return Keys::numpad_3;
 	}
 	break;
 	case VK_NUMPAD0:
 	{
-		return KeyboardKeys::numpad_0;
+		return Keys::numpad_0;
 	}
 	break;
 	case VK_DECIMAL:
 	{
-		return KeyboardKeys::numpad_stop;
+		return Keys::numpad_stop;
 	}
 	break;
 	}
 
-	return KeyboardKeys();
+	return Keys();
 }

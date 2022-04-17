@@ -50,7 +50,7 @@ bool windowsPlatform::SubordinateImplimentation::getMouse(MouseButtons button)
 	return mouse.getButton(button);
 }
 
-bool windowsPlatform::SubordinateImplimentation::getKeyboard(KeyboardKeys key)
+bool windowsPlatform::SubordinateImplimentation::getKeyboard(Keys key)
 {
 	return keyboard.getKey(key);
 }

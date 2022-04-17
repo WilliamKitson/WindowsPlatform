@@ -2,7 +2,7 @@
 
 namespace windowsPlatform
 {
-	enum class KeyboardKeys
+	enum class Keys
 	{
 		keyboard_ESC,
 		keyboard_F1,

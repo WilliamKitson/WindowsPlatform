@@ -13,12 +13,12 @@ std::string KeyboardDefaultTest::test()
 {
 	windowsPlatform::Keyboard unit;
 
-	for (int i{ 0 }; i < (int)windowsPlatform::KeyboardKeys::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::Keys::size; i++)
 	{
-		successes += unit.getKey((windowsPlatform::KeyboardKeys)i) == false;
+		successes += unit.getKey((windowsPlatform::Keys)i) == false;
 	}
 
-	if (successes == (int)windowsPlatform::KeyboardKeys::size)
+	if (successes == (int)windowsPlatform::Keys::size)
 	{
 		return std::string();
 	}

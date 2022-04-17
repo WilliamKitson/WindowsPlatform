@@ -13,13 +13,13 @@ std::string KeyboardPressTest::test()
 {
 	windowsPlatform::Keyboard unit;
 
-	for (int i{ 0 }; i < (int)windowsPlatform::KeyboardKeys::size; i++)
+	for (int i{ 0 }; i < (int)windowsPlatform::Keys::size; i++)
 	{
-		unit.press(getWparam((windowsPlatform::KeyboardKeys)i));
-		successes += unit.getKey((windowsPlatform::KeyboardKeys)i) == true;
+		unit.press(getWparam((windowsPlatform::Keys)i));
+		successes += unit.getKey((windowsPlatform::Keys)i) == true;
 	}
 
-	if (successes == (int)windowsPlatform::KeyboardKeys::size)
+	if (successes == (int)windowsPlatform::Keys::size)
 	{
 		return std::string();
 	}
@@ -27,476 +27,476 @@ std::string KeyboardPressTest::test()
 	return "keyboard press test failed\n";
 }
 
-WPARAM KeyboardPressTest::getWparam(windowsPlatform::KeyboardKeys key)
+WPARAM KeyboardPressTest::getWparam(windowsPlatform::Keys key)
 {
 	switch (key)
 	{
-	case windowsPlatform::KeyboardKeys::keyboard_ESC:
+	case windowsPlatform::Keys::keyboard_ESC:
 	{
 		return VK_ESCAPE;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F1:
+	case windowsPlatform::Keys::keyboard_F1:
 	{
 		return VK_F1;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F2:
+	case windowsPlatform::Keys::keyboard_F2:
 	{
 		return VK_F2;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F3:
+	case windowsPlatform::Keys::keyboard_F3:
 	{
 		return VK_F3;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F4:
+	case windowsPlatform::Keys::keyboard_F4:
 	{
 		return VK_F4;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F5:
+	case windowsPlatform::Keys::keyboard_F5:
 	{
 		return VK_F5;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F6:
+	case windowsPlatform::Keys::keyboard_F6:
 	{
 		return VK_F6;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F7:
+	case windowsPlatform::Keys::keyboard_F7:
 	{
 		return VK_F7;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F8:
+	case windowsPlatform::Keys::keyboard_F8:
 	{
 		return VK_F8;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F9:
+	case windowsPlatform::Keys::keyboard_F9:
 	{
 		return VK_F9;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_F10:
+	case windowsPlatform::Keys::keyboard_F10:
 	{
 		return VK_F10;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_scrollLock:
+	case windowsPlatform::Keys::keyboard_scrollLock:
 	{
 		return VK_SCROLL;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_pause:
+	case windowsPlatform::Keys::keyboard_pause:
 	{
 		return VK_PAUSE;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_1:
+	case windowsPlatform::Keys::keyboard_1:
 	{
 		return 0x31;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_2:
+	case windowsPlatform::Keys::keyboard_2:
 	{
 		return 0x32;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_3:
+	case windowsPlatform::Keys::keyboard_3:
 	{
 		return 0x33;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_4:
+	case windowsPlatform::Keys::keyboard_4:
 	{
 		return 0x34;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_5:
+	case windowsPlatform::Keys::keyboard_5:
 	{
 		return 0x35;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_6:
+	case windowsPlatform::Keys::keyboard_6:
 	{
 		return 0x36;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_7:
+	case windowsPlatform::Keys::keyboard_7:
 	{
 		return 0x37;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_8:
+	case windowsPlatform::Keys::keyboard_8:
 	{
 		return 0x38;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_9:
+	case windowsPlatform::Keys::keyboard_9:
 	{
 		return 0x39;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_0:
+	case windowsPlatform::Keys::keyboard_0:
 	{
 		return 0x30;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_dash:
+	case windowsPlatform::Keys::keyboard_dash:
 	{
 		return VK_OEM_MINUS;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_equals:
+	case windowsPlatform::Keys::keyboard_equals:
 	{
 		return VK_OEM_PLUS;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_backspace:
+	case windowsPlatform::Keys::keyboard_backspace:
 	{
 		return VK_BACK;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_insert:
+	case windowsPlatform::Keys::keyboard_insert:
 	{
 		return VK_INSERT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_home:
+	case windowsPlatform::Keys::keyboard_home:
 	{
 		return VK_HOME;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_pageUp:
+	case windowsPlatform::Keys::keyboard_pageUp:
 	{
 		return VK_PRIOR;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_tab:
+	case windowsPlatform::Keys::keyboard_tab:
 	{
 		return VK_TAB;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_q:
+	case windowsPlatform::Keys::keyboard_q:
 	{
 		return 0x51;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_w:
+	case windowsPlatform::Keys::keyboard_w:
 	{
 		return 0x57;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_e:
+	case windowsPlatform::Keys::keyboard_e:
 	{
 		return 0x45;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_r:
+	case windowsPlatform::Keys::keyboard_r:
 	{
 		return 0x52;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_t:
+	case windowsPlatform::Keys::keyboard_t:
 	{
 		return 0x54;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_y:
+	case windowsPlatform::Keys::keyboard_y:
 	{
 		return 0x59;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_u:
+	case windowsPlatform::Keys::keyboard_u:
 	{
 		return 0x55;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_i:
+	case windowsPlatform::Keys::keyboard_i:
 	{
 		return 0x49;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_o:
+	case windowsPlatform::Keys::keyboard_o:
 	{
 		return 0x4F;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_p:
+	case windowsPlatform::Keys::keyboard_p:
 	{
 		return 0x50;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_openBrace:
+	case windowsPlatform::Keys::keyboard_openBrace:
 	{
 		return VK_OEM_4;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_closeBrace:
+	case windowsPlatform::Keys::keyboard_closeBrace:
 	{
 		return VK_OEM_6;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_enter:
+	case windowsPlatform::Keys::keyboard_enter:
 	{
 		return VK_RETURN;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_delete:
+	case windowsPlatform::Keys::keyboard_delete:
 	{
 		return VK_DELETE;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_end:
+	case windowsPlatform::Keys::keyboard_end:
 	{
 		return VK_END;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_pageDown:
+	case windowsPlatform::Keys::keyboard_pageDown:
 	{
 		return VK_NEXT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_caps:
+	case windowsPlatform::Keys::keyboard_caps:
 	{
 		return VK_CAPITAL;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_a:
+	case windowsPlatform::Keys::keyboard_a:
 	{
 		return 0x41;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_s:
+	case windowsPlatform::Keys::keyboard_s:
 	{
 		return 0x53;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_d:
+	case windowsPlatform::Keys::keyboard_d:
 	{
 		return 0x44;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_f:
+	case windowsPlatform::Keys::keyboard_f:
 	{
 		return 0x46;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_g:
+	case windowsPlatform::Keys::keyboard_g:
 	{
 		return 0x47;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_h:
+	case windowsPlatform::Keys::keyboard_h:
 	{
 		return 0x48;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_j:
+	case windowsPlatform::Keys::keyboard_j:
 	{
 		return 0x4A;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_k:
+	case windowsPlatform::Keys::keyboard_k:
 	{
 		return 0x4B;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_l:
+	case windowsPlatform::Keys::keyboard_l:
 	{
 		return 0x4C;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_semicolon:
+	case windowsPlatform::Keys::keyboard_semicolon:
 	{
 		return VK_OEM_1;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_at:
+	case windowsPlatform::Keys::keyboard_at:
 	{
 		return VK_OEM_3;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_hash:
+	case windowsPlatform::Keys::keyboard_hash:
 	{
 		return VK_OEM_7;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_shift:
+	case windowsPlatform::Keys::keyboard_shift:
 	{
 		return VK_SHIFT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_backslash:
+	case windowsPlatform::Keys::keyboard_backslash:
 	{
 		return VK_OEM_5;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_z:
+	case windowsPlatform::Keys::keyboard_z:
 	{
 		return 0x5A;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_x:
+	case windowsPlatform::Keys::keyboard_x:
 	{
 		return 0x58;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_c:
+	case windowsPlatform::Keys::keyboard_c:
 	{
 		return 0x43;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_v:
+	case windowsPlatform::Keys::keyboard_v:
 	{
 		return 0x56;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_b:
+	case windowsPlatform::Keys::keyboard_b:
 	{
 		return 0x42;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_n:
+	case windowsPlatform::Keys::keyboard_n:
 	{
 		return 0x4E;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_m:
+	case windowsPlatform::Keys::keyboard_m:
 	{
 		return 0x4D;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_comma:
+	case windowsPlatform::Keys::keyboard_comma:
 	{
 		return VK_OEM_COMMA;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_stop:
+	case windowsPlatform::Keys::keyboard_stop:
 	{
 		return VK_OEM_PERIOD;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_forwardslash:
+	case windowsPlatform::Keys::keyboard_forwardslash:
 	{
 		return VK_OEM_2;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_control:
+	case windowsPlatform::Keys::keyboard_control:
 	{
 		return VK_CONTROL;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_alt:
+	case windowsPlatform::Keys::keyboard_alt:
 	{
 		return VK_MENU;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_space:
+	case windowsPlatform::Keys::keyboard_space:
 	{
 		return VK_SPACE;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_up:
+	case windowsPlatform::Keys::keyboard_up:
 	{
 		return VK_UP;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_down:
+	case windowsPlatform::Keys::keyboard_down:
 	{
 		return VK_DOWN;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_left:
+	case windowsPlatform::Keys::keyboard_left:
 	{
 		return VK_LEFT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::keyboard_right:
+	case windowsPlatform::Keys::keyboard_right:
 	{
 		return VK_RIGHT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_numlock:
+	case windowsPlatform::Keys::numpad_numlock:
 	{
 		return VK_NUMLOCK;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_divide:
+	case windowsPlatform::Keys::numpad_divide:
 	{
 		return VK_DIVIDE;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_multiply:
+	case windowsPlatform::Keys::numpad_multiply:
 	{
 		return VK_MULTIPLY;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_subtract:
+	case windowsPlatform::Keys::numpad_subtract:
 	{
 		return VK_SUBTRACT;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_7:
+	case windowsPlatform::Keys::numpad_7:
 	{
 		return VK_NUMPAD7;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_8:
+	case windowsPlatform::Keys::numpad_8:
 	{
 		return VK_NUMPAD8;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_9:
+	case windowsPlatform::Keys::numpad_9:
 	{
 		return VK_NUMPAD9;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_add:
+	case windowsPlatform::Keys::numpad_add:
 	{
 		return VK_ADD;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_4:
+	case windowsPlatform::Keys::numpad_4:
 	{
 		return VK_NUMPAD4;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_5:
+	case windowsPlatform::Keys::numpad_5:
 	{
 		return VK_NUMPAD5;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_6:
+	case windowsPlatform::Keys::numpad_6:
 	{
 		return VK_NUMPAD6;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_1:
+	case windowsPlatform::Keys::numpad_1:
 	{
 		return VK_NUMPAD1;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_2:
+	case windowsPlatform::Keys::numpad_2:
 	{
 		return VK_NUMPAD2;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_3:
+	case windowsPlatform::Keys::numpad_3:
 	{
 		return VK_NUMPAD3;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_0:
+	case windowsPlatform::Keys::numpad_0:
 	{
 		return VK_NUMPAD0;
 	}
 	break;
-	case windowsPlatform::KeyboardKeys::numpad_stop:
+	case windowsPlatform::Keys::numpad_stop:
 	{
 		return VK_DECIMAL;
 	}

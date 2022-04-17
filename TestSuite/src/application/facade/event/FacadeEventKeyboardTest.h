@@ -15,10 +15,10 @@ public:
 	std::string test();
 
 private:
-	void postDown(HWND, windowsPlatform::KeyboardKeys);
-	void postUp(HWND, windowsPlatform::KeyboardKeys);
-	bool isSysKey(windowsPlatform::KeyboardKeys);
-	WPARAM getKeyCode(windowsPlatform::KeyboardKeys);
+	void postDown(HWND, windowsPlatform::Keys);
+	void postUp(HWND, windowsPlatform::Keys);
+	bool isSysKey(windowsPlatform::Keys);
+	WPARAM getKeyCode(windowsPlatform::Keys);
 
 private:
 	HINSTANCE hInstance;

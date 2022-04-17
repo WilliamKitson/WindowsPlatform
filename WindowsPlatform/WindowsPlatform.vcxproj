@@ -150,7 +150,7 @@
     <ClInclude Include="src\ApplicationWindow.h" />
     <ClInclude Include="src\DeltaTimer.h" />
     <ClInclude Include="src\Keyboard.h" />
-    <ClInclude Include="src\KeyboardKeys.h" />
+    <ClInclude Include="src\Keys.h" />
     <ClInclude Include="src\Mouse.h" />
     <ClInclude Include="src\MouseButtons.h" />
     <ClInclude Include="src\ResolutionValidator.h" />

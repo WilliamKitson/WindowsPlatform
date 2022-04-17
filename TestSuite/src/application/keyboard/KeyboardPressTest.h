@@ -14,7 +14,7 @@ public:
 	std::string test();
 
 private:
-	WPARAM getWparam(windowsPlatform::KeyboardKeys);
+	WPARAM getWparam(windowsPlatform::Keys);
 
 private:
 	int successes;
