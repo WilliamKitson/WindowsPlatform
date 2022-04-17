@@ -1,9 +1,7 @@
 #pragma once
 
 #include <string>
-
 #include "resolution/ResolutionTester.h"
-#include "normaliser/NormaliserTester.h"
 
 class DomainTester
 {
@@ -15,5 +13,4 @@ public:
 
 private:
 	std::string testResolution();
-	std::string testNormaliser();
 };

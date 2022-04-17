@@ -27,19 +27,7 @@
     <ClCompile Include="src\SubordinateTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\normaliser\NormaliserRangeDefaultTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\domain\normaliser\NormaliserTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\domain\DomainTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\domain\normaliser\NormaliserInvertedRangeTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\domain\normaliser\NormaliserRangeSetTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\application\delta\DeltaDefaultTest.cpp">
@@ -266,19 +254,7 @@
     <ClInclude Include="src\SubordinateTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\normaliser\NormaliserRangeDefaultTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\domain\normaliser\NormaliserTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\domain\DomainTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\domain\normaliser\NormaliserInvertedRangeTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\domain\normaliser\NormaliserRangeSetTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\delta\DeltaDefaultTest.h">
