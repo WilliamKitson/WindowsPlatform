@@ -11,7 +11,7 @@ FacadeEventMouseTest::~FacadeEventMouseTest()
 
 std::string FacadeEventMouseTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade event mouse test"

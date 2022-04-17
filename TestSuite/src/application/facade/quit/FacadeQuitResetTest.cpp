@@ -11,7 +11,7 @@ FacadeQuitResetTest::~FacadeQuitResetTest()
 
 std::string FacadeQuitResetTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade quit reset test"

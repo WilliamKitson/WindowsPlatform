@@ -11,7 +11,7 @@ FacadeMinimiseEventTest::~FacadeMinimiseEventTest()
 
 std::string FacadeMinimiseEventTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade minimise event test"

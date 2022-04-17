@@ -11,7 +11,7 @@ FacadeEventCursorTest::~FacadeEventCursorTest()
 
 std::string FacadeEventCursorTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade event cursor test"

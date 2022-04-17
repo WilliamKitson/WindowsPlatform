@@ -11,7 +11,7 @@ FacadeOpenPostQuitTest::~FacadeOpenPostQuitTest()
 
 std::string FacadeOpenPostQuitTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade open post quit test"

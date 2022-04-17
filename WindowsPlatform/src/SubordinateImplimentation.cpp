@@ -1,7 +1,7 @@
 #include "SubordinateImplimentation.h"
 
 windowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShow, std::string tag)
-	: SubordianteFacade(), windowClass(), window(nCmdShow), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
+	: Facade(), windowClass(), window(nCmdShow), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }

@@ -6,7 +6,7 @@
 #include <string>
 #include <codecvt>
 
-#include "SubordinateFacade.h"
+#include "Facade.h"
 #include "Window.h"
 #include "Mouse.h"
 #include "Keyboard.h"
@@ -15,7 +15,7 @@
 namespace windowsPlatform
 {
 	class SubordinateImplimentation
-		: public SubordianteFacade
+		: public Facade
 	{
 	public:
 		SubordinateImplimentation(HINSTANCE, int, std::string);

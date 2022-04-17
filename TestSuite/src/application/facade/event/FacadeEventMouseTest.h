@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <string>
 
-#include "SubordinateFacade.h"
+#include "Facade.h"
 #include "SubordinateImplimentation.h"
 
 class FacadeEventMouseTest

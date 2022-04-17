@@ -9,11 +9,11 @@
 
 namespace windowsPlatform
 {
-	class SubordianteFacade
+	class Facade
 	{
 	public:
-		SubordianteFacade();
-		virtual ~SubordianteFacade();
+		Facade();
+		virtual ~Facade();
 
 		virtual void update();
 		virtual HWND getWindow();

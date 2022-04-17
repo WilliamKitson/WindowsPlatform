@@ -11,7 +11,7 @@ FacadeWindowTagTest::~FacadeWindowTagTest()
 
 std::string FacadeWindowTagTest::test()
 {
-	windowsPlatform::SubordianteFacade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
 		hInstance,
 		nCmdShow,
 		"facade window tag test"

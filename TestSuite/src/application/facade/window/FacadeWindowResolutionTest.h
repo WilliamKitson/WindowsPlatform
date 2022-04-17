@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "SubordinateFacade.h"
+#include "Facade.h"
 #include "SubordinateImplimentation.h"
 
 class FacadeWindowResolutionTest
