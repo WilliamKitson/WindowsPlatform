@@ -14,12 +14,12 @@
 
 namespace windowsPlatform
 {
-	class SubordinateImplimentation
+	class Implimentation
 		: public Facade
 	{
 	public:
-		SubordinateImplimentation(HINSTANCE, int, std::string);
-		virtual ~SubordinateImplimentation();
+		Implimentation(HINSTANCE, int, std::string);
+		virtual ~Implimentation();
 
 		virtual void update();
 		virtual HWND getWindow();
@@ -58,6 +58,6 @@ namespace windowsPlatform
 		Mouse mouse;
 		Keyboard keyboard;
 		Delta delta;
-		static SubordinateImplimentation* active;
+		static Implimentation* active;
 	};
 }

@@ -11,7 +11,7 @@ FacadeQuitEventTest::~FacadeQuitEventTest()
 
 std::string FacadeQuitEventTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
 		hInstance,
 		nCmdShow,
 		"facade quit event test"

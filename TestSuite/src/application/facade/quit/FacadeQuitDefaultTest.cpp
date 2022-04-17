@@ -11,7 +11,7 @@ FacadeQuitDefaultTest::~FacadeQuitDefaultTest()
 
 std::string FacadeQuitDefaultTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
 		hInstance, 
 		nCmdShow, 
 		"facade quit default test"

@@ -1,16 +1,16 @@
-#include "SubordinateImplimentation.h"
+#include "Implimentation.h"
 
-windowsPlatform::SubordinateImplimentation::SubordinateImplimentation(HINSTANCE hInstance, int nCmdShow, std::string tag)
+windowsPlatform::Implimentation::Implimentation(HINSTANCE hInstance, int nCmdShow, std::string tag)
 	: Facade(), windowClass(), window(nCmdShow), quit{ false }, minimise{ false }, drag(), mouse(), keyboard(), delta()
 {
 	initialise(hInstance, std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(tag));
 }
 
-windowsPlatform::SubordinateImplimentation::~SubordinateImplimentation()
+windowsPlatform::Implimentation::~Implimentation()
 {
 }
 
-void windowsPlatform::SubordinateImplimentation::update()
+void windowsPlatform::Implimentation::update()
 {
 	resetQuit();
 	resetMinimise();
@@ -20,67 +20,67 @@ void windowsPlatform::SubordinateImplimentation::update()
 	delta.update();
 }
 
-HWND windowsPlatform::SubordinateImplimentation::getWindow()
+HWND windowsPlatform::Implimentation::getWindow()
 {
     return window.getWindow();
 }
 
-bool windowsPlatform::SubordinateImplimentation::getQuit()
+bool windowsPlatform::Implimentation::getQuit()
 {
 	return quit;
 }
 
-bool windowsPlatform::SubordinateImplimentation::getMinimise()
+bool windowsPlatform::Implimentation::getMinimise()
 {
 	return minimise;
 }
 
-windowsPlatform::Vector2 windowsPlatform::SubordinateImplimentation::getCursor()
+windowsPlatform::Vector2 windowsPlatform::Implimentation::getCursor()
 {
 	return mouse.getCursor();
 }
 
-windowsPlatform::Vector2 windowsPlatform::SubordinateImplimentation::getDrag()
+windowsPlatform::Vector2 windowsPlatform::Implimentation::getDrag()
 {
 	return drag;
 }
 
-bool windowsPlatform::SubordinateImplimentation::getMouse(Buttons button)
+bool windowsPlatform::Implimentation::getMouse(Buttons button)
 {
 	return mouse.getButton(button);
 }
 
-bool windowsPlatform::SubordinateImplimentation::getKeyboard(Keys key)
+bool windowsPlatform::Implimentation::getKeyboard(Keys key)
 {
 	return keyboard.getKey(key);
 }
 
-float windowsPlatform::SubordinateImplimentation::getDelta()
+float windowsPlatform::Implimentation::getDelta()
 {
 	return delta.getDelta();
 }
 
-void windowsPlatform::SubordinateImplimentation::setTag(std::string value)
+void windowsPlatform::Implimentation::setTag(std::string value)
 {
 	window.setTag(value);
 }
 
-void windowsPlatform::SubordinateImplimentation::setResolution(Vector2 value)
+void windowsPlatform::Implimentation::setResolution(Vector2 value)
 {
 	window.setResolution(value);
 }
 
-void windowsPlatform::SubordinateImplimentation::setBorderless()
+void windowsPlatform::Implimentation::setBorderless()
 {
 	window.borderless();
 }
 
-void windowsPlatform::SubordinateImplimentation::setWindowed()
+void windowsPlatform::Implimentation::setWindowed()
 {
 	window.windowed();
 }
 
-void windowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance, std::wstring tag)
+void windowsPlatform::Implimentation::initialise(HINSTANCE hInstance, std::wstring tag)
 {
 	if (FAILED(initialiseWindowClass(hInstance, tag)))
 	{
@@ -93,7 +93,7 @@ void windowsPlatform::SubordinateImplimentation::initialise(HINSTANCE hInstance,
 	}
 }
 
-HRESULT windowsPlatform::SubordinateImplimentation::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
+HRESULT windowsPlatform::Implimentation::initialiseWindowClass(HINSTANCE hInstance, std::wstring tag)
 {
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -111,7 +111,7 @@ HRESULT windowsPlatform::SubordinateImplimentation::initialiseWindowClass(HINSTA
 	return E_FAIL;
 }
 
-HRESULT windowsPlatform::SubordinateImplimentation::initialiseRawInput()
+HRESULT windowsPlatform::Implimentation::initialiseRawInput()
 {
 	RAWINPUTDEVICE rawInputDevice[1];
 
@@ -130,22 +130,22 @@ HRESULT windowsPlatform::SubordinateImplimentation::initialiseRawInput()
 	return E_FAIL;
 }
 
-void windowsPlatform::SubordinateImplimentation::resetQuit()
+void windowsPlatform::Implimentation::resetQuit()
 {
 	quit = false;
 }
 
-void windowsPlatform::SubordinateImplimentation::resetMinimise()
+void windowsPlatform::Implimentation::resetMinimise()
 {
 	minimise = false;
 }
 
-void windowsPlatform::SubordinateImplimentation::resetDrag()
+void windowsPlatform::Implimentation::resetDrag()
 {
 	drag = Vector2();
 }
 
-void windowsPlatform::SubordinateImplimentation::messageLoop()
+void windowsPlatform::Implimentation::messageLoop()
 {
 	MSG message;
 	active = this;
@@ -159,7 +159,7 @@ void windowsPlatform::SubordinateImplimentation::messageLoop()
 	active = nullptr;
 }
 
-LRESULT CALLBACK windowsPlatform::SubordinateImplimentation::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT CALLBACK windowsPlatform::Implimentation::applicationWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	if (active)
 	{
@@ -169,7 +169,7 @@ LRESULT CALLBACK windowsPlatform::SubordinateImplimentation::applicationWindowPr
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-LRESULT windowsPlatform::SubordinateImplimentation::processMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT windowsPlatform::Implimentation::processMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch (msg)
 	{
@@ -280,7 +280,7 @@ LRESULT windowsPlatform::SubordinateImplimentation::processMessage(HWND hWnd, UI
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-void windowsPlatform::SubordinateImplimentation::processMinimise(WPARAM wParam)
+void windowsPlatform::Implimentation::processMinimise(WPARAM wParam)
 {
 	if (wParam != SIZE_MINIMIZED)
 	{
@@ -290,7 +290,7 @@ void windowsPlatform::SubordinateImplimentation::processMinimise(WPARAM wParam)
 	active->minimise = true;
 }
 
-void windowsPlatform::SubordinateImplimentation::processDrag(LPARAM lParam)
+void windowsPlatform::Implimentation::processDrag(LPARAM lParam)
 {
 	RAWINPUT* rawInput = initialiseRawInputData(lParam);
 
@@ -307,7 +307,7 @@ void windowsPlatform::SubordinateImplimentation::processDrag(LPARAM lParam)
 	active->drag = rawInputDrag;
 }
 
-RAWINPUT* windowsPlatform::SubordinateImplimentation::initialiseRawInputData(LPARAM lParam)
+RAWINPUT* windowsPlatform::Implimentation::initialiseRawInputData(LPARAM lParam)
 {
 	UINT dwSize = sizeof(RAWINPUT);
 	static BYTE lpb[sizeof(RAWINPUT)];
@@ -317,4 +317,4 @@ RAWINPUT* windowsPlatform::SubordinateImplimentation::initialiseRawInputData(LPA
 	return (RAWINPUT*)lpb;
 }
 
-windowsPlatform::SubordinateImplimentation* windowsPlatform::SubordinateImplimentation::active = nullptr;
+windowsPlatform::Implimentation* windowsPlatform::Implimentation::active = nullptr;

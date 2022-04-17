@@ -11,7 +11,7 @@ FacadeMinimiseResetTest::~FacadeMinimiseResetTest()
 
 std::string FacadeMinimiseResetTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
 		hInstance,
 		nCmdShow,
 		"facade minimise reset test"

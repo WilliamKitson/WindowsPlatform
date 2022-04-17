@@ -150,21 +150,21 @@
     <ClInclude Include="src\Buttons.h" />
     <ClInclude Include="src\Delta.h" />
     <ClInclude Include="src\Facade.h" />
+    <ClInclude Include="src\Implimentation.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Keys.h" />
     <ClInclude Include="src\Mouse.h" />
     <ClInclude Include="src\Resolution.h" />
-    <ClInclude Include="src\SubordinateImplimentation.h" />
     <ClInclude Include="src\Vector2.h" />
     <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Delta.cpp" />
     <ClCompile Include="src\Facade.cpp" />
+    <ClCompile Include="src\Implimentation.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\Resolution.cpp" />
-    <ClCompile Include="src\SubordinateImplimentation.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>

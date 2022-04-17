@@ -11,7 +11,7 @@ FacadeWindowWindowedTest::~FacadeWindowWindowedTest()
 
 std::string FacadeWindowWindowedTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
 		hInstance,
 		nCmdShow,
 		"facade window windowed test"

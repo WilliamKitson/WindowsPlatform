@@ -11,7 +11,7 @@ FacadeDeltaTest::~FacadeDeltaTest()
 
 std::string FacadeDeltaTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::SubordinateImplimentation(
+	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
 		hInstance,
 		nCmdShow,
 		"facade delta test"
