@@ -21,6 +21,9 @@ private:
 	windowsPlatform::Vector2 windowResolution(HWND);
 
 private:
+	bool success(windowsPlatform::Vector2);
+
+private:
 	HINSTANCE hInstance;
 	int nCmdShow;
 	WNDCLASSEX windowClass;
