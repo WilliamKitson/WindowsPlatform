@@ -10,22 +10,25 @@ MouseDefaultCursorTest::~MouseDefaultCursorTest()
 
 std::string MouseDefaultCursorTest::test()
 {
-	bool successes = true;
-
-	if (windowsPlatform::Mouse().getCursor().x != 0.0f)
-	{
-		successes = false;
-	}
-
-	if (windowsPlatform::Mouse().getCursor().y != 0.0f)
-	{
-		successes = false;
-	}
-
-	if (successes)
+	if (success())
 	{
 		return std::string();
 	}
 
 	return "mouse default cursor test failed\n";
+}
+
+bool MouseDefaultCursorTest::success()
+{
+	if (windowsPlatform::Mouse().getCursor().x != 0.0f)
+	{
+		return false;
+	}
+
+	if (windowsPlatform::Mouse().getCursor().y != 0.0f)
+	{
+		return false;
+	}
+
+	return true;
 }

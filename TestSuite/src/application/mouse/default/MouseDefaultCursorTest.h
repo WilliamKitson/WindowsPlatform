@@ -10,4 +10,7 @@ public:
 	~MouseDefaultCursorTest();
 
 	std::string test();
+
+private:
+	bool success();
 };
