@@ -17,9 +17,11 @@ public:
 
 private:
 	windowsPlatform::Vector2 windowResolution(HWND);
+	bool success(windowsPlatform::Vector2);
 
 private:
 	HINSTANCE hInstance;
 	int nCmdShow;
+	windowsPlatform::Facade* unit;
 	windowsPlatform::Vector2 resolution;
 };

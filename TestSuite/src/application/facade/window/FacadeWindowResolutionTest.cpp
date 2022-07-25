@@ -1,7 +1,7 @@
 #include "FacadeWindowResolutionTest.h"
 
 FacadeWindowResolutionTest::FacadeWindowResolutionTest(HINSTANCE hInstanceValue, int nCmdShowValue)
-	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, resolution()
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, unit{ new windowsPlatform::Implimentation(hInstance, nCmdShow, "facade window resolution test") }, resolution()
 {
 	resolution = windowsPlatform::Vector2{
 		1000.0f,
@@ -11,35 +11,15 @@ FacadeWindowResolutionTest::FacadeWindowResolutionTest(HINSTANCE hInstanceValue,
 
 FacadeWindowResolutionTest::~FacadeWindowResolutionTest()
 {
+	delete unit;
+	unit = nullptr;
 }
 
 std::string FacadeWindowResolutionTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
-		hInstance,
-		nCmdShow,
-		"facade window resolution test"
-	);
-
 	unit->setResolution(resolution);
-	windowsPlatform::Vector2 window = windowResolution(unit->getWindow());
 
-	delete unit;
-	unit = nullptr;
-
-	bool successes = true;
-
-	if (window.x != resolution.x)
-	{
-		successes = false;
-	}
-
-	if (window.y != resolution.y)
-	{
-		successes = false;
-	}
-
-	if (successes)
+	if (success(windowResolution(unit->getWindow())))
 	{
 		return std::string();
 	}
@@ -60,4 +40,19 @@ windowsPlatform::Vector2 FacadeWindowResolutionTest::windowResolution(HWND windo
 		(float)(windowRect.right - windowRect.left),
 		(float)(windowRect.bottom - windowRect.top)
 	};
+}
+
+bool FacadeWindowResolutionTest::success(windowsPlatform::Vector2 input)
+{
+	if (input.x != resolution.x)
+	{
+		return false;
+	}
+
+	if (input.y != resolution.y)
+	{
+		return false;
+	}
+
+	return true;
 }
