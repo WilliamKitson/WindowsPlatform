@@ -15,8 +15,12 @@ public:
 	std::string test();
 
 private:
+	bool success(windowsPlatform::Vector2);
+
+private:
 	HINSTANCE hInstance;
 	int nCmdShow;
+	windowsPlatform::Facade* unit;
 	int itterations;
 	int successes;
 };

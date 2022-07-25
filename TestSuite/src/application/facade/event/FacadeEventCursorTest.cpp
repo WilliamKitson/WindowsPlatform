@@ -1,22 +1,18 @@
 #include "FacadeEventCursorTest.h"
 
 FacadeEventCursorTest::FacadeEventCursorTest(HINSTANCE hInstanceValue, int nCmdShowValue)
-	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, itterations{ 4 }, successes{ 0 }
+	: hInstance{ hInstanceValue }, nCmdShow{ nCmdShowValue }, unit{ new windowsPlatform::Implimentation(hInstance, nCmdShow, "facade event cursor test") }, itterations{ 4 }, successes{ 0 }
 {
 }
 
 FacadeEventCursorTest::~FacadeEventCursorTest()
 {
+	delete unit;
+	unit = nullptr;
 }
 
 std::string FacadeEventCursorTest::test()
 {
-	windowsPlatform::Facade* unit = new windowsPlatform::Implimentation(
-		hInstance,
-		nCmdShow,
-		"facade event cursor test"
-	);
-
 	for (int i{ 0 }; i < itterations; i++)
 	{
 		windowsPlatform::Vector2 state{
@@ -32,24 +28,8 @@ std::string FacadeEventCursorTest::test()
 		);
 
 		unit->update();
-
-		bool success = true;
-
-		if (unit->getCursor().x != state.x)
-		{
-			success = false;
-		}
-
-		if (unit->getCursor().y != state.y)
-		{
-			success = false;
-		}
-
-		successes += success;
+		successes += success(state);
 	}
-
-	delete unit;
-	unit = nullptr;
 
 	if (successes == itterations)
 	{
@@ -57,4 +37,19 @@ std::string FacadeEventCursorTest::test()
 	}
 
 	return "facade event cursor test failed\n";
+}
+
+bool FacadeEventCursorTest::success(windowsPlatform::Vector2 input)
+{
+	if (unit->getCursor().x != input.x)
+	{
+		return false;
+	}
+
+	if (unit->getCursor().y != input.y)
+	{
+		return false;
+	}
+
+	return true;
 }
