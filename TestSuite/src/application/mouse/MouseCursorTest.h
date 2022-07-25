@@ -12,4 +12,10 @@ public:
 	~MouseCursorTest();
 
 	std::string test();
+
+private:
+	bool success(windowsPlatform::Vector2);
+
+private:
+	windowsPlatform::Vector2 cursor;
 };
