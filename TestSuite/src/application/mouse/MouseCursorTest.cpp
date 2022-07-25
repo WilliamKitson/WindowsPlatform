@@ -18,7 +18,19 @@ std::string MouseCursorTest::test()
 	windowsPlatform::Mouse unit;
 	unit.move(MAKELPARAM(cursor.x, cursor.y));
 
-	if (unit.getCursor() == cursor)
+	bool successes = true;
+
+	if (unit.getCursor().x != cursor.x)
+	{
+		successes = false;
+	}
+
+	if (unit.getCursor().y != cursor.y)
+	{
+		successes = false;
+	}
+
+	if (successes)
 	{
 		return std::string();
 	}

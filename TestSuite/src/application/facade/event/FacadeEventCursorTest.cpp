@@ -32,7 +32,20 @@ std::string FacadeEventCursorTest::test()
 		);
 
 		unit->update();
-		successes += unit->getCursor() == state;
+
+		bool success = true;
+
+		if (unit->getCursor().x != state.x)
+		{
+			success = false;
+		}
+
+		if (unit->getCursor().y != state.y)
+		{
+			success = false;
+		}
+
+		successes += success;
 	}
 
 	delete unit;

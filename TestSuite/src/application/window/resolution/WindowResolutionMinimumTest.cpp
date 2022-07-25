@@ -24,7 +24,21 @@ std::string WindowResolutionMinimumTest::test()
 		540.0f
 	};
 
-	if (windowResolution(unit.getWindow()) == resolution)
+	windowsPlatform::Vector2 window = windowResolution(unit.getWindow());
+
+	bool successes = true;
+
+	if (window.x != resolution.x)
+	{
+		successes = false;
+	}
+
+	if (window.y != resolution.y)
+	{
+		successes = false;
+	}
+
+	if (successes)
 	{
 		return std::string();
 	}

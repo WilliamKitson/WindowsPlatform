@@ -221,11 +221,6 @@
     <ClCompile Include="src\domain\resolution\ResolutionTester.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
-    <ClCompile Include="src\presentation\PresentationTester.cpp" />
-    <ClCompile Include="src\presentation\vector2\VectorDefaultTest.cpp" />
-    <ClCompile Include="src\presentation\vector2\VectorTester.cpp" />
-    <ClCompile Include="src\presentation\vector2\VectorXTest.cpp" />
-    <ClCompile Include="src\presentation\vector2\VectorYTest.cpp" />
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -298,11 +293,6 @@
     <ClInclude Include="src\domain\resolution\parameter\ResolutionParameterWidthTest.h" />
     <ClInclude Include="src\domain\resolution\ResolutionTester.h" />
     <ClInclude Include="src\MemoryTest.h" />
-    <ClInclude Include="src\presentation\PresentationTester.h" />
-    <ClInclude Include="src\presentation\vector2\VectorDefaultTest.h" />
-    <ClInclude Include="src\presentation\vector2\VectorTester.h" />
-    <ClInclude Include="src\presentation\vector2\VectorXTest.h" />
-    <ClInclude Include="src\presentation\vector2\VectorYTest.h" />
     <ClInclude Include="src\SubordinateTester.h" />
   </ItemGroup>
   <ItemGroup>

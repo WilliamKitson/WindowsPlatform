@@ -24,7 +24,21 @@ std::string WindowResolutionSetTest::test()
 	unit.initialise(windowClass);
 	unit.setResolution(resolution);
 
-	if (windowResolution(unit.getWindow()) == resolution)
+	windowsPlatform::Vector2 window = windowResolution(unit.getWindow());
+
+	bool successes = true;
+
+	if (window.x != resolution.x)
+	{
+		successes = false;
+	}
+
+	if (window.y != resolution.y)
+	{
+		successes = false;
+	}
+
+	if (successes)
 	{
 		return std::string();
 	}

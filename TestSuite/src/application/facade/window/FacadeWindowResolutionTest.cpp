@@ -27,7 +27,19 @@ std::string FacadeWindowResolutionTest::test()
 	delete unit;
 	unit = nullptr;
 
-	if (window == resolution)
+	bool successes = true;
+
+	if (window.x != resolution.x)
+	{
+		successes = false;
+	}
+
+	if (window.y != resolution.y)
+	{
+		successes = false;
+	}
+
+	if (successes)
 	{
 		return std::string();
 	}
