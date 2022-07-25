@@ -19,26 +19,7 @@ std::string WindowResolutionMinimumTest::test()
 	unit.initialise(windowClass);
 	unit.setResolution(windowsPlatform::Vector2());
 
-	windowsPlatform::Vector2 resolution{
-		960.0f,
-		540.0f
-	};
-
-	windowsPlatform::Vector2 window = windowResolution(unit.getWindow());
-
-	bool successes = true;
-
-	if (window.x != resolution.x)
-	{
-		successes = false;
-	}
-
-	if (window.y != resolution.y)
-	{
-		successes = false;
-	}
-
-	if (successes)
+	if (success(windowResolution(unit.getWindow())))
 	{
 		return std::string();
 	}
@@ -81,4 +62,19 @@ windowsPlatform::Vector2 WindowResolutionMinimumTest::windowResolution(HWND wind
 		(float)(windowRect.right - windowRect.left),
 		(float)(windowRect.bottom - windowRect.top)
 	};
+}
+
+bool WindowResolutionMinimumTest::success(windowsPlatform::Vector2 input)
+{
+	if (input.x != 960.0f)
+	{
+		return false;
+	}
+
+	if (input.y != 540.0f)
+	{
+		return false;
+	}
+
+	return true;
 }
