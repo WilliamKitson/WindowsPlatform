@@ -18,27 +18,13 @@ WindowResolutionSetTest::~WindowResolutionSetTest()
 std::string WindowResolutionSetTest::test()
 {
 	windowsPlatform::Window unit{
-	nCmdShow
+		nCmdShow
 	};
 
 	unit.initialise(windowClass);
 	unit.setResolution(resolution);
 
-	windowsPlatform::Vector2 window = windowResolution(unit.getWindow());
-
-	bool successes = true;
-
-	if (window.x != resolution.x)
-	{
-		successes = false;
-	}
-
-	if (window.y != resolution.y)
-	{
-		successes = false;
-	}
-
-	if (successes)
+	if (success(windowResolution(unit.getWindow())))
 	{
 		return std::string();
 	}
@@ -81,4 +67,19 @@ windowsPlatform::Vector2 WindowResolutionSetTest::windowResolution(HWND window)
 		(float)(windowRect.right - windowRect.left),
 		(float)(windowRect.bottom - windowRect.top)
 	};
+}
+
+bool WindowResolutionSetTest::success(windowsPlatform::Vector2 input)
+{
+	if (input.x != resolution.x)
+	{
+		return false;
+	}
+
+	if (input.y != resolution.y)
+	{
+		return false;
+	}
+
+	return true;
 }
